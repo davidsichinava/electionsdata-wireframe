@@ -124,6 +124,9 @@ jobs:
       - name: Build parl2012 download bundle
         run: node src/loaders/downloads/process_parl2012_download.js
 
+      - name: Build parl2016 download bundle
+        run: node src/loaders/downloads/process_parl2016_download.js
+
       - name: Build parl2024 download bundle
         run: node src/loaders/downloads/process_parl2024_download.js
 
@@ -154,21 +157,23 @@ jobs:
 
       - name: Copy manifest xlsx downloads to dist
         run: |
-          node <<'NODE'
-          const fs = require('fs');
-          const path = require('path');
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import { collectDownloadEntries, OUT_DIR } from './src/loaders/downloads/shared.js';
 
-          const manifest = JSON.parse(fs.readFileSync('src/data/downloads.json', 'utf8'));
+          const entries = collectDownloadEntries();
           const outDir = 'dist/data/downloads';
           fs.mkdirSync(outDir, { recursive: true });
 
-          for (const entry of manifest.files ?? []) {
-            const source = path.join('src/data/downloads', entry.filename);
+          for (const entry of entries) {
+            const source = path.join(OUT_DIR, entry.filename);
             if (!fs.existsSync(source)) {
               throw new Error(`Download file listed in manifest is missing: ${source}`);
             }
             fs.copyFileSync(source, path.join(outDir, entry.filename));
           }
+          console.log(`Copied ${entries.length} bundle(s) to ${outDir}`);
           NODE
 
       # ── Deploy ─────────────────────────────────────────────────────────────
