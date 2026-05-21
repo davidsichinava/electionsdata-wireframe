@@ -135,9 +135,6 @@ files:
   pr_precinct_results:  "data/results/adj2016_pr_precincts.csv"
   smd_results:          "data/results/adj2016_smd.csv"
   smd_precinct_results: "data/results/adj2016_smd_precincts.csv"
-  candidates:           "data/candidates/adj2016_smd_candidates.csv"
-  party_lists:          "data/candidates/adj2016_party_lists.csv"
-  elected:              "data/candidates/adj2016_elected.csv"
   cartogram:            null
 
 turnout:

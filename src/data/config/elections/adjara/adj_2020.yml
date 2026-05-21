@@ -167,9 +167,6 @@ files:
   pr_precinct_results:  "data/results/adj2020_pr_precincts.csv"
   smd_results:          "data/results/adj2020_smd.csv"
   smd_precinct_results: "data/results/adj2020_smd_precincts.csv"
-  candidates:           "data/candidates/adj2020_smd_candidates.csv"
-  party_lists:          "data/candidates/adj2020_party_lists.csv"
-  elected:              "data/candidates/adj2020_elected.csv"
   cartogram:            null
 
 turnout:

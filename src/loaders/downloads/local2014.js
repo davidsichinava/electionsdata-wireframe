@@ -3,6 +3,7 @@ import {
   WORKBOOK_CREATOR,
   addMetadataSheet,
   buildCsvSheet,
+  canonicalCandidatePath,
   readCSV,
   readElection,
   subElections,
@@ -30,10 +31,12 @@ async function generateBundle(election, sub, generatedAt) {
     buildCsvSheet(wb, "Council SMD - Precincts", readCSV(files?.council_smd_precinct_results));
     buildCsvSheet(wb, "Turnout - Districts", readCSV(election.turnout?.file));
     buildCsvSheet(wb, "Turnout - Precincts", readCSV(election.turnout?.precinct_file));
-    buildCsvSheet(wb, "Party Lists", readCSV(files?.party_lists));
-    buildCsvSheet(wb, "Mayor Gamgebeli Candidates", readCSV(files?.mayor_candidates));
-    buildCsvSheet(wb, "SMD Candidates", readCSV(files?.smd_candidates));
-    buildCsvSheet(wb, "Elected Members", readCSV(files?.elected));
+    // Canonical candidate sheets — one per vote_type slot.
+    buildCsvSheet(wb, "Party Lists",           readCSV(canonicalCandidatePath(election, sub, "pr")));
+    buildCsvSheet(wb, "Mayor Candidates",      readCSV(canonicalCandidatePath(election, sub, "mayor")));
+    buildCsvSheet(wb, "Gamgebeli Candidates",  readCSV(canonicalCandidatePath(election, sub, "gamgebeli")));
+    buildCsvSheet(wb, "Council SMD Candidates",readCSV(canonicalCandidatePath(election, sub, "council_smd")));
+    buildCsvSheet(wb, "Elected Members",       readCSV(canonicalCandidatePath(election, sub, "elected")));
   } else {
     const label = subElectionSheetLabel(sub);
     buildCsvSheet(wb, `Mayor ${label} - Results`, readCSV(files?.smd_results));

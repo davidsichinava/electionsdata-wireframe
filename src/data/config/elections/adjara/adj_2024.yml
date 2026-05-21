@@ -150,7 +150,6 @@ files:
   pr_precinct_results:  "data/results/adj2024_pr_precincts.csv"
   smd_results:          null
   smd_precinct_results: null
-  candidates:           null
   cartogram:            null
 turnout:
   available: true

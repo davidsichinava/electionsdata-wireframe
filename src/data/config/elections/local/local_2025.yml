@@ -81,7 +81,6 @@ files:
   council_smd_precinct_results: "data/results/local2025_council_smd_precincts.csv"
   council_pr_results:           "data/results/local2025_pr.csv"
   council_pr_precinct_results:  "data/results/local2025_pr_precincts.csv"
-  candidates:                   "data/config/candidates/local/local_2025.yml"
 
 # Turnout is inline in each results CSV.
 turnout:

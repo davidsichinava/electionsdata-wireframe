@@ -57,7 +57,7 @@ parties:
   - id: unity
     alias:
       en: Unity — National Movement
-      ka: ერთობა — ნაციონალური მოძრაობა
+      ka: ერთიანობა-ნაციონალური მოძრაობა
     color: "#d13529"
     threshold_status: passed
     seats_pr: 16
@@ -207,7 +207,6 @@ files:
   pr_results:          "data/results/parl2024_pr.csv"
   pr_precinct_results: "data/results/parl2024_pr_precincts.csv"
   smd_results:         null
-  candidates:          "data/candidates/parl2024.csv"
   cartogram:           "data/shp/parl2024_cartogram.geojson"
 
 # Turnout is embedded in the results CSV; no separate turnout files needed.

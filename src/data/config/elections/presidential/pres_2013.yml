@@ -203,7 +203,6 @@ sources:
 files:
   pr_results:          "data/results/pres2013.csv"
   pr_precinct_results: "data/results/pres2013_precincts.csv"
-  candidates:          "data/candidates/pres2013_candidates.csv"
   cartogram:           null
 
 turnout:

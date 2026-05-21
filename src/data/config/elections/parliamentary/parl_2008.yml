@@ -151,9 +151,6 @@ files:
   pr_precinct_results:  "data/results/parl2008_pr_precincts.csv"
   smd_results:          "data/results/parl2008_smd.csv"
   smd_precinct_results: "data/results/parl2008_smd_precincts.csv"
-  party_lists:          "data/candidates/parl2008_party_lists.csv"
-  candidates:           "data/candidates/parl2008_smd_candidates.csv"
-  elected:              "data/candidates/parl2008_elected.csv"
   annulled_precincts:   "data/candidates/parl2008_annulled_precincts.csv"
   cartogram:            null
 

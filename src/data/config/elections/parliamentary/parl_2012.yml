@@ -312,9 +312,6 @@ files:
   pr_precinct_results:  "data/results/parl2012_pr_precincts.csv"
   smd_results:          "data/results/parl2012_smd.csv"
   smd_precinct_results: "data/results/parl2012_smd_precincts.csv"
-  party_lists:          "data/candidates/parl2012_party_lists.csv"
-  candidates:           "data/candidates/parl2012_smd_candidates.csv"
-  elected:              "data/candidates/parl2012_elected.csv"
   annulled_precincts:   "data/candidates/parl2012_annulled_precincts.csv"
   cartogram:            null
 

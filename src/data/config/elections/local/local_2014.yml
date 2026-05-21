@@ -311,11 +311,6 @@ files:
   council_smd_precinct_results: "data/results/local2014_council_smd_precincts.csv"
   council_pr_results:           "data/results/local2014_pr_selfgov.csv"
   council_pr_precinct_results:  "data/results/local2014_pr_precincts.csv"
-  candidates:                   "data/config/candidates/local/local_2014.yml"
-  party_lists:                  "data/candidates/local2014_party_lists.csv"
-  mayor_candidates:             "data/candidates/local2014_mayor_gamgebeli_candidates.csv"
-  smd_candidates:               "data/candidates/local2014_smd_candidates.csv"
-  elected:                      "data/candidates/local2014_elected.csv"
 
 turnout:
   available: true

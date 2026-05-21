@@ -186,6 +186,32 @@ parties:
     threshold_status: failed
   - id: georgian_march
     threshold_status: failed
+  # ── 2017-only sakrebulo PR labels (promoted from candidate XLSX) ────────
+  - id: progressive_democratic_2017
+    threshold_status: failed
+    alias:
+      en: "Progressive-Democratic Movement"
+      ka: "პროგრესულ-დემოკრატიული მოძრაობა"
+  - id: peoples_unity_2017
+    threshold_status: failed
+    alias:
+      en: "People's — People's Unity"
+      ka: "სახალხო-ხალხის ერთსულოვნება"
+  - id: construction_movement_2017
+    threshold_status: failed
+    alias:
+      en: "Construction Movement"
+      ka: "შენების მოძრაობა"
+  - id: new_rights_2017
+    threshold_status: failed
+    alias:
+      en: "New Rights"
+      ka: "ახალი მემარჯვენეები"
+  - id: united_democratic_2017
+    threshold_status: failed
+    alias:
+      en: "United Democratic Movement"
+      ka: "გაერთიანებული დემოკრატიული მოძრაობა"
 
 # ── Data files ────────────────────────────────────────────────────────────
 sources:
@@ -209,7 +235,6 @@ files:
   council_smd_precinct_results: "data/results/local2017_council_smd_precincts.csv"
   council_pr_results:           "data/results/local2017_pr.csv"
   council_pr_precinct_results:  "data/results/local2017_pr_precincts.csv"
-  candidates:                   "data/config/candidates/local/local_2017.yml"
 
 # ── Turnout metadata ──────────────────────────────────────────────────────
 turnout:

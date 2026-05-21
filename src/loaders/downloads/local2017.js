@@ -3,6 +3,7 @@ import {
   WORKBOOK_CREATOR,
   addMetadataSheet,
   buildCsvSheet,
+  canonicalCandidatePath,
   readCSV,
   readElection,
   subElections,
@@ -33,6 +34,12 @@ async function generateBundle(election, sub, generatedAt) {
     // Council SMD
     buildCsvSheet(wb, "Council SMD - Results", readCSV(files?.council_smd_results));
     buildCsvSheet(wb, "Council SMD - Precincts", readCSV(files?.council_smd_precinct_results));
+
+    // Canonical candidate sheets (sourced from adg_2017_candidates_unified.xlsx).
+    buildCsvSheet(wb, "Party Lists",            readCSV(canonicalCandidatePath(election, sub, "pr")));
+    buildCsvSheet(wb, "Council SMD Candidates", readCSV(canonicalCandidatePath(election, sub, "council_smd")));
+    buildCsvSheet(wb, "Mayor Candidates",       readCSV(canonicalCandidatePath(election, sub, "mayor")));
+    buildCsvSheet(wb, "Elected Members",        readCSV(canonicalCandidatePath(election, sub, "elected")));
   } else {
     const label = subElectionSheetLabel(sub);
     buildCsvSheet(wb, `Mayor ${label} - Results`, readCSV(files?.smd_results));

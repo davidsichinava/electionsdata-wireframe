@@ -164,9 +164,6 @@ files:
   council_smd_precinct_results: "data/results/local2010_council_smd_precincts.csv"
   council_pr_results:           "data/results/local2010_pr.csv"
   council_pr_precinct_results:  "data/results/local2010_pr_precincts.csv"
-  candidates:                   "data/config/candidates/local/local_2010.yml"
-  mayor_candidates:             "data/candidates/local2010_mayor_candidates.csv"
-  smd_candidates:               "data/candidates/local2010_smd_candidates.csv"
   cartogram:                    null
 
 turnout:

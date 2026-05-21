@@ -3,6 +3,7 @@ import {
   WORKBOOK_CREATOR,
   addMetadataSheet,
   buildCsvSheet,
+  canonicalCandidatePath,
   readCSV,
   readElection,
   subElections,
@@ -24,8 +25,9 @@ async function generateBundle(election, sub, generatedAt) {
   buildCsvSheet(wb, "SMD - Precincts", readCSV(files?.smd_precinct_results));
   buildCsvSheet(wb, "Turnout - Districts", readCSV(election.turnout?.file));
   buildCsvSheet(wb, "Turnout - Precincts", readCSV(election.turnout?.precinct_file));
-  buildCsvSheet(wb, "Party Lists", readCSV(files?.party_lists));
-  buildCsvSheet(wb, "SMD Candidates", readCSV(files?.candidates));
+  buildCsvSheet(wb, "Party Lists",    readCSV(canonicalCandidatePath(election, sub, "pr")));
+  buildCsvSheet(wb, "SMD Candidates", readCSV(canonicalCandidatePath(election, sub, "smd")));
+  buildCsvSheet(wb, "Elected Members", readCSV(canonicalCandidatePath(election, sub, "elected")));
 
   addMetadataSheet(wb, election, sub, generatedAt);
   return writeBundle(wb, election, sub);

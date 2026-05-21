@@ -104,7 +104,6 @@ sources:
 files:
   pr_results:          "data/results/pres2008.csv"
   pr_precinct_results: "data/results/pres2008_precincts.csv"
-  candidates:          "data/candidates/pres2008_candidates.csv"
   cartogram:           null
 
 turnout:

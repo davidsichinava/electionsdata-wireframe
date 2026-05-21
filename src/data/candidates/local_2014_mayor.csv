@@ -1,0 +1,89 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,171,,,,გიორგი,მოსიაშვილი,გიორგი მოსიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,171,,,,ქეთევან,ზაქარიაშვილი,ქეთევან ზაქარიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,171,,,,თამაზი,არჯევანიძე,თამაზი არჯევანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,171,,,,პლატონი,კალმახელიძე,პლატონი კალმახელიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,171,,,,ალექსი,ძულიაშვილი,ალექსი ძულიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,171,,,,ნოდარ,მუმლაური,ნოდარ მუმლაური,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,171,,,,ზაზა,დევიძე,ზაზა დევიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,20,,,,ალექსანდრე,ბერიძე,ალექსანდრე ბერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,our_georgia_2014,ჩვენი საქართველო,12,20,,,,ერასტი,კიწმარიშვილი,ერასტი კიწმარიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,20,,,,ალექსანდრე,კობაიძე,ალექსანდრე კობაიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,20,,,,რევაზ,რიჟამაძე,რევაზ რიჟამაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,20,,,,კობა,ძლიერიშვილი,კობა ძლიერიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,20,,,,დავითი,ჯიქია,დავითი ჯიქია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,20,,,,მამუკა,ჩიქოვანი,მამუკა ჩიქოვანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,ufali_2014,უფლის სახელით - უფალია ჩვენი სიმართლე,7,20,,,,ელგუჯა,ქოჩიაშვილი,ელგუჯა ქოჩიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,20,,,,ივანე,შათირიშვილი,ივანე შათირიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,271,,,,ივანე,ბერიძე,ივანე ბერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,sakhalkho_party_2014,სახალხო პარტია,26,271,,,,რამაზ,ღვალაძე,რამაზ ღვალაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,271,,,,ილია,რუხაძე,ილია რუხაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,271,,,,ავთანდილ,ნემსიწვერიძე,ავთანდილ ნემსიწვერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,271,,,,გურამი,კინწურაშვილი,გურამი კინწურაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,271,,,,დავით,მაჩხანელი,დავით მაჩხანელი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,271,,,,დავით,ალიბეგაშვილი,დავით ალიბეგაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,321,,,,ვასილ,ბუთხუზი,ვასილ ბუთხუზი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,georgian_party_2014,ირაკლი ოქრუაშვილი - ქართული პარტია,14,321,,,,კახაბერ,ერგემლიძე,კახაბერ ერგემლიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unity_hall_2014,ერთიანობის დარბაზი,17,321,,,,თამაზ,მაყაშვილი,თამაზ მაყაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,321,,,,მამუკა,ნოზაძე,მამუკა ნოზაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,workers_council_2014,საქართველოს მშრომელთა საბჭო,36,321,,,,გიული,მუკნიაშვილი,გიული მუკნიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,321,,,,ზურაბი,ჯირკველიშვილი,ზურაბი ჯირკველიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,321,,,,არჩილ,საბიაშვილი,არჩილ საბიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,371,,,,გოჩა,ათოშვილი,გოჩა ათოშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,371,,,,ზაზა,ნათენაძე,ზაზა ნათენაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,371,,,,გიორგი,კოპაძე,გიორგი კოპაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,371,,,,გელა,დემეტრაძე,გელა დემეტრაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,441,,,,რატი,ნამგალაძე,რატი ნამგალაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,441,,,,ამირან,ლომთაძე,ამირან ლომთაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,59,,,,მაგდა,გაბრიჩიძე,მაგდა გაბრიჩიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,59,,,,ირაკლი,კიკვაძე,ირაკლი კიკვაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,59,,,,თეიმურაზ,შაშიაშვილი,თეიმურაზ შაშიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,59,,,,შოთა,მურღულია,შოთა მურღულია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,59,,,,გიორგი,თევდორაძე,გიორგი თევდორაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,59,,,,ალექსანდრე,კეზევაძე,ალექსანდრე კეზევაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,self_governance_people_2014,თვითმმართველობა ხალხს!,9,59,,,,ხათუნა,მაჭავარიანი,ხათუნა მაჭავარიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,601,,,,ირმა,კვაჭანტირაძე,ირმა კვაჭანტირაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,601,,,,ივანე,ტაბატაძე,ივანე ტაბატაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,601,,,,მირზა,ჩხიკვიშვილი,მირზა ჩხიკვიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,601,,,,კახა,ჩავლეშვილი,კახა ჩავლეშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,601,,,,ბეგლარ,სიორიძე,ბეგლარ სიორიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,601,,,,ლევან,გოგუაძე,ლევან გოგუაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,601,,,,შოთა,გოგიბერიძე,შოთა გოგიბერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,self_governance_people_2014,თვითმმართველობა ხალხს!,9,601,,,,ლაშა,მოისწრაფიშვილი,ლაშა მოისწრაფიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,671,,,,ირაკლი,ღურწკაია,ირაკლი ღურწკაია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,671,,,,რუსუდან,პაჭკორია,რუსუდან პაჭკორია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,671,,,,ირაკლი,გოგოხია,ირაკლი გოგოხია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,671,,,,თეიმურაზ,ბასილაია,თეიმურაზ ბასილაია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,70,,,,დავით,ქანთარია,დავით ქანთარია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,70,,,,ირაკლი,კაკულია,ირაკლი კაკულია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,70,,,,ვახტანგი,დარცმელიძე,ვახტანგი დარცმელიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,70,,,,უშანგი,გეგენავა,უშანგი გეგენავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,79,,,,ალექსანდრე,თევზაძე,ალექსანდრე თევზაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,peoples_party_2014,ხალხის პარტია,10,79,,,,ჯუმბერ,თავართქილაძე,ჯუმბერ თავართქილაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,reformers_2014,ირაკლი ღლონტი - რეფორმატორები,11,79,,,,დავით,დიასამიძე,დავით დიასამიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unity_hall_2014,ერთიანობის დარბაზი,17,79,,,,მერაბ,ხიმშიაშვილი,მერაბ ხიმშიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,79,,,,გოჩა,გუგუნავა,გოჩა გუგუნავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,79,,,,ნუგზარ,ჩხაიძე,ნუგზარ ჩხაიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,79,,,,მურმან,ბერიძე,მურმან ბერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,ქართული ოცნება,41,79,,,,გიორგი,ერმაკოვი,გიორგი ერმაკოვი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,ერთიანი ნაციონალური მოძრაობა,5,79,,,,გიორგი,დიასამიძე,გიორგი დიასამიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,79,,,,თეიმურაზ,მიქელაძე,თეიმურაზ მიქელაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,self_governance_people_2014,თვითმმართველობა ხალხს!,9,79,,,,დურმიშხან,შაინიძე,დურმიშხან შაინიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,ufali_2014,„უფლის სახელით-უფალია ჩვენი სიმართლე”,7,1,,,,მიხეილ,სალუაშვილი,მიხეილ სალუაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,future_georgia_2014,„მომავალი საქართველო”,13,1,,,,გიორგი,ლაღიძე,გიორგი ლაღიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,labour,"„შალვა ნათელაშვილი  - საქართველოს ლეიბორისტული პარტია""",20,1,,,,ასმათ,ტყაბლაძე,ასმათ ტყაბლაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,greens_2014,"„გიორგი გაჩეჩილაძე -
+მწვანეთა პარტია”",6,1,,,,გიორგი,გაჩეჩილაძე,გიორგი გაჩეჩილაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,workers_council_2014,„საქართველოს მშრომელთა საბჭო”,36,1,,,,როინ,ლიპარტელიანი,როინ ლიპარტელიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,burjanadze_united_opposition_2014,"„ნინო ბურჯანაძე -
+ერთიანი ოპოზიცია""",3,1,,,,დიმიტრი,ლორთქიფანიძე,დიმიტრი ლორთქიფანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,reformers_2014,"„ირაკლი ღლონტი -
+რეფორმატორები""",11,1,,,,ირაკლი,ღლონტი,ირაკლი ღლონტი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,kostava_society,„მერაბ კოსტავას საზოგადოება”,30,1,,,,გიორგი,ლილუაშვილი,გიორგი ლილუაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,gd,„ქართული ოცნება”,41,1,,,,დავით,ნარმანია,დავით ნარმანია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,nonparliamentary_opposition_2014,"„არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)”",1,1,,,,კახა,კუკავა,კახა კუკავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,self_governance_people_2014,"ბლოკი
+„თვითმმართველობა ხალხს!""",9,1,,,,სერგო,ჯავახიძე,სერგო ჯავახიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,unm,"ბლოკი „ერთიანი ნაციონალური მოძრაობა""",5,1,,,,ნიკანორ,მელია,ნიკანორ მელია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,patriots,"„დავით თარხან-მოურავი- საქართველოს პატრიოტთა ალიანსი""",8,1,,,,ირმა,ინაშვილი,ირმა ინაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,mayor,georgias_way_2014,"„სალომე ზურაბიშვილი- საქართველოს გზა""",18,1,,,,თეიმურაზ,მურვანიძე,თეიმურაზ მურვანიძე,,,SakrebuloMembers2014.pdf

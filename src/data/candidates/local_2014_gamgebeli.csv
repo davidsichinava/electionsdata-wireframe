@@ -1,0 +1,258 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,11,,,,ივანე,დემეტრაშვილი,ივანე დემეტრაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,11,,,,დავითი,მაისაშვილი,დავითი მაისაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,sakhalkho_party_2014,სახალხო პარტია,26,11,,,,ალექსი,არაბული,ალექსი არაბული,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,11,,,,თენგიზ,სონიშვილი,თენგიზ სონიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,11,,,,გიორგი,გზირიშვილი,გიორგი გზირიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,11,,,,გარსევან,ბუხნიკაშვილი,გარსევან ბუხნიკაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,11,,,,სოსლან,გარსევანიშვილი,სოსლან გარსევანიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,12,,,,ფარვიზი,ბაწელაშვილი,ფარვიზი ბაწელაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,12,,,,ვალერი,შოშიაშვილი,ვალერი შოშიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,12,,,,გივი,გერგიძე,გივი გერგიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,12,,,,გიორგი,პეტრუზაშვილი,გიორგი პეტრუზაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,13,,,,გიორგი,მჭედლიშვილი,გიორგი მჭედლიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,13,,,,ირაკლი,სულიაშვილი,ირაკლი სულიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,kostava_society,მერაბ კოსტავას საზოგადოება,30,13,,,,ნოდარი,კუტიბაშვილი,ნოდარი კუტიბაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,13,,,,დავითი,ჯანიკაშვილი,დავითი ჯანიკაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,13,,,,ზაზა,ზედელაშვილი,ზაზა ზედელაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,14,,,,გელა,ბაგალიშვილი,გელა ბაგალიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,14,,,,ნიკოლოზ,ჯანიაშვილი,ნიკოლოზ ჯანიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,14,,,,ემზარ,ჯანაშვილი,ემზარ ჯანაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,15,,,,ნოდარი,მანიჟაშვილი,ნოდარი მანიჟაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,15,,,,ისაკო,ცქიფურიშვილი,ისაკო ცქიფურიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,15,,,,კარლო,ჯამბურია,კარლო ჯამბურია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,15,,,,ნიკა,ნოზაძე,ნიკა ნოზაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,16,,,,ილია,ბურკიაშვილი,ილია ბურკიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,16,,,,ილია,მზექალაშვილი,ილია მზექალაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,16,,,,ხატია,დეკანოიძე,ხატია დეკანოიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,16,,,,რევაზი,ჩოხადარი,რევაზი ჩოხადარი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,16,,,,ალექსი,შიუკაშვილი,ალექსი შიუკაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,17,,,,მალხაზი,არუდაშვილი,მალხაზი არუდაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,17,,,,ჯემალი,ბაღათრიშვილი,ჯემალი ბაღათრიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,17,,,,ალექსანდრე,შათირიშვილი,ალექსანდრე შათირიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,17,,,,გიორგი,ბოტკოველი,გიორგი ბოტკოველი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,18,,,,ნიკოლოზი,ბართიშვილი,ნიკოლოზი ბართიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,18,,,,ზურაბი,ფილაშვილი,ზურაბი ფილაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,18,,,,ბექა,ბაიდაური,ბექა ბაიდაური,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,18,,,,შაქრო,ტერტერაშვილი,შაქრო ტერტერაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,19,,,,ილია,არჩემაშვილი,ილია არჩემაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,19,,,,ლელა,ქიტესაშვილი,ლელა ქიტესაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,19,,,,ვაჟა,წოწკოლაური,ვაჟა წოწკოლაური,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,19,,,,ალექსი,ქავთარაძე,ალექსი ქავთარაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,19,,,,ლერი,ნაკვეთაური,ლერი ნაკვეთაური,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,self_governance_people_2014,თვითმმართველობა ხალხს!,9,19,,,,მალხაზ,იარაჯული,მალხაზ იარაჯული,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,21,,,,თელმანი,გასანოვი,თელმანი გასანოვი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,21,,,,იოსები,ჯაფარიძე,იოსები ჯაფარიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,21,,,,გარსევან,ნიორაძე,გარსევან ნიორაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,21,,,,ბესიკი,კახაბრიშვილი,ბესიკი კახაბრიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,22,,,,შამილ,ახუნდოვი,შამილ ახუნდოვი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,future_georgia_2014,მომავალი საქართველო,13,22,,,,ნელი,კილინკაროვა,ნელი კილინკაროვა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,22,,,,ზვიადი,შუბითიძე,ზვიადი შუბითიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,22,,,,რაშიდ,მამედოვი,რაშიდ მამედოვი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,22,,,,მერაბ,თოფჩიშვილი,მერაბ თოფჩიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,22,,,,აკმამედ,იმამკულიევი,აკმამედ იმამკულიევი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,23,,,,მალხაზი,ერაძე,მალხაზი ერაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,23,,,,გოგი,მეშველიანი,გოგი მეშველიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,23,,,,ოლეგ,მაღრაძე,ოლეგ მაღრაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,24,,,,ზურაბი,აკოფაშვილი,ზურაბი აკოფაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,24,,,,გოგი,ბარბაქაძე,გოგი ბარბაქაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,24,,,,ბაკური,მგელაძე,ბაკური მგელაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,25,,,,რუსლან,ხუციშვილი,რუსლან ხუციშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,25,,,,ილია,საბაძე,ილია საბაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,25,,,,ნოდარ,ხოზრევანიძე,ნოდარ ხოზრევანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,self_governance_people_2014,თვითმმართველობა ხალხს!,9,25,,,,გივი,ღვინჯილია,გივი ღვინჯილია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,26,,,,ჯუმბერი,პაპაშვილი,ჯუმბერი პაპაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,26,,,,ბესიკი,ყველაშვილი,ბესიკი ყველაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,26,,,,ბესიკ,წიკლაური,ბესიკ წიკლაური,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,26,,,,გიორგი,მესტვირიშვილი,გიორგი მესტვირიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,27,,,,დავით,ჯარაშნელი,დავით ჯარაშნელი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,sakhalkho_party_2014,სახალხო პარტია,26,27,,,,ივანე,სისაური,ივანე სისაური,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,kostava_society,მერაბ კოსტავას საზოგადოება,30,27,,,,კახაბერი,წოწინაშვილი,კახაბერი წოწინაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,27,,,,ზურაბი,აბესაძე,ზურაბი აბესაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,27,,,,ცირა,ჯავახიშვილი,ცირა ჯავახიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,27,,,,ვლადიმერ,ხუციშვილი,ვლადიმერ ხუციშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,28,,,,გიორგი,ხუციშვილი,გიორგი ხუციშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,28,,,,ვაჟა,ჩოხელი,ვაჟა ჩოხელი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,28,,,,ზურაბ,ოტიაშვილი,ზურაბ ოტიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,28,,,,ირმა,ცხორაგაული,ირმა ცხორაგაული,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,self_governance_people_2014,თვითმმართველობა ხალხს!,9,28,,,,აკაკი,ბრელიძე,აკაკი ბრელიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,29,,,,გურამი,აქიაშვილი,გურამი აქიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,29,,,,ვაჟა,გელაძე,ვაჟა გელაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,29,,,,გივი,ქირიკაშვილი,გივი ქირიკაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,29,,,,გუგუა,მარსაგიშვილი,გუგუა მარსაგიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,30,,,,ვახტანგ,გუგულაშვილი,ვახტანგ გუგულაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,30,,,,გოჩა,გოჩიტაშვილი,გოჩა გოჩიტაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,30,,,,ნუგზარი,ნონიაშვილი,ნუგზარი ნონიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,30,,,,გელა,გურასპაშვილი,გელა გურასპაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,30,,,,პავლე,მარქარაშვილი,პავლე მარქარაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,32,,,,რაულ,გაგოშიძე,რაულ გაგოშიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgian_party_2014,ირაკლი ოქრუაშვილი - ქართული პარტია,14,32,,,,ბონდო,ვათიაშვილი,ბონდო ვათიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,32,,,,რამზესი,მთიულიშვილი,რამზესი მთიულიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,32,,,,ივანე,მაჭარაშვილი,ივანე მაჭარაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,32,,,,დავით,ონიაშვილი,დავით ონიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,32,,,,კახა,ტოლიაშვილი,კახა ტოლიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,33,,,,პაატა,ღვინიაშვილი,პაატა ღვინიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,33,,,,ზაზა,გულიაშვილი,ზაზა გულიაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,33,,,,ავთანდილ,ივანიძე,ავთანდილ ივანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,35,,,,გიორგი,შათირიშვილი,გიორგი შათირიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,35,,,,შალვა,ციცქიშვილი,შალვა ციცქიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,35,,,,გიორგი,გურასპაშვილი,გიორგი გურასპაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,35,,,,გიორგი,მახათაძე,გიორგი მახათაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,35,,,,ზურაბ,გელაშვილი,ზურაბ გელაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,35,,,,ჯიმი,ტაბატაძე,ჯიმი ტაბატაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,36,,,,ლევან,ლომსაძე,ლევან ლომსაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,36,,,,ავთანდილ,გონგლაძე,ავთანდილ გონგლაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,36,,,,დიმიტრი,ყიფიანი,დიმიტრი ყიფიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,36,,,,მურთაზ,ღონღაძე,მურთაზ ღონღაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,37,,,,ბახვა,გელაშვილი,ბახვა გელაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,37,,,,ოლეგი,ძოწენიძე,ოლეგი ძოწენიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,37,,,,ზაზა,მელიქიძე,ზაზა მელიქიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,37,,,,გოჩა,გვარამაძე,გოჩა გვარამაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,37,,,,მამუკა,გოგოლაძე,მამუკა გოგოლაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,38,,,,თამაზ,მწყერაშვილი,თამაზ მწყერაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,38,,,,ზაქარია,ენდელაძე,ზაქარია ენდელაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,38,,,,სიმონ,პარუნაშვილი,სიმონ პარუნაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,39,,,,ნიკოლოზი,ბერიძე,ნიკოლოზი ბერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,39,,,,გელა,ლეკიშვილი,გელა ლეკიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,39,,,,ლევან,ცაბაძე,ლევან ცაბაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,39,,,,ბესიკი,ბექაური,ბესიკი ბექაური,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,40,,,,არტაშეს,პალანჯიან,არტაშეს პალანჯიან,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,40,,,,ედუარდ,აღასარიან,ედუარდ აღასარიან,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,40,,,,არტურ,კირაკოსიან,არტურ კირაკოსიან,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,41,,,,გაგიკ,კარსლიან,გაგიკ კარსლიან,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,self_governance_people_2014,თვითმმართველობა ხალხს!,9,41,,,,სევაკ,ერანოსიან,სევაკ ერანოსიან,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,43,,,,ალექსანდრე,მეტრეველი,ალექსანდრე მეტრეველი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,43,,,,ლერი,მიქუჩაძე,ლერი მიქუჩაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,43,,,,გიორგი,ლობჯანიძე,გიორგი ლობჯანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,43,,,,ბექარი,მაისურაძე,ბექარი მაისურაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,43,,,,ოქროპირი,ნავროზაშვილი,ოქროპირი ნავროზაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,43,,,,გიორგი,ხომასურიძე,გიორგი ხომასურიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,44,,,,თეიმურაზ,მენაბდე,თეიმურაზ მენაბდე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,44,,,,მალხაზ,ლომთაძე,მალხაზ ლომთაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,44,,,,ოთარ,სირაძე,ოთარ სირაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,45,,,,რევაზ,ბენიძე,რევაზ ბენიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,45,,,,ალექსანდრე,ნინუა,ალექსანდრე ნინუა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,christian_democrats_2014,ქრისტიან დემოკრატიული პარტია (ქრისტიან დემოკრატები),16,46,,,,დათო,ფურელიანი,დათო ფურელიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,46,,,,ამირან,ჯამბურიძე,ამირან ჯამბურიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,46,,,,შალვა,ონიანი,შალვა ონიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,47,,,,მირონ,ფირცხელანი,მირონ ფირცხელანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,47,,,,კაპიტონ,ჟორჟოლიანი,კაპიტონ ჟორჟოლიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,greens_2014,გიორგი გაჩეჩილაძე - მწვანეთა პარტია,6,47,,,,ნინო,ჯაფარიძე,ნინო ჯაფარიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,48,,,,როინი,ხიჯაკაძე,როინი ხიჯაკაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,48,,,,კობა,ლურსმანაშვილი,კობა ლურსმანაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,48,,,,ლაშა,ნიქაცაძე,ლაშა ნიქაცაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,49,,,,ნიკა,მემანიშვილი,ნიკა მემანიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,49,,,,მევლუდი,ბრეგვაძე,მევლუდი ბრეგვაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,49,,,,თეიმურაზ,ჯაფარიძე,თეიმურაზ ჯაფარიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,49,,,,ტარიელი,ფანჩულიძე,ტარიელი ფანჩულიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,50,,,,გელა,არჩვაძე,გელა არჩვაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,50,,,,ტარიელ,ტყემალაძე,ტარიელ ტყემალაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,50,,,,მალხაზი,ბაზაძე,მალხაზი ბაზაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,50,,,,ნუგზარი,დუშუაშვილი,ნუგზარი დუშუაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,51,,,,ელგუჯა,კვეტენაძე,ელგუჯა კვეტენაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,51,,,,თენგიზ,კაკოჩაშვილი,თენგიზ კაკოჩაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,51,,,,გიორგი,ჩუბინიძე,გიორგი ჩუბინიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,51,,,,ტარიელ,თუთარაშვილი,ტარიელ თუთარაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,51,,,,გიორგი,ხუტაშვილი,გიორგი ხუტაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,51,,,,იოსებ,ჯუღელი,იოსებ ჯუღელი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,52,,,,მევლუდ,კიკნაველიძე,მევლუდ კიკნაველიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,52,,,,ბადრი,ჭელიძე,ბადრი ჭელიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,52,,,,როლანდ,ლომინაძე,როლანდ ლომინაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,52,,,,ლაშა,ჩიქვინიძე,ლაშა ჩიქვინიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,52,,,,ირაკლი,გეგეშიძე,ირაკლი გეგეშიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,53,,,,ბეჟან,ხურციძე,ბეჟან ხურციძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,53,,,,ზაზა,ხურციძე,ზაზა ხურციძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,53,,,,ლევან,მაღლაკელიძე,ლევან მაღლაკელიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,54,,,,დავით,ბაღდავაძე,დავით ბაღდავაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,54,,,,მამუკა,მხეიძე,მამუკა მხეიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,54,,,,ვალერიანე,ფოცხვერია,ვალერიანე ფოცხვერია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,54,,,,გივი,ღაღანიძე,გივი ღაღანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,self_governance_people_2014,თვითმმართველობა ხალხს!,9,54,,,,ზვიად,ნიკურაძე,ზვიად ნიკურაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,55,,,,შალვა,კვარაცხელია,შალვა კვარაცხელია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,55,,,,ჯემალი,მებუკე,ჯემალი მებუკე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,55,,,,ზურაბ,ჯიბუხაია,ზურაბ ჯიბუხაია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,55,,,,ვახტანგ,ბალავაძე,ვახტანგ ბალავაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,56,,,,როსტომ,ცარციძე,როსტომ ცარციძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,reformers_2014,ირაკლი ღლონტი - რეფორმატორები,11,56,,,,ზვიად,გველესიანი,ზვიად გველესიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,56,,,,თენგიზ,მოცრაძე,თენგიზ მოცრაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,56,,,,სულხან,მახათაძე,სულხან მახათაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,56,,,,გოგი,ჩიკვილაძე,გოგი ჩიკვილაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,56,,,,ირაკლი,გაფრინდაშვილი,ირაკლი გაფრინდაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,57,,,,თენგიზ,ჭიქაბერიძე,თენგიზ ჭიქაბერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,57,,,,რობიზონ,გვენეტაძე,რობიზონ გვენეტაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,57,,,,ლევანი,დოხნაძე,ლევანი დოხნაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,veterans_patriots_2014,საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,2,58,,,,სერგო,დათუაშვილი,სერგო დათუაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,58,,,,პავლე,კიკალიშვილი,პავლე კიკალიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,58,,,,კონსტანტინე,მამისეიშვილი,კონსტანტინე მამისეიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,58,,,,ზურაბ,ჯიმშელეიშვილი,ზურაბ ჯიმშელეიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,60,,,,მინდია,კეჭაყმაძე,მინდია კეჭაყმაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,60,,,,მერაბ,ჭანუყვაძე,მერაბ ჭანუყვაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,60,,,,შალვა,თავდიშვილი,შალვა თავდიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,61,,,,დარეჯან,ესართია,დარეჯან ესართია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,61,,,,ზაზა,ურუშაძე,ზაზა ურუშაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,61,,,,რამაზ,გვარჯალაძე,რამაზ გვარჯალაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,61,,,,ბარნაბ,ჭყონია,ბარნაბ ჭყონია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,62,,,,ავთანდილ,ჯაში,ავთანდილ ჯაში,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,62,,,,ირაკლი,კუჭავა,ირაკლი კუჭავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,62,,,,გურამ,ჩალაგაშვილი,გურამ ჩალაგაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,62,,,,მაია,კუტუბიძე,მაია კუტუბიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,self_governance_people_2014,თვითმმართველობა ხალხს!,9,62,,,,დავით,ბერიშვილი,დავით ბერიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,63,,,,რევაზი,ხაბეიშვილი,რევაზი ხაბეიშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,63,,,,მამუკა,კვიტაშვილი,მამუკა კვიტაშვილი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,63,,,,ზურაბ,ლომია,ზურაბ ლომია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,63,,,,რომან,ჭანტურია,რომან ჭანტურია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,self_governance_people_2014,თვითმმართველობა ხალხს!,9,63,,,,კობა,გრიგოლია,კობა გრიგოლია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,64,,,,ზაზა,სიჭინავა,ზაზა სიჭინავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,64,,,,გიორგი,სახოკია,გიორგი სახოკია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,64,,,,იგორი,ბოჯგუა,იგორი ბოჯგუა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,64,,,,გოჩა,ბოკუჩავა,გოჩა ბოკუჩავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,64,,,,გოჩა,დგებუაძე,გოჩა დგებუაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,64,,,,ზურაბი,სანაია,ზურაბი სანაია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,65,,,,მიხეილ,ცაავა,მიხეილ ცაავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,reformers_2014,ირაკლი ღლონტი - რეფორმატორები,11,65,,,,ლაშა,ხაფავა,ლაშა ხაფავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,65,,,,გია,ხაინდრავა,გია ხაინდრავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,65,,,,დავით,ინჯია,დავით ინჯია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,65,,,,ალექსანდრე,გრიგალავა,ალექსანდრე გრიგალავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,65,,,,მამუკა,დანელია,მამუკა დანელია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,66,,,,დავითი,კუკავა,დავითი კუკავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,66,,,,აკაკი,პაჭკორია,აკაკი პაჭკორია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,66,,,,გოჩა,ქაჯაია,გოჩა ქაჯაია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,66,,,,მამუკა,ჭოხონელიძე,მამუკა ჭოხონელიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,67,,,,ოთარ,ჭითანავა,ოთარ ჭითანავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unity_hall_2014,ერთიანობის დარბაზი,17,67,,,,ვახტანგ,ანთია,ვახტანგ ანთია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,sakhalkho_party_2014,სახალხო პარტია,26,67,,,,ვახუშტი,ფარცვანია,ვახუშტი ფარცვანია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,67,,,,გოგიტა,ბიგვავა,გოგიტა ბიგვავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,67,,,,ედიშერ,თოლორაია,ედიშერ თოლორაია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,67,,,,თენგიზ,გუნავა,თენგიზ გუნავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,68,,,,გიორგი,ვეკუა,გიორგი ვეკუა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,68,,,,გოგა,გულორდავა,გოგა გულორდავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,68,,,,შოთა,იზორია,შოთა იზორია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,69,,,,დათო,გოგუა,დათო გოგუა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,69,,,,რამაზ,თოლორდავა,რამაზ თოლორდავა,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,69,,,,კობა,ფარცვანია,კობა ფარცვანია,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,80,,,,დავით,ბერიძე,დავით ბერიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,80,,,,ზურაბ,ავალიანი,ზურაბ ავალიანი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,80,,,,დავით,დუმბაძე,დავით დუმბაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,80,,,,ჯემალ,შარაძე,ჯემალ შარაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,80,,,,გურამ,ხაბაზი,გურამ ხაბაზი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,georgias_way_2014,სალომე ზურაბიშვილი - საქართველოს გზა,18,81,,,,ჯემალ,მჟავანაძე,ჯემალ მჟავანაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,81,,,,ბელა,ბერაძე,ბელა ბერაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,81,,,,ზურაბ,ჩელებაძე,ზურაბ ჩელებაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,81,,,,სულხან,ევგენიძე,სულხან ევგენიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,81,,,,რევაზ,ხარაზი,რევაზ ხარაზი,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,81,,,,დავით,წულუკიძე,დავით წულუკიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,82,,,,რევაზ,დავითაძე,რევაზ დავითაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,82,,,,ტარიელ,ებრალიძე,ტარიელ ებრალიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,82,,,,ზაურ,დავითაძე,ზაურ დავითაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,nonparliamentary_opposition_2014,"არასაპარლამენტო ოპოზიცია (კახა კუკავა, ფიქრია ჩიხრაძე)",1,83,,,,მირზა,აბაშიძე,მირზა აბაშიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unity_hall_2014,ერთიანობის დარბაზი,17,83,,,,გოჩა,შერვაშიძე,გოჩა შერვაშიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,labour,შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია,20,83,,,,მაყვალა,მიქელაძე,მაყვალა მიქელაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,83,,,,ვაჟა,ცინცქილაძე,ვაჟა ცინცქილაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,83,,,,ნადიმ,ვარშანიძე,ნადიმ ვარშანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,83,,,,ირაკლი,ჯაფარიძე,ირაკლი ჯაფარიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,83,,,,დავით,ყიფშიძე,დავით ყიფშიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unity_hall_2014,ერთიანობის დარბაზი,17,84,,,,თემურ,ხოზრევანიძე,თემურ ხოზრევანიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,burjanadze_united_opposition_2014,ნინო ბურჯანაძე - ერთიანი ოპოზიცია,3,84,,,,ასლან,ტუნაძე,ასლან ტუნაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,gd,ქართული ოცნება,41,84,,,,ბესიკ,ბაუჩაძე,ბესიკ ბაუჩაძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,unm,ერთიანი ნაციონალური მოძრაობა,5,84,,,,ოთარ,შაინიძე,ოთარ შაინიძე,,,SakrebuloMembers2014.pdf
+local_2014,__main__,gamgebeli,patriots,დავით თარხან-მოურავი - საქართველოს პატრიოტთა ალიანსი,8,84,,,,ემზარ,ბოლქვაძე,ემზარ ბოლქვაძე,,,SakrebuloMembers2014.pdf

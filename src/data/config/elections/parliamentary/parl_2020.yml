@@ -357,7 +357,6 @@ files:
   pr_precinct_results:  "data/results/parl2020_pr_precincts.csv"
   smd_results:          "data/results/parl2020_smd.csv"
   smd_precinct_results: "data/results/parl2020_smd_precincts.csv"
-  candidates:           null
   cartogram:            "data/shp/parl2020_cartogram.geojson"
 
 turnout:

@@ -133,11 +133,17 @@ parties:
     seats_smd: 0
 
   - id: burjanadze_democratic
+    alias:
+      en: Nino Burjanadze — Democratic Movement
+      ka: ნინო ბურჯანაძე - დემოკრატიული მოძრაობა
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: burchuladze
+    alias:
+      en: Paata Burchuladze — State for the People
+      ka: პაატა ბურჭულაძე - სახელმწიფო ხალხისთვის
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
@@ -152,91 +158,145 @@ parties:
     seats_smd: 0
 
   - id: republicans_2016
+    alias:
+      en: Usupashvili — Republicans
+      ka: უსუფაშვილი - რესპუბლიკელები
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: national_forum
+    alias:
+      en: National Forum
+      ka: ეროვნული ფორუმი
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: industry_sakartvelo
+    alias:
+      en: Topadze — Industrialists, Our Homeland
+      ka: თოფაძე - მრეწველები, ჩვენი სამშობლო
     threshold_status: failed
     seats_pr: 0
     seats_smd: 1
 
   - id: georgian_idea
+    alias:
+      en: Georgian Idea
+      ka: ქართული იდეა
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: peace_georgia_2016
+    alias:
+      en: David Tevzadze — For Peace in Georgia
+      ka: დავით თევზაძე - საქართველოს მშვიდობისათვის
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: georgian_group
+    alias:
+      en: Jondi Baghaturia — Georgian Group
+      ka: ჯონდი ბაღათურია - ქართული დასი
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: chvenni_peoples
+    alias:
+      en: Chvenebi — People's Party
+      ka: ჩვენები - სახალხო პარტია
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: zviads_way
+    alias:
+      en: Zviad's Path — In the Name of the Lord
+      ka: ზვიადის გზა - უფლის სახელით
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: mechiauri_united
+    alias:
+      en: Tamaz Mechiauri — United for Georgia
+      ka: თამაზ მეჭიაური ერთიანი საქართველოსთვის
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: progressive_democratic_2016
+    alias:
+      en: Progressive-Democratic Movement
+      ka: პროგრესულ-დემოკრატიული მოძრაობა
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: peoples_power_2016
+    alias:
+      en: People's Power
+      ka: სახალხო ხელისუფლება
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: communist_stalinist
+    alias:
+      en: Communist Party — Stalinists (Ivane Tsiklauri)
+      ka: საქართველოს კომუნისტური პარტია - სტალინელები (ივანე წიკლაური)
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: workers_socialist
+    alias:
+      en: Workers' Socialist Party
+      ka: მშრომელთა სოციალისტური პარტია
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: united_communist_2016
+    alias:
+      en: United Communist Party of Georgia
+      ka: საქართველოს ერთიანი კომუნისტური პარტია
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: georgia_2016
+    alias:
+      en: Georgia
+      ka: საქართველო
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: kostava_society
+    alias:
+      en: Merab Kostava Society
+      ka: მერაბ კოსტავას საზოგადოება
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: left_alliance_2016
+    alias:
+      en: Left Alliance
+      ka: კახა ძაგანია, სოსო შატბერაშვილი, პაატა ჯიბლაძე, არჩილ ბენიძე - მემარცხენე ალიანსი
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
 
   - id: our_georgia_2016
+    alias:
+      en: Our Georgia (Badri Patarkatsishvili Campaign HQ)
+      ka: ჩვენი საქართველო (ბადრი პატარკაციშვილის საარჩევნო შტაბი)
     threshold_status: failed
     seats_pr: 0
     seats_smd: 0
@@ -451,7 +511,6 @@ files:
   pr_precinct_results:  "data/results/parl2016_pr_precincts.csv"
   smd_results:          "data/results/parl2016_smd.csv"
   smd_precinct_results: "data/results/parl2016_smd_precincts.csv"
-  candidates:           null
   cartogram:            null
 
 turnout:

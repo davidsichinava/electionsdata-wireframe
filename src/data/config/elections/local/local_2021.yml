@@ -187,7 +187,6 @@ files:
   council_smd_precinct_results: "data/results/local2021_council_smd_precincts.csv"
   council_pr_results:           "data/results/local2021_pr.csv"
   council_pr_precinct_results:  "data/results/local2021_pr_precincts.csv"
-  candidates:                   "data/config/candidates/local/local_2021.yml"
 
 # ── Turnout metadata ──────────────────────────────────────────────────────
 turnout:

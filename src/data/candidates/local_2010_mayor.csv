@@ -1,0 +1,10 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+local_2010,__main__,mayor,alliance_georgia_2010,"“ალიანსი საქართველოსთვის” (ი. ალასანია, ს. სუბარი, დ. უსუფაშვილი, დ. გამყრელიძე, ს. ზურაბიშვილი)",2,1,,,,ირაკლი,ალასანია,ირაკლი ალასანია,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,industry_sakartvelo,თოფაძე-მრეწველები,3,1,,,,გიორგი,თოფაძე,გიორგი თოფაძე,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,unm,“ერთიანი ნაციონალური მოძრაობა”,5,1,,,,გიორგი,უგულავა,გიორგი უგულავა,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,national_council_2010,“ეროვნული საბჭო”,7,1,,,,ზვიად,ძიძიგური,ზვიად ძიძიგური,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,christian_democrats_2010,"“გიორგი თარგამაძე, ინგა გრიგოლია – ქრისტიან-დემოკრატიული გაერთიანება”",10,1,,,,გიორგი,ჭანტურია,გიორგი ჭანტურია,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,future_georgia,პოლიტიკური პარტია “მომავალი საქართველო”,14,1,,,,გიორგი,ლაღიძე,გიორგი ლაღიძე,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,solidarity_2010,პოლიტიკური მოძრაობა “სოლიდარობა”,18,1,,,,თამაზ,ვაშაძე,თამაზ ვაშაძე,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,tortladze_democratic_2010,“თორთლაძე – დემოკრატიული პარტია”,21,1,,,,დავით,იაკობიძე,დავით იაკობიძე,,,SakrebuloMembers2014.pdf
+local_2010,__main__,mayor,ivanishvili_peoples_democrats_2010,ივანიშვილი – “სახალხო დემოკრატები”,25,1,,,,ნიკოლოზ,ივანიშვილი,ნიკოლოზ ივანიშვილი,,,SakrebuloMembers2014.pdf

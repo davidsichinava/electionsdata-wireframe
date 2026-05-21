@@ -122,8 +122,6 @@ files:
   pr_precinct_results:  "data/results/adj2008_pr_precincts.csv"
   smd_results:          "data/results/adj2008_smd.csv"
   smd_precinct_results: "data/results/adj2008_smd_precincts.csv"
-  candidates:           "data/candidates/adj2008_smd_candidates.csv"
-  party_lists:          "data/candidates/adj2008_party_lists.csv"
   cartogram:            null
 
 turnout:

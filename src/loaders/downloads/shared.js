@@ -130,6 +130,18 @@ export async function writeBundle(wb, election, sub) {
   return downloadEntry(election, sub, filename);
 }
 
+// Canonical candidate-CSV path for an (election, sub, slot) tuple, per the
+// convention in src/data/candidates/README.md. Returns the
+// election.files.candidate_overrides.<slot> override when set; otherwise
+// `data/candidates/{election_id|sub_id}_{slot}.csv`.
+export function canonicalCandidatePath(election, sub, slot) {
+  const overrides = election?.files?.candidate_overrides ?? {};
+  if (overrides[slot]) return overrides[slot];
+  const isMain = !sub || sub.id === "__main__";
+  const prefix = isMain ? election.id : sub.id;
+  return `data/candidates/${prefix}_${slot}.csv`;
+}
+
 export function mainSubElection() {
   return { id: "__main__", type: "main", name: { en: "Main", ka: "ძირითადი კენჭისყრა" } };
 }

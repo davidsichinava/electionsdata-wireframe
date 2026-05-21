@@ -1,38 +1,35 @@
-// Shared loader for the candidate search feature. Returns the parsed clusters
-// list and metadata. Consumed by:
+// Shared loader for the candidate search feature. Reads only canonical CSVs
+// from src/data/candidates/ (one CSV per (election_id, slot) — see
+// src/data/candidates/README.md for the schema). No YAML rosters, no XLSX
+// special cases, no auto-detected legacy filenames.
+//
+// Consumed by:
 //   - src/data/candidates-index.json.js   (slim search index, no appearances)
 //   - src/data/candidates-details.json.js (cluster_id → appearance[] map)
 //
 // Inputs:
-//   - src/data/config/elections/**/*.yml            (per-election metadata)
-//   - src/data/config/parties.yml                   (canonical party names)
-//   - src/data/config/candidates/local/*.yml        (mayor/gamgebeli rosters)
-//   - src/data/candidates/*.csv                     (PR / SMD / elected rosters)
-//   - src/data/raw/party_lists_2024_georgia_unified.xlsx (2024 PR, no CSV yet)
-//   - src/data/results/*.csv                        (joined to attach votes)
-//   - src/data/shp/*.geojson                        (district names + centroids)
+//   - src/data/config/elections/**/*.yml         (election metadata + parties)
+//   - src/data/config/parties.yml                (canonical party registry)
+//   - src/data/candidates/{election|sub}_{slot}.csv  (canonical candidate data)
+//   - src/data/results/*.csv                     (joined to attach votes)
+//   - src/data/shp/*.geojson                     (district names + centroids)
 
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { load as yamlLoad } from "js-yaml";
 import { csvParse } from "d3-dsv";
-import ExcelJS from "exceljs";
 
 const ROOT = "src";
 const CONFIG_ELECTIONS_DIR = join(ROOT, "data/config/elections");
 const PARTIES_YML = join(ROOT, "data/config/parties.yml");
+const CANDIDATES_DIR = "data/candidates";
 
 // ─── helpers ─────────────────────────────────────────────────────────────────
 
 function readYaml(path) {
   const text = readFileSync(path, "utf8");
-  try {
-    return yamlLoad(text);
-  } catch {
-    // Some legacy roster YAMLs (e.g. local_2014.yml) have duplicate keys.
-    // Fall back to permissive JSON-compat mode (later dupes win).
-    return yamlLoad(text, { json: true });
-  }
+  try { return yamlLoad(text); }
+  catch { return yamlLoad(text, { json: true }); }
 }
 
 function readCsv(relPath) {
@@ -71,13 +68,12 @@ function geomCentroid(geom) {
   return [sx / coords.length, sy / coords.length];
 }
 
-// Loose Georgian-aware normalization for fuzzy clustering on (first, last).
 function normalizeName(s) {
   if (!s) return "";
   let x = String(s).toLowerCase().trim();
   x = x.replace(/[„""«»".,()]/g, "");
   x = x.replace(/\s+/g, " ");
-  x = x.replace(/ი\b/g, "");   // strip trailing nominative -ი
+  x = x.replace(/ი\b/g, "");
   return x.trim();
 }
 
@@ -101,7 +97,7 @@ function yearFromId(id) {
   return m ? Number(m[1]) : null;
 }
 
-// ─── parties / geo / results caches ──────────────────────────────────────────
+// ─── party registry ──────────────────────────────────────────────────────────
 
 const partiesYml = readYaml(PARTIES_YML);
 const partyRegistry = {};
@@ -112,6 +108,7 @@ for (const p of (partiesYml?.parties ?? [])) {
   };
 }
 
+// Per-election party map: alias.ka/en override registry names.
 function buildElectionPartyMap(election) {
   const m = {};
   for (const p of (election.parties ?? [])) {
@@ -124,47 +121,7 @@ function buildElectionPartyMap(election) {
   return m;
 }
 
-// Normalize Georgian party labels for fuzzy matching: lowercase, strip the
-// various flavours of Georgian / typographic quotes, collapse dashes and
-// whitespace. This lets us match e.g.
-//   "საარჩევნო ბლოკი „ბაქრაძე, უგულავა-ევროპული საქართველო""
-// against the registry name
-//   "ევროპული საქართველო"
-// despite the bloc-prefix and the quoted-form differences.
-function normPartyLabel(s) {
-  return (s ?? "")
-    .toString()
-    .toLowerCase()
-    .replace(/[„""""''«»]/g, "")
-    .replace(/[-‒–—―]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function partyIdFromLabel(label, electionPartyMap) {
-  if (!label) return null;
-  const norm = normPartyLabel(label);
-  // Stage 1: try the election's own party map (aliases override registry).
-  for (const [pid, names] of Object.entries(electionPartyMap)) {
-    if (!names.name_ka) continue;
-    const nk = normPartyLabel(names.name_ka);
-    if (!nk) continue;
-    if (norm === nk || norm.includes(nk) || nk.includes(norm)) return pid;
-  }
-  // Stage 2: fall through to the global registry. Some XLSX labels carry
-  // names that the election YAML alias has rewritten (e.g. registry says
-  // "ევროპული საქართველო" but the election alias says
-  // "ევროპული საქართველო-მოძრაობა თავისუფლებისთვის"); the XLSX may match
-  // the registry root better.
-  for (const pid of Object.keys(electionPartyMap)) {
-    const reg = partyRegistry[pid];
-    if (!reg?.name_ka) continue;
-    const rk = normPartyLabel(reg.name_ka);
-    if (!rk) continue;
-    if (norm === rk || norm.includes(rk) || rk.includes(norm)) return pid;
-  }
-  return null;
-}
+// ─── geo lookups (cached per shape file) ─────────────────────────────────────
 
 const geoCache = new Map();
 function loadGeoIndex(shapeFile) {
@@ -175,38 +132,16 @@ function loadGeoIndex(shapeFile) {
   const byId = {};
   for (const feat of gj.features) {
     const p = feat.properties ?? {};
-    // Match the elections page's geoId() fallback chain — different vintages
-    // of council-district shape files use different property names: 2025/2021
-    // use `major_id`, 2010/2014 use `maj_id`, 2017 uses `MID`.
     const id =
-      p.district_id ??
-      p.electoral_district_id ??
-      p.major_id ??
-      p.maj_id ??
-      p.MID ??
-      p.selfgov_id ??
-      p.self_gov_id ??
-      p.id ??
-      p.OBJECTID;
+      p.district_id ?? p.electoral_district_id ?? p.major_id ?? p.maj_id ?? p.MID ??
+      p.selfgov_id ?? p.self_gov_id ?? p.id ?? p.OBJECTID;
     if (id == null) continue;
     const c = geomCentroid(feat.geometry);
-    // Council-district vintages also vary in how the human-readable name is
-    // stored: 2025/2021 → district_name_{ka,en}; 2014 → name_{ka,en};
-    // 2010 → district_{ka,en}; 2017 has no name field at all.
     const name_ka = p.name_ka ?? p.district_name_ka ?? p.district_ka ?? p.NAME_KA ?? p.name ?? null;
     const name_en = p.name_en ?? p.district_name_en ?? p.district_en ?? p.NAME_EN ?? null;
-    // Multiple features can share an id (e.g. a council district split into
-    // several polygons). First write wins for the name; centroid stays from
-    // the first polygon, which is good enough for the "view on map" anchor.
     const key = String(id);
     if (!byId[key]) {
-      byId[key] = {
-        name_ka,
-        name_en,
-        lat: c ? c[1] : null,
-        lng: c ? c[0] : null,
-        zoom: 9
-      };
+      byId[key] = { name_ka, name_en, lat: c ? c[1] : null, lng: c ? c[0] : null, zoom: 9 };
     }
   }
   const idx = { byId };
@@ -215,11 +150,13 @@ function loadGeoIndex(shapeFile) {
 }
 
 function lookupDistrict(shapeFile, id) {
-  if (!shapeFile || id == null) return {};
+  if (!shapeFile || id == null || id === "") return {};
   const idx = loadGeoIndex(shapeFile);
   if (!idx) return {};
   return idx.byId[String(id)] ?? {};
 }
+
+// ─── results joining (vote shares) ───────────────────────────────────────────
 
 const resultsCache = new Map();
 function loadResults(relPath) {
@@ -271,16 +208,21 @@ function indexPresResults(rows) {
   return idx;
 }
 
+// ─── appearance shape ────────────────────────────────────────────────────────
+
 function makeAppearance(o) {
   return {
     election_id: o.election_id,
     election_type: o.election_type,
     election_year: o.election_year,
+    sub_id: o.sub_id ?? "__main__",
     vote_type: o.vote_type,
     party_id: o.party_id ?? null,
     party_label_ka: o.party_label_ka ?? null,
     party_label_en: o.party_label_en ?? null,
+    party_code: o.party_code ?? null,
     list_order: o.list_order ?? null,
+    ballot_number: o.ballot_number ?? null,
     district_id: o.district_id ?? null,
     district_name_ka: o.district_name_ka ?? null,
     district_name_en: o.district_name_en ?? null,
@@ -291,99 +233,13 @@ function makeAppearance(o) {
     vote_share: o.vote_share ?? null,
     elected: o.elected ?? false,
     notes: o.notes ?? null,
-    // placeholders — to be populated in a later pass:
     bio_link: null,
     photo_link: null,
     dob: o.dob ?? null
   };
 }
 
-// Read the local-2017 PR list + elected sheets from the
-// adg_2017_candidates_unified.xlsx raw file. Returns
-//   { prRows: [{selfgov_id, party_label, list_order, first_name, last_name}], electedNames: Set<"first__last"> }
-async function read2017LocalXlsx() {
-  const path = join(ROOT, "data/raw/adg_2017_candidates_unified.xlsx");
-  if (!existsSync(path)) return { prRows: [], electedNames: new Set() };
-  const wb = new ExcelJS.Workbook();
-  await wb.xlsx.readFile(path);
-
-  // PR list candidates
-  const prRows = [];
-  const prWs = wb.getWorksheet("PR candidates");
-  if (prWs) {
-    const hdr = prWs.getRow(1).values.slice(1);
-    for (let i = 2; i <= prWs.rowCount; i++) {
-      const row = prWs.getRow(i).values.slice(1);
-      const rec = Object.fromEntries(hdr.map((h, j) => [h, row[j]]));
-      const first = rec.name?.toString().trim();
-      const last = rec.last_name?.toString().trim();
-      if (!first && !last) continue;
-      prRows.push({
-        selfgov_id: rec.district_number != null ? String(rec.district_number) : null,
-        party_label: rec.party_list_name?.toString().trim() ?? null,
-        list_order: Number(rec.order_id) || null,
-        first_name: first,
-        last_name: last,
-        partisanship: rec.partisanship?.toString().trim() ?? null
-      });
-    }
-  }
-
-  // Elected politicians — covers PR, SMD, mayor in one sheet
-  const electedNames = new Set();
-  const elWs = wb.getWorksheet("elected politicians");
-  if (elWs) {
-    const hdr = elWs.getRow(1).values.slice(1);
-    for (let i = 2; i <= elWs.rowCount; i++) {
-      const row = elWs.getRow(i).values.slice(1);
-      const rec = Object.fromEntries(hdr.map((h, j) => [h, row[j]]));
-      const first = rec.name?.toString().trim() ?? "";
-      const last = rec.last_name?.toString().trim() ?? "";
-      if (!first && !last) continue;
-      electedNames.add(`${normalizeName(first)}__${normalizeName(last)}`);
-    }
-  }
-
-  return { prRows, electedNames };
-}
-
-async function read2024PrListXlsx() {
-  const path = join(ROOT, "data/raw/party_lists_2024_georgia_unified.xlsx");
-  if (!existsSync(path)) return [];
-  const wb = new ExcelJS.Workbook();
-  await wb.xlsx.readFile(path);
-  const ws = wb.getWorksheet("Candidates");
-  if (!ws) return [];
-  const headerRow = ws.getRow(1).values.slice(1);
-  const out = [];
-  for (let i = 2; i <= ws.rowCount; i++) {
-    const row = ws.getRow(i).values.slice(1);
-    const rec = Object.fromEntries(headerRow.map((h, j) => [h, row[j]]));
-    if (!rec.name && !rec.last_name) continue;
-    out.push({
-      first_name: rec.name?.toString().trim(),
-      last_name: rec.last_name?.toString().trim(),
-      list_order: Number(rec.order_id) || null,
-      party_label: rec.party_name?.toString().trim(),
-      partisanship: rec.partisanship?.toString().trim()
-    });
-  }
-  return out;
-}
-
-function loadElectedKeys(electionFiles) {
-  if (!electionFiles?.elected) return new Set();
-  const rows = readCsv(electionFiles.elected);
-  if (!rows) return new Set();
-  const set = new Set();
-  for (const r of rows) {
-    const { first_name, last_name } = splitName(r.name_ka, r.first_name, r.last_name);
-    set.add(`${normalizeName(first_name)}__${normalizeName(last_name)}`);
-  }
-  return set;
-}
-
-// Compact: drop null fields + the cluster-redundant name fields.
+// Compact: drop null fields + cluster-redundant name fields.
 function compactAppearance(a) {
   const out = {};
   for (const [k, v] of Object.entries(a)) {
@@ -394,303 +250,202 @@ function compactAppearance(a) {
   return out;
 }
 
+// ─── canonical-row → appearance ──────────────────────────────────────────────
+
+const VALID_VOTE_TYPES = new Set(["pr", "smd", "council_smd", "mayor", "gamgebeli", "presidential"]);
+
+function intOrNull(v) {
+  if (v == null || v === "") return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+function appearanceFromCanonicalRow(row, election, sub, partyMap, shapeForVoteType, smdResultsIdx, presResultsIdx) {
+  const first_name = (row.first_name ?? "").toString().trim();
+  const last_name  = (row.last_name  ?? "").toString().trim();
+  if (!first_name && !last_name) return null;
+  const name_ka = (row.name_ka ?? `${first_name} ${last_name}`).toString().trim();
+
+  const party_id = (row.party_id ?? "").toString().trim() || null;
+  const party_label_ka = (row.party_label_ka ?? "").toString().trim() || null;
+  const partyNames = party_id && partyMap[party_id] ? partyMap[party_id] : null;
+  const party_label_en = partyNames?.name_en ?? partyRegistry[party_id]?.name_en ?? null;
+
+  const vote_type_raw = (row.vote_type ?? "").toString().trim();
+  // Normalize sakrebulo_smd alias → council_smd
+  const vote_type = vote_type_raw === "sakrebulo_smd" ? "council_smd" : vote_type_raw;
+  if (!VALID_VOTE_TYPES.has(vote_type)) return null;
+
+  const districtId = (row.district_id ?? "").toString().trim() || null;
+
+  // District name + centroid: prefer the row's value, fall back to a GeoJSON lookup.
+  let district_name_ka = (row.district_name_ka ?? "").toString().trim() || null;
+  let district_name_en = null;
+  let district_lat = null, district_lng = null, district_zoom = null;
+  const shape = shapeForVoteType(vote_type, election);
+  const geo = lookupDistrict(shape, districtId);
+  if (geo) {
+    district_name_ka ??= geo.name_ka ?? null;
+    district_name_en   = geo.name_en ?? null;
+    district_lat       = geo.lat ?? null;
+    district_lng       = geo.lng ?? null;
+    district_zoom      = geo.zoom ?? null;
+  }
+
+  // Votes / vote share: joined from results CSVs by (district_id, party_id) for
+  // SMD and (party_id) for presidential.
+  let votes = null, vote_share = null;
+  if (vote_type === "smd" || vote_type === "council_smd") {
+    const idx = smdResultsIdx ?? {};
+    const key = (districtId != null && party_id) ? `${districtId}__${party_id}` : null;
+    const hit = key ? idx[key] : null;
+    if (hit) { votes = hit.votes; vote_share = hit.vote_share; }
+  } else if (vote_type === "presidential" && party_id) {
+    const hit = presResultsIdx?.[party_id];
+    if (hit) { votes = hit.votes; vote_share = hit.vote_share; }
+  }
+
+  const elected = String(row.elected ?? "").toUpperCase() === "TRUE";
+
+  const ap = makeAppearance({
+    election_id: election.id,
+    election_type: election.type,
+    election_year: yearFromId(election.id),
+    sub_id: (row.sub_id ?? sub?.id ?? "__main__").toString().trim() || "__main__",
+    vote_type,
+    party_id,
+    party_label_ka,
+    party_label_en,
+    party_code: intOrNull(row.party_code),
+    list_order: intOrNull(row.list_order),
+    ballot_number: intOrNull(row.ballot_number),
+    district_id: districtId,
+    district_name_ka,
+    district_name_en,
+    district_lat, district_lng, district_zoom,
+    votes, vote_share,
+    elected,
+    notes: (row.partisanship ?? "").toString().trim() || null
+  });
+  ap.first_name = first_name;
+  ap.last_name  = last_name;
+  ap.name_ka    = name_ka;
+  return ap;
+}
+
+// Pick the right GeoJSON for a given vote_type in this election.
+function shapeForVoteType(voteType, election) {
+  if (election.type === "parliamentary" || election.type === "adjara") {
+    if (voteType === "smd") return election.system?.smd?.shape_file ?? null;
+    return election.system?.pr?.shape_file ?? null;
+  }
+  if (election.type === "local") {
+    if (voteType === "council_smd") return election.council?.shape_file ?? election.system?.smd?.shape_file ?? null;
+    // mayor / gamgebeli / pr / smd all live on selfgov polygons
+    return election.system?.pr?.selfgov_shape_file ?? election.system?.smd?.shape_file ?? null;
+  }
+  if (election.type === "presidential") return election.system?.pr?.shape_file ?? null;
+  return null;
+}
+
 // ─── main build ──────────────────────────────────────────────────────────────
+
+const SLOTS = ["pr", "smd", "council_smd", "mayor", "gamgebeli", "presidential"];
+const ELECTED_SLOT = "elected";
+
+// Build the canonical-CSV path for one (election, sub_id, slot). Honors an
+// optional override in election.files.candidate_overrides.{slot} when set.
+function canonicalSlotPath(election, sub, slot) {
+  const overrides = election.files?.candidate_overrides ?? {};
+  if (overrides[slot]) return overrides[slot];
+  const prefix = (!sub || sub.id === "__main__") ? election.id : sub.id;
+  return `${CANDIDATES_DIR}/${prefix}_${slot}.csv`;
+}
+
+// Key for matching elected.csv rows back onto roster appearances.
+function mergeKey(electionId, subId, voteType, firstName, lastName) {
+  return `${electionId}|${subId ?? "__main__"}|${voteType}|${normalizeName(firstName)}|${normalizeName(lastName)}`;
+}
 
 export async function buildCandidates() {
   const electionFiles = collectYmlFiles(CONFIG_ELECTIONS_DIR);
   const elections = electionFiles.map(f => readYaml(f));
 
-  const electionMeta = elections.map(e => ({
-    id: e.id,
-    type: e.type,
-    year: yearFromId(e.id),
-    name_ka: e.name?.ka ?? e.id,
-    name_en: e.name?.en ?? e.id
-  })).sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+  const electionMeta = elections
+    .filter(e => e?.id)
+    .map(e => ({
+      id: e.id,
+      type: e.type,
+      year: yearFromId(e.id),
+      name_ka: e.name?.ka ?? e.id,
+      name_en: e.name?.en ?? e.id
+    }))
+    .sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 
   const appearances = [];
-
-  function pushCsvAppearances({ rows, electionId, electionType, electionYear, voteType, partyMap, electedKeys, shapeFile, smdIdx, getDistrictId, getPartyId, getListOrder }) {
-    if (!rows) return;
-    for (const r of rows) {
-      const { first_name, last_name, name_ka } = splitName(r.name_ka, r.first_name, r.last_name);
-      if (!first_name && !last_name) continue;
-      const did = getDistrictId ? getDistrictId(r) : null;
-      const pid = getPartyId ? getPartyId(r) : (r.party_id || null);
-      const partyNames = (pid && partyMap[pid]) ? partyMap[pid] : null;
-      const district = shapeFile ? lookupDistrict(shapeFile, did) : {};
-      const joinKey = (did != null && pid) ? `${did}__${pid}` : null;
-      const result = joinKey && smdIdx ? smdIdx[joinKey] : null;
-      const electedKey = `${normalizeName(first_name)}__${normalizeName(last_name)}`;
-      const ap = makeAppearance({
-        election_id: electionId,
-        election_type: electionType,
-        election_year: electionYear,
-        vote_type: voteType,
-        party_id: pid,
-        party_label_ka: partyNames?.name_ka ?? r.party_label ?? r.party_label_ka ?? r.party_name ?? null,
-        party_label_en: partyNames?.name_en ?? null,
-        list_order: getListOrder ? getListOrder(r) : null,
-        district_id: did,
-        district_name_ka: district.name_ka ?? r.district_name_ka ?? r.smd_name ?? null,
-        district_name_en: district.name_en ?? null,
-        district_lat: district.lat ?? null,
-        district_lng: district.lng ?? null,
-        district_zoom: district.zoom ?? null,
-        votes: result?.votes ?? null,
-        vote_share: result?.vote_share ?? null,
-        elected: electedKeys?.has(electedKey) ?? false
-      });
-      ap.first_name = first_name;
-      ap.last_name = last_name;
-      ap.name_ka = name_ka;
-      appearances.push(ap);
-    }
-  }
+  const apIndex = new Map(); // mergeKey → appearance reference
 
   for (const election of elections) {
+    if (!election?.id) continue;
     const partyMap = buildElectionPartyMap(election);
-    const electedKeys = loadElectedKeys(election.files);
-    const year = yearFromId(election.id);
-    const f = election.files ?? {};
 
-    // Special-case raw-XLSX ingestion for elections whose candidate data lives
-    // in a not-yet-converted XLSX. Currently only local_2017 — the XLSX
-    // carries the sakrebulo PR list (12.9k rows) + a unified elected-politicians
-    // sheet that covers mayor / SMD / PR winners. Loaded once per pass; the
-    // elected names are unioned into electedKeys BEFORE the YAML candidate
-    // roster is processed, so `elected: true` is correct for both branches.
-    let xlsx2017 = null;
-    if (election.id === "local_2017") {
-      xlsx2017 = await read2017LocalXlsx();
-      for (const k of xlsx2017.electedNames) electedKeys.add(k);
+    // Pre-load PR + SMD result indexes once per election (used by ALL subs).
+    const smdResultsIdx = indexSmdResults(election.files?.smd_results ? loadResults(election.files.smd_results) : null);
+    const presResultsIdx = indexPresResults(election.files?.pr_results ? loadResults(election.files.pr_results) : null);
+
+    // Process __main__ election + each sub-election uniformly.
+    const subs = [{ id: "__main__", sub: null }];
+    for (const sub of (election.sub_elections ?? [])) {
+      if (sub?.id) subs.push({ id: sub.id, sub });
     }
 
-    if (f.party_lists) {
-      // For local elections, the PR list is per selfgov unit — pass the selfgov
-      // shape so each candidate gets the selfgov name as their district label.
-      const prShapeFile = election.type === "local"
-        ? (election.system?.pr?.selfgov_shape_file ?? election.system?.smd?.shape_file ?? null)
-        : null;
-      pushCsvAppearances({
-        rows: readCsv(f.party_lists),
-        electionId: election.id,
-        electionType: election.type,
-        electionYear: year,
-        voteType: "pr",
-        partyMap, electedKeys,
-        shapeFile: prShapeFile,
-        getDistrictId: r => r.district_id ?? null,
-        getPartyId: r => r.party_id ?? null,
-        getListOrder: r => Number(r.list_order ?? r.order_id ?? r.candidate_order) || null
-      });
-    }
-
-    if (f.candidates && f.candidates.endsWith(".csv") && election.type !== "presidential") {
-      // For local elections the SMD candidate CSV is actually a sakrebulo
-      // (council) SMD roster — the matching geojson is election.council.shape_file
-      // and the id to match is major_id. For parliamentary/adjara, the regular
-      // election.system.smd.shape_file is correct.
-      const isLocal = election.type === "local";
-      const smdShape = isLocal
-        ? (election.council?.shape_file ?? election.system?.smd?.shape_file ?? null)
-        : (election.system?.smd?.shape_file ?? null);
-      const smdIdx = indexSmdResults(f.smd_results ? loadResults(f.smd_results) : null);
-      pushCsvAppearances({
-        rows: readCsv(f.candidates),
-        electionId: election.id,
-        electionType: election.type,
-        electionYear: year,
-        voteType: isLocal ? "council_smd" : "smd",
-        partyMap, electedKeys,
-        shapeFile: smdShape, smdIdx,
-        getDistrictId: isLocal
-          ? (r => r.major_id ?? r.district_id ?? r.electoral_district_id ?? r.smd_code ?? null)
-          : (r => r.electoral_district_id ?? r.district_id ?? r.major_id ?? r.smd_code ?? null),
-        getPartyId: r => r.party_id ?? null
-      });
-    }
-
-    if (election.type === "local") {
-      const stem = election.id.replace("_", "");
-      const mayorCsv = `data/candidates/${stem}_mayor_candidates.csv`;
-      const mayorGCsv = `data/candidates/${stem}_mayor_gamgebeli_candidates.csv`;
-      const selfgovShape = election.system?.pr?.selfgov_shape_file ?? election.system?.smd?.shape_file ?? null;
-      if (existsSync(join(ROOT, mayorCsv))) {
-        pushCsvAppearances({
-          rows: readCsv(mayorCsv),
-          electionId: election.id,
-          electionType: election.type,
-          electionYear: year,
-          voteType: "mayor",
-          partyMap, electedKeys,
-          shapeFile: selfgovShape,
-          getDistrictId: r => r.selfgov_id ?? r.district_id ?? null,
-          getPartyId: r => r.party_id ?? null
-        });
-      }
-      if (existsSync(join(ROOT, mayorGCsv))) {
-        pushCsvAppearances({
-          rows: readCsv(mayorGCsv),
-          electionId: election.id,
-          electionType: election.type,
-          electionYear: year,
-          voteType: "gamgebeli",
-          partyMap, electedKeys,
-          shapeFile: election.system?.smd?.shape_file ?? null,
-          getDistrictId: r => r.district_id ?? r.major_id ?? null,
-          getPartyId: r => r.party_id ?? null
-        });
-      }
-    }
-
-    if (election.type === "presidential" && f.candidates?.endsWith(".csv")) {
-      const candRows = readCsv(f.candidates);
-      const presIdx = indexPresResults(loadResults(f.pr_results));
-      if (candRows) {
-        for (const r of candRows) {
-          const { first_name, last_name, name_ka } = splitName(r.name_ka, r.first_name, r.last_name);
-          if (!first_name && !last_name) continue;
-          const pid = r.party_id;
-          const partyNames = pid ? partyMap[pid] : null;
-          const result = pid ? presIdx[pid] : null;
-          const electedKey = `${normalizeName(first_name)}__${normalizeName(last_name)}`;
-          const ap = makeAppearance({
-            election_id: election.id,
-            election_type: election.type,
-            election_year: year,
-            vote_type: "presidential",
-            party_id: pid,
-            party_label_ka: partyNames?.name_ka ?? r.party_label_ka ?? null,
-            party_label_en: partyNames?.name_en ?? null,
-            votes: result?.votes ?? null,
-            vote_share: result?.vote_share ?? null,
-            elected: electedKeys.has(electedKey)
-          });
-          ap.first_name = first_name; ap.last_name = last_name; ap.name_ka = name_ka;
+    for (const { sub } of subs) {
+      // Read each candidate-roster slot.
+      for (const slot of SLOTS) {
+        const csvPath = canonicalSlotPath(election, sub, slot);
+        const rows = readCsv(csvPath);
+        if (!rows) continue;
+        for (const r of rows) {
+          const ap = appearanceFromCanonicalRow(
+            r, election, sub, partyMap,
+            shapeForVoteType, smdResultsIdx, presResultsIdx
+          );
+          if (!ap) continue;
           appearances.push(ap);
+          const k = mergeKey(ap.election_id, ap.sub_id, ap.vote_type, ap.first_name, ap.last_name);
+          if (!apIndex.has(k)) apIndex.set(k, ap);
+        }
+      }
+
+      // Read elected.csv as a MODIFIER. For each row, find the matching roster
+      // appearance (same election/sub/vote_type/normalized name) and flip its
+      // `elected` flag to true. If no match found, emit a standalone appearance
+      // marked elected — this happens when the roster wasn't sourced but
+      // winners are known (e.g. some sub-elections).
+      const electedCsvPath = canonicalSlotPath(election, sub, ELECTED_SLOT);
+      const electedRows = readCsv(electedCsvPath);
+      if (electedRows) {
+        for (const r of electedRows) {
+          const ap = appearanceFromCanonicalRow(
+            r, election, sub, partyMap,
+            shapeForVoteType, smdResultsIdx, presResultsIdx
+          );
+          if (!ap) continue;
+          ap.elected = true; // elected.csv rows always mark winners
+          const k = mergeKey(ap.election_id, ap.sub_id, ap.vote_type, ap.first_name, ap.last_name);
+          const existing = apIndex.get(k);
+          if (existing) {
+            existing.elected = true;
+          } else {
+            appearances.push(ap);
+            apIndex.set(k, ap);
+          }
         }
       }
     }
-
-    const localCandYml = f.candidates && f.candidates.endsWith(".yml") ? join(ROOT, f.candidates) : null;
-    if (localCandYml && existsSync(localCandYml)) {
-      const doc = readYaml(localCandYml);
-      const selfgovShape = election.system?.smd?.shape_file ?? null;
-      const councilShape = election.council?.shape_file ?? null;
-      for (const c of Object.values(doc.candidates ?? {})) {
-        const { first_name, last_name, name_ka } = splitName(c.name_ka, null, null);
-        if (!first_name && !last_name) continue;
-        const pid = c.party ?? null;
-        const partyNames = pid ? partyMap[pid] : null;
-        const electionType = c.election_type ?? "mayor";
-
-        // Council SMD candidates carry both a selfgov_id and a major_id; the
-        // relevant geographic unit is the council district (major_id), and the
-        // matching geojson is election.council.shape_file — NOT the selfgov
-        // polygons. Resolving against the wrong shape gives the selfgov
-        // centroid instead of the specific council-district centroid, and the
-        // elections page can't drill down on the `unit` param.
-        const isCouncilSmd = electionType === "sakrebulo_smd" || electionType === "council_smd";
-        const did = isCouncilSmd
-          ? (c.major_id ?? c.district_id ?? c.selfgov_id ?? null)
-          : (c.selfgov_id ?? c.district_id ?? null);
-        const shape = isCouncilSmd ? (councilShape ?? selfgovShape) : selfgovShape;
-        const district = shape ? lookupDistrict(shape, did) : {};
-
-        const electedKey = `${normalizeName(first_name)}__${normalizeName(last_name)}`;
-        const ap = makeAppearance({
-          election_id: election.id,
-          election_type: election.type,
-          election_year: year,
-          vote_type: electionType,
-          party_id: pid,
-          party_label_ka: partyNames?.name_ka ?? null,
-          party_label_en: partyNames?.name_en ?? null,
-          district_id: did,
-          district_name_ka: district.name_ka ?? null,
-          district_name_en: district.name_en ?? null,
-          district_lat: district.lat ?? null,
-          district_lng: district.lng ?? null,
-          district_zoom: district.zoom ?? null,
-          elected: electedKeys.has(electedKey)
-        });
-        ap.first_name = first_name; ap.last_name = last_name; ap.name_ka = name_ka;
-        appearances.push(ap);
-      }
-    }
-
-    // local_2017 sakrebulo PR list — sourced from adg_2017 XLSX. The local
-    // YAML roster only covers mayor / sakrebulo_smd, so PR candidates would
-    // otherwise be absent. Each row is one PR-list slot inside a selfgov unit.
-    if (election.id === "local_2017" && xlsx2017) {
-      const selfgovShape = election.system?.pr?.selfgov_shape_file
-                       ?? election.system?.smd?.shape_file ?? null;
-      for (const r of xlsx2017.prRows) {
-        const first_name = r.first_name ?? "";
-        const last_name = r.last_name ?? "";
-        if (!first_name && !last_name) continue;
-        const pid = partyIdFromLabel(r.party_label, partyMap);
-        const partyNames = pid ? partyMap[pid] : null;
-        const did = r.selfgov_id;
-        const district = selfgovShape ? lookupDistrict(selfgovShape, did) : {};
-        const electedKey = `${normalizeName(first_name)}__${normalizeName(last_name)}`;
-        const ap = makeAppearance({
-          election_id: "local_2017",
-          election_type: "local",
-          election_year: 2017,
-          vote_type: "pr",
-          party_id: pid,
-          party_label_ka: partyNames?.name_ka ?? r.party_label ?? null,
-          party_label_en: partyNames?.name_en ?? null,
-          list_order: r.list_order,
-          district_id: did,
-          district_name_ka: district.name_ka ?? null,
-          district_name_en: district.name_en ?? null,
-          district_lat: district.lat ?? null,
-          district_lng: district.lng ?? null,
-          district_zoom: district.zoom ?? null,
-          elected: electedKeys.has(electedKey),
-          notes: r.partisanship && r.partisanship !== r.party_label ? r.partisanship : null
-        });
-        ap.first_name = first_name;
-        ap.last_name = last_name;
-        ap.name_ka = `${first_name} ${last_name}`.trim();
-        appearances.push(ap);
-      }
-    }
   }
 
-  // 2024 PR list — sourced from raw XLSX (no CSV yet).
-  const parl2024 = elections.find(e => e.id === "parl_2024");
-  if (parl2024) {
-    const partyMap = buildElectionPartyMap(parl2024);
-    const rows = await read2024PrListXlsx();
-    for (const r of rows) {
-      const first_name = (r.first_name ?? "").trim();
-      const last_name = (r.last_name ?? "").trim();
-      if (!first_name && !last_name) continue;
-      const pid = partyIdFromLabel(r.party_label, partyMap);
-      const partyNames = pid ? partyMap[pid] : null;
-      const ap = makeAppearance({
-        election_id: "parl_2024",
-        election_type: "parliamentary",
-        election_year: 2024,
-        vote_type: "pr",
-        party_id: pid,
-        party_label_ka: partyNames?.name_ka ?? r.party_label ?? null,
-        party_label_en: partyNames?.name_en ?? null,
-        list_order: r.list_order ?? null,
-        notes: r.partisanship && r.partisanship !== r.party_label ? r.partisanship : null
-      });
-      ap.first_name = first_name;
-      ap.last_name = last_name;
-      ap.name_ka = `${first_name} ${last_name}`.trim();
-      appearances.push(ap);
-    }
-  }
-
-  // ─── cluster ───────────────────────────────────────────────────────────────
+  // ─── cluster by normalized (first_name, last_name) ─────────────────────────
 
   const clusters = new Map();
   for (const ap of appearances) {
@@ -708,7 +463,7 @@ export async function buildCandidates() {
         name_variants: new Set(),
         latest_party_id: null,
         latest_year: -Infinity,
-        parties: new Set(),                  // all party_ids the candidate ran for
+        parties: new Set(),
         appearances: []
       };
       clusters.set(cid, c);
@@ -727,15 +482,11 @@ export async function buildCandidates() {
     .map(c => {
       const sortedAppearances = c.appearances
         .sort((a, b) => (b.election_year ?? 0) - (a.election_year ?? 0));
-      // Compact per-cluster summary list: election_id + vote_type pairs in display
-      // order. `d` (district name) is included when meaningful — used in the
-      // search-results column to show e.g. "Local 2014, PR list (Tbilisi)".
       const appearances_summary = sortedAppearances.map(a => {
         const obj = { e: a.election_id, v: a.vote_type };
         if (a.district_name_ka) obj.d = a.district_name_ka;
         return obj;
       });
-      // Parties ordered by most-recent-appearance.
       const partiesOrdered = [];
       const partyLabels = new Map();
       const seen = new Set();
