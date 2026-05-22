@@ -159,33 +159,16 @@ parties:
     alias:
       ka: შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია
       en: Shalva Natelashvili-Labour Party of Georgia
-  - id: girchi
-    threshold_status: passed
   - id: republicans_2016
-    threshold_status: failed
-  - id: free_democrats
-    threshold_status: failed
-  - id: burjanadze_democratic
+    alias:
+      ka: „რესპუბლიკური პარტია”
+      en: "Republican Party"
     threshold_status: failed
   - id: new_christian_democrats
     threshold_status: failed
     alias:
       ka: გოგი წულაია - ახალი ქრისტიანდემოკრატები
       en: Gogi Tsulaia - New Christian Democrats
-  - id: industry_sakartvelo
-    threshold_status: failed
-  - id: greens
-    threshold_status: failed
-  - id: social_democrats
-    threshold_status: failed
-  - id: european_democrats
-    threshold_status: failed
-  - id: national_forum
-    threshold_status: failed
-  - id: democratic_movement
-    threshold_status: failed
-  - id: georgian_march
-    threshold_status: failed
   # ── 2017-only sakrebulo PR labels (promoted from candidate XLSX) ────────
   - id: progressive_democratic_2017
     threshold_status: failed

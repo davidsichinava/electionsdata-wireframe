@@ -65,12 +65,6 @@ parties:
     alias:
       en: "United National Movement"
       ka: "ერთიანი ნაციონალური მოძრაობა"
-  - id: sports_union_2010
-    threshold_status: failed
-    color: "#0277BD"
-    alias:
-      en: "Union of Georgian Sportspeople"
-      ka: "საქართველოს სპორტსმენთა კავშირი"
   - id: national_council_2010
     threshold_status: passed
     color: "#6A1B9A"
@@ -126,8 +120,8 @@ parties:
     threshold_status: failed
     color: "#795548"
     alias:
-      en: "Force Veterans, Patriots and Pensioners Political Movement"
-      ka: "ძალოვანი ვეტერანების, პატრიოტთა და პენსიონერთა პოლიტიკური მოძრაობა"
+      en: "Force Veterans, Patriots and Pensioners Political Movement “Mamulisvili”"
+      ka: "ძალოვანი ვეტერანების, პატრიოტთა და პენსიონერთა პოლიტიკური მოძრაობა “მამულიშვილი”"
   - id: tortladze_democratic_2010
     threshold_status: passed
     color: "#546E7A"

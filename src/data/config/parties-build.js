@@ -88,9 +88,10 @@ function loadResults(relPath) {
   return rows;
 }
 
-// Look up the national PR vote share for one party in one election.
-// Tries (in order) pr_results, pr_selfgov_results, council_pr_results.
-function partyPrVoteShare(election, party_id) {
+// Look up the national PR vote share AND total vote count for one party in
+// one election. Tries (in order) pr_results, pr_selfgov_results,
+// council_pr_results. Returns { share, votes } — either field may be null.
+function partyPrResult(election, party_id) {
   const candidates = [
     election.files?.pr_results,
     election.files?.council_pr_results
@@ -105,7 +106,10 @@ function partyPrVoteShare(election, party_id) {
     const national = rows.find(r => r.party_id === party_id && (r.district_id === "national" || r.district_id === "0"));
     if (national) {
       const share = Number(national.vote_share);
-      if (Number.isFinite(share) && share > 0) return share;
+      const votes = Number(national.votes);
+      if (Number.isFinite(share) && share > 0) {
+        return { share, votes: Number.isFinite(votes) && votes > 0 ? votes : null };
+      }
     }
     // Sum-fallback: total votes for this party / total valid PR votes.
     const partyRows = rows.filter(r => r.party_id === party_id && r.district_id !== "national" && r.district_id !== "0");
@@ -115,10 +119,17 @@ function partyPrVoteShare(election, party_id) {
       const districts = new Set(partyRows.map(r => r.district_id));
       const totalRows = rows.filter(r => districts.has(r.district_id) && r.district_id !== "national");
       const totalVotes = totalRows.reduce((s, r) => s + (Number(r.votes) || 0), 0);
-      if (totalVotes > 0) return partyVotes / totalVotes;
+      if (totalVotes > 0) {
+        return { share: partyVotes / totalVotes, votes: partyVotes };
+      }
     }
   }
-  return null;
+  return { share: null, votes: null };
+}
+
+// Backwards-compatible wrapper (some call sites still want just the share).
+function partyPrVoteShare(election, party_id) {
+  return partyPrResult(election, party_id).share;
 }
 
 // ─── main build ─────────────────────────────────────────────────────────────
@@ -220,7 +231,9 @@ export async function buildParties() {
       entry.party_label_ka = p.alias?.ka ?? entry.party_label_ka;
       entry.party_label_en = p.alias?.en ?? entry.party_label_en;
       entry.color_override = p.color ?? null;
-      entry.vote_share = partyPrVoteShare(election, p.id);
+      const result = partyPrResult(election, p.id);
+      entry.vote_share = result.share;
+      entry.votes = result.votes;
     }
   }
 
@@ -300,6 +313,7 @@ export async function buildParties() {
       won,
       threshold_status: entry.threshold_status ?? null,
       vote_share: entry.vote_share ?? null,
+      votes: entry.votes ?? null,
       candidate_count: entry.candidate_count ?? 0,
       pr_candidates: entry.pr_candidates ?? 0,
       smd_candidates: entry.smd_candidates ?? 0,

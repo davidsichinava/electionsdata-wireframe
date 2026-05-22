@@ -69,6 +69,7 @@ parties:
       ka: თავისუფალი საქართველო
     color: "#00695C"
     type: party
+    lineage: free_georgia
 
   - id: tribuna
     name:
@@ -403,6 +404,7 @@ parties:
       en: Early Elections Coalition
       ka: ვადამდელი არჩევნები - ერთიანი საქართველო - დემოკრატიული მოძრაობა
     color: "#B71C1C"
+    lineage: burjanadze
     type: alliance
 
   - id: law_justice
@@ -726,6 +728,7 @@ parties:
       ka: მოძრაობა თავისუფალი საქართველოსთვის
     color: "#0288D1"
     type: party
+    lineage: free_georgia
 
   - id: georgian_choice
     name:
@@ -797,6 +800,7 @@ parties:
       ka: ეროვნულ-დემოკრატიული პარტია
     color: "#1B5E20"
     type: party
+    lineage: national_democratic_party
 
   - id: social_justice_2020
     name:
@@ -903,7 +907,32 @@ parties:
       ka: მამულიშვილთა ორდენი სამშობლო
     color: "#4527A0"
     type: party
-    
+    lineage: motherland
+
+  - id: our_country_2008
+    name:
+      en: Our Country
+      ka: ჩვენი ქვეყანა
+    color: "#9E9E9E"
+    type: party
+    lineage: our_country
+
+  - id: radical_democrats_2008
+    name:
+      en: Radical-Democrats National Party
+      ka: სრულიად საქართველოს რადიკალ-დემოკრატთა ნაციონალური პარტია
+    color: "#6D4C41"
+    type: party
+    lineage: radical_democrats
+
+  - id: greens_2014
+    name:
+      en: Giorgi Gachechiladze — Green Party
+      ka: გიორგი გაჩეჩილაძე - მწვანეთა პარტია
+    color: "#43A047"
+    type: party
+    lineage: greens
+
   - id: christian_democrats_2008
     name:
       en: Christian Democratic Movement

@@ -164,12 +164,13 @@ const frame = html`
   .cand-table-pappear .cand-table-row {
     grid-template-columns:
       minmax(3.5rem, 0.45fr)
-      minmax(14rem, 2.3fr)
+      minmax(14rem, 2.2fr)
       minmax(6rem, 0.9fr)
-      minmax(7rem, 0.95fr)
-      minmax(5rem, 0.7fr)
-      minmax(5rem, 0.7fr)
-      minmax(6.5rem, 0.9fr)
+      minmax(7rem, 0.9fr)
+      minmax(7rem, 0.9fr)
+      minmax(5rem, 0.65fr)
+      minmax(5rem, 0.65fr)
+      minmax(6.5rem, 0.85fr)
       minmax(7rem, 1fr);
   }
   .cand-table-cell {
@@ -511,7 +512,8 @@ function renderPartyAppearances(lineage, appearances) {
       <div class="cand-table-cell" role="cell">${electionName(ap.election_id)}</div>
       <div class="cand-table-cell" role="cell">${ap.party_label_ka ?? ap.party_label_en ?? ""}</div>
       <div class="cand-table-cell num" role="cell">${formatVoteShare(ap.vote_share)}</div>
-      <div class="cand-table-cell num" role="cell">${ap.won || ""}</div>
+      <div class="cand-table-cell num" role="cell">${formatInt(ap.votes)}</div>
+      <div class="cand-table-cell num" role="cell">${ap.won ? formatInt(ap.won) : ""}</div>
       <div class="cand-table-cell num" role="cell">${formatInt(ap.candidate_count)}</div>
       <div class="cand-table-cell" role="cell">${
         // Threshold only meaningful for parliamentary elections — local has
@@ -535,6 +537,7 @@ function renderPartyAppearances(lineage, appearances) {
         <div class="cand-table-cell" role="columnheader">${t("parties.col_election")}</div>
         <div class="cand-table-cell" role="columnheader">${t("parties.col_label")}</div>
         <div class="cand-table-cell num" role="columnheader">${t("parties.col_vote_share")}</div>
+        <div class="cand-table-cell num" role="columnheader">${t("parties.col_votes")}</div>
         <div class="cand-table-cell num" role="columnheader">${t("parties.col_seats")}</div>
         <div class="cand-table-cell num" role="columnheader">${t("parties.col_candidates")}</div>
         <div class="cand-table-cell" role="columnheader">${t("parties.col_threshold")}</div>

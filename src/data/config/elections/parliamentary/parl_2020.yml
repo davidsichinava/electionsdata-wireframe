@@ -353,10 +353,6 @@ parties:
     seats_smd: 0
 
   # SMD-only parties / candidates
-  - id: our_georgia
-    seats_pr: 0
-    seats_smd: 0
-
   - id: independent
     seats_pr: 0
     seats_smd: 0

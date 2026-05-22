@@ -78,7 +78,7 @@ export function makeRenderers({
     function barRow(d) {
       const pct      = (d.vote_share / maxVal) * 100;
       const shareStr = `${(d.vote_share * 100).toFixed(1)}%`;
-      const countStr = d.votes != null ? d.votes.toLocaleString() : "—";
+      const countStr = d.votes != null ? d.votes.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—";
       const pname    = d.party?.name?.[lang] || d.party_id;
       const isWinner = winnerId && d.party_id === winnerId;
       const el = html`
@@ -282,7 +282,7 @@ export function makeRenderers({
     function distRow(r) {
       const color        = partyColor(r.party_id, electionVal?.id);
       const shareStr     = `${(r.vote_share * 100).toFixed(1)}%`;
-      const countStr     = r.votes != null ? r.votes.toLocaleString() : "—";
+      const countStr     = r.votes != null ? r.votes.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—";
       const partyName    = r.party_label || getParty(r.party_id).name?.[lang] || r.party_id;
       const candidateName = candidateLabel(r);
       const el = html`<tr class="dist-table-row" data-party-id="${r.party_id}" title="${t("elections.chart.click_filter")}">
@@ -356,13 +356,13 @@ export function makeRenderers({
         : panelBackHeader(pname)}
       ${props.precinct_name_ka ? html`<div style="font-size:0.78rem;color:var(--muted);margin:-4px 0 8px;">${props.precinct_name_ka}</div>` : ""}
       ${metricRow("final", t("elections.turnout.pct"), pct)}
-      ${statRow(t("elections.turnout.voted"),      td.voted      != null ? td.voted.toLocaleString()      : "—")}
-      ${statRow(t("elections.turnout.registered"), td.registered != null ? td.registered.toLocaleString() : "—")}
-      ${(turnoutCfg.has_snapshots || noonPct) && noonPct ? metricRow("noon", t("elections.turnout.noon"), noonPct, td.voted_noon != null ? `(${td.voted_noon.toLocaleString()})` : null) : ""}
-      ${(turnoutCfg.has_snapshots || fivePct) && fivePct ? metricRow("5pm",  t("elections.turnout.5pm"),  fivePct,  td.voted_5pm  != null ? `(${td.voted_5pm.toLocaleString()})` : null)  : ""}
-      ${turnoutCfg.has_lists && td.main_list    != null ? statRow(t("elections.turnout.main_list"),    td.main_list.toLocaleString())    : ""}
-      ${turnoutCfg.has_lists && td.special_list != null ? statRow(t("elections.turnout.special_list"), td.special_list.toLocaleString()) : ""}
-      ${invPct ? metricRow("invalid", t("elections.turnout.invalid_pct"), invPct, td.invalid_ballots != null ? `(${td.invalid_ballots.toLocaleString()})` : null) : ""}
+      ${statRow(t("elections.turnout.voted"),      td.voted      != null ? td.voted.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")      : "—")}
+      ${statRow(t("elections.turnout.registered"), td.registered != null ? td.registered.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—")}
+      ${(turnoutCfg.has_snapshots || noonPct) && noonPct ? metricRow("noon", t("elections.turnout.noon"), noonPct, td.voted_noon != null ? `(${td.voted_noon.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})` : null) : ""}
+      ${(turnoutCfg.has_snapshots || fivePct) && fivePct ? metricRow("5pm",  t("elections.turnout.5pm"),  fivePct,  td.voted_5pm  != null ? `(${td.voted_5pm.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})` : null)  : ""}
+      ${turnoutCfg.has_lists && td.main_list    != null ? statRow(t("elections.turnout.main_list"),    td.main_list.toLocaleString(lang === "ka" ? "ka-GE" : "en-US"))    : ""}
+      ${turnoutCfg.has_lists && td.special_list != null ? statRow(t("elections.turnout.special_list"), td.special_list.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")) : ""}
+      ${invPct ? metricRow("invalid", t("elections.turnout.invalid_pct"), invPct, td.invalid_ballots != null ? `(${td.invalid_ballots.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})` : null) : ""}
     </div>`;
   }
 
@@ -384,7 +384,7 @@ export function makeRenderers({
     function voteRow(r) {
       const color        = partyColor(r.party_id, electionVal?.id);
       const shareStr     = `${(r.vote_share * 100).toFixed(1)}%`;
-      const countStr     = r.votes != null ? r.votes.toLocaleString() : "—";
+      const countStr     = r.votes != null ? r.votes.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—";
       const pname_r      = r.party_label || getParty(r.party_id).name?.[lang] || r.party_id;
       const candidateName = candidateLabel(r);
       return html`<tr>
@@ -427,13 +427,13 @@ export function makeRenderers({
         ${t("elections.turnout.title")}
       </div>
       ${metricRow("final", t("elections.turnout.pct"), _pct)}
-      ${statRow(t("elections.turnout.voted"),      td.voted      != null ? td.voted.toLocaleString()      : "—")}
-      ${statRow(t("elections.turnout.registered"), td.registered != null ? td.registered.toLocaleString() : "—")}
-      ${(turnoutCfg.has_snapshots || _noonPct) && _noonPct ? metricRow("noon", t("elections.turnout.noon"), _noonPct, td.voted_noon != null ? `(${td.voted_noon.toLocaleString()})` : null) : ""}
-      ${(turnoutCfg.has_snapshots || _fivePct) && _fivePct ? metricRow("5pm",  t("elections.turnout.5pm"),  _fivePct, td.voted_5pm  != null ? `(${td.voted_5pm.toLocaleString()})` : null)  : ""}
-      ${turnoutCfg.has_lists && td.main_list    != null ? statRow(t("elections.turnout.main_list"),    td.main_list.toLocaleString())    : ""}
-      ${turnoutCfg.has_lists && td.special_list != null ? statRow(t("elections.turnout.special_list"), td.special_list.toLocaleString()) : ""}
-      ${_invPct ? metricRow("invalid", t("elections.turnout.invalid_pct"), _invPct, td.invalid_ballots != null ? `(${td.invalid_ballots.toLocaleString()})` : null) : ""}
+      ${statRow(t("elections.turnout.voted"),      td.voted      != null ? td.voted.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")      : "—")}
+      ${statRow(t("elections.turnout.registered"), td.registered != null ? td.registered.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—")}
+      ${(turnoutCfg.has_snapshots || _noonPct) && _noonPct ? metricRow("noon", t("elections.turnout.noon"), _noonPct, td.voted_noon != null ? `(${td.voted_noon.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})` : null) : ""}
+      ${(turnoutCfg.has_snapshots || _fivePct) && _fivePct ? metricRow("5pm",  t("elections.turnout.5pm"),  _fivePct, td.voted_5pm  != null ? `(${td.voted_5pm.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})` : null)  : ""}
+      ${turnoutCfg.has_lists && td.main_list    != null ? statRow(t("elections.turnout.main_list"),    td.main_list.toLocaleString(lang === "ka" ? "ka-GE" : "en-US"))    : ""}
+      ${turnoutCfg.has_lists && td.special_list != null ? statRow(t("elections.turnout.special_list"), td.special_list.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")) : ""}
+      ${_invPct ? metricRow("invalid", t("elections.turnout.invalid_pct"), _invPct, td.invalid_ballots != null ? `(${td.invalid_ballots.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})` : null) : ""}
     ` : "";
 
     return html`<div class="card results-panel" id="results-panel">
@@ -470,34 +470,34 @@ export function makeRenderers({
               <div style="font-size:0.72rem; color:var(--muted); text-transform:uppercase;">${t("elections.turnout.pct")}</div>
             </div>
             <div style="text-align:center;">
-              <div style="font-size:1.1rem; font-weight:700;">${row.voted != null ? row.voted.toLocaleString() : "—"}</div>
+              <div style="font-size:1.1rem; font-weight:700;">${row.voted != null ? row.voted.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—"}</div>
               <div style="font-size:0.72rem; color:var(--muted); text-transform:uppercase;">${t("elections.turnout.voted")}</div>
             </div>
             <div style="text-align:center;">
-              <div style="font-size:1.1rem; font-weight:700; color:var(--muted);">${row.registered != null ? row.registered.toLocaleString() : "—"}</div>
+              <div style="font-size:1.1rem; font-weight:700; color:var(--muted);">${row.registered != null ? row.registered.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—"}</div>
               <div style="font-size:0.72rem; color:var(--muted); text-transform:uppercase;">${t("elections.turnout.registered")}</div>
             </div>
           </div>
           ${(turnoutCfg.has_snapshots || row.voted_noon != null) && row.voted_noon != null ? html`
             <div style="font-size:0.78rem; color:var(--muted); margin-bottom:3px;">
               ${t("elections.turnout.noon")}: <strong>${row.noon_pct != null ? `${(row.noon_pct*100).toFixed(1)}%` : `${(row.voted_noon/row.registered*100).toFixed(1)}%`}</strong>
-              <span style="opacity:0.7;"> (${row.voted_noon.toLocaleString()})</span>
+              <span style="opacity:0.7;"> (${row.voted_noon.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})</span>
             </div>
             <div style="font-size:0.78rem; color:var(--muted); margin-bottom:3px;">
               ${t("elections.turnout.5pm")}: <strong>${row.five_pct != null ? `${(row.five_pct*100).toFixed(1)}%` : `${(row.voted_5pm/row.registered*100).toFixed(1)}%`}</strong>
-              <span style="opacity:0.7;"> (${row.voted_5pm.toLocaleString()})</span>
+              <span style="opacity:0.7;"> (${row.voted_5pm.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})</span>
             </div>` : ""}
           ${row.invalid_ballots != null ? html`
             <div style="font-size:0.78rem; color:var(--muted); margin-bottom:3px;">
               ${t("elections.turnout.invalid_short")}: <strong>${row.invalid_pct != null ? `${(row.invalid_pct*100).toFixed(1)}%` : "—"}</strong>
-              <span style="opacity:0.7;"> (${row.invalid_ballots.toLocaleString()})</span>
+              <span style="opacity:0.7;"> (${row.invalid_ballots.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")})</span>
             </div>` : ""}
           ${turnoutCfg.has_lists && row.main_list != null ? html`
             <div style="font-size:0.78rem; color:var(--muted); margin-bottom:3px;">
-              ${t("elections.turnout.main_list")}: <strong>${row.main_list.toLocaleString()}</strong>
+              ${t("elections.turnout.main_list")}: <strong>${row.main_list.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")}</strong>
             </div>
             <div style="font-size:0.78rem; color:var(--muted);">
-              ${t("elections.turnout.special_list")}: <strong>${row.special_list.toLocaleString()}</strong>
+              ${t("elections.turnout.special_list")}: <strong>${row.special_list.toLocaleString(lang === "ka" ? "ka-GE" : "en-US")}</strong>
             </div>` : ""}
         </div>
       `)}

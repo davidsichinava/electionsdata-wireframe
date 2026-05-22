@@ -55,8 +55,15 @@ function appearanceLabel({e: electionId, v: voteType, d: district}) {
 
 ```js
 // ── Search corpus per cluster: pre-built once, used on every keystroke.
-//    "<first> <last> <party_ka> <party_en> <each-appearance-label>"
-const corpus = index.clusters.map(c => {
+//    Split into two scopes so the user can opt-in via checkboxes:
+//      nameCorpus[i]  — candidate first/last name plus appearance context
+//                       (election name, vote type, district). Appearance
+//                       context stays here because it describes the candidate,
+//                       not the party.
+//      partyCorpus[i] — party labels only (Georgian + English + party_id).
+const nameCorpus = [];
+const partyCorpus = [];
+for (const c of index.clusters) {
   const inlineLabels = inlinePartyLabelMap(c);
   const partyNames = (c.ps || []).map(pid => {
     const p = index.parties?.[pid];
@@ -64,8 +71,9 @@ const corpus = index.clusters.map(c => {
     return `${inline?.k ?? ""} ${inline?.e ?? ""} ${p?.name_ka ?? ""} ${p?.name_en ?? ""} ${pid ?? ""}`;
   }).join(" ");
   const apLabels = (c.a || []).map(appearanceLabel).join(" ");
-  return `${c.f ?? ""} ${c.l ?? ""} ${partyNames} ${apLabels}`.toLowerCase();
-});
+  nameCorpus.push(`${c.f ?? ""} ${c.l ?? ""} ${apLabels}`.toLowerCase());
+  partyCorpus.push(partyNames.toLowerCase());
+}
 ```
 
 ```js
@@ -77,6 +85,10 @@ const corpus = index.clusters.map(c => {
 const stateWidget = (() => {
   const el = document.createElement("div");
   let initialQuery = "";
+  // Default search scope is "candidate name only". When the page is opened
+  // via ?party=<id> from the parties page, also enable the "party" scope so
+  // the pre-filled query (a party display name) matches.
+  let initialScopes = new Set(["name"]);
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);
     const partyId = params.get("party");
@@ -84,9 +96,10 @@ const stateWidget = (() => {
       const p = index.parties?.[partyId];
       if (p) initialQuery = (lang === "ka" ? (p.name_ka ?? p.name_en) : (p.name_en ?? p.name_ka)) ?? partyId;
       else initialQuery = partyId; // fall through: the party_id itself is in the corpus
+      initialScopes = new Set(["name", "party"]);
     }
   }
-  el.value = { query: initialQuery, page: 1, expanded: new Set() };
+  el.value = { query: initialQuery, page: 1, expanded: new Set(), scopes: initialScopes, exact: false };
   function emit(next) {
     el.value = next;
     el.dispatchEvent(new Event("input"));
@@ -98,6 +111,12 @@ const stateWidget = (() => {
     if (next.has(cid)) next.delete(cid); else next.add(cid);
     emit({ ...el.value, expanded: next });
   };
+  el.setScope = (scope, on) => {
+    const next = new Set(el.value.scopes);
+    if (on) next.add(scope); else next.delete(scope);
+    emit({ ...el.value, scopes: next, page: 1 });
+  };
+  el.setExact = on => emit({ ...el.value, exact: !!on, page: 1 });
   return el;
 })();
 const state = Generators.input(stateWidget);
@@ -115,6 +134,40 @@ const searchInput = Inputs.text({
 });
 searchInput.style.width = "100%";
 searchInput.addEventListener("input", () => stateWidget.setQuery(searchInput.value));
+
+// ── Scope checkboxes — drive the search corpus selection plus an
+//    "exact match" toggle. Each is a plain <label><input type=checkbox>…</label>.
+const scopeBox = (key, labelKey) => {
+  const wrap = document.createElement("label");
+  wrap.className = "cand-scope";
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.checked = stateWidget.value.scopes.has(key);
+  cb.addEventListener("change", () => stateWidget.setScope(key, cb.checked));
+  const txt = document.createElement("span");
+  txt.textContent = t(labelKey);
+  wrap.append(cb, txt);
+  return wrap;
+};
+// Separate "exact match" checkbox: when ON, the search treats the query as
+// one verbatim phrase instead of splitting it into space-separated terms.
+const exactBox = (() => {
+  const wrap = document.createElement("label");
+  wrap.className = "cand-scope";
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.checked = !!stateWidget.value.exact;
+  cb.addEventListener("change", () => stateWidget.setExact(cb.checked));
+  const txt = document.createElement("span");
+  txt.textContent = t("candidates.scope.exact");
+  wrap.append(cb, txt);
+  return wrap;
+})();
+const scopeBoxes = html`<div class="cand-scopes">
+  ${scopeBox("name",  "candidates.scope.candidate")}
+  ${scopeBox("party", "candidates.scope.party")}
+  ${exactBox}
+</div>`;
 ```
 
 ```js
@@ -158,6 +211,26 @@ const frame = html`
     color: var(--muted);
     font-style: italic;
     opacity: 1;
+  }
+  /* Scope checkbox row beneath the search input. */
+  .cand-scopes {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin: 0.4rem 0 0.6rem;
+  }
+  .cand-scope {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--muted);
+    font-size: 0.86rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  .cand-scope input[type="checkbox"] {
+    accent-color: var(--red, #CC1720);
+    cursor: pointer;
   }
   /* Grid-backed tables: one shared column template for header and body rows.
      This avoids browser/Framework table responsiveness splitting tbody from
@@ -324,6 +397,7 @@ const frame = html`
   <div class="cand-grid">
     <div class="card">
       <div class="input-group">${searchInput}</div>
+      ${scopeBoxes}
       ${resultsPanel}
     </div>
   </div>
@@ -464,16 +538,26 @@ function renderAppearancesTable(cluster, appearances) {
 {
   const PAGE_SIZE = 25;
   const queryRaw   = (state.query ?? "").toString().toLowerCase().replace(/\s+/g, " ").trim();
-  const queryTerms = queryRaw.split(" ").filter(Boolean);
+  // In "exact" mode the entire trimmed query is one phrase; otherwise we
+  // split on whitespace and require every term to appear (AND).
+  const exact      = !!state.exact;
+  const queryTerms = exact
+    ? (queryRaw ? [queryRaw] : [])
+    : queryRaw.split(" ").filter(Boolean);
   const pageNum    = state.page || 1;
 
+  const scopes = state.scopes || new Set(["name"]);
   const matches = (() => {
     if (!queryTerms.length) return [];
+    if (!scopes.size) return [];
     const out = [];
-    for (let i = 0; i < corpus.length; i++) {
+    for (let i = 0; i < nameCorpus.length; i++) {
+      // Per-cluster haystack: union of the active scope corpuses.
+      const haystack = (scopes.has("name")  ? nameCorpus[i]  : "") +
+                       (scopes.has("party") ? (" " + partyCorpus[i]) : "");
       let ok = true;
       for (const term of queryTerms) {
-        if (!corpus[i].includes(term)) { ok = false; break; }
+        if (!haystack.includes(term)) { ok = false; break; }
       }
       if (ok) out.push(index.clusters[i]);
     }

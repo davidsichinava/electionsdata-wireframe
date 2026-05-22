@@ -1,0 +1,6 @@
+source,election_id,election_year,candidate_id,candidate_name_ka,party_field,lineage,lineage_member_years,issue,suggestion
+election_yaml_candidate,pres_2013,2013,nino_burjanadze,ნინო ბურჯანაძე,burjanadze_democratic,burjanadze,2014,lineage_has_no_member_for_election_year,"add burjanadze_2013 to parties.yml, OR add lineage: burjanadze to the candidate's per-candidate id"
+election_yaml_candidate,pres_2013,2013,giorgi_targamadze,გიორგი თარგამაძე,christian_democratic_movement,christian_democratic_movement,2008;2010;2012,lineage_has_no_member_for_election_year,"add christian_democratic_movement_2013 to parties.yml, OR add lineage: christian_democratic_movement to the candidate's per-candidate id"
+election_yaml_candidate,pres_2008,2008,saakashvili,მიხეილ სააკაშვილი,unm,unm,,lineage_has_no_member_for_election_year,"add unm_2008 to parties.yml, OR add lineage: unm to the candidate's per-candidate id"
+election_yaml_candidate,pres_2013,2013,bakradze,დავით ბაქრაძე,unm,unm,,lineage_has_no_member_for_election_year,"add unm_2013 to parties.yml, OR add lineage: unm to the candidate's per-candidate id"
+election_yaml_candidate,pres_2018,2018,vashadze,გრიგოლ ვაშაძე,unm,unm,,lineage_has_no_member_for_election_year,"add unm_2018 to parties.yml, OR add lineage: unm to the candidate's per-candidate id"
