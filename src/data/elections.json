@@ -111,8 +111,7 @@
       "council_smd_results": "data/results/local2025_council_smd.csv",
       "council_smd_precinct_results": "data/results/local2025_council_smd_precincts.csv",
       "council_pr_results": "data/results/local2025_pr.csv",
-      "council_pr_precinct_results": "data/results/local2025_pr_precincts.csv",
-      "candidates": "data/config/candidates/local/local_2025.yml"
+      "council_pr_precinct_results": "data/results/local2025_pr_precincts.csv"
     },
     "turnout": {
       "available": true,
@@ -178,7 +177,7 @@
     "system": {
       "pr": {
         "enabled": true,
-        "seats": 150,
+        "seats": 21,
         "threshold_pct": 5,
         "method": "dhondt",
         "shape_file": "data/shp/adj2024_pr.geojson",
@@ -226,7 +225,7 @@
         "id": "unity",
         "alias": {
           "en": "Unity — National Movement",
-          "ka": "ერთობა — ნაციონალური მოძრაობა"
+          "ka": "ერთიანობა-ნაციონალური მოძრაობა"
         },
         "color": "#d13529",
         "threshold_status": "passed",
@@ -252,7 +251,7 @@
         },
         "color": "#4b2775",
         "threshold_status": "passed",
-        "seats_pr": 1,
+        "seats_pr": 2,
         "seats_smd": 0
       },
       {
@@ -348,7 +347,6 @@
       "pr_precinct_results": "data/results/adj2024_pr_precincts.csv",
       "smd_results": null,
       "smd_precinct_results": null,
-      "candidates": null,
       "cartogram": null
     },
     "turnout": {
@@ -424,7 +422,7 @@
         "id": "unity",
         "alias": {
           "en": "Unity — National Movement",
-          "ka": "ერთობა — ნაციონალური მოძრაობა"
+          "ka": "ერთიანობა-ნაციონალური მოძრაობა"
         },
         "color": "#d13529",
         "threshold_status": "passed",
@@ -609,7 +607,6 @@
       "pr_results": "data/results/parl2024_pr.csv",
       "pr_precinct_results": "data/results/parl2024_pr_precincts.csv",
       "smd_results": null,
-      "candidates": "data/candidates/parl2024.csv",
       "cartogram": "data/shp/parl2024_cartogram.geojson"
     },
     "turnout": {
@@ -907,8 +904,7 @@
       "council_smd_results": "data/results/local2021_council_smd.csv",
       "council_smd_precinct_results": "data/results/local2021_council_smd_precincts.csv",
       "council_pr_results": "data/results/local2021_pr.csv",
-      "council_pr_precinct_results": "data/results/local2021_pr_precincts.csv",
-      "candidates": "data/config/candidates/local/local_2021.yml"
+      "council_pr_precinct_results": "data/results/local2021_pr_precincts.csv"
     },
     "turnout": {
       "available": true,
@@ -1122,9 +1118,6 @@
       "pr_precinct_results": "data/results/adj2020_pr_precincts.csv",
       "smd_results": "data/results/adj2020_smd.csv",
       "smd_precinct_results": "data/results/adj2020_smd_precincts.csv",
-      "candidates": "data/candidates/adj2020_smd_candidates.csv",
-      "party_lists": "data/candidates/adj2020_party_lists.csv",
-      "elected": "data/candidates/adj2020_elected.csv",
       "cartogram": null
     },
     "turnout": {
@@ -1233,8 +1226,8 @@
       {
         "id": "lelo",
         "alias": {
-          "en": "Lelo — Mamuka Khazaradze",
-          "ka": "ლელო — მამუკა ხაზარაძე"
+          "en": "Lelo for Georgia",
+          "ka": "ლელო საქართველოსთვის"
         },
         "color": "#00695C",
         "threshold_status": "passed",
@@ -1346,6 +1339,10 @@
       },
       {
         "id": "social_democrats_2020",
+        "alias": {
+          "en": "Social Democrats for Georgia's Development",
+          "ka": "სოციალ-დემოკრატები საქარველოს განვითარებისათვის"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
@@ -1436,6 +1433,16 @@
       },
       {
         "id": "zviads_way",
+        "threshold_status": "failed",
+        "seats_pr": 0,
+        "seats_smd": 0
+      },
+      {
+        "id": "khma_erisa_2020",
+        "alias": {
+          "en": "Union for Restoration of Justice — Voice of the Nation",
+          "ka": "სამართლიანობის აღდგენის კავშირი ხმა ერისა - უფალია ჩვენი სიმართლე"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
@@ -1532,6 +1539,10 @@
       },
       {
         "id": "traditionalists",
+        "alias": {
+          "en": "Union of Georgian Traditionalists",
+          "ka": "ქართველ ტრადიციონალისტთა კავშირი"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
@@ -1566,7 +1577,6 @@
       "pr_precinct_results": "data/results/parl2020_pr_precincts.csv",
       "smd_results": "data/results/parl2020_smd.csv",
       "smd_precinct_results": "data/results/parl2020_smd_precincts.csv",
-      "candidates": null,
       "cartogram": "data/shp/parl2020_cartogram.geojson"
     },
     "turnout": {
@@ -2151,6 +2161,46 @@
       {
         "id": "georgian_march",
         "threshold_status": "failed"
+      },
+      {
+        "id": "progressive_democratic_2017",
+        "threshold_status": "failed",
+        "alias": {
+          "en": "Progressive-Democratic Movement",
+          "ka": "პროგრესულ-დემოკრატიული მოძრაობა"
+        }
+      },
+      {
+        "id": "peoples_unity_2017",
+        "threshold_status": "failed",
+        "alias": {
+          "en": "People's — People's Unity",
+          "ka": "სახალხო-ხალხის ერთსულოვნება"
+        }
+      },
+      {
+        "id": "construction_movement_2017",
+        "threshold_status": "failed",
+        "alias": {
+          "en": "Construction Movement",
+          "ka": "შენების მოძრაობა"
+        }
+      },
+      {
+        "id": "new_rights_2017",
+        "threshold_status": "failed",
+        "alias": {
+          "en": "New Rights",
+          "ka": "ახალი მემარჯვენეები"
+        }
+      },
+      {
+        "id": "united_democratic_2017",
+        "threshold_status": "failed",
+        "alias": {
+          "en": "United Democratic Movement",
+          "ka": "გაერთიანებული დემოკრატიული მოძრაობა"
+        }
       }
     ],
     "sources": [
@@ -2172,8 +2222,7 @@
       "council_smd_results": "data/results/local2017_council_smd.csv",
       "council_smd_precinct_results": "data/results/local2017_council_smd_precincts.csv",
       "council_pr_results": "data/results/local2017_pr.csv",
-      "council_pr_precinct_results": "data/results/local2017_pr_precincts.csv",
-      "candidates": "data/config/candidates/local/local_2017.yml"
+      "council_pr_precinct_results": "data/results/local2017_pr_precincts.csv"
     },
     "turnout": {
       "available": true,
@@ -2350,9 +2399,6 @@
       "pr_precinct_results": "data/results/adj2016_pr_precincts.csv",
       "smd_results": "data/results/adj2016_smd.csv",
       "smd_precinct_results": "data/results/adj2016_smd_precincts.csv",
-      "candidates": "data/candidates/adj2016_smd_candidates.csv",
-      "party_lists": "data/candidates/adj2016_party_lists.csv",
-      "elected": "data/candidates/adj2016_elected.csv",
       "cartogram": null
     },
     "turnout": {
@@ -2525,12 +2571,20 @@
       },
       {
         "id": "burjanadze_democratic",
+        "alias": {
+          "en": "Nino Burjanadze — Democratic Movement",
+          "ka": "ნინო ბურჯანაძე - დემოკრატიული მოძრაობა"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "burchuladze",
+        "alias": {
+          "en": "Paata Burchuladze — State for the People",
+          "ka": "პაატა ბურჭულაძე - სახელმწიფო ხალხისთვის"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
@@ -2548,108 +2602,180 @@
       },
       {
         "id": "republicans_2016",
+        "alias": {
+          "en": "Usupashvili — Republicans",
+          "ka": "უსუფაშვილი - რესპუბლიკელები"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "national_forum",
+        "alias": {
+          "en": "National Forum",
+          "ka": "ეროვნული ფორუმი"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "industry_sakartvelo",
+        "alias": {
+          "en": "Topadze — Industrialists, Our Homeland",
+          "ka": "თოფაძე - მრეწველები, ჩვენი სამშობლო"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 1
       },
       {
         "id": "georgian_idea",
+        "alias": {
+          "en": "Georgian Idea",
+          "ka": "ქართული იდეა"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "peace_georgia_2016",
+        "alias": {
+          "en": "David Tevzadze — For Peace in Georgia",
+          "ka": "დავით თევზაძე - საქართველოს მშვიდობისათვის"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "georgian_group",
+        "alias": {
+          "en": "Jondi Baghaturia — Georgian Group",
+          "ka": "ჯონდი ბაღათურია - ქართული დასი"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "chvenni_peoples",
+        "alias": {
+          "en": "Chvenebi — People's Party",
+          "ka": "ჩვენები - სახალხო პარტია"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "zviads_way",
+        "alias": {
+          "en": "Zviad's Path — In the Name of the Lord",
+          "ka": "ზვიადის გზა - უფლის სახელით"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "mechiauri_united",
+        "alias": {
+          "en": "Tamaz Mechiauri — United for Georgia",
+          "ka": "თამაზ მეჭიაური ერთიანი საქართველოსთვის"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "progressive_democratic_2016",
+        "alias": {
+          "en": "Progressive-Democratic Movement",
+          "ka": "პროგრესულ-დემოკრატიული მოძრაობა"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "peoples_power_2016",
+        "alias": {
+          "en": "People's Power",
+          "ka": "სახალხო ხელისუფლება"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "communist_stalinist",
+        "alias": {
+          "en": "Communist Party — Stalinists (Ivane Tsiklauri)",
+          "ka": "საქართველოს კომუნისტური პარტია - სტალინელები (ივანე წიკლაური)"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "workers_socialist",
+        "alias": {
+          "en": "Workers' Socialist Party",
+          "ka": "მშრომელთა სოციალისტური პარტია"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "united_communist_2016",
+        "alias": {
+          "en": "United Communist Party of Georgia",
+          "ka": "საქართველოს ერთიანი კომუნისტური პარტია"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "georgia_2016",
+        "alias": {
+          "en": "Georgia",
+          "ka": "საქართველო"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "kostava_society",
+        "alias": {
+          "en": "Merab Kostava Society",
+          "ka": "მერაბ კოსტავას საზოგადოება"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "left_alliance_2016",
+        "alias": {
+          "en": "Left Alliance",
+          "ka": "კახა ძაგანია, სოსო შატბერაშვილი, პაატა ჯიბლაძე, არჩილ ბენიძე - მემარცხენე ალიანსი"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
       },
       {
         "id": "our_georgia_2016",
+        "alias": {
+          "en": "Our Georgia (Badri Patarkatsishvili Campaign HQ)",
+          "ka": "ჩვენი საქართველო (ბადრი პატარკაციშვილის საარჩევნო შტაბი)"
+        },
         "threshold_status": "failed",
         "seats_pr": 0,
         "seats_smd": 0
@@ -2917,7 +3043,6 @@
       "pr_precinct_results": "data/results/parl2016_pr_precincts.csv",
       "smd_results": "data/results/parl2016_smd.csv",
       "smd_precinct_results": "data/results/parl2016_smd_precincts.csv",
-      "candidates": null,
       "cartogram": null
     },
     "turnout": {
@@ -3164,51 +3289,6 @@
         }
       },
       {
-        "id": "peoples_authority_2016",
-        "threshold_status": "failed",
-        "color": "#7CB342",
-        "alias": {
-          "en": "People's Authority",
-          "ka": "სახალხო ხელისუფლება"
-        }
-      },
-      {
-        "id": "free_democrats",
-        "threshold_status": "failed",
-        "color": "#1565C0",
-        "alias": {
-          "en": "Free Democrats",
-          "ka": "თავისუფალი დემოკრატები"
-        }
-      },
-      {
-        "id": "burchuladze",
-        "threshold_status": "failed",
-        "color": "#7E57C2",
-        "alias": {
-          "en": "Paata Burchuladze - State for the People",
-          "ka": "პაატა ბურჭულაძე - სახელმწიფო ხალხისთვის"
-        }
-      },
-      {
-        "id": "republicans_2016",
-        "threshold_status": "failed",
-        "color": "#26A69A",
-        "alias": {
-          "en": "Republicans",
-          "ka": "უსუფაშვილი - რესპუბლიკელები"
-        }
-      },
-      {
-        "id": "national_forum",
-        "threshold_status": "failed",
-        "color": "#8D6E63",
-        "alias": {
-          "en": "National Forum",
-          "ka": "ეროვნული ფორუმი"
-        }
-      },
-      {
         "id": "nonparliamentary_opposition_2014",
         "threshold_status": "failed",
         "color": "#00897B",
@@ -3403,12 +3483,7 @@
       "council_smd_results": "data/results/local2014_council_smd.csv",
       "council_smd_precinct_results": "data/results/local2014_council_smd_precincts.csv",
       "council_pr_results": "data/results/local2014_pr_selfgov.csv",
-      "council_pr_precinct_results": "data/results/local2014_pr_precincts.csv",
-      "candidates": "data/config/candidates/local/local_2014.yml",
-      "party_lists": "data/candidates/local2014_party_lists.csv",
-      "mayor_candidates": "data/candidates/local2014_mayor_gamgebeli_candidates.csv",
-      "smd_candidates": "data/candidates/local2014_smd_candidates.csv",
-      "elected": "data/candidates/local2014_elected.csv"
+      "council_pr_precinct_results": "data/results/local2014_pr_precincts.csv"
     },
     "turnout": {
       "available": true,
@@ -3504,7 +3579,7 @@
           "en": "Giorgi Targamadze",
           "ka": "გიორგი თარგამაძე"
         },
-        "party": "independent",
+        "party": "christian_democratic_movement",
         "color": "#6D4C41",
         "threshold_status": "passed"
       },
@@ -3701,7 +3776,6 @@
     "files": {
       "pr_results": "data/results/pres2013.csv",
       "pr_precinct_results": "data/results/pres2013_precincts.csv",
-      "candidates": "data/candidates/pres2013_candidates.csv",
       "cartogram": null
     },
     "turnout": {
@@ -4084,9 +4158,6 @@
       "pr_precinct_results": "data/results/parl2012_pr_precincts.csv",
       "smd_results": "data/results/parl2012_smd.csv",
       "smd_precinct_results": "data/results/parl2012_smd_precincts.csv",
-      "party_lists": "data/candidates/parl2012_party_lists.csv",
-      "candidates": "data/candidates/parl2012_smd_candidates.csv",
-      "elected": "data/candidates/parl2012_elected.csv",
       "annulled_precincts": "data/candidates/parl2012_annulled_precincts.csv",
       "cartogram": null
     },
@@ -4338,9 +4409,6 @@
       "council_smd_precinct_results": "data/results/local2010_council_smd_precincts.csv",
       "council_pr_results": "data/results/local2010_pr.csv",
       "council_pr_precinct_results": "data/results/local2010_pr_precincts.csv",
-      "candidates": "data/config/candidates/local/local_2010.yml",
-      "mayor_candidates": "data/candidates/local2010_mayor_candidates.csv",
-      "smd_candidates": "data/candidates/local2010_smd_candidates.csv",
       "cartogram": null
     },
     "turnout": {
@@ -4504,8 +4572,6 @@
       "pr_precinct_results": "data/results/adj2008_pr_precincts.csv",
       "smd_results": "data/results/adj2008_smd.csv",
       "smd_precinct_results": "data/results/adj2008_smd_precincts.csv",
-      "candidates": "data/candidates/adj2008_smd_candidates.csv",
-      "party_lists": "data/candidates/adj2008_party_lists.csv",
       "cartogram": null
     },
     "turnout": {
@@ -4666,17 +4732,6 @@
         "seats_smd": 0
       },
       {
-        "id": "christian_democrats_2008",
-        "alias": {
-          "en": "Giorgi Targamadze - Christian Democrats",
-          "ka": "გიორგი თარგამაძე - ქრისტიან-დემოკრატები"
-        },
-        "color": "#6D4C41",
-        "threshold_status": "passed",
-        "seats_pr": 6,
-        "seats_smd": 0
-      },
-      {
         "id": "traditionalists",
         "alias": {
           "en": "Traditionalists - Our Georgia and Women's Party",
@@ -4705,9 +4760,6 @@
       "pr_precinct_results": "data/results/parl2008_pr_precincts.csv",
       "smd_results": "data/results/parl2008_smd.csv",
       "smd_precinct_results": "data/results/parl2008_smd_precincts.csv",
-      "party_lists": "data/candidates/parl2008_party_lists.csv",
-      "candidates": "data/candidates/parl2008_smd_candidates.csv",
-      "elected": "data/candidates/parl2008_elected.csv",
       "annulled_precincts": "data/candidates/parl2008_annulled_precincts.csv",
       "cartogram": null
     },
@@ -4853,7 +4905,6 @@
     "files": {
       "pr_results": "data/results/pres2008.csv",
       "pr_precinct_results": "data/results/pres2008_precincts.csv",
-      "candidates": "data/candidates/pres2008_candidates.csv",
       "cartogram": null
     },
     "turnout": {
@@ -5064,7 +5115,6 @@
     "files": {
       "pr_results": "data/results/parl1919_pr.csv",
       "smd_results": null,
-      "candidates": "data/candidates/parl1919.csv",
       "cartogram": "data/shp/parl1919_cartogram.geojson"
     },
     "turnout": {

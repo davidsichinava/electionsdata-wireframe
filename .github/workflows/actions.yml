@@ -118,6 +118,12 @@ jobs:
       - name: Build pres2013 download bundle
         run: node src/loaders/downloads/process_pres2013_download.js
 
+      - name: Build pres2018 download bundle
+        run: node src/loaders/downloads/process_pres2018_download.js
+
+      - name: Build pres2024_indirect download bundle
+        run: node src/loaders/downloads/process_pres2024_indirect_download.js
+
       - name: Build parl2008 download bundle
         run: node src/loaders/downloads/process_parl2008_download.js
 
@@ -127,8 +133,17 @@ jobs:
       - name: Build parl2016 download bundle
         run: node src/loaders/downloads/process_parl2016_download.js
 
+      - name: Build parl2020 download bundle
+        run: node src/loaders/downloads/process_parl2020_download.js
+
       - name: Build parl2024 download bundle
         run: node src/loaders/downloads/process_parl2024_download.js
+
+      - name: Build local2025 download bundle
+        run: node src/loaders/downloads/process_local2025_download.js
+
+      - name: Build local2021 download bundle
+        run: node src/loaders/downloads/process_local2021_download.js
 
       - name: Build local2017 download bundle
         run: node src/loaders/downloads/process_local2017_download.js
@@ -138,6 +153,9 @@ jobs:
 
       - name: Build local2010 download bundle
         run: node src/loaders/downloads/process_local2010_download.js
+
+      - name: Build adj2024 download bundle
+        run: node src/loaders/downloads/process_adj2024_download.js
 
       - name: Build adj2020 download bundle
         run: node src/loaders/downloads/process_adj2020_download.js

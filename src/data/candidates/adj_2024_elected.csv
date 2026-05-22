@@ -1,0 +1,22 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,2,,დავით,გაბაიძე,დავით გაბაიძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,3,,გოგი,ფუტკარაძე,გოგი ფუტკარაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,4,,ტიტე,აროშიძე,ტიტე აროშიძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,6,,რამაზ,ჯინჭარაძე,რამაზ ჯინჭარაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,7,,ცოტნე,ანანიძე,ცოტნე ანანიძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,8,,მინდია,დიასამიძე,მინდია დიასამიძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,9,,ვახტანგ,ბერიძე,ვახტანგ ბერიძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,10,,მამუკა,თურმანიძე,მამუკა თურმანიძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,11,,ფრიდონ,ფუტკარაძე,ფრიდონ ფუტკარაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,12,,დავით,ბაციკაძე,დავით ბაციკაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,13,,მარინე,გვიანიძე,მარინე გვიანიძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,14,,დავით,თედორაძე,დავით თედორაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gd,„ქართული ოცნება“,41,,,15,,ფატი,ხალვაში,ფატი ხალვაში,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,unity,„ერთიანობა-ნაციონალური მოძრაობა“,5,,,1,,ელგუჯა,ბაგრატიონი,ელგუჯა ბაგრატიონი,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,unity,„ერთიანობა-ნაციონალური მოძრაობა“,5,,,2,,მიშა,ბოლქვაძე,მიშა ბოლქვაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,unity,„ერთიანობა-ნაციონალური მოძრაობა“,5,,,3,,ედიშერ,ჟღენტი,ედიშერ ჟღენტი,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,unity,„ერთიანობა-ნაციონალური მოძრაობა“,5,,,4,,ლია,ჯაყელი,ლია ჯაყელი,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gakharia,„გახარია საქართველოსთვის“,25,,,1,,გოჩა,გუგუნავა,გოჩა გუგუნავა,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,gakharia,„გახარია საქართველოსთვის“,25,,,2,,ირაკლი,ბოლქვაძე,ირაკლი ბოლქვაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,coalition_for_change,„კოალიცია ცვლილებისთვის გვარამია მელია გირჩი დროა“,4,,,1,,მირდატ,ქამადაძე,მირდატ ქამადაძე,,TRUE,adjara_2024_party_lists_unified.xlsx
+adj_2024,__main__,pr,strong_georgia,"„ძლიერი საქართველო - ლელო, ხალხისთვის, თავისუფლებისთვის!“",9,,,1,,გენადი,თებიძე,გენადი თებიძე,,TRUE,adjara_2024_party_lists_unified.xlsx

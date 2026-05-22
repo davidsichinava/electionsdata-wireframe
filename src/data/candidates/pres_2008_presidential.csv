@@ -1,8 +1,8 @@
 election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
-pres_2008,__main__,presidential,gachechiladze,გაერთიანებული ოპოზიცია,1,,,,1,ლევან,გაჩეჩილაძე,ლევან გაჩეჩილაძე,,,
-pres_2008,__main__,presidential,patarkatsishvili,საინიციატივო ჯგუფი,2,,,,2,არკადი,პატარკაციშვილი,არკადი პატარკაციშვილი,,,
-pres_2008,__main__,presidential,gamkrelidze,ახალი მემარჯვენეები,3,,,,3,დავით,გამყრელიძე,დავით გამყრელიძე,,,
-pres_2008,__main__,presidential,natelashvili,ლეიბორისტული პარტია,4,,,,4,შალვა,ნათელაშვილი,შალვა ნათელაშვილი,,,
-pres_2008,__main__,presidential,saakashvili,ერთიანი ნაციონალური მოძრაობა,5,,,,5,მიხეილ,სააკაშვილი,მიხეილ სააკაშვილი,,,
-pres_2008,__main__,presidential,maisashvili,საინიციატივო ჯგუფი,6,,,,6,გიორგი,მაისაშვილი,გიორგი მაისაშვილი,,,
-pres_2008,__main__,presidential,sarishvili_chanturia,საინიციატივო ჯგუფი,7,,,,7,ირინა,სარიშვილი-ჭანტურია,ირინა სარიშვილი-ჭანტურია,,,
+pres_2008,__main__,presidential,gachechiladze,გაერთიანებული ოპოზიცია,1,,,,1,ლევან,გაჩეჩილაძე,ლევან გაჩეჩილაძე,,FALSE,presidential_candidates.xlsx
+pres_2008,__main__,presidential,patarkatsishvili,საინიციატივო ჯგუფი,2,,,,2,არკადი,პატარკაციშვილი,არკადი პატარკაციშვილი,,FALSE,presidential_candidates.xlsx
+pres_2008,__main__,presidential,gamkrelidze,ახალი მემარჯვენეები,3,,,,3,დავით,გამყრელიძე,დავით გამყრელიძე,,FALSE,presidential_candidates.xlsx
+pres_2008,__main__,presidential,natelashvili,ლეიბორისტული პარტია,4,,,,4,შალვა,ნათელაშვილი,შალვა ნათელაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2008,__main__,presidential,saakashvili,ერთიანი ნაციონალური მოძრაობა,5,,,,5,მიხეილ,სააკაშვილი,მიხეილ სააკაშვილი,,TRUE,presidential_candidates.xlsx
+pres_2008,__main__,presidential,maisashvili,საინიციატივო ჯგუფი,6,,,,6,გიორგი,მაისაშვილი,გიორგი მაისაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2008,__main__,presidential,sarishvili_chanturia,საინიციატივო ჯგუფი,7,,,,7,ირინა,სარიშვილი-ჭანტურია,ირინა სარიშვილი-ჭანტურია,,FALSE,presidential_candidates.xlsx

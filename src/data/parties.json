@@ -15,7 +15,8 @@
       "ka": "ევროპელი დემოკრატები"
     },
     "color": "#0288D1",
-    "type": "party"
+    "type": "party",
+    "lineage": "european_democrats"
   },
   {
     "id": "patriots",
@@ -24,7 +25,8 @@
       "ka": "საქართველოს პატრიოტთა ალიანსი"
     },
     "color": "#880E4F",
-    "type": "party"
+    "type": "party",
+    "category": "party"
   },
   {
     "id": "our_georgia",
@@ -114,7 +116,8 @@
       "ka": "ქართული ოცნება"
     },
     "color": "#1565C0",
-    "type": "party"
+    "type": "party",
+    "category": "party"
   },
   {
     "id": "unm",
@@ -123,7 +126,9 @@
       "ka": "ერთიანი ნაციონალური მოძრაობა"
     },
     "color": "#C62828",
-    "type": "party"
+    "type": "party",
+    "category": "party",
+    "lineage": "unm"
   },
   {
     "id": "coalition_for_change",
@@ -141,7 +146,8 @@
       "ka": "ერთობა — ნაციონალური მოძრაობა"
     },
     "color": "#B71C1C",
-    "type": "bloc"
+    "type": "bloc",
+    "lineage": "unm"
   },
   {
     "id": "strong_georgia",
@@ -159,7 +165,8 @@
       "ka": "ევროპული საქართველო"
     },
     "color": "#0288D1",
-    "type": "party"
+    "type": "party",
+    "category": "party"
   },
   {
     "id": "girchi",
@@ -168,16 +175,18 @@
       "ka": "გირჩი"
     },
     "color": "#F57F17",
-    "type": "party"
+    "type": "party",
+    "category": "party"
   },
   {
     "id": "labour",
     "name": {
       "en": "Labour Party",
-      "ka": "შრომის პარტია"
+      "ka": "ლეიბორისტული პარტია"
     },
     "color": "#D32F2F",
-    "type": "party"
+    "type": "party",
+    "category": "party"
   },
   {
     "id": "mkhedrioni_1992",
@@ -186,7 +195,8 @@
       "ka": "მხედრიონი / 11 ოქტომბრის ბლოკი"
     },
     "color": "#4E342E",
-    "type": "bloc"
+    "type": "bloc",
+    "category": "historic"
   },
   {
     "id": "peace_1992",
@@ -195,7 +205,8 @@
       "ka": "მშვიდობის ბლოკი"
     },
     "color": "#37474F",
-    "type": "bloc"
+    "type": "bloc",
+    "category": "historic"
   },
   {
     "id": "other_1992",
@@ -204,7 +215,8 @@
       "ka": "სხვა (1992)"
     },
     "color": "#9E9E9E",
-    "type": "other"
+    "type": "other",
+    "category": "historic"
   },
   {
     "id": "social_democrats_1919",
@@ -213,7 +225,8 @@
       "ka": "საქართველოს სოციალ-დემოკრატიული მუშათა პარტია"
     },
     "color": "#C62828",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "national_democrats_1919",
@@ -222,7 +235,8 @@
       "ka": "საქართველოს ეროვნულ-დემოკრატიული პარტია"
     },
     "color": "#1B5E20",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "sr_1919",
@@ -231,7 +245,8 @@
       "ka": "საქართველოს სოციალისტ-რევოლუციონერთა პარტია"
     },
     "color": "#377eb8",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "dashnaks",
@@ -240,7 +255,8 @@
       "ka": "„დაშნაკცუთიუნ\""
     },
     "color": "#984ea3",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "federalists_1919",
@@ -249,7 +265,8 @@
       "ka": "საქართველოს სოციალისტ-ფედერალისტთა პარტია"
     },
     "color": "#00838F",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "muslim_1919",
@@ -258,7 +275,8 @@
       "ka": "მუსლიმთა ეროვნული საბჭო"
     },
     "color": "#2E7D32",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "raddem_1919",
@@ -267,7 +285,8 @@
       "ka": "საქართველოს რადიკალ-დემოკრატთა პარტია"
     },
     "color": "#F9A825",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "natparty_1919",
@@ -276,7 +295,8 @@
       "ka": "საქართველოს ეროვნული პარტია"
     },
     "color": "#4527A0",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "left_federalists_1919",
@@ -285,7 +305,8 @@
       "ka": "მემარცხენე სოციალისტ-ფედერალისტთა მაშვრალთა პარტია"
     },
     "color": "#00695C",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "rustaveli_1919",
@@ -294,7 +315,8 @@
       "ka": "შოთა რუსთაველის ჯგუფი"
     },
     "color": "#6D4C41",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "indie_1919",
@@ -303,7 +325,8 @@
       "ka": "დამოუკიდებელთა (უპარტიო) კავშირი"
     },
     "color": "#546E7A",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "borchalo_1919",
@@ -312,7 +335,8 @@
       "ka": "ბორჩალოს მაზრის მცხოვრებ მუსულმანთა ჯგუფი"
     },
     "color": "#558B2F",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "sdwpr_1919",
@@ -321,7 +345,8 @@
       "ka": "რუსეთის სოციალ-დემოკრატთა მუშათა პარტია"
     },
     "color": "#880E4F",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "aesth_1919",
@@ -330,7 +355,8 @@
       "ka": "ესთეტიური ლიგა პატრიოტებისა"
     },
     "color": "#7B1FA2",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "hellenic_1919",
@@ -339,7 +365,8 @@
       "ka": "საქართველოს ელინთა დემოკრატიული ჯგუფი"
     },
     "color": "#1565C0",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "abkh_1919",
@@ -348,7 +375,8 @@
       "ka": "აფხაზეთის ნაციონალური პარტია"
     },
     "color": "#33691E",
-    "type": "party"
+    "type": "party",
+    "category": "historic"
   },
   {
     "id": "mamuli_ena",
@@ -375,7 +403,8 @@
       "ka": "მწვანეთა პარტია"
     },
     "color": "#388E3C",
-    "type": "party"
+    "type": "party",
+    "lineage": "greens"
   },
   {
     "id": "peoples_power",
@@ -429,7 +458,8 @@
       "ka": "მესამე ძალა-სტრატეგია აღმაშენებელი"
     },
     "color": "#37474F",
-    "type": "party"
+    "type": "party",
+    "lineage": "third_force"
   },
   {
     "id": "early_elections_coalition",
@@ -474,7 +504,8 @@
       "ka": "ქართული დასი"
     },
     "color": "#33691E",
-    "type": "party"
+    "type": "party",
+    "lineage": "georgian_group"
   },
   {
     "id": "european_socialists",
@@ -555,7 +586,8 @@
       "ka": "მეჭიაური გაერთიანებული"
     },
     "color": "#827717",
-    "type": "party"
+    "type": "party",
+    "lineage": "mechiauri"
   },
   {
     "id": "freedom_gamsakhurdia",
@@ -645,7 +677,8 @@
       "ka": "ბურჯანაძე-დემოკრატები"
     },
     "color": "#5C6BC0",
-    "type": "party"
+    "type": "party",
+    "lineage": "burjanadze"
   },
   {
     "id": "republicans_2016",
@@ -654,7 +687,8 @@
       "ka": "საქართველოს რესპუბლიკური პარტია"
     },
     "color": "#FF7043",
-    "type": "party"
+    "type": "party",
+    "lineage": "republicans"
   },
   {
     "id": "peoples_power_2016",
@@ -753,7 +787,8 @@
       "ka": "გიორგი ვაშაძე — ერთობა ახალი საქართველო"
     },
     "color": "#0288D1",
-    "type": "bloc"
+    "type": "bloc",
+    "lineage": "third_force"
   },
   {
     "id": "smd_only_42",
@@ -798,7 +833,8 @@
       "ka": "ნინო ბურჯანაძე — ერთიანი საქართველო — დემოკრატიული მოძრაობა"
     },
     "color": "#5D4037",
-    "type": "bloc"
+    "type": "bloc",
+    "lineage": "burjanadze"
   },
   {
     "id": "future_georgia",
@@ -816,7 +852,8 @@
       "ka": "თამაზ მეჭიაური — ერთიანი საქართველოსთვის"
     },
     "color": "#00838F",
-    "type": "party"
+    "type": "party",
+    "lineage": "mechiauri"
   },
   {
     "id": "greens",
@@ -825,7 +862,8 @@
       "ka": "მწვანეთა პარტია"
     },
     "color": "#388E3C",
-    "type": "party"
+    "type": "party",
+    "lineage": "greens"
   },
   {
     "id": "free_georgia_movement",
@@ -906,7 +944,8 @@
       "ka": "სტრატეგია აღმაშენებელი"
     },
     "color": "#283593",
-    "type": "bloc"
+    "type": "bloc",
+    "lineage": "third_force"
   },
   {
     "id": "roots",
@@ -996,7 +1035,8 @@
       "ka": "ქართული დასი"
     },
     "color": "#6A1B9A",
-    "type": "party"
+    "type": "party",
+    "lineage": "georgian_group"
   },
   {
     "id": "progressive_georgia",
@@ -1062,6 +1102,26 @@
     "type": "party"
   },
   {
+    "id": "christian_democrats_2008",
+    "name": {
+      "en": "Christian Democratic Movement",
+      "ka": "ქრისტიან დემოკრატიული მოძრაობა"
+    },
+    "color": "#6D4C41",
+    "type": "party",
+    "lineage": "christian_democratic_movement"
+  },
+  {
+    "id": "christian_democrats_2012",
+    "name": {
+      "en": "Giorgi Targamadze - Christian-Democratic Movement",
+      "ka": "გიორგი თარგამაძე - ქრისტიან-დემოკრატიული გაერთიანება"
+    },
+    "color": "#6D4C41",
+    "type": "party",
+    "lineage": "christian_democratic_movement"
+  },
+  {
     "id": "independent",
     "name": {
       "en": "Independent",
@@ -1096,6 +1156,97 @@
     },
     "color": "#C62828",
     "type": "option"
+  },
+  {
+    "id": "christian_democrats_2010",
+    "name": {
+      "en": "Targamadze, Grigolia — Christian-Democratic Union",
+      "ka": "გიორგი თარგამაძე, ინგა გრიგოლია – ქრისტიან-დემოკრატიული გაერთიანება"
+    },
+    "color": "#6D4C41",
+    "type": "party",
+    "lineage": "christian_democratic_movement"
+  },
+  {
+    "id": "alliance_georgia_2010",
+    "name": {
+      "en": "Alliance for Georgia",
+      "ka": "ალიანსი საქართველოსთვის"
+    },
+    "color": "#1565C0",
+    "type": "alliance",
+    "category": "coalition"
+  },
+  {
+    "id": "burjanadze_united_opposition_2014",
+    "name": {
+      "en": "Nino Burjanadze — United Opposition",
+      "ka": "ნინო ბურჯანაძე — ერთიანი ოპოზიცია"
+    },
+    "color": "#7B1FA2",
+    "type": "bloc",
+    "category": "coalition",
+    "lineage": "burjanadze"
+  },
+  {
+    "id": "republicans_2008",
+    "name": {
+      "en": "Republican Party of Georgia",
+      "ka": "საქართველოს რესპუბლიკური პარტია"
+    },
+    "color": "#FF7043",
+    "type": "party",
+    "lineage": "republicans"
+  },
+  {
+    "id": "adj2008_chven_tviton",
+    "name": {
+      "en": "We Ourselves",
+      "ka": "ჩვენ თვითონ"
+    },
+    "color": "#00897B",
+    "type": "party",
+    "lineage": "european_democrats"
+  },
+  {
+    "id": "adj2008_kartuli_dasi",
+    "name": {
+      "en": "Georgian Group",
+      "ka": "ქართული დასი"
+    },
+    "color": "#33691E",
+    "type": "party",
+    "lineage": "georgian_group"
+  },
+  {
+    "id": "national_democratic_2010",
+    "name": {
+      "en": "National-Democratic Party",
+      "ka": "ეროვნულ-დემოკრატიული პარტია"
+    },
+    "color": "#3949AB",
+    "type": "party",
+    "lineage": "national_democratic_party"
+  },
+  {
+    "id": "ndp_2012",
+    "name": {
+      "en": "National-Democratic Party",
+      "ka": "ეროვნულ-დემოკრატიული პარტია"
+    },
+    "color": "#455A64",
+    "type": "party",
+    "lineage": "national_democratic_party"
+  },
+  {
+    "id": "national_democratic_2014",
+    "name": {
+      "en": "National-Democratic Party (NDP)",
+      "ka": "ეროვნულ-დემოკრატიული პარტია (ედპ)"
+    },
+    "color": "#3949AB",
+    "type": "party",
+    "lineage": "national_democratic_party"
   },
   {
     "id": "other",

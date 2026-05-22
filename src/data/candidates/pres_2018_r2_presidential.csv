@@ -1,0 +1,3 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+pres_2018,pres_2018_r2,presidential,vashadze,ერთიანი ნაციონალური მოძრაობა,5,,,,5,გრიგოლ,ვაშაძე,გრიგოლ ვაშაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,pres_2018_r2,presidential,zourabichvili,ამომრჩეველთა საინიციატივო ჯგუფი,48,,,,48,სალომე,ზურაბიშვილი,სალომე ზურაბიშვილი,,TRUE,presidential_candidates.xlsx

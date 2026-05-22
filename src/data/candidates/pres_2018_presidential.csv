@@ -1,0 +1,26 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+pres_2018,__main__,presidential,mikheil_antadze,მოძრაობა სახელმწიფო ხალხისთვის,1,,,,1,მიხეილ,ანთაძე,მიხეილ ანთაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,bakradze,"პ/გ ""ევროპული საქართველო  მოძრაობა თავისუფლებისთვის""",2,,,,2,დავით,ბაქრაძე,დავით ბაქრაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,gabunia,"პ/გ ""ქრისტიან დემოკრატიული მოძრაობა""",4,,,,4,ვახტანგ,გაბუნია,ვახტანგ გაბუნია,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,vashadze,ერთიანი ნაციონალური მოძრაობა,5,,,,5,გრიგოლ,ვაშაძე,გრიგოლ ვაშაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,natelashvili,საქართველოს ლეიბორისტული პარტია,10,,,,10,შალვა,ნათელაშვილი,შალვა ნათელაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,mekhatishvili,"მპგ ""საქართველოს ქრისტიან კონსერვატიული პარტია""",13,,,,13,ზვიად,მეხატიშვილი,ზვიად მეხატიშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,liluashvili,"პ/გ პარტია ""საქართველო""",17,,,,17,გიორგი,ლილუაშვილი,გიორგი ლილუაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,asatiani,ქართველ ტრადიციონალისტთა კავშირი,18,,,,18,აკაკი,ასათიანი,აკაკი ასათიანი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,kukava,"პ/გ ""თავისუფალი საქართველო""",21,,,,21,კახა,კუკავა,კახა კუკავა,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,meunargia,მრეწველობა გადაარჩენს საქართველოს,22,,,,22,ოთარ,მეუნარგია,ოთარ მეუნარგია,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,gorgadze,"პ/გ ""მოძრაობა თავისუფალი საქართველოსთვის""",23,,,,23,ირაკლი,გორგაძე,ირაკლი გორგაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,usupashvili,"პ/გ ""თავისუფალი დემოკრატები""",25,,,,25,დავით,უსუფაშვილი,დავით უსუფაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,baghdavadze,"პ/გ ""სამოქალაქო პლატფორმა  ახალი საქართველო""",27,,,,27,ზვიადი,ბაღდავაძე,ზვიადი ბაღდავაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,saluashvili,"პ/გ ""სამართლიანობის აღდგენის კავშირი ხმა ერისა: უფალია ჩვენი სიმართლე""",28,,,,28,მიხეილ,სალუაშვილი,მიხეილ სალუაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,iashvili,"პ/გ ""ეროვნულ-დემოკრატიული პარტია"" (ედპ)",30,,,,30,ზვიად,იაშვილი,ზვიად იაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,tskharagauli,"პოლიტიკური მოძრაობა ""თავისუფლება -  ზვიად გამსახურდიას გზა""",31,,,,31,თამარი,ცხორაგაული,თამარი ცხორაგაული,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,khutsishvili,"მპგ ""საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა""",35,,,,35,გელა,ხუციშვილი,გელა ხუციშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,japaridze,გირჩი,36,,,,36,ზურაბ,ჯაფარიძე,ზურაბ ჯაფარიძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,chkheidze,"პ/გ ""ახალი ქრისტიან-დემოკრატები""",40,,,,40,ლევანი,ჩხეიძე,ლევანი ჩხეიძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,zourabichvili,ამომრჩეველთა საინიციატივო ჯგუფი,48,,,,48,სალომე,ზურაბიშვილი,სალომე ზურაბიშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,tediashvili,ამომრჩეველთა საინიციატივო ჯგუფი,49,,,,49,ბესარიონ,თედიაშვილი,ბესარიონ თედიაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,andriadze,ამომრჩეველთა საინიციატივო ჯგუფი,51,,,,51,გიორგი,ანდრიაძე,გიორგი ანდრიაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,chichinadze,ამომრჩეველთა საინიციატივო ჯგუფი,58,,,,58,კახაბერ,ჭიჭინაძე,კახაბერ ჭიჭინაძე,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,nonikashvili,ამომრჩეველთა საინიციატივო ჯგუფი,62,,,,62,ვლადიმერ,ნონიკაშვილი,ვლადიმერ ნონიკაშვილი,,FALSE,presidential_candidates.xlsx
+pres_2018,__main__,presidential,shashiashvili,ამომრჩეველთა საინიციატივო ჯგუფი,65,,,,65,თეიმურაზ,შაშიაშვილი,თეიმურაზ შაშიაშვილი,,FALSE,presidential_candidates.xlsx

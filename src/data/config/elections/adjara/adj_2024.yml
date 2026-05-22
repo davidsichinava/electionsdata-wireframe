@@ -8,7 +8,7 @@ name:
 system:
   pr:
     enabled: true
-    seats: 150
+    seats: 21
     threshold_pct: 5.0
     method: dhondt
     shape_file: "data/shp/adj2024_pr.geojson"
@@ -52,7 +52,7 @@ parties:
   - id: unity
     alias:
       en: Unity — National Movement
-      ka: ერთობა — ნაციონალური მოძრაობა
+      ka: ერთიანობა-ნაციონალური მოძრაობა
     color: "#d13529"
     threshold_status: passed
     seats_pr: 4
@@ -73,7 +73,7 @@ parties:
       ka: გახარია საქართველოსთვის
     color: "#4b2775"
     threshold_status: passed
-    seats_pr: 1
+    seats_pr: 2
     seats_smd: 0
 
   - id: girchi

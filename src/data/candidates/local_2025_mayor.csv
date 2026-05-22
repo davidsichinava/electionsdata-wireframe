@@ -1,122 +1,122 @@
 election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
-local_2025,__main__,mayor,mamuli_ena,"მამული, ენა, სარწმუნოება",,1,,,,თეიმურაზ,ბოკელავაძე,თეიმურაზ ბოკელავაძე,,,local_2025.yml
-local_2025,__main__,mayor,conservatives_geo,კონსერვატორები საქართველოსთვის,,1,,,,ზურაბ,მახარაძე,ზურაბ მახარაძე,,,local_2025.yml
-local_2025,__main__,mayor,free_georgia,თავისუფალი საქართველო,,1,,,,კახა,კუკავა,კახა კუკავა,,,local_2025.yml
-local_2025,__main__,mayor,patriots,საქართველოს პატრიოტთა ალიანსი,,1,,,,ოთარ,ჭითანავა,ოთარ ჭითანავა,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,1,,,,ირაკლი,კუპრაძე,ირაკლი კუპრაძე,,,local_2025.yml
-local_2025,__main__,mayor,georgia_party,საქართველო,,1,,,,გიორგი,ლილუაშვილი,გიორგი ლილუაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,greens_geo,მწვანეთა პარტია,,1,,,,გიორგი,გაჩეჩილაძე,გიორგი გაჩეჩილაძე,,,local_2025.yml
-local_2025,__main__,mayor,girchi,გირჩი,,1,,,,იაგო,ხვიჩია,იაგო ხვიჩია,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,1,,,,კახა,კალაძე,კახა კალაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,11,,,,ვახტანგი,კაკუტაშვილი,ვახტანგი კაკუტაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,12,,,,გიორგი,მაჭავარიანი,გიორგი მაჭავარიანი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,13,,,,ნოდარი,ვარდიაშვილი,ნოდარი ვარდიაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,13,,,,მალხაზი,ბეგიაშვილი,მალხაზი ბეგიაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,14,,,,ნიკოლოზ,ჯანიაშვილი,ნიკოლოზ ჯანიაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,15,,,,ვანო,ზურაბაშვილი,ვანო ზურაბაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,15,,,,ჯონდო,მდივნიშვილი,ჯონდო მდივნიშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,16,,,,ილია,მზექალაშვილი,ილია მზექალაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,17,,,,ზაზა,ჯაფარიძე,ზაზა ჯაფარიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,17,,,,ვაჟა,მაღრაძე,ვაჟა მაღრაძე,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,18,,,,მათე,წვერაიძე,მათე წვერაიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,18,,,,ალექსი,ფიცხელაური,ალექსი ფიცხელაური,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,19,,,,ლევან,წიკლაური,ლევან წიკლაური,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,20,,,,თამარ,კეკენაძე,თამარ კეკენაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,20,,,,ნინო,ლაცაბიძე,ნინო ლაცაბიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,21,,,,დავითი,კარგარეთელი,დავითი კარგარეთელი,,,local_2025.yml
-local_2025,__main__,mayor,our_georgia,ჩვენი გაერთიანებული საქართველო,,22,,,,ალი,ბადიროვი,ალი ბადიროვი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,22,,,,ასად,ალიევი,ასად ალიევი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,22,,,,დაური,ისმაილოვი,დაური ისმაილოვი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,23,,,,ასაფ,ჩირაგოვი,ასაფ ჩირაგოვი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,23,,,,ზამური,ჭითანავა,ზამური ჭითანავა,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,24,,,,კობა,მურადაშვილი,კობა მურადაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,25,,,,ილია,საბაძე,ილია საბაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,26,,,,მიხეილ,აფციაური,მიხეილ აფციაური,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,27,,,,თამარ,ლომიტაშვილი,თამარ ლომიტაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,27,,,,გოგი,აბუაშვილი,გოგი აბუაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,28,,,,ლაშა,ცხადაძე,ლაშა ცხადაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,28,,,,კახაბერ,ჩიტაური,კახაბერ ჩიტაური,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,29,,,,საბა,ჩქარეული,საბა ჩქარეული,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,29,,,,კობა,გელაძე,კობა გელაძე,,,local_2025.yml
-local_2025,__main__,mayor,independent,დამოუკიდებელი,,29,,,,მარეხ,ჩოფიკაშვილი,მარეხ ჩოფიკაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,30,,,,თათია,ბროლაძე,თათია ბროლაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,30,,,,ვახტანგ,მაისურაძე,ვახტანგ მაისურაძე,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,32,,,,ნიკოლოზ,დოლიაშვილი,ნიკოლოზ დოლიაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,32,,,,კონსტანტინე,ბუზალაძე,კონსტანტინე ბუზალაძე,,,local_2025.yml
-local_2025,__main__,mayor,free_georgia,თავისუფალი საქართველო,,33,,,,ზვიადი,მექვაბიძე,ზვიადი მექვაბიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,33,,,,ზაზა,გულიაშვილი,ზაზა გულიაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,35,,,,პაატა,ჩადუნელი,პაატა ჩადუნელი,,,local_2025.yml
-local_2025,__main__,mayor,independent,დამოუკიდებელი,,35,,,,ვალერი,გელაშვილი,ვალერი გელაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,36,,,,იზოლდა,ლომიძე,იზოლდა ლომიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,36,,,,მამუკა,გელაშვილი,მამუკა გელაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,37,,,,ვარლამ,წიკლაური,ვარლამ წიკლაური,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,38,,,,გოჩა,ქიმაძე,გოჩა ქიმაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,39,,,,როსტომ,მაგრაქველიძე,როსტომ მაგრაქველიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,40,,,,მელქონ,მაკარიან,მელქონ მაკარიან,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,41,,,,ანივარდ,მოსოიან,ანივარდ მოსოიან,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,43,,,,დავით,ლობჟანიძე,დავით ლობჟანიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,44,,,,ზაზა,ქევანიშვილი,ზაზა ქევანიშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,45,,,,ჭაბუკი,ჭაბუკიანი,ჭაბუკი ჭაბუკიანი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,46,,,,გიორგი,გაზდელიანი,გიორგი გაზდელიანი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,47,,,,კაპიტონ,ჟორჟოლიანი,კაპიტონ ჟორჟოლიანი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,48,,,,ინგა,მაღრაძე,ინგა მაღრაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,48,,,,კობა,ლურსმანაშვილი,კობა ლურსმანაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,49,,,,სულიკო,ზარნაძე,სულიკო ზარნაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,49,,,,მანუჩარ,რობაქიძე,მანუჩარ რობაქიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,50,,,,ლევანი,ივანაშვილი,ლევანი ივანაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,georgia_party,საქართველო,,51,,,,გიგი,ნებიერიძე,გიგი ნებიერიძე,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,51,,,,ქართლოს,პერანიძე,ქართლოს პერანიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,51,,,,ვახტანგ,ღამბაშიძე,ვახტანგ ღამბაშიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,52,,,,ნოდარ,გიორგიძე,ნოდარ გიორგიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,53,,,,ალექსანდრე,გოგორიშვილი,ალექსანდრე გოგორიშვილი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,54,,,,ბადრი,ვაშაკიძე,ბადრი ვაშაკიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,54,,,,დავით,ბახტაძე,დავით ბახტაძე,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,55,,,,გელა,ბობოხიძე,გელა ბობოხიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,55,,,,ლადო,ჯურხაძე,ლადო ჯურხაძე,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,56,,,,ზაზა,ჭუმბურიძე,ზაზა ჭუმბურიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,56,,,,გივი,მოდებაძე,გივი მოდებაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,57,,,,დავით,კუბლაშვილი,დავით კუბლაშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,58,,,,ქეთევან,ბაკარაძე,ქეთევან ბაკარაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,58,,,,გენადი,ბალანჩივაძე,გენადი ბალანჩივაძე,,,local_2025.yml
-local_2025,__main__,mayor,georgia_party,საქართველო,,59,,,,გიორგი,ამაღლობელი,გიორგი ამაღლობელი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,59,,,,პაატა,ზაქარეიშვილი,პაატა ზაქარეიშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,59,,,,დავითი,ერემეიშვილი,დავითი ერემეიშვილი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,60,,,,ალექსანდრე,მენაბდე,ალექსანდრე მენაბდე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,60,,,,პაატა,კუნჭულია,პაატა კუნჭულია,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,61,,,,დავით,ჩხაიძე,დავით ჩხაიძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,61,,,,ალექსანდრე,სარიშვილი,ალექსანდრე სარიშვილი,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,62,,,,ნუგზარი,ჩხიკვაძე,ნუგზარი ჩხიკვაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,62,,,,მინდია,ჟღერია,მინდია ჟღერია,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,63,,,,გიგა,გაბელაია,გიგა გაბელაია,,,local_2025.yml
-local_2025,__main__,mayor,free_georgia,თავისუფალი საქართველო,,64,,,,ბესიკი,წულეისკირი,ბესიკი წულეისკირი,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,64,,,,ჯონი,ტორჩინავა,ჯონი ტორჩინავა,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,64,,,,ვახტანგ,გადელია,ვახტანგ გადელია,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,65,,,,გიორგი,ნაჭყებია,გიორგი ნაჭყებია,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,66,,,,იური,ბუკია,იური ბუკია,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,66,,,,დავით,ბუკია,დავით ბუკია,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,67,,,,გიორგი,თოდუა,გიორგი თოდუა,,,local_2025.yml
-local_2025,__main__,mayor,georgia_party,საქართველო,,67,,,,რამაზ,ჩაჩიბაია,რამაზ ჩაჩიბაია,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,67,,,,დათო,კოდუა,დათო კოდუა,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,68,,,,ხვიჩა,მებონია,ხვიჩა მებონია,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,68,,,,გუბა,საჯაია,გუბა საჯაია,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,69,,,,მალხაზ,გახარია,მალხაზ გახარია,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,69,,,,ჯუმბერი,იზორია,ჯუმბერი იზორია,,,local_2025.yml
-local_2025,__main__,mayor,independent,დამოუკიდებელი,,69,,,,ოდიშარ,ლაგვილავა,ოდიშარ ლაგვილავა,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,70,,,,ბექა,ვაჭარაძე,ბექა ვაჭარაძე,,,local_2025.yml
-local_2025,__main__,mayor,mamuli_ena,"მამული, ენა, სარწმუნოება",,79,,,,თამარ,მიქელაძე,თამარ მიქელაძე,,,local_2025.yml
-local_2025,__main__,mayor,our_georgia,ჩვენი გაერთიანებული საქართველო,,79,,,,ზვიად,კვირიკაძე,ზვიად კვირიკაძე,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,79,,,,გოჩა,გუგუნავა,გოჩა გუგუნავა,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,79,,,,გიორგი,ცინცაძე,გიორგი ცინცაძე,,,local_2025.yml
-local_2025,__main__,mayor,independent,დამოუკიდებელი,,79,,,,კახაბერ,ცისკარიძე,კახაბერ ცისკარიძე,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,80,,,,რამაზ,დავითაძე,რამაზ დავითაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,80,,,,მამუკა,თურმანიძე,მამუკა თურმანიძე,,,local_2025.yml
-local_2025,__main__,mayor,our_georgia,ჩვენი გაერთიანებული საქართველო,,81,,,,ტელმანი,მესხიძე,ტელმანი მესხიძე,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,81,,,,პაატა,ცივაძე,პაატა ცივაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,81,,,,ირაკლი,ცეცხლაძე,ირაკლი ცეცხლაძე,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,82,,,,ნათია,მგელაძე,ნათია მგელაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,82,,,,ომარ,ტაკიძე,ომარ ტაკიძე,,,local_2025.yml
-local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო,,83,,,,ბადრი,მამულაძე,ბადრი მამულაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,83,,,,ზაზა,დიასამიძე,ზაზა დიასამიძე,,,local_2025.yml
-local_2025,__main__,mayor,peoples_power,სახალხო ხელისუფლება,,84,,,,ზია,საგინაძე,ზია საგინაძე,,,local_2025.yml
-local_2025,__main__,mayor,gakharia,გახარია საქართველოსთვის,,84,,,,ირაკლი,ბოლქვაძე,ირაკლი ბოლქვაძე,,,local_2025.yml
-local_2025,__main__,mayor,gd,ქართული ოცნება,,84,,,,ვახტანგ,ბერიძე,ვახტანგ ბერიძე,,,local_2025.yml
+local_2025,__main__,mayor,gd,ქართული ოცნება,,11,საგარეჯო,,41,ვახტანგი,კაკუტაშვილი,ვახტანგი კაკუტაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,12,გურჯაანი,,41,გიორგი,მაჭავარიანი,გიორგი მაჭავარიანი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,13,სიღნაღი,,9,ნოდარი,ვარდიაშვილი,ნოდარი ვარდიაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,13,სიღნაღი,,41,მალხაზი,ბეგიაშვილი,მალხაზი ბეგიაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,14,დედოფლისწყარო,,41,ნიკოლოზ,ჯანიაშვილი,ნიკოლოზ ჯანიაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,15,ლაგოდეხი,,9,ვანო,ზურაბაშვილი,ვანო ზურაბაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,15,ლაგოდეხი,,41,ჯონდო,მდივნიშვილი,ჯონდო მდივნიშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,16,ყვარელი,,41,ილია,მზექალაშვილი,ილია მზექალაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,17,თელავი,,25,ზაზა,ჯაფარიძე,ზაზა ჯაფარიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,17,თელავი,,41,ვაჟა,მაღრაძე,ვაჟა მაღრაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,18,ახმეტა,,25,მათე,წვერაიძე,მათე წვერაიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,18,ახმეტა,,41,ალექსი,ფიცხელაური,ალექსი ფიცხელაური,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,19,თიანეთი,,41,ლევან,წიკლაური,ლევან წიკლაური,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,20,რუსთავი,,25,თამარ,კეკენაძე,თამარ კეკენაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,20,რუსთავი,,41,ნინო,ლაცაბიძე,ნინო ლაცაბიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,21,გარდაბანი,,41,დავითი,კარგარეთელი,დავითი კარგარეთელი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,our_georgia,„ჩვენი გაერთიანებული საქართველო“,,22,მარნეული,,5,ალი,ბადიროვი,ალი ბადიროვი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,22,მარნეული,,9,ასად,ალიევი,ასად ალიევი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,22,მარნეული,,41,დაური,ისმაილოვი,დაური ისმაილოვი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,23,ბოლნისი,,9,ასაფ,ჩირაგოვი,ასაფ ჩირაგოვი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,23,ბოლნისი,,41,ზამური,ჭითანავა,ზამური ჭითანავა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,24,დმანისი,,41,კობა,მურადაშვილი,კობა მურადაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,25,წალკა,,41,ილია,საბაძე,ილია საბაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,26,თეთრიწყარო,,41,მიხეილ,აფციაური,მიხეილ აფციაური,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,27,მცხეთა,,25,თამარ,ლომიტაშვილი,თამარ ლომიტაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,27,მცხეთა,,41,გოგი,აბუაშვილი,გოგი აბუაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,28,დუშეთი,,25,ლაშა,ცხადაძე,ლაშა ცხადაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,28,დუშეთი,,41,კახაბერ,ჩიტაური,კახაბერ ჩიტაური,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,29,ყაზბეგი,,9,საბა,ჩქარეული,საბა ჩქარეული,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,29,ყაზბეგი,,41,კობა,გელაძე,კობა გელაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,,"ნონა ჩოფიკაშვილი, ნანა ხართიშვილი, მანანა ჩოფიკაშვილი, დოდო გომიაშვილი, თამარი ფირანიშვილი",,29,ყაზბეგი,,42,მარეხ,ჩოფიკაშვილი,მარეხ ჩოფიკაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,30,კასპი,,25,თათია,ბროლაძე,თათია ბროლაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,30,კასპი,,41,ვახტანგ,მაისურაძე,ვახტანგ მაისურაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,32,გორი,,9,ნიკოლოზ,დოლიაშვილი,ნიკოლოზ დოლიაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,32,გორი,,41,კონსტანტინე,ბუზალაძე,კონსტანტინე ბუზალაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,free_georgia,„თავისუფალი საქართველო“,,33,ქარელი,,7,ზვიადი,მექვაბიძე,ზვიადი მექვაბიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,33,ქარელი,,41,ზაზა,გულიაშვილი,ზაზა გულიაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,35,ხაშური,,41,პაატა,ჩადუნელი,პაატა ჩადუნელი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,,"გელა გელაშვილი, ნათია ჩადუნელი, გიორგი მანჩაკოვი, კობა ნოზაძე, ირინე ფერაძე",,35,ხაშური,,42,ვალერი,გელაშვილი,ვალერი გელაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,36,ბორჯომი,,9,იზოლდა,ლომიძე,იზოლდა ლომიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,36,ბორჯომი,,41,მამუკა,გელაშვილი,მამუკა გელაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,37,ახალციხე,,41,ვარლამ,წიკლაური,ვარლამ წიკლაური,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,38,ადიგენი,,41,გოჩა,ქიმაძე,გოჩა ქიმაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,39,ასპინძა,,41,როსტომ,მაგრაქველიძე,როსტომ მაგრაქველიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,40,ახალქალაქი,,41,მელქონ,მაკარიან,მელქონ მაკარიან,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,41,ნინოწმინდა,,41,ანივარდ,მოსოიან,ანივარდ მოსოიან,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,43,ონი,,41,დავით,ლობჟანიძე,დავით ლობჟანიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,44,ამბროლაური,,41,ზაზა,ქევანიშვილი,ზაზა ქევანიშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,45,ცაგერი,,41,ჭაბუკი,ჭაბუკიანი,ჭაბუკი ჭაბუკიანი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,46,ლენტეხი,,41,გიორგი,გაზდელიანი,გიორგი გაზდელიანი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,47,მესტია,,41,კაპიტონ,ჟორჟოლიანი,კაპიტონ ჟორჟოლიანი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,48,ხარაგაული,,9,ინგა,მაღრაძე,ინგა მაღრაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,48,ხარაგაული,,41,კობა,ლურსმანაშვილი,კობა ლურსმანაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,49,თერჯოლა,,25,სულიკო,ზარნაძე,სულიკო ზარნაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,49,თერჯოლა,,41,მანუჩარ,რობაქიძე,მანუჩარ რობაქიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,50,საჩხერე,,41,ლევანი,ივანაშვილი,ლევანი ივანაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,georgia_party,„საქართველო“,,51,ზესტაფონი,,11,გიგი,ნებიერიძე,გიგი ნებიერიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,51,ზესტაფონი,,25,ქართლოს,პერანიძე,ქართლოს პერანიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,51,ზესტაფონი,,41,ვახტანგ,ღამბაშიძე,ვახტანგ ღამბაშიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,52,ბაღდათი,,41,ნოდარ,გიორგიძე,ნოდარ გიორგიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,53,ვანი,,41,ალექსანდრე,გოგორიშვილი,ალექსანდრე გოგორიშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,54,სამტრედია,,9,ბადრი,ვაშაკიძე,ბადრი ვაშაკიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,54,სამტრედია,,41,დავით,ბახტაძე,დავით ბახტაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,55,ხონი,,9,გელა,ბობოხიძე,გელა ბობოხიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,55,ხონი,,41,ლადო,ჯურხაძე,ლადო ჯურხაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,56,ჭიათურა,,25,ზაზა,ჭუმბურიძე,ზაზა ჭუმბურიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,56,ჭიათურა,,41,გივი,მოდებაძე,გივი მოდებაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,57,ტყიბული,,41,დავით,კუბლაშვილი,დავით კუბლაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,58,წყალტუბო,,25,ქეთევან,ბაკარაძე,ქეთევან ბაკარაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,58,წყალტუბო,,41,გენადი,ბალანჩივაძე,გენადი ბალანჩივაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,georgia_party,„საქართველო“,,59,ქუთაისი,,11,გიორგი,ამაღლობელი,გიორგი ამაღლობელი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,59,ქუთაისი,,25,პაატა,ზაქარეიშვილი,პაატა ზაქარეიშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,59,ქუთაისი,,41,დავითი,ერემეიშვილი,დავითი ერემეიშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,60,ოზურგეთი,,25,ალექსანდრე,მენაბდე,ალექსანდრე მენაბდე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,60,ოზურგეთი,,41,პაატა,კუნჭულია,პაატა კუნჭულია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,61,ლანჩხუთი,,25,დავით,ჩხაიძე,დავით ჩხაიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,61,ლანჩხუთი,,41,ალექსანდრე,სარიშვილი,ალექსანდრე სარიშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,62,ჩოხატაური,,9,ნუგზარი,ჩხიკვაძე,ნუგზარი ჩხიკვაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,62,ჩოხატაური,,41,მინდია,ჟღერია,მინდია ჟღერია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,63,აბაშა,,41,გიგა,გაბელაია,გიგა გაბელაია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,free_georgia,„თავისუფალი საქართველო“,,64,სენაკი,,7,ბესიკი,წულეისკირი,ბესიკი წულეისკირი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,64,სენაკი,,25,ჯონი,ტორჩინავა,ჯონი ტორჩინავა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,64,სენაკი,,41,ვახტანგ,გადელია,ვახტანგ გადელია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,65,მარტვილი,,41,გიორგი,ნაჭყებია,გიორგი ნაჭყებია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,66,ხობი,,9,იური,ბუკია,იური ბუკია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,66,ხობი,,41,დავით,ბუკია,დავით ბუკია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,67,ზუგდიდი,,9,გიორგი,თოდუა,გიორგი თოდუა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,georgia_party,„საქართველო“,,67,ზუგდიდი,,11,რამაზ,ჩაჩიბაია,რამაზ ჩაჩიბაია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,67,ზუგდიდი,,41,დათო,კოდუა,დათო კოდუა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,68,წალენჯიხა,,25,ხვიჩა,მებონია,ხვიჩა მებონია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,68,წალენჯიხა,,41,გუბა,საჯაია,გუბა საჯაია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,69,ჩხოროწყუ,,25,მალხაზ,გახარია,მალხაზ გახარია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,69,ჩხოროწყუ,,41,ჯუმბერი,იზორია,ჯუმბერი იზორია,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,,"ზაირა შენგელია, მარინე დარსალია, ბენო ლემონჯავა, ოსმან ლემონჯავა, სოფიკო ჯაგუნავა",,69,ჩხოროწყუ,,42,ოდიშარ,ლაგვილავა,ოდიშარ ლაგვილავა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,70,ფოთი,,41,ბექა,ვაჭარაძე,ბექა ვაჭარაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,mamuli_ena,"„მამული, ენა, სარწმუნოება“",,79,ბათუმი,,1,თამარ,მიქელაძე,თამარ მიქელაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,our_georgia,„ჩვენი გაერთიანებული საქართველო“,,79,ბათუმი,,5,ზვიად,კვირიკაძე,ზვიად კვირიკაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,79,ბათუმი,,25,გოჩა,გუგუნავა,გოჩა გუგუნავა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,79,ბათუმი,,41,გიორგი,ცინცაძე,გიორგი ცინცაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,,"ნიკა კალანდაძე, ზაზა ცისკარიძე, გიული ბერიძე, ლამარა სადრაძე, ნინო ხუნწარია",,79,ბათუმი,,42,კახაბერ,ცისკარიძე,კახაბერ ცისკარიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,80,ქედა,,9,რამაზ,დავითაძე,რამაზ დავითაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,80,ქედა,,41,მამუკა,თურმანიძე,მამუკა თურმანიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,our_georgia,„ჩვენი გაერთიანებული საქართველო“,,81,ქობულეთი,,5,ტელმანი,მესხიძე,ტელმანი მესხიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,81,ქობულეთი,,9,პაატა,ცივაძე,პაატა ცივაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,81,ქობულეთი,,41,ირაკლი,ცეცხლაძე,ირაკლი ცეცხლაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,82,შუახევი,,9,ნათია,მგელაძე,ნათია მგელაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,82,შუახევი,,41,ომარ,ტაკიძე,ომარ ტაკიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,83,ხელვაჩაური,,9,ბადრი,მამულაძე,ბადრი მამულაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,83,ხელვაჩაური,,41,ზაზა,დიასამიძე,ზაზა დიასამიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,peoples_power,„სახალხო ხელისუფლება“,,84,ხულო,,14,ზია,საგინაძე,ზია საგინაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gakharia,„გახარია საქართველოსთვის“,,84,ხულო,,25,ირაკლი,ბოლქვაძე,ირაკლი ბოლქვაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,84,ხულო,,41,ვახტანგ,ბერიძე,ვახტანგ ბერიძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,greens_geo,მწვანეთა პარტია,,,თბილისი,,12,გიორგი,გაჩეჩილაძე,გიორგი გაჩეჩილაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,free_georgia,„თავისუფალი საქართველო“,,,თბილისი,,7,კახა,კუკავა,კახა კუკავა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,conservatives_geo,„კონსერვატორები საქართველოსთვის“,,,თბილისი,,3,ზურაბ,მახარაძე,ზურაბ მახარაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,strong_georgia,ძლიერი საქართველო-ლელო,,,თბილისი,,9,ირაკლი,კუპრაძე,ირაკლი კუპრაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,patriots,„საქართველოს პატრიოტთა ალიანსი“,,,თბილისი,,8,ოთარ,ჭითანავა,ოთარ ჭითანავა,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,gd,ქართული ოცნება,,,თბილისი,,41,კახა,კალაძე,კახა კალაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,georgia_party,„საქართველო“,,,თბილისი,,11,გიორგი,ლილუაშვილი,გიორგი ლილუაშვილი,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,mamuli_ena,"„მამული, ენა, სარწმუნოება“",,,თბილისი,,1,თეიმურაზ,ბოკელავაძე,თეიმურაზ ბოკელავაძე,,,adg_2025_candidates_unified.xlsx
+local_2025,__main__,mayor,girchi,გირჩი,,,თბილისი,,36,იაგო,ხვიჩია,იაგო ხვიჩია,,,adg_2025_candidates_unified.xlsx

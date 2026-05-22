@@ -1,0 +1,2 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+pres_2024_indirect,__main__,presidential,kavelashvili,ქართული ოცნება-დემოკრატიული საქართველო,41,,,,41,მიხეილ,ყაველაშვილი,მიხეილ ყაველაშვილი,,TRUE,presidential_candidates.xlsx

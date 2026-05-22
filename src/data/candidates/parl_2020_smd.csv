@@ -1,0 +1,491 @@
+election_id,sub_id,vote_type,party_id,party_label_ka,party_code,district_id,district_name_ka,list_order,ballot_number,first_name,last_name,name_ka,partisanship,elected,source
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,1,,,2,შალვა,შავგულიძე,შალვა შავგულიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,1,,,4,კობა,ამირხანაშვილი,კობა ამირხანაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,future_georgia,„მომავალი საქართველო”,,1,,,6,მაია,ლიპარტელიანი,მაია ლიპარტელიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,1,,,8,მალხაზ,თოფურია,მალხაზ თოფურია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,1,,,9,თეიმურაზ,ცაგარეიშვილი,თეიმურაზ ცაგარეიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,1,,,13,ანი,ჯაფარიძე,ანი ჯაფარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,1,,,19,ჯაბა,ჯიშკარიანი,ჯაბა ჯიშკარიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,1,,,20,ბესიკი,ადამია,ბესიკი ადამია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,1,,,21,ირაკლი,ჯალაღონია,ირაკლი ჯალაღონია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,1,,,30,ნატალია,კამოზა,ნატალია კამოზა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,1,,,41,ბექა,ოდიშარია,ბექა ოდიშარია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,1,,,44,ია,რჩეულიშვილი,ია რჩეულიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_troupe,„ჯონდო ბაღათურია - ქართული დასი”,,1,,,49,მაია,სირაძე,მაია სირაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,1,,,50,ნატალია,პაპაშვილი,ნატალია პაპაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,euroatlantic_vector,„სერგო ჯავახიძე-ევროატლანტიკური ვექტორი“,,1,,,52,ლაშა,ბრეგვაძე,ლაშა ბრეგვაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,1,,,55,გოგა,მგალობლიშვილი,გოგა მგალობლიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,1,,,56,საბა,ბუაძე,საბა ბუაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,2,,,2,ელენე,ხოშტარია,ელენე ხოშტარია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,2,,,4,ლევანი,ჩხეიძე,ლევანი ჩხეიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,future_georgia,„მომავალი საქართველო”,,2,,,6,როინ,ლიპარტელიანი,როინ ლიპარტელიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,2,,,8,ნანა,დევდარიანი,ნანა დევდარიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,2,,,9,გიორგი,გაჩეჩილაძე,გიორგი გაჩეჩილაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,2,,,13,მაია,კუკავა,მაია კუკავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,2,,,14,მეგი,აღაპიშვილი,მეგი აღაპიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,2,,,19,ბექა,ნაცვლიშვილი,ბექა ნაცვლიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“ მამუკა მელიქიშვილი საქართველოს პარლამენტის 2020 წლის 31 ოქტომბრის არჩევნებისათვის რეგისტრირებული მაჟორიტარი კანდიდატები 19,,2,,,20,ოქტომბრის,მდგომარეობით,ოქტომბრის მდგომარეობით,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,2,,,21,კახა,კუკავა,კახა კუკავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,2,,,23,კონსტანტინე,ბუქურაული,კონსტანტინე ბუქურაული,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,2,,,30,ნინო,ქარელი,ნინო ქარელი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,2,,,41,ნოდარ,ტურძელაძე,ნოდარ ტურძელაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,2,,,44,გეგა,ხვედელიძე,გეგა ხვედელიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,conservatives,„ზვიად ძიძიგური - საქართველოს კონსერვატიული პარტია”,,2,,,47,ხათუნა,საგინაშვილი,ხათუნა საგინაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_troupe,„ჯონდო ბაღათურია - ქართული დასი”,,2,,,49,ჯონდო,ბაღათურია,ჯონდო ბაღათურია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,2,,,50,დავით,დადიანი,დავით დადიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,2,,,51,ნანა,წითელაშვილი,ნანა წითელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,traditionalists,„ტრადიციონალისტები“,,2,,,53,ირაკლი,მაჭავარიანი,ირაკლი მაჭავარიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,2,,,55,გურამ,საღარაძე,გურამ საღარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,2,,,56,ლევანი,კობერიძე,ლევანი კობერიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,development_party,„საქართველოს განვითარების პარტია“,,2,,,60,თენგიზ,ტყეშელაშვილი,თენგიზ ტყეშელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - მიხეილ ბურძგლა, ნატა სეფერთელაძე, ვლადიმერ თევდორაძე, ლიანა სამსონაძე, ნინო ამაღლობელი, ემზარ ახსიაშვილი, ზურაბ ლოლაშვილი, ბესიკ ჩადუნელი",,2,,,61,ბიძინა,გეგიძე,ბიძინა გეგიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,3,,,4,ზურაბ,ნიჟარაძე,ზურაბ ნიჟარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,future_georgia,„მომავალი საქართველო”,,3,,,6,ირაკლი,ავალიშვილი,ირაკლი ავალიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,3,,,8,კახაბერ,ძაგანია,კახაბერ ძაგანია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,3,,,9,თამაზ,ინწკირველი,თამაზ ინწკირველი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,workers_socialist,„მშრომელთა სოციალისტური პარტია“,,3,,,11,მერაბ,ხანთაძე,მერაბ ხანთაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,3,,,13,მიხეილ,კოხრეიძე,მიხეილ კოხრეიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,3,,,14,პაატა,დევსურაშვილი,პაატა დევსურაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,victorious_georgia,„ირაკლი ოქრუაშვილი - გამარჯვებული საქართველო“,,3,,,17,ირაკლი,ოქრუაშვილი,ირაკლი ოქრუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,3,,,19,ლევან,გოგიჩაიშვილი,ლევან გოგიჩაიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,3,,,20,გიორგი,ლილუაშვილი,გიორგი ლილუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,3,,,21,როინი,ხიჯაკაძე,როინი ხიჯაკაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,3,,,23,ალექსანდრე,გახარია,ალექსანდრე გახარია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,citizens,„ალეკო ელისაშვილი-მოქალაქეები“,,3,,,24,ალექსანდრე,ელისაშვილი,ალექსანდრე ელისაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_democrats,„თავისუფალი დემოკრატები“,,3,,,25,ვიტალი,დარასელია,ვიტალი დარასელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,agmashenebeli,საარჩევნო ბლოკი „გიორგი ვაშაძე-სტრატეგია აღმაშენებელი”,,3,,,27,თამარ,ჩარკვიანი,თამარ ჩარკვიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,3,,,30,იანა,კამოზა,იანა კამოზა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,3,,,41,დავით,სერგეენკო,დავით სერგეენკო,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,3,,,44,ანზორ,საკანდელიძე,ანზორ საკანდელიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,national_democrats,„ეროვნულ დემოკრატიული მოძრაობა“,,3,,,45,ვახტანგ,გვაზავა,ვახტანგ გვაზავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,3,,,50,ნიკოლოზ,ლელუაშვილი,ნიკოლოზ ლელუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,3,,,51,ზაზა,ნეფარიძე,ზაზა ნეფარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,3,,,55,მიხეილ,ჭავჭანიძე,მიხეილ ჭავჭანიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,3,,,56,ბადრი,ჯაფარიძე,ბადრი ჯაფარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - კახაბერ შარტავა, მზია იასაღაშვილი, ქეთევან მელქაძე, გვანცა გიორგაძე, რუსუდან ბერიძე",,3,,,61,თამარი,მაყაშვილი,თამარი მაყაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,whites,(პარტია) „თეთრები”,,4,,,1,ჯუმბერ,ბოლღაშვილი,ჯუმბერ ბოლღაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,4,,,4,დავით,ჭიჭინაძე,დავით ჭიჭინაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,4,,,5,ხატია,დეკანოიძე,ხატია დეკანოიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,4,,,9,ბადრი,მანიჟაშვილი,ბადრი მანიჟაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,4,,,13,გიორგი,ავაზაშვილი,გიორგი ავაზაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,4,,,19,კახა,ნადირაძე,კახა ნადირაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,4,,,20,გოჩა,შოშიაშვილი,გოჩა შოშიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_democrats,„თავისუფალი დემოკრატები“,,4,,,25,ედუარდი,ელოშვილი,ედუარდი ელოშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,agmashenebeli,საარჩევნო ბლოკი „გიორგი ვაშაძე-სტრატეგია აღმაშენებელი”,,4,,,27,გიორგი,ვაშაძე,გიორგი ვაშაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,4,,,30,სოფიო,დილებაშვილი,სოფიო დილებაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,4,,,31,დავით,ჩიგოგიძე,დავით ჩიგოგიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,4,,,41,კახა,კახიშვილი,კახა კახიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,4,,,44,ილია,ხმალაძე,ილია ხმალაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,4,,,50,ნოე,გოგიაშვილი,ნოე გოგიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,4,,,55,ალექსანდრე,ჩარგეიშვილი,ალექსანდრე ჩარგეიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,4,,,56,ლანა,გალდავა,ლანა გალდავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,5,,,4,ვაჟა,ჟვანია,ვაჟა ჟვანია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,5,,,5,ლევან,ხაბეიშვილი,ლევან ხაბეიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,5,,,8,გურამ,ნიკოლაიშვილი,გურამ ნიკოლაიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,5,,,9,მანანა,ბოჭორიშვილი,მანანა ბოჭორიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,5,,,14,ბეჟან,გუნავა,ბეჟან გუნავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,5,,,19,ალექსანდრე,რიჟამაძე,ალექსანდრე რიჟამაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,5,,,20,გოჩა,ხარაული,გოჩა ხარაული,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,5,,,21,ლალი,ფერაძე,ლალი ფერაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,justice,ეკა ბესელია - პ.პ. „სამართლიანობისთვის“,,5,,,26,იოსები,დარსაველიძე,იოსები დარსაველიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,5,,,30,ნუგზარი,კელეპტრიშვილი,ნუგზარი კელეპტრიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,5,,,31,გიორგი,ხოსიტაშვილი,გიორგი ხოსიტაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,peoples_party,„სახალხო პარტია“,,5,,,32,ილია,მაჭარაშვილი,ილია მაჭარაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,5,,,41,სოზარ,სუბარი,სოზარ სუბარი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,5,,,44,გურამ,ფალავანდიშვილი,გურამ ფალავანდიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,5,,,50,კახაბერ,მუმლაძე,კახაბერ მუმლაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,5,,,55,ირაკლი,შიხიაშვილი,ირაკლი შიხიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,5,,,56,ფიქრია,ჩიხრაძე,ფიქრია ჩიხრაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,6,,,4,მიხეილ,ქავთარაძე,მიხეილ ქავთარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,future_georgia,„მომავალი საქართველო”,,6,,,6,დავით,ხიზანიშვილი,დავით ხიზანიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,6,,,8,არჩილ,ბენიძე,არჩილ ბენიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,6,,,9,თამარ,ჭიჭინაძე,თამარ ჭიჭინაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,6,,,13,დავით,შალუტაშვილი,დავით შალუტაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,6,,,14,მანანა,მოსულიშვილი,მანანა მოსულიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,6,,,19,გედევან,ფოფხაძე,გედევან ფოფხაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,6,,,20,გიორგი,ფიცხელაური,გიორგი ფიცხელაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,6,,,21,თენგიზ,ომანიძე,თენგიზ ომანიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,6,,,23,გიგა,გიგაური,გიგა გიგაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,6,,,30,გიორგი,ოთარაშვილი,გიორგი ოთარაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,6,,,31,ოთარ,ბაღათურია,ოთარ ბაღათურია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,girchi,„გირჩი“ ზურაბ,,6,,,36,გირჩი,ჯაფარიძე,გირჩი ჯაფარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,6,,,41,გიორგი,ვოლსკი,გიორგი ვოლსკი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_troupe,„ჯონდო ბაღათურია - ქართული დასი”,,6,,,49,დავით,ოსეფაშვილი,დავით ოსეფაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,6,,,55,ცირა,ჯავახიშვილი,ცირა ჯავახიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,6,,,56,ლევან,სამუშია,ლევან სამუშია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,საინიციატივო ჯგუფი - ნინო წულაძე; ლაშა ანაკიძე; ქეთევან მუსერიძე; ზურაბ კურცხალია; მარი რუხაძე.,,6,,,61,ანა,დოლიძე,ანა დოლიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,საინიციატივო ჯგუფი - დავით ბირკაძე; ზურაბ სამხარაძე; ტატო ეგრისელაშვილი; ლევან კოშაძე; შალვა მზარეულიშვილი.,,6,,,62,გიორგი,ქაჯაია,გიორგი ქაჯაია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,საინიციატივო ჯგუფი - ილია დვალიძე; ირაკლი მაჭარაშვილი; კახა ჭოხონელიძე; იოსებ ჯანგულაშვილი; გიორგი ჩუხრუკიძე.,,6,,,63,დიმიტრი,ლორთქიფანიძე,დიმიტრი ლორთქიფანიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,7,,,4,ლია,მუხაშავრია,ლია მუხაშავრია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,7,,,8,ირმა,ინაშვილი,ირმა ინაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,7,,,9,გურამ,ნიკოლეიშვილი,გურამ ნიკოლეიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,7,,,10,შალვა,ნათელაშვილი,შალვა ნათელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,workers_socialist,„მშრომელთა სოციალისტური პარტია“,,7,,,11,გია,ნემსაძე,გია ნემსაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,7,,,19,ზვიადი,თავაძე,ზვიადი თავაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,7,,,20,ლალი,მაისურაძე,ლალი მაისურაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,7,,,21,გულადი,ყრუაშვილი,გულადი ყრუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,7,,,23,ალექსანდრე,ბარდაძე,ალექსანდრე ბარდაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,7,,,30,დარეჯან,გაგნიძე,დარეჯან გაგნიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,7,,,41,მიხეილ,ყაველაშვილი,მიხეილ ყაველაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,7,,,44,პაატა,გოგშელიძე,პაატა გოგშელიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_troupe,„ჯონდო ბაღათურია - ქართული დასი”,,7,,,49,მარიამი,სულაძე,მარიამი სულაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,7,,,50,გაიოზი,ჩარკვიანი,გაიოზი ჩარკვიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,7,,,51,დავით,გოგიტაშვილი,დავით გოგიტაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,7,,,55,გიორგი,გიგაური,გიორგი გიგაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,7,,,56,ნიკოლოზ,ჩერქეზიშვილი,ნიკოლოზ ჩერქეზიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - თამთა დუნდუა, ცინარი ომარაშვილი, ვახტანგი გელიაშვილი, ლია კომახიძე, ანა იმერლიშვილი, გვანცა მონიავა, ანდრო ნოზაძე",,7,,,61,ირაკლი,გუჯაბიძე,ირაკლი გუჯაბიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,8,,,5,ნიკანორი,მელია,ნიკანორი მელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,mechiauri,„თამაზ მეჭიაური ერთიანი საქართველოსთვის“,,8,,,7,რომანი,ფალელაშვილი,რომანი ფალელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,8,,,8,მერაბ,ჭიქაშვილი,მერაბ ჭიქაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,8,,,9,მერაბ,შარაბიძე,მერაბ შარაბიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,8,,,13,ხატია,ქობალია,ხატია ქობალია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,8,,,19,ლაშა,გიორგაძე,ლაშა გიორგაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,8,,,20,გოდერძი,ლომთათიძე,გოდერძი ლომთათიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,8,,,23,შოთა,მაჭარაშვილი,შოთა მაჭარაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,justice,ეკა ბესელია - პ.პ. „სამართლიანობისთვის“,,8,,,26,ნუგზარ,ლომიშვილი,ნუგზარ ლომიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,8,,,30,სალომე,მეგრელიშვილი,სალომე მეგრელიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,8,,,41,ლევან,კობიაშვილი,ლევან კობიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,8,,,44,ალექსანდრე,რაზმაძე,ალექსანდრე რაზმაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,conservatives,„ზვიად ძიძიგური - საქართველოს კონსერვატიული პარტია”,,8,,,47,გრიგოლი,ბენიძე,გრიგოლი ბენიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,8,,,50,კახაბერ,კალაშოვი,კახაბერ კალაშოვი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,8,,,51,ზვიად,ტომარაძე,ზვიად ტომარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,8,,,55,კახაბერ,კობახიძე,კახაბერ კობახიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,8,,,56,გიგლა,მიქაუტაძე,გიგლა მიქაუტაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,9,,,2,გიორგი,ღვინიაშვილი,გიორგი ღვინიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,9,,,4,ივანე,დათუაშვილი,ივანე დათუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,9,,,5,ლევან,ბეჟაშვილი,ლევან ბეჟაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,future_georgia,„მომავალი საქართველო”,,9,,,6,ვახუშტი,ქიზიყურაშვილი,ვახუშტი ქიზიყურაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,mechiauri,„თამაზ მეჭიაური ერთიანი საქართველოსთვის“,,9,,,7,ნუგზარ,ჭიაბერაშვილი,ნუგზარ ჭიაბერაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,9,,,8,სოსლან,გარსევანიშვილი,სოსლან გარსევანიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,9,,,9,დავით,ცხვარიაშვილი,დავით ცხვარიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,workers_socialist,„მშრომელთა სოციალისტური პარტია“,,9,,,11,ამირან,ლუაშვილი,ამირან ლუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,9,,,19,ელენე,ქურთიაშვილი,ელენე ქურთიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,9,,,20,თამარ,ფხოველიშვილი,თამარ ფხოველიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,9,,,21,მალხაზ,ფილაური,მალხაზ ფილაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_democrats,„თავისუფალი დემოკრატები“,,9,,,25,დავითი,ჭუნიაშვილი,დავითი ჭუნიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,roots,„ქართული ფესვები”,,9,,,28,ია,გოდერძიშვილი,ია გოდერძიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,9,,,30,ირაკლი,კოკილაშვილი,ირაკლი კოკილაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,9,,,41,დავით,სონღულაშვილი,დავით სონღულაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,9,,,44,გიორგი,მახარაშვილი,გიორგი მახარაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,9,,,50,ალექსი,კობაიძე,ალექსი კობაიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,9,,,55,ალექსი,არაბული,ალექსი არაბული,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,9,,,56,ეკატერინე,ქვლივიძე,ეკატერინე ქვლივიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,10,,,2,ზურაბ,ჭიაბერაშვილი,ზურაბ ჭიაბერაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,10,,,5,გიორგი,ბოტკოველი,გიორგი ბოტკოველი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,10,,,8,იოსებ,პარწიკანაშვილი,იოსებ პარწიკანაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,10,,,10,ნიკოლოზ,ვარდოშვილი,ნიკოლოზ ვარდოშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,10,,,14,გიორგი,ჯავახიშვილი,გიორგი ჯავახიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,10,,,20,ლალი,ბუნტური,ლალი ბუნტური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,10,,,21,მაია,წერეთელი,მაია წერეთელი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,10,,,23,მიხეილ,ჯანეზაშვილი,მიხეილ ჯანეზაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,roots,„ქართული ფესვები”,,10,,,28,გიორგი,სულხანიშვილი,გიორგი სულხანიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,10,,,30,ზიზი,გაგნიძე,ზიზი გაგნიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,10,,,41,ირაკლი,ქადაგიშვილი,ირაკლი ქადაგიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,10,,,44,ალექსანდრე,ფალავანდიშვილი,ალექსანდრე ფალავანდიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_troupe,„ჯონდო ბაღათურია - ქართული დასი”,,10,,,49,ლეილა,ხარაიშვილი,ლეილა ხარაიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,10,,,50,ვლადიმერი,გურჯიძე,ვლადიმერი გურჯიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,10,,,51,ემზარი,ქვარიანი,ემზარი ქვარიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,10,,,55,თენგიზ,ქეთელაური,თენგიზ ქეთელაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,10,,,56,ირაკლი,ტალახაძე,ირაკლი ტალახაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,11,,,4,ვაჟა,ჩოხელი,ვაჟა ჩოხელი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,11,,,5,ცეზარი,ჩოჩელი,ცეზარი ჩოჩელი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,mechiauri,„თამაზ მეჭიაური ერთიანი საქართველოსთვის“,,11,,,7,თამაზ,მეჭიაური,თამაზ მეჭიაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,11,,,8,იოსებ,შატბერაშვილი,იოსებ შატბერაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,11,,,10,ბექა,ნათელაშვილი,ბექა ნათელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,11,,,13,ბაკური,ბუჩუკური,ბაკური ბუჩუკური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,11,,,20,დენიზა,სუმბაძე,დენიზა სუმბაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,11,,,21,გიორგი,აბჟანდაძე,გიორგი აბჟანდაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_democrats,„თავისუფალი დემოკრატები“,,11,,,25,ვახტანგ,მარტოლეკი,ვახტანგ მარტოლეკი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,justice,ეკა ბესელია - პ.პ. „სამართლიანობისთვის“,,11,,,26,ეკა,ბესელია,ეკა ბესელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,11,,,30,ვახტანგ,იმერლიშვილი,ვახტანგ იმერლიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,11,,,41,შალვა,კერესელიძე,შალვა კერესელიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,11,,,44,ბადრი,დავითური,ბადრი დავითური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,11,,,55,გიორგი,ლაფანაშვილი,გიორგი ლაფანაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,11,,,56,მალხაზ,ვახტანგაშვილი,მალხაზ ვახტანგაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,whites,(პარტია) „თეთრები”,,12,,,1,ლუარა,ნიჟარაძე,ლუარა ნიჟარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,12,,,2,ირმა,ნადირაშვილი,ირმა ნადირაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,12,,,5,დავით,კირკიტაძე,დავით კირკიტაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,12,,,8,პაატა,ჯიბლაძე,პაატა ჯიბლაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,12,,,10,მიხეილ,ქუმსიშვილი,მიხეილ ქუმსიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,12,,,14,შორენა,მამალაშვილი,შორენა მამალაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,12,,,19,ილია,ლობჟანიძე,ილია ლობჟანიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,12,,,20,გიორგი,მაისურაძე,გიორგი მაისურაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,12,,,21,ლაშა,მაჭარაშვილი,ლაშა მაჭარაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,roots,„ქართული ფესვები”,,12,,,28,ბესიკ,ჩუბინიძე,ბესიკ ჩუბინიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,12,,,30,ეკატერინე,ოქროცვარიძე,ეკატერინე ოქროცვარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,12,,,31,მალხაზი,გორგასლიძე,მალხაზი გორგასლიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,girchi,„გირჩი“,,12,,,36,ვახტანგი,მეგრელიშვილი,ვახტანგი მეგრელიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,12,,,41,ნინო,ლაცაბიძე,ნინო ლაცაბიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,12,,,44,ზაზა,მარგველანი,ზაზა მარგველანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,12,,,50,ალექსანდრე,კობაიძე,ალექსანდრე კობაიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,12,,,55,დავით,სუარიშვილი,დავით სუარიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,12,,,56,გრიგოლ,გეგელია,გრიგოლ გეგელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - სოფიკო ნაკაშიძე, ლაშა ნაკაშიძე, რატი ნაკაშიძე, გიორგი ნაკაშიძე, ინგა ნოზაძე",,12,,,61,გელა,ნაკაშიძე,გელა ნაკაშიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,13,,,2,აკმამედ,იმამკულიევი,აკმამედ იმამკულიევი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,13,,,4,აშოტ,მურადიანი,აშოტ მურადიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,13,,,5,აზერ,სულეიმანოვი,აზერ სულეიმანოვი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,13,,,8,მახირ,იუსუბოვი,მახირ იუსუბოვი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,13,,,10,ალი,ბადიროვი,ალი ბადიროვი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,13,,,19,თამარ,ჭონიშვილი,თამარ ჭონიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,13,,,20,გიულსაფა,აივაზოვა,გიულსაფა აივაზოვა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,13,,,21,ნატალია,გელაზონია,ნატალია გელაზონია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,13,,,30,ავთანდილ,ოქროცვარიძე,ავთანდილ ოქროცვარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,13,,,41,ზაურ,დარგალი,ზაურ დარგალი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,13,,,44,ოლეგი,დევაძე,ოლეგი დევაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,13,,,50,გაჯარ,გუსეინოვი,გაჯარ გუსეინოვი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,13,,,55,ისპანდიარ,ქარიმოვი,ისპანდიარ ქარიმოვი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,13,,,56,მურად,მურადოვი,მურად მურადოვი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,14,,,5,კახაბერ,ოქრიაშვილი,კახაბერ ოქრიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,14,,,8,მაია,ცაბუტაშვილი,მაია ცაბუტაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,14,,,10,თემურ,წიკლაური,თემურ წიკლაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,14,,,14,გიორგი,შავრეშიანი,გიორგი შავრეშიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,14,,,19,ამირან,კორტი,ამირან კორტი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,14,,,20,ვიქტორ,კუსიანი,ვიქტორ კუსიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,14,,,21,დარეჯან,პეტრიაშვილი,დარეჯან პეტრიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_democrats,„თავისუფალი დემოკრატები“,,14,,,25,გურამ,ფადარაშვილი,გურამ ფადარაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,14,,,30,ქეთევან,ყანდაშვილი,ქეთევან ყანდაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,14,,,41,გოგი,მეშველიანი,გოგი მეშველიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,14,,,50,რობერტ,გვარლიანი,რობერტ გვარლიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,14,,,55,მამუკა,ჩოქური,მამუკა ჩოქური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,14,,,56,გიორგი,ჭელიძე,გიორგი ჭელიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,15,,,2,ლევან,თარხნიშვილი,ლევან თარხნიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,15,,,5,ბადრი,ბასიშვილი,ბადრი ბასიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,15,,,8,კობა,მაზანაშვილი,კობა მაზანაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,victorious_georgia,„ირაკლი ოქრუაშვილი - გამარჯვებული საქართველო“,,15,,,17,ირაკლი,ოქრუაშვილი,ირაკლი ოქრუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,15,,,19,ემზარი,საბანაძე,ემზარი საბანაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,15,,,20,იოსები,ვარდანიძე,იოსები ვარდანიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,15,,,21,ნანა,აღორძინება,ნანა აღორძინება,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,15,,,30,მარიამი,ხორგუაშვილი,მარიამი ხორგუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,15,,,31,ზაზა,მეზვრიშვილი,ზაზა მეზვრიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,peoples_party,„სახალხო პარტია“,,15,,,32,ბესიკ,ბოგველი,ბესიკ ბოგველი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,15,,,41,გიორგი,ხოჯევანიშვილი,გიორგი ხოჯევანიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,15,,,44,ალექსანდრე,ვაშაყმაძე,ალექსანდრე ვაშაყმაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,15,,,56,პაპუნა,კობერიძე,პაპუნა კობერიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,democratic_movement,ნინო ბურჯანაძე-ერთიანი საქართველო-დემოკრატიული მოძრაობა,,16,,,3,ალექსი,ჩხიკვაძე,ალექსი ჩხიკვაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,16,,,5,ნატო,ჩხეიძე,ნატო ჩხეიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,mechiauri,„თამაზ მეჭიაური ერთიანი საქართველოსთვის“,,16,,,7,თამაზ,ჩადუნელი,თამაზ ჩადუნელი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,16,,,8,ელიბო,პატურაშვილი,ელიბო პატურაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,victorious_georgia,„ირაკლი ოქრუაშვილი - გამარჯვებული საქართველო“,,16,,,17,გურამ,ჩალაგაშვილი,გურამ ჩალაგაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,16,,,19,ბესიკ,ბუთურიშვილი,ბესიკ ბუთურიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,16,,,20,ირინა,ცაავა,ირინა ცაავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,16,,,21,ხათუნა,გელაშვილი,ხათუნა გელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,16,,,30,მერაბ,ზურაბაშვილი,მერაბ ზურაბაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,16,,,31,პაატა,შუბითიძე,პაატა შუბითიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,girchi,„გირჩი“,,16,,,36,ნიკა,მოსიაშვილი,ნიკა მოსიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,16,,,41,ზაალ,დუგლაძე,ზაალ დუგლაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,16,,,44,ლევანი,ქველაძე,ლევანი ქველაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,national_democrats,„ეროვნულ დემოკრატიული მოძრაობა“,,16,,,45,დიმიტრი,ღონღაძე,დიმიტრი ღონღაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,16,,,51,რატი,სულაძე,რატი სულაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,16,,,55,ზვიად,გელაშვილი,ზვიად გელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,16,,,56,კახა,კოჟორიძე,კახა კოჟორიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,17,,,2,ზურაბი,ჩილინგარაშვილი,ზურაბი ჩილინგარაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,17,,,4,გელა,კვარაცხელია,გელა კვარაცხელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,17,,,5,ვაჟა,ჩიტაშვილი,ვაჟა ჩიტაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,17,,,8,დავით,გოგიჩაიშვილი,დავით გოგიჩაიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,17,,,10,გიორგი,ჩიტაური,გიორგი ჩიტაური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,17,,,14,მარიზა,ჯიქია,მარიზა ჯიქია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,17,,,19,ბესარიონ,ფოფხაძე,ბესარიონ ფოფხაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,17,,,20,რამაზი,გელაშვილი,რამაზი გელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,17,,,21,გოდერძი,კუბლაშვილი,გოდერძი კუბლაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,17,,,30,მარიამი,ჭრელაშვილი,მარიამი ჭრელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,17,,,31,ზურაბ,ხუციშვილი,ზურაბ ხუციშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,17,,,41,ანტონ,ობოლაშვილი,ანტონ ობოლაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,17,,,55,ოლეგი,სანდროშვილი,ოლეგი სანდროშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,17,,,56,იზოლდა,ლომიძე,იზოლდა ლომიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,18,,,2,არსენ,კარაპეტიან,არსენ კარაპეტიან,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,18,,,5,მელიქ,რაისიან,მელიქ რაისიან,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,18,,,8,არტაშეს,ჰაკობიან,არტაშეს ჰაკობიან,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,18,,,14,დიანა,არუთუნიან,დიანა არუთუნიან,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,18,,,20,მიხეილი,შიოშვილი,მიხეილი შიოშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,18,,,21,ამირან,ჭაღალიძე,ამირან ჭაღალიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,18,,,30,ელზა,გრიგორიანი,ელზა გრიგორიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,18,,,41,სამველ,მანუკიან,სამველ მანუკიან,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - ევგენია კარაპეტიან, შორენა თეთვაძე, არაგეღეციკ სანოსიან, არმინე მინასიან, როზა ასლანიან",,18,,,61,ენზელ,მკოიანი,ენზელ მკოიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,whites,(პარტია) „თეთრები”,,19,,,1,იური,ბელაშვილი,იური ბელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,19,,,2,გოჩა,გურგუჩიანი,გოჩა გურგუჩიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,19,,,5,დილარ,ხაბულიანი,დილარ ხაბულიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,19,,,8,ერეკლე,საღლიანი,ერეკლე საღლიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,19,,,14,გიორგი,ზურაბიანი,გიორგი ზურაბიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,19,,,21,პაატა,მაცაბერიძე,პაატა მაცაბერიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,19,,,30,მარია,არსენაშვილი,მარია არსენაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,19,,,41,გოჩა,ენუქიძე,გოჩა ენუქიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,19,,,56,სოსო,ლიპარტელიანი,სოსო ლიპარტელიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,20,,,2,სერგო,რატიანი,სერგო რატიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,20,,,5,გიორგი,კაპანაძე,გიორგი კაპანაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,20,,,8,გიორგი,კასრაძე,გიორგი კასრაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,20,,,14,როინ,გელაშვილი,როინ გელაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,20,,,19,ნინო,ბრეგვაძე,ნინო ბრეგვაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,20,,,20,გიორგი,ვაჭარაძე,გიორგი ვაჭარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,20,,,21,როსტომ,ცარციძე,როსტომ ცარციძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,20,,,30,ალექსანდრე,გაგნიძე,ალექსანდრე გაგნიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,20,,,41,პაატა,კვიჟინაძე,პაატა კვიჟინაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,20,,,44,ზინა,გველესიანი,ზინა გველესიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,20,,,56,ანი,მიროტაძე,ანი მიროტაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,21,,,2,გიორგი,წერეთელი,გიორგი წერეთელი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,21,,,5,კახა,გეწაძე,კახა გეწაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,mechiauri,„თამაზ მეჭიაური ერთიანი საქართველოსთვის“,,21,,,7,გელა,ჩივაძე,გელა ჩივაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,21,,,8,ოთარ,შაორშაძე,ოთარ შაორშაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,21,,,10,სამსონი,გუგავა,სამსონი გუგავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,workers_socialist,„მშრომელთა სოციალისტური პარტია“,,21,,,11,ნოდარ,ებანოიძე,ნოდარ ებანოიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,21,,,14,თემურ,გოგსაძე,თემურ გოგსაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,21,,,19,დავით,შალამბერიძე,დავით შალამბერიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,21,,,20,ლაშა,ლილუაშვილი,ლაშა ლილუაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,21,,,21,მურმან,ნებიერიძე,მურმან ნებიერიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,21,,,23,გიორგი,გვენეტაძე,გიორგი გვენეტაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,citizens,„ალეკო ელისაშვილი-მოქალაქეები“,,21,,,24,დავით,გიორგაძე,დავით გიორგაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,21,,,30,მერაბ,გიორგობიანი,მერაბ გიორგობიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,21,,,41,ბეჟან,წაქაძე,ბეჟან წაქაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,21,,,44,გიორგი,ქუჩიშვილი,გიორგი ქუჩიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,21,,,50,ნინო,მეფარიშვილი,ნინო მეფარიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,21,,,51,გიგა,გაბრიჭიძე,გიგა გაბრიჭიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,21,,,55,ანზორი,ფორჩხიძე,ანზორი ფორჩხიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,21,,,56,ანა,ბიბილაშვილი,ანა ბიბილაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,22,,,2,აკაკი,ბობოხიძე,აკაკი ბობოხიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,22,,,5,ნანა,ჟორჟოლიანი,ნანა ჟორჟოლიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,22,,,8,ირაკლი,კობრავა,ირაკლი კობრავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,22,,,14,იოსები,ჩიხლაძე,იოსები ჩიხლაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,22,,,19,ალექსანდრე,ჩიქოვანი,ალექსანდრე ჩიქოვანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,22,,,20,მაკა,გრიგოლია,მაკა გრიგოლია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,22,,,21,გიორგი,წულაია,გიორგი წულაია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,citizens,„ალეკო ელისაშვილი-მოქალაქეები“,,22,,,24,ინდიკო,ბერძენაძე,ინდიკო ბერძენაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,22,,,30,მანანა,ხელაძე,მანანა ხელაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,22,,,31,ირაკლი,გაგნიძე,ირაკლი გაგნიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,22,,,41,გივი,ჭიჭინაძე,გივი ჭიჭინაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,22,,,44,ზურაბ,მესხი,ზურაბ მესხი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,conservatives,„ზვიად ძიძიგური - საქართველოს კონსერვატიული პარტია”,,22,,,47,კობა,ძიძიგური,კობა ძიძიგური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,22,,,55,ნანა,ცაგურია,ნანა ცაგურია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,22,,,56,თორნიკე,ართქმელაძე,თორნიკე ართქმელაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,whites,(პარტია) „თეთრები”,,23,,,1,თეიმურაზ,შაშიაშვილი,თეიმურაზ შაშიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,23,,,2,ოთარი,კახიძე,ოთარი კახიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,23,,,4,ლაშა,არსენიძე,ლაშა არსენიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,23,,,5,გრიგოლ,ვაშაძე,გრიგოლ ვაშაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,23,,,8,ნონა,ასათიანი,ნონა ასათიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,23,,,9,სოფიო,იმედაძე,სოფიო იმედაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,23,,,14,მელანო,შავგულიძე,მელანო შავგულიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,23,,,19,თორნიკე,მარჯანიშვილი,თორნიკე მარჯანიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,23,,,20,ალექსი,გეჯაძე,ალექსი გეჯაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,23,,,21,ელგუჯა,ხიშტოვანი,ელგუჯა ხიშტოვანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,23,,,23,ნიკა,ქურციკიძე,ნიკა ქურციკიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,citizens,„ალეკო ელისაშვილი-მოქალაქეები“,,23,,,24,იოსებ,კენჭაძე,იოსებ კენჭაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,roots,„ქართული ფესვები”,,23,,,28,ნათელა,ჯიმშელეიშვილი,ნათელა ჯიმშელეიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,23,,,30,თამარი,ჯინჭველაძე,თამარი ჯინჭველაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,freedom_gamsakhurdia,თავისუფლება-ზვიად გამსახურდიას გზა,,23,,,31,დიმიტრი,ხმალაძე,დიმიტრი ხმალაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,23,,,41,ზაზა,ლომინაძე,ზაზა ლომინაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,23,,,44,რამინი,აბესაძე,რამინი აბესაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,conservatives,„ზვიად ძიძიგური - საქართველოს კონსერვატიული პარტია”,,23,,,47,თეა,ერგემლიძე,თეა ერგემლიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,23,,,50,ირინა,საღინაძე,ირინა საღინაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,23,,,55,ერმილე,ნემსაძე,ერმილე ნემსაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,23,,,56,ანა,ნაცვლიშვილი,ანა ნაცვლიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,development_party,„საქართველოს განვითარების პარტია“,,23,,,60,გიორგი,პატარიძე,გიორგი პატარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,24,,,2,ხათუნა,გოგორიშვილი,ხათუნა გოგორიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,24,,,5,მანუჩარ,კვირკელია,მანუჩარ კვირკელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,24,,,8,შოთა,გოგიბერიძე,შოთა გოგიბერიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,24,,,10,დავით,მამალაძე,დავით მამალაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,24,,,19,ნინო,შეწირული-გობრონიძე,ნინო შეწირული-გობრონიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,citizens,„ალეკო ელისაშვილი-მოქალაქეები“,,24,,,24,ოთარ,ქერქაძე,ოთარ ქერქაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,justice,ეკა ბესელია - პ.პ. „სამართლიანობისთვის“,,24,,,26,ნინო,ორაგველიძე,ნინო ორაგველიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,24,,,30,მაკა,მგალობლიშვილი,მაკა მგალობლიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,girchi,„გირჩი“,,24,,,36,ვახტანგ,ზენაიშვილი,ვახტანგ ზენაიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,24,,,41,ვასილ,ჩიგოგიძე,ვასილ ჩიგოგიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,24,,,44,ლაშა,ხეცურიანი,ლაშა ხეცურიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,24,,,55,რამაზ,ზოიძე,რამაზ ზოიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,24,,,56,გიორგი,სიორიძე,გიორგი სიორიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - რევაზი გობრონიძე, ლუიზა მანქანაშვილი, შუქრი ბარამიძე, როლანდ ბანძავა, გივი ჭელიძე",,24,,,61,გოჩა,ძიმისტარიშვილი,გოჩა ძიმისტარიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,25,,,2,ლელა,ქებურია,ლელა ქებურია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,25,,,5,როლანდ,ფიფია,როლანდ ფიფია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,25,,,8,ვიქტორ,ცაავა,ვიქტორ ცაავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,25,,,10,მამუკა,ხორავა,მამუკა ხორავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,25,,,19,ნინო,გულუა,ნინო გულუა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,25,,,21,გოჩა,ბახია,გოჩა ბახია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,25,,,30,ნოდარი,გაგნიძე,ნოდარი გაგნიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,25,,,41,ალექსანდრე,მოწერელია,ალექსანდრე მოწერელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,25,,,51,როინ,ნაჭყებია,როინ ნაჭყებია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,25,,,55,კახაბერი,თოფურიძე,კახაბერი თოფურიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,25,,,56,თამარი,ბელქანია,თამარი ბელქანია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,26,,,2,გიორგი,ბოკერია,გიორგი ბოკერია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,26,,,5,მურთაზ,ზოდელავა,მურთაზ ზოდელავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,26,,,8,თეიმურაზი,ფაჩულია,თეიმურაზი ფაჩულია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,26,,,14,ლევან,მარტიაშვილი,ლევან მარტიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,26,,,19,ირაკლი,ბერაია,ირაკლი ბერაია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,26,,,20,დავით,დავითაია,დავით დავითაია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,26,,,21,თამარ,ფაჩულია,თამარ ფაჩულია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,26,,,30,მზია,თამაზაშვილი,მზია თამაზაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,girchi,„გირჩი“,,26,,,36,ბორისი,ყურუა,ბორისი ყურუა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,26,,,41,ირაკლი,ხახუბია,ირაკლი ხახუბია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,26,,,44,გიორგი,გახოკიძე,გიორგი გახოკიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,conservatives,„ზვიად ძიძიგური - საქართველოს კონსერვატიული პარტია”,,26,,,47,თეიმურაზი,წურწუმია,თეიმურაზი წურწუმია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,26,,,50,ზაალი,დავითაია,ზაალი დავითაია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,26,,,56,გიორგი,ბარამია,გიორგი ბარამია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - პაატა ჩაგანავა, ირაკლი ხვიჩავა, დავითი ჯიქია, მერაბი სიმონია, დავით ბასილაია",,26,,,61,დათო,სარსანია,დათო სარსანია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,,"საინიციატივო ჯგუფი - ირაკლი კუპრეიშვილი, გიორგი ლაკია, ნოდარი ადამია, გურანდა ოდიშარია, გულიზა ჯობავა",,26,,,62,აპოლონი,გარუჩავა,აპოლონი გარუჩავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,27,,,2,გიორგი,უგულავა,გიორგი უგულავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,27,,,4,ვაჟა,კიტია,ვაჟა კიტია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,27,,,5,მალხაზ,ჯალაღონია,მალხაზ ჯალაღონია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,27,,,8,ოთარ,ჭითანავა,ოთარ ჭითანავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,27,,,19,ჯამბულ,ნაჭყებია,ჯამბულ ნაჭყებია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,27,,,20,სოფიო,დანელია,სოფიო დანელია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,27,,,21,ზურაბ,ჯინჯოლავა,ზურაბ ჯინჯოლავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,27,,,23,ზვიად,ვეკუა,ზვიად ვეკუა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,27,,,30,ნინო,კუხაშვილი,ნინო კუხაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,27,,,41,ირაკლი,ჩიქოვანი,ირაკლი ჩიქოვანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,zviads_way,"„ზვიადის გზა“ (ღმერთის, სიმართლისა და ქვეყნისათვის)",,27,,,43,რამაზ,ჩაჩიბაია,რამაზ ჩაჩიბაია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,27,,,44,დავით,არდია,დავით არდია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,conservatives,„ზვიად ძიძიგური - საქართველოს კონსერვატიული პარტია”,,27,,,47,გიორგი,მორგოშია,გიორგი მორგოშია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,27,,,55,გიორგი,გაბედავა,გიორგი გაბედავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,27,,,56,ალექსანდრე,ახვლედიანი,ალექსანდრე ახვლედიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,28,,,2,არმაზ,ახვლედიანი,არმაზ ახვლედიანი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,28,,,5,ლევან,ვარშალომიძე,ლევან ვარშალომიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,28,,,8,ზაურ,გაბაიძე,ზაურ გაბაიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,28,,,9,რამაზ,ადაძე,რამაზ ადაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,28,,,10,ტარიელ,კალანდარიშვილი,ტარიელ კალანდარიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,reformer,„რეფორმერი“,,28,,,13,ჯეირან,ოქროპირიძე,ჯეირან ოქროპირიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,28,,,14,მადონა,შაინიძე,მადონა შაინიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,victorious_georgia,„ირაკლი ოქრუაშვილი - გამარჯვებული საქართველო“,,28,,,17,იზა,სურმანიძე,იზა სურმანიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,28,,,19,მარიამ,ჯაში,მარიამ ჯაში,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,28,,,20,ზურაბი,ჯორბენაძე,ზურაბი ჯორბენაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,new_force,„ახალი ძალა“,,28,,,23,ლაზარე,ზაქარიაძე,ლაზარე ზაქარიაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,citizens,„ალეკო ელისაშვილი-მოქალაქეები“,,28,,,24,გენრი,დოლიძე,გენრი დოლიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,roots,„ქართული ფესვები”,,28,,,28,ვახტანგ,კახიძე,ვახტანგ კახიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,28,,,30,ირაკლი,ქორელი,ირაკლი ქორელი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,girchi,„გირჩი“,,28,,,36,იაგო,ხვიჩია,იაგო ხვიჩია,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,28,,,41,რესან,კონცელიძე,რესან კონცელიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,28,,,44,ტარიელ,მახარაძე,ტარიელ მახარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,national_democrats,„ეროვნულ დემოკრატიული მოძრაობა“,,28,,,45,რამაზ,ფევაძე,რამაზ ფევაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,conservatives,„ზვიად ძიძიგური - საქართველოს კონსერვატიული პარტია”,,28,,,47,ნატალია,ძიძიგური,ნატალია ძიძიგური,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,28,,,55,თემურ,მახარაძე,თემურ მახარაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,28,,,56,ირაკლი,კუპრაძე,ირაკლი კუპრაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,29,,,2,ირინე,აფხაზავა,ირინე აფხაზავა,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,democratic_movement,ნინო ბურჯანაძე-ერთიანი საქართველო-დემოკრატიული მოძრაობა,,29,,,3,ხვიჩა,გამარჯობაძე,ხვიჩა გამარჯობაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,29,,,5,ბონდო,თედორაძე,ბონდო თედორაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,29,,,8,ამირან,ტაკიძე,ამირან ტაკიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,labour,„შალვა ნათელაშვილი-საქართველოს ლეიბორისტული პარტია“,,29,,,10,მირიან,ბერაძე,მირიან ბერაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,29,,,14,ნათია,შაქარიშვილი,ნათია შაქარიშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,29,,,19,ზვიად,კვაჭანტირაძე,ზვიად კვაჭანტირაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,29,,,20,ალექსი,ბახოლდინი,ალექსი ბახოლდინი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,29,,,21,ირმა,ოქროპირიძე,ირმა ოქროპირიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,29,,,30,ნანა,კოკილაშვილი,ნანა კოკილაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,29,,,41,ზაალ,მიქელაძე,ზაალ მიქელაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,29,,,44,დავით,ცენტერაძე,დავით ცენტერაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,progressive_georgia,„პროგრესული საქართველო“,,29,,,50,ლაურა,ტაკიძე,ლაურა ტაკიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,veterans,„საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა”,,29,,,51,ჯუმბერ,ანანიძე,ჯუმბერ ანანიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,29,,,55,თენგიზ,ჯაფარიძე,თენგიზ ჯაფარიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,29,,,56,პაატა,ცივაძე,პაატა ცივაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,whites,(პარტია) „თეთრები”,,30,,,1,ზურაბ,ხიმშიაშვილი,ზურაბ ხიმშიაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,european_georgia,"„ბაქრაძე, უგულავა, ბოკერია - ევროპული საქართველო - მოძრაობა თავისუფლებისთვის“",,30,,,2,ტარიელ,ნაკაიძე,ტარიელ ნაკაიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,tribuna,„დავით ჭიჭინაძე ტრიბუნა - ქდმ”,,30,,,4,ზვიად,კვირიკაძე,ზვიად კვირიკაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,unm,საარჩევნო ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია”,,30,,,5,მიშა,ბოლქვაძე,მიშა ბოლქვაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,future_georgia,„მომავალი საქართველო”,,30,,,6,ნუკრი,ბასილაძე,ნუკრი ბასილაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,patriots,"„დავით თარხან-მოურავი, ირმა ინაშვილი - საქართველოს პატრიოტთა ალიანსი”",,30,,,8,ზორბეგ,ბერიძე,ზორბეგ ბერიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,greens,„გაჩეჩილაძე - მწვანეთა პარტია“,,30,,,9,ნინო,ბოლქვაძე,ნინო ბოლქვაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_choice,„ბეჟან გუნავა - ქართული არჩევანი“,,30,,,14,ბადრი,შაინიძე,ბადრი შაინიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,victorious_georgia,„ირაკლი ოქრუაშვილი - გამარჯვებული საქართველო“,,30,,,17,ოთარ,შაინიძე,ოთარ შაინიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,alliance,მოქალაქეთა პოლიტიკური გაერთიანება „ჩვენი საქართველო - სოლიდარობის ალიანსი“,,30,,,19,ამირან,მალაყმაძე,ამირან მალაყმაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgia_party,„საქართველო“,,30,,,20,ქეთინო,გეჯაძე,ქეთინო გეჯაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,free_georgia,"„თავისუფალი საქართველო (კახა კუკავა, გიორგი წულაია)“",,30,,,21,დალი,ტაკიძე,დალი ტაკიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,citizens,„ალეკო ელისაშვილი-მოქალაქეები“,,30,,,24,გიორგი,გაბაიძე,გიორგი გაბაიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,roots,„ქართული ფესვები”,,30,,,28,ზურაბ,ცინცქილაძე,ზურაბ ცინცქილაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,change_georgia,„შეცვალე საქართველო”,,30,,,30,ეკატერინე,იარღანაშვილი,ეკატერინე იარღანაშვილი,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,gd,ქართული ოცნება - დემოკრატიული საქართველო,,30,,,41,ანზორ,ბოლქვაძე,ანზორ ბოლქვაძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_idea,"„ლევან ჩაჩუა, გურამ ფალავანდიშვილი - ქართული იდეა“",,30,,,44,გურამ,გოგიტიძე,გურამ გოგიტიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,georgian_march,„ქართული მარში-ეროვნული მოძრაობა“,,30,,,55,ნაბი,დოლიძე,ნაბი დოლიძე,,,party_lists_2020_georgia_unified.xlsx
+parl_2020,__main__,smd,lelo,„ლელო - მამუკა ხაზარაძე“,,30,,,56,ჯამბულ,ხოზრევანიძე,ჯამბულ ხოზრევანიძე,,,party_lists_2020_georgia_unified.xlsx
