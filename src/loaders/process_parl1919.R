@@ -50,6 +50,12 @@ PARTY_MAP <- c(
 df <- read_excel(RAW_FILE, sheet = "source")
 message(sprintf("Loaded %d rows from Excel", nrow(df)))
 
+# The XLSX uses `OID` as the district identifier. Older versions of the file
+# called it `id`; tolerate either so the script survives an upstream rename.
+if ("OID" %in% names(df) && !("id" %in% names(df))) {
+  df <- df |> rename(id = OID)
+}
+
 party_cols <- names(PARTY_MAP)
 missing    <- setdiff(party_cols, names(df))
 if (length(missing) > 0) {
