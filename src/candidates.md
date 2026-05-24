@@ -170,7 +170,18 @@ const searchInput = Inputs.text({
   submit: false
 });
 searchInput.style.width = "100%";
-searchInput.addEventListener("input", () => stateWidget.setQuery(searchInput.value));
+// Debounce keystrokes: with 56,839 clusters in the corpus, dispatching a full
+// re-render on every character causes typing lag on lower-powered devices.
+// 180ms after the last keystroke is short enough to feel instant but long
+// enough that holding a key or pasting doesn't trigger N redundant searches.
+{
+  let _t;
+  searchInput.addEventListener("input", () => {
+    clearTimeout(_t);
+    const v = searchInput.value;
+    _t = setTimeout(() => stateWidget.setQuery(v), 180);
+  });
+}
 
 // ── Scope checkboxes — drive the search corpus selection plus an
 //    "exact match" toggle. Each is a plain <label><input type=checkbox>…</label>.
@@ -634,16 +645,27 @@ function renderAppearancesTable(cluster, appearances) {
   const pageNum    = state.page || 1;
 
   const scopes = state.scopes || new Set(["name"]);
+  // Require at least 2 characters of search text before scanning the corpus.
+  // Single-letter queries match nearly every candidate and produce a huge
+  // sort + render that's visibly slow on GitHub Pages. We treat the
+  // too-short state like an empty query so no misleading "no results"
+  // message appears while the user is mid-type.
+  const totalQueryChars = queryTerms.reduce((a, b) => a + b.length, 0);
+  const effectiveTerms = totalQueryChars >= 2 ? queryTerms : [];
   const matches = (() => {
-    if (!queryTerms.length) return [];
+    if (!effectiveTerms.length) return [];
     if (!scopes.size) return [];
+    // Hoist scope flags out of the hot loop so we don't re-read the Set on
+    // each of 56k iterations.
+    const useName  = scopes.has("name");
+    const useParty = scopes.has("party");
     const out = [];
     for (let i = 0; i < nameCorpus.length; i++) {
       // Per-cluster haystack: union of the active scope corpuses.
-      const haystack = (scopes.has("name")  ? nameCorpus[i]  : "") +
-                       (scopes.has("party") ? (" " + partyCorpus[i]) : "");
+      const haystack = (useName  ? nameCorpus[i]  : "") +
+                       (useParty ? (" " + partyCorpus[i]) : "");
       let ok = true;
-      for (const term of queryTerms) {
+      for (const term of effectiveTerms) {
         if (!haystack.includes(term)) { ok = false; break; }
       }
       if (ok) out.push(index.clusters[i]);
@@ -654,7 +676,7 @@ function renderAppearancesTable(cluster, appearances) {
 
   resultsPanel.innerHTML = "";
 
-  if (!queryTerms.length) {
+  if (!effectiveTerms.length) {
     // No prompt below the box — the input's placeholder already invites typing.
   } else if (matches.length === 0) {
     resultsPanel.append(html`<p class="cand-prompt">${t("candidates.no_results")}</p>`);
