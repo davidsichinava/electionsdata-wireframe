@@ -27,29 +27,57 @@ function inlinePartyLabelMap(c) {
   return new Map((c.pl || []).map(p => [p.i, p]));
 }
 
+// Resolve a party's display name. Inline (election-specific) labels in
+// `c.pl` only carry the fields that DIFFER from the global registry — so a
+// missing `.k` or `.e` means "fall through to the registry". Both sources
+// may be empty; in that case return the party_id as last-resort text.
 function partyName(pid, prefer = lang, inlineLabels = null) {
   const inline = inlineLabels?.get(pid);
-  if (inline) {
-    return (prefer === "ka" ? inline.k : inline.e) ?? inline.k ?? inline.e ?? pid ?? "";
+  const reg = index.parties?.[pid];
+  if (prefer === "ka") {
+    return inline?.k
+        ?? (reg?.name_ka && reg.name_ka !== pid ? reg.name_ka : null)
+        ?? inline?.e ?? reg?.name_en ?? pid ?? "";
   }
-  const p = index.parties?.[pid];
-  if (!p) return pid ?? "";
-  if (prefer === "ka") return (p.name_ka && p.name_ka !== pid ? p.name_ka : p.name_en) ?? pid;
-  return (p.name_en && p.name_en !== pid ? p.name_en : p.name_ka) ?? pid;
+  return inline?.e
+      ?? (reg?.name_en && reg.name_en !== pid ? reg.name_en : null)
+      ?? inline?.k ?? reg?.name_ka ?? pid ?? "";
 }
 
 function voteTypeLabel(voteType) {
   return t(`candidates.vote_type.${voteType}`) || voteType;
 }
 
+// Appearance entries store election + vote_type as integer indices into the
+// top-level `index.elections` and `index.vote_types` arrays (saves ~1.5 MB
+// raw versus repeating the string ids 90,000+ times). Resolve via the
+// arrays; the resolvers tolerate already-decoded strings too, so existing
+// callers that still pass the string form keep working.
+const electionAtIdx = (i) => {
+  if (typeof i === "string") return electionById.get(i);
+  return index.elections[i];
+};
+const voteTypeAtIdx = (i) => {
+  if (typeof i === "string") return i;
+  return index.vote_types?.[i] ?? "";
+};
+
+function appearanceElectionId(a) {
+  return typeof a.e === "string" ? a.e : (index.elections[a.e]?.id ?? "");
+}
+function appearanceVoteType(a) {
+  return typeof a.v === "string" ? a.v : (index.vote_types?.[a.v] ?? "");
+}
+
 // "<election name>, <vote-type> (<district>)" — used both in display and the
 // search corpus. The district suffix is shown when present (e.g. for local
 // PR/SMD list candidacies in a specific self-gov unit).
-function appearanceLabel({e: electionId, v: voteType, d: district}) {
-  const ename = electionName(electionId);
-  const vlabel = voteTypeLabel(voteType);
+function appearanceLabel(a) {
+  const election = electionAtIdx(a.e);
+  const ename = election ? ((lang === "ka" ? election.name_ka : election.name_en) ?? election.id) : "";
+  const vlabel = voteTypeLabel(appearanceVoteType(a));
   const head = vlabel ? `${ename}, ${vlabel}` : ename;
-  return district ? `${head} (${district})` : head;
+  return a.d ? `${head} (${a.d})` : head;
 }
 ```
 
@@ -68,6 +96,11 @@ for (const c of index.clusters) {
   const partyNames = (c.ps || []).map(pid => {
     const p = index.parties?.[pid];
     const inline = inlineLabels.get(pid);
+    // Inline pl entries only carry fields that DIFFER from the registry, so
+    // we want BOTH sources in the search corpus: inline catches election-
+    // specific aliases ("Bloc: UNM — United Opposition"), registry catches
+    // the canonical form ("United National Movement"). Falsy / missing
+    // fields stringify as "" and contribute nothing.
     return `${inline?.k ?? ""} ${inline?.e ?? ""} ${p?.name_ka ?? ""} ${p?.name_en ?? ""} ${pid ?? ""}`;
   }).join(" ");
   const apLabels = (c.a || []).map(appearanceLabel).join(" ");

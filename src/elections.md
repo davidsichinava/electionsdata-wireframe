@@ -1325,14 +1325,106 @@ const container = html`
   .seat-block { display: flex; flex-wrap: wrap; gap: 2px; }
   .seat-tile  { width: 9px; height: 9px; border-radius: 1px; }
 
-  /* Active bar row (party filter) */
-  .bar-row-active { background: rgba(0,0,0,0.06); border-radius: 3px; }
+  /* Active highlights for legend rows (bar chart, district table, seat
+     legend). All three reserve a 3 px transparent left border on the base
+     class so the active state can colour it in without shifting the row's
+     contents — that way the red accent never overlaps the swatch or text,
+     and toggling does not cause a horizontal jiggle. Background tint stays
+     the same in all three for visual consistency. */
 
-  /* Clickable district/precinct table rows */
+  /* Active bar row (party filter) — visible when the user lands via a
+     ?party= deep link from /parties or clicks any row themselves. */
+  .bar-row {
+    transition: background 0.15s, border-color 0.15s;
+    border-left: 3px solid transparent;
+    border-radius: 3px;
+    padding-left: 4px;
+  }
+  .bar-row-active {
+    background: rgba(204, 23, 32, 0.08);
+    border-left-color: var(--red, #CC1720);
+  }
+
+  /* Clickable district/precinct table rows. The accent attaches to the
+     first cell because Leaflet doesn't let us paint a border across the
+     whole <tr>; padding-left adds breathing room between the stripe and
+     the party-dot swatch. */
   .dist-table-row { cursor: pointer; transition: background 0.1s; }
   .dist-table-row:hover td { background: rgba(0,0,0,0.04); }
-  .dist-table-row-active td { background: rgba(0,0,0,0.07); }
-  .dist-table-row-active td:first-child { font-weight: 700; }
+  .dist-table-row td:first-child {
+    border-left: 3px solid transparent;
+    padding-left: 10px;
+  }
+  .dist-table-row-active td { background: rgba(204, 23, 32, 0.08); }
+  .dist-table-row-active td:first-child {
+    font-weight: 700;
+    border-left-color: var(--red, #CC1720);
+  }
+
+  /* Seat legend row (below the dot composition). Border-radius lives here
+     (was inline) so the active border-left can sit flush against it. */
+  .seat-legend-row {
+    transition: background 0.15s, border-color 0.15s;
+    border-left: 3px solid transparent;
+    border-radius: 3px;
+    padding-left: 7px;
+  }
+  .seat-legend-row:hover { background: rgba(0,0,0,0.04); }
+  .seat-legend-row-active {
+    background: rgba(204, 23, 32, 0.08);
+    border-left-color: var(--red, #CC1720);
+  }
+  .seat-legend-row-active strong { color: var(--red, #CC1720); }
+
+  /* Election info card "Sources:" footer (rendered by renderElectionInfo()
+     after the notes block). Small, muted, treats the YAML 'sources:' array
+     as a citation list. */
+  .election-sources {
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--border);
+  }
+  .election-sources-label {
+    font-family: var(--font-head);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.3rem;
+  }
+  .election-sources-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .election-sources-list li { margin-bottom: 0.2rem; }
+  .election-sources-list a {
+    color: var(--red, #CC1720);
+    text-decoration: none;
+  }
+  .election-sources-list a:hover { text-decoration: underline; }
+
+  /* Selected map unit (parliamentary SMD, sakrebulo majoritarian, selfgov,
+     or precinct circle). The class is toggled by setSelectedUnit() on the
+     Leaflet SVG element. !important is necessary because Leaflet applies
+     stroke style inline via setStyle() during hover, re-colouring, and
+     party-filter restyling, and we want the selection accent to survive all
+     of that. The animated dash gives the user an unmistakable cue without
+     obscuring the fill colour underneath. */
+  path.geda-selected,
+  circle.geda-selected {
+    stroke: var(--red, #CC1720) !important;
+    stroke-width: 3px !important;
+    stroke-opacity: 1 !important;
+    stroke-dasharray: 6 3 !important;
+    animation: geda-selected-dash 0.9s linear infinite;
+  }
+  @keyframes geda-selected-dash {
+    to { stroke-dashoffset: -9; }
+  }
 
   /* Turnout metric rows — clickable to switch the map metric */
   .turnout-metric-row {
@@ -1538,7 +1630,7 @@ const {
 } = makeRenderers({
   t, lang, electionVal,
   getParty, partyColor,
-  selectPartyOnMap, _mapCtrl,
+  selectPartyOnMap, _mapCtrl, _partyCtrl,
   passed, failed, presidentialWinnerId,
   viewMode, isPresidential, isPlebiscite,
   effectiveVoteType, results, seatFilter,

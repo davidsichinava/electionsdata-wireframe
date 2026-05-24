@@ -1554,11 +1554,6 @@
         "seats_smd": 0
       },
       {
-        "id": "our_georgia",
-        "seats_pr": 0,
-        "seats_smd": 0
-      },
-      {
         "id": "independent",
         "seats_pr": 0,
         "seats_smd": 0
@@ -2111,19 +2106,11 @@
         }
       },
       {
-        "id": "girchi",
-        "threshold_status": "passed"
-      },
-      {
         "id": "republicans_2016",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "free_democrats",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "burjanadze_democratic",
+        "alias": {
+          "ka": "„რესპუბლიკური პარტია”",
+          "en": "Republican Party"
+        },
         "threshold_status": "failed"
       },
       {
@@ -2133,34 +2120,6 @@
           "ka": "გოგი წულაია - ახალი ქრისტიანდემოკრატები",
           "en": "Gogi Tsulaia - New Christian Democrats"
         }
-      },
-      {
-        "id": "industry_sakartvelo",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "greens",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "social_democrats",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "european_democrats",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "national_forum",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "democratic_movement",
-        "threshold_status": "failed"
-      },
-      {
-        "id": "georgian_march",
-        "threshold_status": "failed"
       },
       {
         "id": "progressive_democratic_2017",
@@ -4266,15 +4225,6 @@
         }
       },
       {
-        "id": "sports_union_2010",
-        "threshold_status": "failed",
-        "color": "#0277BD",
-        "alias": {
-          "en": "Union of Georgian Sportspeople",
-          "ka": "საქართველოს სპორტსმენთა კავშირი"
-        }
-      },
-      {
         "id": "national_council_2010",
         "threshold_status": "passed",
         "color": "#6A1B9A",
@@ -4357,8 +4307,8 @@
         "threshold_status": "failed",
         "color": "#795548",
         "alias": {
-          "en": "Force Veterans, Patriots and Pensioners Political Movement",
-          "ka": "ძალოვანი ვეტერანების, პატრიოტთა და პენსიონერთა პოლიტიკური მოძრაობა"
+          "en": "Force Veterans, Patriots and Pensioners Political Movement “Mamulisvili”",
+          "ka": "ძალოვანი ვეტერანების, პატრიოტთა და პენსიონერთა პოლიტიკური მოძრაობა “მამულიშვილი”"
         }
       },
       {
@@ -5109,6 +5059,12 @@
         "name": {
           "en": "National Archives of Georgia. Central Historical Archive, Fund N1834, Descr. 2, Fol. 17, Pg. 25",
           "ka": "საქართველოს ეროვნული არქივი. საისტორიო ცენტრალური არქივი, ფონდი N1834, აღწერა 2, საქმე 17, გვ. 25"
+        }
+      },
+      {
+        "name": {
+          "en": "Electoral lists: https://firstrepublic.ge/ka/theme/68",
+          "ka": "პარტიული სიები: https://firstrepublic.ge/ka/theme/68"
         }
       }
     ],

@@ -50,10 +50,65 @@ PARTY_MAP <- c(
 df <- read_excel(RAW_FILE, sheet = "source")
 message(sprintf("Loaded %d rows from Excel", nrow(df)))
 
-# The XLSX uses `OID` as the district identifier. Older versions of the file
-# called it `id`; tolerate either so the script survives an upstream rename.
-if ("OID" %in% names(df) && !("id" %in% names(df))) {
-  df <- df |> rename(id = OID)
+# ── XLSX (Settype, name_ka) → geojson `id` lookup ───────────────────────────
+# The XLSX's `OID` column is a row index that does NOT correspond to the
+# polygon `id` in src/data/shp/parl1919_pr.geojson. Each (Settype, name_ka)
+# row in the source maps to exactly one polygon there; we hard-code that
+# mapping rather than do name-matching at runtime so the join is auditable.
+# Two name forms exist per location: an "Urban" point (the city proper) and
+# a "Mazra" polygon (the county). Tbilisi appears in the geojson under the
+# historic Russian-Imperial spelling "ტფილისი"; the XLSX uses modern "თბილისი".
+DISTRICT_MAP <- tibble::tribble(
+  ~settype, ~name_ka,            ~district_id,
+  # Mazras (counties / okrugs)
+  "Mazra",  "ახალციხე",            6,
+  "Mazra",  "ახალქალაქი",          4,
+  "Mazra",  "ბორჩალო",             7,
+  "Mazra",  "თბილისი",            15,
+  "Mazra",  "გორი",                9,
+  "Mazra",  "დუშეთი",             11,
+  "Mazra",  "თიანეთი",            18,
+  "Mazra",  "სიღნაღი",            26,
+  "Mazra",  "თელავი",             17,
+  "Mazra",  "ოზურგეთი",           22,
+  "Mazra",  "შორაპანი",           33,
+  "Mazra",  "ქუთაისი",            31,
+  "Mazra",  "რაჭა",               23,
+  "Mazra",  "ლეჩხუმი",            20,
+  "Mazra",  "ახალსენაკი",          2,
+  "Mazra",  "ზუგდიდი",            13,
+  "Mazra",  "სოხუმის ოლქი",       27,
+  # Urban centres
+  "Urban",  "ახალციხე",            5,
+  "Urban",  "დუშეთი",             10,
+  "Urban",  "თბილისი",            14,
+  "Urban",  "სიღნაღი",            25,
+  "Urban",  "თელავი",             16,
+  "Urban",  "გორი",                8,
+  "Urban",  "ოზურგეთი",           21,
+  "Urban",  "ახალქალაქი",          3,
+  "Urban",  "ყვირილა",            32,
+  "Urban",  "ჭიათურა",            34,
+  "Urban",  "სამტრედია",          24,
+  "Urban",  "ახალსენაკი",          1,
+  "Urban",  "ხონი",               36,
+  "Urban",  "ზუგდიდი",            12,
+  "Urban",  "ლანჩხუთი",           19,
+  "Urban",  "ფოთი",               29,
+  "Urban",  "ქუთაისი",            30,
+  "Urban",  "სურამი",             28,
+  "Urban",  "ხაშური",             35
+)
+
+# Join the lookup; warn loudly if any source row failed to match.
+df <- df |> left_join(DISTRICT_MAP, by = c("Settype" = "settype", "name_ka" = "name_ka"))
+unmatched <- df |> dplyr::filter(is.na(district_id)) |> dplyr::select(OID, Settype, name_ka)
+if (nrow(unmatched) > 0) {
+  warning(
+    "Source rows without a geojson district_id mapping:\n  ",
+    paste(sprintf("OID=%s Settype=%s name_ka=%s", unmatched$OID, unmatched$Settype, unmatched$name_ka),
+          collapse = "\n  ")
+  )
 }
 
 party_cols <- names(PARTY_MAP)
@@ -68,7 +123,7 @@ df <- df |>
   mutate(across(all_of(party_cols), ~ as.integer(replace_na(.x, 0))))
 
 df_long <- df |>
-  select(id, total_voters, votes, valid_votes, all_of(party_cols)) |>
+  select(district_id, total_voters, votes, valid_votes, all_of(party_cols)) |>
   pivot_longer(
     cols      = all_of(party_cols),
     names_to  = "party_ka",
@@ -82,7 +137,7 @@ df_long <- df |>
   # Capture `voted` before reusing the `votes` name for party_votes
   rename(voted = votes) |>
   transmute(
-    district_id = id,
+    district_id,
     party_id,
     votes       = party_votes,
     vote_share,

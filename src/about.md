@@ -175,9 +175,17 @@ const styleOptions = [
       const elecLabel = (lang === "ka" && e.name?.ka) ? e.name.ka : (e.name?.en ?? e.id);
       const items = e.sources.map(s => {
         const label = (lang === "ka" && s.name?.ka) ? s.name.ka : (s.name?.en ?? "");
-        return s.url
-          ? html`<li><a href="${s.url}" target="_blank" rel="noopener">${label}</a></li>`
-          : html`<li>${label}</li>`;
+        // Auto-link: if no explicit s.url is set, scan the label text for an
+        // embedded http(s):// link and split the visible text from the URL so
+        // we still render a clickable anchor. Matches the elections page's
+        // renderElectionInfo() so sources behave consistently across pages.
+        const urlMatch = label.match(/https?:\/\/\S+/);
+        const url = s.url ?? (urlMatch ? urlMatch[0] : null);
+        if (!url) return html`<li>${label}</li>`;
+        const visibleLabel = urlMatch
+          ? label.replace(urlMatch[0], "").replace(/[:\s]+$/u, "").trim()
+          : label;
+        return html`<li><a href="${url}" target="_blank" rel="noopener">${visibleLabel || url}</a></li>`;
       });
       const note = (lang === "ka" && e.source_note?.ka) ? e.source_note.ka
                  : e.source_note?.en ?? "";

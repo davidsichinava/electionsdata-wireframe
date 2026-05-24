@@ -271,7 +271,33 @@ export async function buildElectionMap({
   let currentSelectedUnitLevel = _selectedUnitLevelCtrl?.value ?? null;
   let currentSelectedUnit      = _selectedUnitCtrl?.value ?? null;
   const selectionHandlers = new Map();
+  // Track the Leaflet layer behind each selectable unit so we can highlight
+  // the matching polygon / circle whenever a district is selected (click,
+  // URL restore, or programmatic). Without this the side-panel updates but
+  // the map gives no visual confirmation of which unit is currently active.
+  const selectionLayers = new Map();
   const selectionKey = (level, id) => `${level ?? ""}:${String(id ?? "")}`;
+
+  // Toggle the `.geda-selected` CSS class on the Leaflet path/circle SVG
+  // element of the currently-selected unit. CSS in elections.md styles this
+  // with a thick red accent stroke, layered on top of whatever fill the
+  // choropleth has applied — works for parliamentary SMD, council SMD,
+  // selfgov, and precinct circles alike.
+  function applySelectionHighlight() {
+    if (mapContainer) {
+      mapContainer.querySelectorAll(".geda-selected").forEach(el => el.classList.remove("geda-selected"));
+    } else {
+      document.querySelectorAll(".geda-selected").forEach(el => el.classList.remove("geda-selected"));
+    }
+    if (!currentSelectedUnitLevel || !currentSelectedUnit) return;
+    const layer = selectionLayers.get(selectionKey(currentSelectedUnitLevel, currentSelectedUnit));
+    const el    = layer?.getElement?.();
+    if (el?.classList) {
+      el.classList.add("geda-selected");
+      // Promote so the highlight isn't obscured by neighbouring polygons.
+      if (typeof layer.bringToFront === "function") layer.bringToFront();
+    }
+  }
 
   function setSelectedUnit(level, id, {updateUrl = true} = {}) {
     currentSelectedUnitLevel = level || null;
@@ -288,6 +314,7 @@ export async function buildElectionMap({
         []
       );
     }
+    applySelectionHighlight();
   }
 
   function clearSelectedUnit({updateUrl = true} = {}) {
@@ -302,11 +329,14 @@ export async function buildElectionMap({
     if (updateUrl && typeof updateUrlParams === "function") {
       updateUrlParams({}, ["unit_level", "unit"]);
     }
+    applySelectionHighlight();
   }
 
-  function registerSelection(level, id, handler) {
+  function registerSelection(level, id, handler, layer) {
     if (level && id != null && typeof handler === "function") {
       selectionHandlers.set(selectionKey(level, id), handler);
+      // Stash the layer so applySelectionHighlight() can find its SVG element.
+      if (layer) selectionLayers.set(selectionKey(level, id), layer);
     }
   }
 
@@ -464,7 +494,7 @@ export async function buildElectionMap({
 
         if (isCouncilMode) updateCouncilSeatsForDistrict(did, f.properties);
       };
-      registerSelection("district", did, selectDistrict);
+      registerSelection("district", did, selectDistrict, circle);
       circle.on("click", () => applySelection("district", did));
       bindDynamicTooltip(circle, () => {
         const title = (lang === "ka" ? f.properties.name_ka : f.properties.name_en) ?? did;
@@ -487,7 +517,7 @@ export async function buildElectionMap({
             : renderDistrictPanel(did, feature.properties));
           if (isCouncilMode) updateCouncilSeatsForDistrict(did, feature.properties);
         };
-        registerSelection("district", did, selectDistrict);
+        registerSelection("district", did, selectDistrict, layer);
         layer.on("click", () => applySelection("district", did));
         layer.on("dblclick", e => {
           L.DomEvent.stop(e);
@@ -577,7 +607,7 @@ export async function buildElectionMap({
               updateCouncilSeats(_sgId, _sgFeat?.properties ?? _props, true);
             }
           };
-          registerSelection("council_district", did, selectCouncilDistrict);
+          registerSelection("council_district", did, selectCouncilDistrict, layer);
           layer.on("click", () => applySelection("council_district", did));
           layer.on("dblclick", e => {
             L.DomEvent.stop(e);
@@ -611,7 +641,7 @@ export async function buildElectionMap({
               : renderDistrictPanel(did, feature.properties, selfgovResults));
             if (isCouncilMode) updateCouncilSeats(did, feature.properties, true);
           };
-          registerSelection("selfgov", did, selectSelfgov);
+          registerSelection("selfgov", did, selectSelfgov, layer);
           layer.on("click", () => applySelection("selfgov", did));
           layer.on("dblclick", e => {
             L.DomEvent.stop(e);
@@ -901,8 +931,8 @@ export async function buildElectionMap({
               }
               updateCouncilSeatsForPrecinct(parentDid, stationId, enhancedProps);
             };
-            registerSelection("precinct", resultKey, selectPrecinct);
-            if (resultKey !== stationId) registerSelection("precinct", stationId, selectPrecinct);
+            registerSelection("precinct", resultKey, selectPrecinct, layer);
+            if (resultKey !== stationId) registerSelection("precinct", stationId, selectPrecinct, layer);
             layer.on("click", () => applySelection("precinct", resultKey));
             bindDynamicTooltip(layer, () => {
               const title = lang === "ka" ? titleKa : titleEn;
@@ -966,8 +996,8 @@ export async function buildElectionMap({
               }
               updateCouncilSeatsForPrecinct(parentDid, stationId, enhancedProps);
             };
-            registerSelection("precinct", resultKey, selectPrecinct);
-            if (resultKey !== stationId) registerSelection("precinct", stationId, selectPrecinct);
+            registerSelection("precinct", resultKey, selectPrecinct, layer);
+            if (resultKey !== stationId) registerSelection("precinct", stationId, selectPrecinct, layer);
             layer.on("click", () => applySelection("precinct", resultKey));
             bindDynamicTooltip(layer, () => {
               const title = lang === "ka" ? enhancedProps.name_ka : enhancedProps.name_en;
@@ -1627,12 +1657,18 @@ export async function buildElectionMap({
         this.currentPartyId = newId;
         if (_partyCtrl) _partyCtrl.value = newId;
 
-        // Visual feedback: highlight matching rows in bar chart and district/precinct tables
+        // Visual feedback: highlight matching rows in bar chart, district/
+        // precinct tables, and the seat legend so the user can always see
+        // which party drives the map colouring (whether they arrived via a
+        // ?party= link from /parties or clicked a row themselves).
         document.querySelectorAll(".bar-row[data-party-id]").forEach(row => {
           row.classList.toggle("bar-row-active", newId != null && row.dataset.partyId === newId);
         });
         document.querySelectorAll(".dist-table-row[data-party-id]").forEach(row => {
           row.classList.toggle("dist-table-row-active", newId != null && row.dataset.partyId === newId);
+        });
+        document.querySelectorAll(".seat-legend-row[data-party-id]").forEach(row => {
+          row.classList.toggle("seat-legend-row-active", newId != null && row.dataset.partyId === newId);
         });
 
         // Only restyle the active layer; others must stay hollow

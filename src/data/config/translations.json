@@ -62,6 +62,7 @@
     "elections.plebiscite_results_title": "Results",
     "elections.plebiscite_results_text": "When a district is clicked, results for each ballot measure will appear here.",
     "elections.info_title": "Election info",
+    "elections.sources": "Sources",
     "elections.info_text": "Summary and results will appear here.",
     "elections.year": "Year",
     "elections.half_circle_placeholder": "Half-circle seat chart\nplaceholder",
@@ -348,6 +349,7 @@
     "elections.plebiscite_results_text": "რუკაზე ოლქზე დაჭერისას აქ გამოჩნდება ამ ოლქის შედეგები თითოეული საკითხისთვის.",
 
     "elections.info_title": "არჩევნების ინფორმაცია",
+    "elections.sources": "წყაროები",
     "elections.info_text": "აქ გამოჩნდება არჩეული არჩევნების შეჯამება და შედეგები.",
     "elections.year": "წელი",
     "elections.half_circle_placeholder": "ნახევარწრიული მანდატების დიაგრამის\nდროებითი ვერსია",

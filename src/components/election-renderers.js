@@ -8,7 +8,7 @@ import {seatsFor, partiesForFilter, councilSelfgovIdFromMajorId, formatTurnoutPc
 export function makeRenderers({
   t, lang, electionVal,
   getParty, partyColor,
-  selectPartyOnMap, _mapCtrl,
+  selectPartyOnMap, _mapCtrl, _partyCtrl,
   passed, failed, presidentialWinnerId,
   viewMode, isPresidential, isPlebiscite,
   effectiveVoteType, results, seatFilter,
@@ -71,9 +71,18 @@ export function makeRenderers({
     if (panel) panel.replaceWith(renderNationalPanel());
   }
 
+  // Currently-selected party_id, from the map controller if mounted, else
+  // from the URL-driven _partyCtrl (set before any render runs). Used by
+  // renderers below to mark the matching row "active" on first paint so a
+  // shared link like ?party=gd visually highlights GD in every legend.
+  function selectedPartyId() {
+    return _mapCtrl?.current?.currentPartyId ?? _partyCtrl?.value ?? null;
+  }
+
   // ── Horizontal bar chart ──────────────────────────────────────────────────
   function renderBarChart(passed, failed, elecId, winnerId = null) {
     const maxVal = d3.max([...passed, ...failed], d => d.vote_share) || 1;
+    const activeId = selectedPartyId();
 
     function barRow(d) {
       const pct      = (d.vote_share / maxVal) * 100;
@@ -81,8 +90,9 @@ export function makeRenderers({
       const countStr = d.votes != null ? d.votes.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—";
       const pname    = d.party?.name?.[lang] || d.party_id;
       const isWinner = winnerId && d.party_id === winnerId;
+      const isActive = activeId != null && d.party_id === activeId;
       const el = html`
-        <div class="bar-row" data-party-id="${d.party_id}" style="cursor:pointer;" title="${t("elections.chart.click_filter")}">
+        <div class="bar-row${isActive ? " bar-row-active" : ""}" data-party-id="${d.party_id}" style="cursor:pointer;" title="${t("elections.chart.click_filter")}">
           <div class="bar-label" title="${pname}">
             <span class="party-dot" style="background:${d.color};"></span>${pname}
             ${isWinner ? html`<span style="margin-left:4px; font-size:0.68rem; background:${d.color}; color:#fff; border-radius:3px; padding:1px 5px; vertical-align:middle;">✓</span>` : ""}
@@ -246,15 +256,19 @@ export function makeRenderers({
   // ── Seat legend ───────────────────────────────────────────────────────────
   function renderSeatLegend(parties, filter, elec) {
     const subset = partiesForFilter(parties, filter, elec);
+    const activeId = selectedPartyId();
     return html`<div style="display:flex; flex-wrap:wrap; gap:0.75rem 1.25rem; margin-top:0.75rem;">
       ${subset.map(d => {
         const seats = seatsFor(d, filter);
         const pname = d.party?.name?.[lang] || d.party_id;
-        return html`<div style="display:flex; align-items:center; gap:5px; font-size:0.8rem;">
+        const isActive = activeId != null && d.party_id === activeId;
+        const el = html`<div class="seat-legend-row${isActive ? " seat-legend-row-active" : ""}" data-party-id="${d.party_id}" style="display:flex; align-items:center; gap:5px; font-size:0.8rem; cursor:pointer; padding-top:2px; padding-bottom:2px; padding-right:5px;" title="${t("elections.chart.click_filter")}">
           <span style="width:10px;height:10px;border-radius:2px;background:${d.color};display:inline-block;flex-shrink:0;"></span>
           <span style="color:var(--muted);">${pname}</span>
           <strong style="color:var(--dark);">${seats}</strong>
         </div>`;
+        el.addEventListener("click", () => selectPartyOnMap(d.party_id));
+        return el;
       })}
     </div>`;
   }
@@ -279,13 +293,15 @@ export function makeRenderers({
     const topRows   = rows.slice(0, SHOW_N);
     const moreRows  = rows.slice(SHOW_N);
 
+    const activeId = selectedPartyId();
     function distRow(r) {
       const color        = partyColor(r.party_id, electionVal?.id);
       const shareStr     = `${(r.vote_share * 100).toFixed(1)}%`;
       const countStr     = r.votes != null ? r.votes.toLocaleString(lang === "ka" ? "ka-GE" : "en-US") : "—";
       const partyName    = r.party_label || getParty(r.party_id).name?.[lang] || r.party_id;
       const candidateName = candidateLabel(r);
-      const el = html`<tr class="dist-table-row" data-party-id="${r.party_id}" title="${t("elections.chart.click_filter")}">
+      const isActive = activeId != null && r.party_id === activeId;
+      const el = html`<tr class="dist-table-row${isActive ? " dist-table-row-active" : ""}" data-party-id="${r.party_id}" title="${t("elections.chart.click_filter")}">
         <td style="vertical-align:middle;">
           <span class="party-dot" style="background:${color}; vertical-align:middle;"></span>
           ${isSMD && candidateName
@@ -511,12 +527,45 @@ export function makeRenderers({
       return typeof raw === "string" && raw.trim() === "" ? null : raw;
     };
     const notesRaw = noteForLang(subElection?.notes) ?? noteForLang(elec?.notes);
-    if (!notesRaw) return "";
+
+    // Render the election YAML's `sources:` block as a small attribution
+    // footer beneath the notes. Each entry has `{name: {en, ka}, url?}`; we
+    // pick the localized name and turn the entry into a link when `url` is
+    // present. If neither notes nor sources exist we return nothing.
+    const sources = Array.isArray(elec?.sources) ? elec.sources.filter(Boolean) : [];
+
+    if (!notesRaw && sources.length === 0) return "";
 
     const notesNode = document.createElement("div");
-    notesNode.innerHTML = notesRaw;
+    if (notesRaw) notesNode.innerHTML = notesRaw;
 
-    return html`<div class="card election-blurb">${notesNode}</div>`;
+    const sourceItems = sources.map(s => {
+      const name = s?.name?.[lang] ?? s?.name?.en ?? s?.name?.ka ?? "";
+      if (!name) return null;
+      // Treat http(s)://… inside the name string as an inline link too — that
+      // matches how parl_1919 currently expresses "Electoral lists: <url>".
+      const urlMatch = String(name).match(/https?:\/\/\S+/);
+      const url = s?.url ?? (urlMatch ? urlMatch[0] : null);
+      if (url) {
+        // If the URL is embedded in the name string, split it so we don't
+        // render a bare URL alongside the link.
+        const label = urlMatch ? String(name).replace(urlMatch[0], "").replace(/[:\s]+$/u, "").trim() : String(name);
+        return html`<li><a href="${url}" target="_blank" rel="noopener">${label || url}</a></li>`;
+      }
+      return html`<li>${name}</li>`;
+    }).filter(Boolean);
+
+    const sourcesNode = sourceItems.length
+      ? html`<div class="election-sources">
+          <div class="election-sources-label">${t("elections.sources") || "Sources"}</div>
+          <ul class="election-sources-list">${sourceItems}</ul>
+        </div>`
+      : "";
+
+    return html`<div class="card election-blurb">
+      ${notesRaw ? notesNode : ""}
+      ${sourcesNode}
+    </div>`;
   }
 
   // ── Electoral college (indirect presidential) ─────────────────────────────
