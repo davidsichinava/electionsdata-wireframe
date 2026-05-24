@@ -147,6 +147,19 @@ const smdRows      = sheetRows(wbC, "majoritarian candidates");
 const mgRows       = sheetRows(wbC, "mayor_gamgebeli");
 const electedRows  = sheetRows(wbE, "elected politicians");
 
+// The 2014 "party lists" sheet stores `district_code` as a numeric selfgov id
+// (literally "11" rather than "საგარეჯო"), so PR rows can't pick up a human-
+// readable name straight from that sheet. The mayor_gamgebeli sheet does carry
+// (selfgov_id, district_name) pairs — build a lookup table from it and reuse
+// for PR rows. The same lookup also helps elected (mayor / gamgebeli) rows
+// whose source columns vary across sheets.
+const selfgovIdToName = new Map();
+for (const r of mgRows) {
+  if (r.selfgov_id && r.district_name && !selfgovIdToName.has(String(r.selfgov_id))) {
+    selfgovIdToName.set(String(r.selfgov_id), r.district_name);
+  }
+}
+
 const CANDIDATES_SOURCE = "adg_2014_candidates_unified_corrected.xlsx";
 const ELECTED_SOURCE   = "adg_2014_elected_politicians.xlsx";
 
@@ -159,6 +172,11 @@ function partyIdOf(label) {
 
 const prOut = [];
 for (const r of prRows) {
+  // Resolve a human-readable selfgov name. The mayor_gamgebeli lookup is the
+  // source of truth; fall back to the PR sheet's own district_code when it
+  // happens to be a name (Tbilisi rows ship as "თბილისი" rather than "1").
+  const nameFromLookup = selfgovIdToName.get(String(r.selfgov_id));
+  const fallback = /^\d+$/.test(String(r.district_code ?? "")) ? "" : r.district_code;
   prOut.push({
     election_id: "local_2014",
     sub_id: "__main__",
@@ -167,7 +185,7 @@ for (const r of prRows) {
     party_label_ka: r.party_name,
     party_code: "",
     district_id: r.selfgov_id,
-    district_name_ka: r.district_code,
+    district_name_ka: nameFromLookup || fallback || "",
     list_order: r.order_id,
     ballot_number: "",
     first_name: r.first_name,

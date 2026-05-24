@@ -56,6 +56,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 „დავით თევზაძე - საქართველოს მშვიდობისათვის”,peace_georgia_2016,18,parl_2016,1
 „დავით ჭიჭინაძე ტრიბუნა - ქდმ“,tribuna,21,adj_2020,1
 „დავით ჭიჭინაძე ტრიბუნა - ქდმ”,tribuna,181,parl_2020,1
+„დაშნაკცუთიუნ“,dashnaks,19,parl_1919,1
 „დემოკრატთა ალიანსი”,democrats_alliance,29,local_2021,1
 „ევროპელი დემოკრატები“,european_democrats,24,adj_2024,1
 „ევროპელი დემოკრატები”,european_democrats,683,local_2021,1
@@ -235,6 +236,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 „თვითმმართველობა ხალხს!""",self_governance_people_2014,1,local_2014,1
 ბლოკი „ერთიანი ნაციონალური მოძრაობა-გაერთიანებული ოპოზიცია „ძალა ერთობაშია“,unm,36,adj_2020,1
 "ბლოკი „ერთიანი ნაციონალური მოძრაობა""",unm,1,local_2014,1
+ბორჩალოს მაზრის მცხოვრებ მუსულმანთა ჯგუფი,borchalo_1919,5,parl_1919,1
 გაერთიანებული ოპოზიცია,gachechiladze,1,pres_2008,1
 "გაერთიანებული ოპოზიცია (ეროვნული საბჭო, მემარჯვენეები)",united_opposition_2008,17,parl_2008,1
 გახარია - საქართველოსთვის,gakharia,2370,local_2021,1
@@ -258,6 +260,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 დავით თარხან‐მოურავი − საქართველოს პატრიოტთა ალიანსი,patriots,311,local_2014,1
 დავით თევზაძე - საქართველოს მშვიდობისათვის,peace_georgia_2016,106,parl_2016,1
 დავით ჭიჭინაძე - ტრიბუნა,tribuna,187,local_2021,1
+დამოუკიდებელთა (უპარტიო) კავშირი,indie_1919,10,parl_1919,1
 დამოუკიდებელი,independent,21,local_2017,1
 დამოუკიდებელი არასაპარლამენტო,independent,1,local_2014,1
 დამოუკიდებელი დავით თარხან - მოურავი -,independent,2,local_2014,1
@@ -284,6 +287,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 ეროვნულ-დემოკრატიული პარტია (ედპ),national_democratic_2010,11,local_2010,1
 ეროვნულ‐დემოკრატიული პარტია (ედპ),national_democratic_2014,3,local_2014,1
 ეროვნული ფორუმი,national_forum,213,adj_2016;parl_2016,1
+ესთეტიური ლიგა პატრიოტებისა,aesth_1919,6,parl_1919,1
 ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,veterans_patriots_2014,2,local_2014,1
 ზვიადის გზა - უფლის სახელით,zviads_way,130,parl_2016,1
 ზვიადის გზა უფლის სახელით [სამართლიანობის აღდგენის კავშირი; მეანაბრეთა ასოციაცია; იპოთეკით დაზარალებულთა დარბაზი; ალტერნატიული პირადობის დაშვების ლიგა; უფალია ჩვენი სიმართლე],zviads_way,58,local_2017,1
@@ -312,6 +316,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 მამულიშვილთა ორდენი „სამშობლო“,motherland_2020,121,parl_2020,1
 მამულიშვილთა ორდენი „სამშობლო”,motherland_2020,33,local_2017,1
 მემარცხენე ალიანსი,left_alliance,86,local_2017;parl_2024,1
+მემარცხენე სოციალისტ-ფედერალისტთა მაშვრალთა პარტია,left_federalists_1919,38,parl_1919,1
 მერაბ კოსტავას საზოგადოება,kostava_society,335,local_2014;parl_2016,1
 მომავალი საქართველო,future_georgia,108,parl_2012,2
 მომავალი საქართველო,future_georgia_2014,5,local_2014,2
@@ -336,6 +341,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 "მპმ ""სოციალური სამართლიანობისათვის""",social_justice_2020,149,parl_2020,1
 მრეწველობა გადაარჩენს საქართველოს,industry_sakartvelo,204,adj_2008;parl_2020,2
 მრეწველობა გადაარჩენს საქართველოს,meunargia,1,pres_2018,2
+მუსლიმთა ეროვნული საბჭო,muslim_1919,5,parl_1919,1
 მშრომელთა სოციალისტური პარტია,workers_socialist,231,local_2017;local_2021;parl_2016,1
 მწვანეთა პარტია,greens_geo,53,local_2025,1
 ნაციონალური მოძრაობა,unm,2,local_2014,1
@@ -381,6 +387,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 პროგრესული საქართველო,progressive_georgia,126,parl_2020,1
 რესპუბლიკური პარტია,republicans_2016,55,local_2017,1
 რეფორმატორები,reformators,123,parl_2020,1
+რუსეთის სოციალ-დემოკრატთა მუშათა პარტია,sdwpr_1919,12,parl_1919,1
 საარჩევნო ბლოკი - „ნინო ბურჯანაძე - დემოკრატიული მოძრაობა“,burjanadze_democratic,36,adj_2016,1
 "საარჩევნო ბლოკი „ბაქრაძე, უგულავა-ევროპული საქართველო”",european_georgia,2471,local_2017,1
 "საარჩევნო ბლოკი “გაერთიანებული ოპოზიცია (ეროვნული საბჭო, მემარჯვენეები)”",united_opposition_2008,164,parl_2008,1
@@ -638,9 +645,12 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 საქართველო,georgia_party,166,local_2021;parl_2024,3
 საქართველო,patriots,60,local_2017,3
 საქართველოს ევროპელი დემოკრატები,zurab_kharatishvili,1,pres_2013,1
+საქართველოს ელინთა დემოკრატიული ჯგუფი,hellenic_1919,10,parl_1919,1
 საქართველოს ერთიანი კომუნისტური პარტია,united_communist_2016,148,adj_2016;parl_2016,1
 საქართველოს ერთიანი კომუნისტური პარტია (სეკპ),adj2008_united_communist,37,adj_2008,1
 საქართველოს ერთობისა და განვითარების პარტია,unity_development,81,local_2017;parl_2024,1
+საქართველოს ეროვნულ-დემოკრატიული პარტია,national_democrats_1919,96,parl_1919,1
+საქართველოს ეროვნული პარტია,natparty_1919,25,parl_1919,1
 საქართველოს კომუნისტური პარტია - სტალინელები (ივანე წიკლაური),communist_stalinist,122,parl_2016,1
 საქართველოს კონსერვატიული პარტია,conservatives,164,adj_2008;parl_2020,1
 საქართველოს ლეიბორისტული პარტია,labour,102,adj_2016;local_2014;parl_2024,2
@@ -648,7 +658,11 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 საქართველოს მშრომელთა საბჭო,workers_council_2014,45,local_2014,1
 საქართველოს პატრიოტთა ალიანსი,patriots,82,local_2014;parl_2024,1
 საქართველოს პოლიტიკური პარტია “ჩვენი ქვეყანა”,our_country_2008,124,parl_2008,1
+საქართველოს რადიკალ-დემოკრატთა პარტია,raddem_1919,50,parl_1919,1
 საქართველოს რესპუბლიკური პარტია,republicans_2008,216,parl_2008,1
+საქართველოს სოციალ-დემოკრატიული მუშათა პარტია,social_democrats_1919,130,parl_1919,1
+საქართველოს სოციალისტ-რევოლუციონერთა პარტია,sr_1919,73,parl_1919,1
+საქართველოს სოციალისტ-ფედერალისტთა პარტია,federalists_1919,120,parl_1919,1
 საქართველოს სპორტსმენთა კავშირი,sports_union_2012,133,parl_2012,1
 საქართველოს ძალოვან ვეტერანთა და პატრიოტთა პოლიტიკური მოძრაობა,veterans_patriots_2014,1040,local_2014,1
 სახალხო მოძრაობა,peoples_movement_2014,18,local_2014,1
@@ -693,6 +707,7 @@ party_label_ka,party_id,appearances,election_ids,label_resolves_to_n_ids
 შალვა ნათელაშვილი საქართველოს ლეიბორისტული პარტია,labour,3,local_2014,1
 შენების მოძრაობა,construction_movement_2017,12,local_2017,1
 შეცვალე საქართველო,change_georgia,82,parl_2024,1
+შოთა რუსთაველის ჯგუფი,rustaveli_1919,1,parl_1919,1
 ჩვენ,chven,41,parl_2024,1
 ჩვენი გაერთიანებული საქართველო,our_georgia,31,parl_2024,1
 ჩვენი საქართველო,our_georgia_2014,109,local_2014,1

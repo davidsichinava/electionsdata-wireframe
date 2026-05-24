@@ -80,11 +80,18 @@ for (const c of index.clusters) {
 // ── State widget — a single custom input carrying {query, page, expanded}.
 //    `expanded` is a Set<cluster_id>; clicking a candidate name toggles
 //    its membership so multiple candidates can be expanded in-place at once.
-//    On first load, honours a `?party=<id>` URL param coming from the
-//    /parties page: pre-fills the search with that party's display name.
+//    On first load:
+//      * honours ?party=<id>      (from /parties page)
+//      * honours #candidate=<cid> (shareable link to a specific candidate)
+//    The hash is kept in sync as the user expands/collapses, so the address
+//    bar always carries a copyable deep-link to the most recently opened row.
+const clusterById = new Map(index.clusters.map(c => [c.c, c]));
+
 const stateWidget = (() => {
   const el = document.createElement("div");
   let initialQuery = "";
+  let initialExpanded = new Set();
+  let initialScrollCid = null;
   // Default search scope is "candidate name only". When the page is opened
   // via ?party=<id> from the parties page, also enable the "party" scope so
   // the pre-filled query (a party display name) matches.
@@ -98,18 +105,48 @@ const stateWidget = (() => {
       else initialQuery = partyId; // fall through: the party_id itself is in the corpus
       initialScopes = new Set(["name", "party"]);
     }
+    // Deep-link to a specific candidate via #candidate=<cluster_id>.
+    const hashMatch = (window.location.hash || "").match(/(?:^|[#&])candidate=([^&]+)/);
+    if (hashMatch) {
+      const cid = decodeURIComponent(hashMatch[1]);
+      const c = clusterById.get(cid);
+      if (c) {
+        // Pre-fill the search so the candidate's row shows up in the result
+        // list (otherwise an empty query produces zero matches).
+        if (!initialQuery) initialQuery = `${c.f ?? ""} ${c.l ?? ""}`.trim();
+        initialExpanded = new Set([cid]);
+        initialScrollCid = cid;
+      }
+    }
   }
-  el.value = { query: initialQuery, page: 1, expanded: new Set(), scopes: initialScopes, exact: false };
+  el.value = {
+    query: initialQuery, page: 1,
+    expanded: initialExpanded,
+    scopes: initialScopes, exact: false,
+    scrollToCid: initialScrollCid
+  };
   function emit(next) {
     el.value = next;
     el.dispatchEvent(new Event("input"));
   }
-  el.setQuery   = q   => emit({ ...el.value, query: q, page: 1 });
+  function writeHash(expandedSet) {
+    if (typeof window === "undefined") return;
+    const last = [...expandedSet].pop();
+    const hash = last ? `#candidate=${encodeURIComponent(last)}` : "";
+    const url = window.location.pathname + window.location.search + hash;
+    history.replaceState(null, "", url);
+  }
+  el.setQuery   = q   => emit({ ...el.value, query: q, page: 1, scrollToCid: null });
   el.bumpPage   = ()  => emit({ ...el.value, page: el.value.page + 1 });
   el.toggleExpand = cid => {
     const next = new Set(el.value.expanded);
     if (next.has(cid)) next.delete(cid); else next.add(cid);
-    emit({ ...el.value, expanded: next });
+    writeHash(next);
+    emit({ ...el.value, expanded: next, scrollToCid: next.has(cid) ? cid : null });
+  };
+  el.copyLink = () => {
+    if (typeof window === "undefined" || !navigator?.clipboard) return Promise.resolve(false);
+    return navigator.clipboard.writeText(window.location.href).then(() => true, () => false);
   };
   el.setScope = (scope, on) => {
     const next = new Set(el.value.scopes);
@@ -358,7 +395,33 @@ const frame = html`
     margin: 0 0 0.5rem;
     color: var(--muted);
     font-size: 0.82rem;
+    align-items: center;
   }
+  .cand-detail-share { margin-left: auto; }
+  .cand-copy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--theme-background, #fff);
+    border: 1px solid var(--theme-foreground-faint, #ccc);
+    border-radius: 4px;
+    padding: 3px 9px;
+    font: inherit;
+    font-size: 0.78rem;
+    color: var(--muted);
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+  }
+  .cand-copy-link:hover {
+    color: var(--red, #CC1720);
+    border-color: var(--red, #CC1720);
+  }
+  .cand-copy-link.cand-copy-feedback {
+    color: var(--red, #CC1720);
+    border-color: var(--red, #CC1720);
+    background: var(--theme-background-alt, #fff5f5);
+  }
+  .cand-copy-link svg { flex: none; }
   /* Toggle chevron next to the candidate name. Uses CSS-generated content
      so we don't have to template the glyph from JS. */
   .cand-link .cand-chevron {
@@ -494,11 +557,35 @@ function renderAppearancesTable(cluster, appearances) {
     return v ? `${ename}, ${v}` : ename;
   };
 
+  // Shareable-link button: copies the current URL (which carries
+  // #candidate=<cluster_id>) to the clipboard. Falls back to a "select-and-
+  // copy" prompt on browsers without clipboard permission.
+  const copyBtn = html`<button type="button" class="cand-copy-link" title="${t("candidates.copy_link") || "Copy link"}">
+    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+      <path d="M10 13a5 5 0 0 0 7.07 0l3.54-3.54a5 5 0 0 0-7.07-7.07L11.5 4.43" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M14 11a5 5 0 0 0-7.07 0L3.39 14.54a5 5 0 0 0 7.07 7.07L12.5 19.57" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </svg>
+    <span>${t("candidates.copy_link") || "Copy link"}</span>
+  </button>`;
+  copyBtn.addEventListener("click", async () => {
+    const ok = await stateWidget.copyLink();
+    const original = copyBtn.querySelector("span").textContent;
+    copyBtn.querySelector("span").textContent = ok
+      ? (t("candidates.link_copied") || "Copied!")
+      : (t("candidates.copy_failed") || "Copy failed");
+    copyBtn.classList.add("cand-copy-feedback");
+    setTimeout(() => {
+      copyBtn.querySelector("span").textContent = original;
+      copyBtn.classList.remove("cand-copy-feedback");
+    }, 1500);
+  });
+
   return html`
     <div class="cand-detail">
       <div class="cand-detail-meta">
         <span>${t("candidates.record_count")}: <strong>${cluster.n}</strong></span>
         <span>${t("candidates.latest_year")}: <strong>${cluster.y ?? "—"}</strong></span>
+        <span class="cand-detail-share">${copyBtn}</span>
       </div>
       <div class="cand-table cand-table-details" role="table">
         <div class="cand-table-row cand-table-head" role="row">
@@ -631,6 +718,20 @@ function renderAppearancesTable(cluster, appearances) {
       const btn = ev.target.closest(".cand-link");
       if (btn) stateWidget.toggleExpand(btn.dataset.cid);
     });
+
+    // Honour ?candidate=<cid> deep-link or a toggle-driven scroll: after the
+    // table renders, if a particular cluster id has been flagged for scroll,
+    // bring its detail row into view. We clear the flag immediately so future
+    // re-renders (e.g. typing in the search) don't keep auto-scrolling.
+    if (state.scrollToCid) {
+      const cid = state.scrollToCid;
+      // Delay one frame so the DOM has the detail row attached.
+      requestAnimationFrame(() => {
+        const target = resultsPanel.querySelector(`[data-cid-detail="${CSS.escape(cid)}"]`);
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+      stateWidget.value = { ...stateWidget.value, scrollToCid: null };
+    }
 
     const pager = end < matches.length
       ? html`<div class="cand-pager"><button type="button" class="cand-show-more">${t("candidates.show_more")}</button></div>`

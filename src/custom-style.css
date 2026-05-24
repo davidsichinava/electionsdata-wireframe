@@ -636,7 +636,18 @@ hr {
     display: flex;
   }
 
+  /* The desktop layout wraps each menu link in an <h2> with `display: flex`
+     so it acts as a transparent flex item. In the mobile column layout we
+     need each h2 to span the full nav width so the <a> inside can stretch
+     edge-to-edge; otherwise the link shrinks to its text width and the
+     active-state highlight ends up floating in the middle of the canvas. */
+  .top-nav h2 {
+    display: block;
+    width: 100%;
+  }
+
   .top-nav a {
+    display: block;
     width: 100%;
     box-sizing: border-box;
     min-width: auto;

@@ -124,6 +124,9 @@ jobs:
       - name: Build pres2024_indirect download bundle
         run: node src/loaders/downloads/process_pres2024_indirect_download.js
 
+      - name: Build parl1919 download bundle
+        run: node src/loaders/downloads/process_parl1919_download.js
+
       - name: Build parl2008 download bundle
         run: node src/loaders/downloads/process_parl2008_download.js
 
