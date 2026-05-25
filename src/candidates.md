@@ -138,6 +138,24 @@ const stateWidget = (() => {
       else initialQuery = partyId; // fall through: the party_id itself is in the corpus
       initialScopes = new Set(["name", "party"]);
     }
+    // Deep-link from /elections "Participating political groups". Append
+    // election name and (if present) vote-type label to the search query;
+    // both strings live in the per-cluster appearance corpus, so the
+    // existing substring matcher filters down to the right roster without
+    // requiring a new filter axis.
+    const electionId = params.get("election");
+    if (electionId) {
+      const elec = electionById.get(electionId);
+      const ename = elec
+        ? (lang === "ka" ? elec.name_ka : elec.name_en) ?? electionId
+        : electionId;
+      initialQuery = initialQuery ? `${initialQuery} ${ename}` : ename;
+    }
+    const voteType = params.get("vote_type");
+    if (voteType) {
+      const vlabel = t(`candidates.vote_type.${voteType}`) || voteType;
+      initialQuery = initialQuery ? `${initialQuery} ${vlabel}` : vlabel;
+    }
     // Deep-link to a specific candidate via #candidate=<cluster_id>.
     const hashMatch = (window.location.hash || "").match(/(?:^|[#&])candidate=([^&]+)/);
     if (hashMatch) {

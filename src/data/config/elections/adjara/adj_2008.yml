@@ -33,9 +33,9 @@ map_view:
 
 notes:
   en: |
-    The November 3, 2008 elections to the Supreme Council of Adjara were held under a mixed electoral system, with proportional party-list voting and six single-member majoritarian districts.
+    The November 3, 2008 elections to the Supreme Council of Adjara were held under a mixed electoral system, with proportional party-list voting and six single-member majoritarian districts. Elections in Khelvachauri district were held again due to the invalidation of the initial results.
   ka: |
-    აჭარის ავტონომიური რესპუბლიკის უმაღლესი საბჭოს 2008 წლის 3 ნოემბრის არჩევნები შერეული საარჩევნო სისტემით გაიმართა: ამომრჩევლები ხმას აძლევდნენ როგორც პროპორციულ პარტიულ სიებს, ასევე ექვს ერთმანდატიან მაჟორიტარულ ოლქში წარდგენილ კანდიდატებს.
+    აჭარის ავტონომიური რესპუბლიკის უმაღლესი საბჭოს 2008 წლის 3 ნოემბრის არჩევნები შერეული საარჩევნო სისტემით გაიმართა: ამომრჩევლები ხმას აძლევდნენ როგორც პროპორციულ პარტიულ სიებს, ასევე ექვს ერთმანდატიან მაჟორიტარულ ოლქში წარდგენილ კანდიდატებს. მაჟორიტარული არჩევნები ხელვაჩაურის ოლქში ხელახლა ჩატარდა, თავდაპირველი შედეგების ბათილად ცნობის გამო.
 
 parties:
   - id: unm
@@ -114,8 +114,8 @@ sub_elections: []
 
 sources:
   - name:
-      en: "Public information requested from the Supreme Electoral Council of Adjara"
-      ka: "აჭარის უმაღლესი საარჩევნო კომისიიდან გამოთხოვნილი საჯარო ინფორმაცია"
+      en: "National Democratic Institute (NDI)"
+      ka: "ეროვნული დემოკრატიული ინსტიტუტი (NDI)"
 
 files:
   pr_results:           "data/results/adj2008_pr.csv"

@@ -127,8 +127,8 @@ parties:
 
 sources:
   - name:
-      en: "Public information requested from the Supreme Electoral Council of Adjara"
-      ka: "აჭარის უმაღლესი საარჩევნო კომისიიდან გამოთხოვნილი საჯარო ინფორმაცია"
+      en: "National Democratic Institute (NDI)"
+      ka: "ეროვნული დემოკრატიული ინსტიტუტი (NDI)"
 
 files:
   pr_results:           "data/results/adj2016_pr.csv"

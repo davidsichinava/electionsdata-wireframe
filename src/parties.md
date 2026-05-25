@@ -42,10 +42,18 @@ const corpus = index.lineages.map(l => {
 ```
 
 ```js
-// ── State widget — {query, page, filter:category, expanded:Set<lineage_id>} ──
+// ── State widget — {query, page, filter:category, expanded, electionId} ──
+//    `electionId`, when set, restricts the lineage list to lineages that
+//    participated in that election. Driven by the `?election=<id>` URL param
+//    sent by the elections page's "Participating political groups" section.
 const stateWidget = (() => {
   const el = document.createElement("div");
-  el.value = { query: "", page: 1, filter: "all", expanded: new Set() };
+  let initialElectionId = null;
+  if (typeof window !== "undefined") {
+    const p = new URLSearchParams(window.location.search);
+    initialElectionId = p.get("election") || null;
+  }
+  el.value = { query: "", page: 1, filter: "all", expanded: new Set(), electionId: initialElectionId };
   function emit(next) {
     el.value = next;
     el.dispatchEvent(new Event("input"));
@@ -57,6 +65,15 @@ const stateWidget = (() => {
     const next = new Set(el.value.expanded);
     if (next.has(lid)) next.delete(lid); else next.add(lid);
     emit({ ...el.value, expanded: next });
+  };
+  el.clearElection = () => {
+    if (typeof window !== "undefined") {
+      const p = new URLSearchParams(window.location.search);
+      p.delete("election");
+      const qs = p.toString();
+      history.replaceState(null, "", window.location.pathname + (qs ? "?" + qs : "") + window.location.hash);
+    }
+    emit({ ...el.value, electionId: null, page: 1 });
   };
   return el;
 })();
@@ -143,6 +160,34 @@ const frame = html`
     border-color: var(--red, #CC1720);
     color: #fff;
   }
+  /* "Filtering by election: …" chip that appears when /parties is opened
+     via /elections "Participating political groups → Political parties". */
+  .parties-elec-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px 4px 12px;
+    margin: 0 0 0.75rem;
+    background: rgba(204, 23, 32, 0.08);
+    border-left: 3px solid var(--red, #CC1720);
+    border-radius: 3px;
+    font-size: 0.82rem;
+  }
+  .parties-elec-chip-label {
+    color: var(--muted);
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .parties-elec-chip strong { color: var(--dark); font-weight: 700; }
+  .parties-elec-chip-clear {
+    background: none; border: none; cursor: pointer;
+    color: var(--muted); font-size: 1.1rem; line-height: 1;
+    padding: 0 4px; margin-left: 2px;
+  }
+  .parties-elec-chip-clear:hover { color: var(--red, #CC1720); }
   /* Grid-backed tables: shared column template for header + body rows. */
   .cand-table { width: 100%; max-width: none; font-size: 0.86rem; margin: 0; }
   .cand-table-row {
@@ -372,15 +417,17 @@ function mapUrlForAppearance(ap, lineage) {
   const pageNum    = state.page || 1;
   const filter     = state.filter || "all";
   const expanded   = state.expanded || new Set();
+  const electionId = state.electionId || null;
 
   // Update filter chip visuals
   filterRow.querySelectorAll(".cand-chip").forEach(el => {
     el.classList.toggle("cand-chip-active", el.dataset.filter === filter);
   });
 
-  // Pre-filter by category, then by query.
+  // Pre-filter by category, election, then by query.
   const filtered = index.lineages.filter((l, i) => {
     if (filter !== "all" && l.category !== filter) return false;
+    if (electionId && !(l.election_ids ?? []).includes(electionId)) return false;
     if (queryTerms.length) {
       for (const term of queryTerms) {
         if (!corpus[i].includes(term)) return false;
@@ -390,6 +437,22 @@ function mapUrlForAppearance(ap, lineage) {
   });
 
   resultsPanel.innerHTML = "";
+
+  // Visible "filtering by election" chip when a ?election=<id> deep-link is
+  // active. Shows the localised election name and a × button to clear it.
+  if (electionId) {
+    const elec = electionById.get(electionId);
+    const ename = elec
+      ? (lang === "ka" ? elec.name_ka : elec.name_en) ?? elec.id
+      : electionId;
+    const chip = html`<div class="parties-elec-chip">
+      <span class="parties-elec-chip-label">${t("parties.filtering_by_election") || "Filtering by election"}:</span>
+      <strong>${ename}</strong>
+      <button type="button" class="parties-elec-chip-clear" aria-label="${t("parties.clear_filter") || "Clear filter"}">×</button>
+    </div>`;
+    chip.querySelector("button").addEventListener("click", () => stateWidget.clearElection());
+    resultsPanel.append(chip);
+  }
 
   if (filtered.length === 0) {
     resultsPanel.append(html`<p class="cand-prompt">${t("parties.no_results")}</p>`);

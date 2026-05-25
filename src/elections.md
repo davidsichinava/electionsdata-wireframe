@@ -1376,6 +1376,111 @@ const container = html`
   }
   .seat-legend-row-active strong { color: var(--red, #CC1720); }
 
+  /* Overlay opacity slider — driven by the OpacityControl in election-map.js.
+     The toggle button shows a half-shaded circle icon and reveals a small
+     tray with a horizontal range input. Adjusting it sets a CSS custom
+     property on the map container; the two rules below apply that to the
+     Leaflet overlay/marker panes so the choropleth (and precinct circles)
+     dim together, revealing the basemap's settlement labels beneath. */
+  .leaflet-container .leaflet-overlay-pane,
+  .leaflet-container .leaflet-marker-pane {
+    opacity: var(--map-overlay-opacity, 1);
+    transition: opacity 0.15s ease;
+  }
+
+  /* Unify every map-control button — Leaflet's built-in zoom +/-, the
+     custom Zoom-Georgia / Zoom-Tbilisi, Share, Fullscreen, and Opacity
+     toggles — to the same 26×26 grey-on-white box. Without this Leaflet's
+     touch theme bumps the zoom +/- to 30×30 on tablets and our custom
+     controls stay 26×26, so the column ends up jagged. We also force
+     display:flex so any inline SVG centres on both axes instead of
+     hanging off the text baseline (this was the "opacity icon off-centre"
+     bug).
+     !important is needed because the inline cssText attribute set on
+     each custom button has higher specificity than a plain class rule. */
+  .leaflet-bar a,
+  .leaflet-touch .leaflet-bar a {
+    width: 26px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+    color: #444 !important;
+    background-color: #fff;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    font-size: 18px;
+  }
+  .leaflet-bar a:hover { color: #000 !important; background-color: #f4f4f4; }
+  /* SVG icons render as inline elements by default and pick up baseline
+     alignment, which pushed the opacity glyph a couple of pixels low. */
+  .leaflet-bar a > svg { display: block; }
+
+  .map-opacity-ctrl {
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    overflow: hidden;
+  }
+  .map-opacity-toggle { /* size + color inherited from .leaflet-bar a */ }
+  .map-opacity-tray {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 8px;
+    border-left: 1px solid var(--theme-foreground-faint, #ccc);
+  }
+  .map-opacity-tray[hidden] { display: none; }
+  .map-opacity-slider {
+    width: 90px;
+    accent-color: var(--red, #CC1720);
+    cursor: pointer;
+  }
+  .map-opacity-value {
+    font-size: 0.7rem;
+    color: #444;
+    min-width: 30px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* "Participating political groups" — cross-page navigation block in the
+     election-info card. Sits between notes and sources; shows quick-jump
+     links to the filtered /parties list and to each available candidate
+     roster (/candidates?election=<id>&vote_type=<type>). */
+  .election-participants {
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--border);
+  }
+  .election-participants-label {
+    font-family: var(--font-head);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.3rem;
+  }
+  .election-participants-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+  .election-participants-list li {
+    margin-bottom: 0.15rem;
+  }
+  .election-participants-list li::marker {
+    color: var(--muted);
+  }
+  .election-participants-list a {
+    color: var(--red, #CC1720);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .election-participants-list a:hover { text-decoration: underline; }
+
   /* Election info card "Sources:" footer (rendered by renderElectionInfo()
      after the notes block). Small, muted, treats the YAML 'sources:' array
      as a citation list. */
@@ -1411,19 +1516,15 @@ const container = html`
      or precinct circle). The class is toggled by setSelectedUnit() on the
      Leaflet SVG element. !important is necessary because Leaflet applies
      stroke style inline via setStyle() during hover, re-colouring, and
-     party-filter restyling, and we want the selection accent to survive all
-     of that. The animated dash gives the user an unmistakable cue without
-     obscuring the fill colour underneath. */
+     party-filter restyling, and we want the selection accent to survive
+     all of that. A thin black dashed outline reads cleanly on top of any
+     fill colour without competing with the choropleth gradient. */
   path.geda-selected,
   circle.geda-selected {
-    stroke: var(--red, #CC1720) !important;
-    stroke-width: 3px !important;
+    stroke: #111 !important;
+    stroke-width: 1.75px !important;
     stroke-opacity: 1 !important;
-    stroke-dasharray: 6 3 !important;
-    animation: geda-selected-dash 0.9s linear infinite;
-  }
-  @keyframes geda-selected-dash {
-    to { stroke-dashoffset: -9; }
+    stroke-dasharray: 5 3 !important;
   }
 
   /* Turnout metric rows — clickable to switch the map metric */

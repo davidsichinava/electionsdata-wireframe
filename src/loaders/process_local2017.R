@@ -82,15 +82,15 @@ PARTY_MAP_STATIC <- c(
   "15" = "workers_socialist",         # მშრ. სოც. პარტ.
   "17" = "georgia_2016",              # საქართველო
   "18" = "traditionalists",           # ტრადიციონ.
-  "20" = "free_democrats",            # შენ. მოძ. (Alasania / Free Democrats)
+  "20" = "construction_movement_2017",
   "23" = "new_christian_democrats",   # ახ. ქრ.-დემ.
   "27" = "vashadze_2017",             # გ. ვაშაძე – ერთობა ახ. საქ.
   "28" = "zviads_way",                # ზვ. გზა-უფ. სახ.
   "31" = "freedom_gamsakhurdia",      # თავ. – ზვ. გ. გზა
   "34" = "mamuli_ena",                # მამ. ორდ. „სამშობლო"
   "37" = "communist_stalinist",       # სოც. საქ. – კომ.
-  "38" = "peoples_power_2016",        # სახ. – ხ. ერთ.
-  "39" = "progressive_democratic_2016", # პრ.-დემ. მოძ.
+  "38" = "peoples_unity_2017",
+  "39" = "progressive_democratic_2017",
   "41" = "gd"                         # ქართ. ოცნება
 )
 
@@ -103,11 +103,15 @@ cat("Building dynamic party map from candidates file...\n")
 raw_mayor_candidates <- read_excel(CANDS_PATH, sheet = "mayoral candidates")
 raw_major_candidates <- read_excel(CANDS_PATH, sheet = "majoritarian candidates")
 
-# Column positions: mayoral(3=cand_num, 4=party), majoritarian(5=cand_num, 6=party)
 .tmp_ballots <- bind_rows(
-  raw_mayor_candidates %>% select(candidate_number = 3, endorsing_party = 4),
-  raw_major_candidates %>% select(candidate_number = 5, endorsing_party = 6)
+  raw_mayor_candidates %>% transmute(candidate_number, endorsing_party),
+  raw_major_candidates %>% transmute(candidate_number, endorsing_party)
 ) %>%
+  mutate(candidate_number = if_else(
+    suppressWarnings(as.integer(candidate_number)) >= 100L,
+    suppressWarnings(as.integer(candidate_number)) %% 100L,
+    suppressWarnings(as.integer(candidate_number))
+  )) %>%
   filter(str_detect(coalesce(as.character(endorsing_party), ""), "საინიციატივო ჯგუფი")) %>%
   pull(candidate_number) %>%
   unique() %>%
@@ -128,7 +132,38 @@ rm(.tmp_ballots, .new_ballots)
 to_selfgov   <- function(d) as.integer(ifelse(!is.na(d) & d >= 1L & d <= 10L, 1L, d))
 to_major_id  <- function(d, major, local = 0L) {
   base <- ifelse(!is.na(d) & d >= 1L & d <= 10L, 99L, as.integer(d))
-  as.integer(base * 10000L + as.integer(major) * 100L + as.integer(local))
+  local <- ifelse(is.na(local), 0L, as.integer(local))
+  as.integer(base * 10000L + as.integer(major) * 100L + local)
+}
+
+normalise_mid <- function(mid) {
+  out <- suppressWarnings(as.integer(round(as.numeric(mid))))
+  out_chr <- as.character(out)
+  tbilisi_short <- !is.na(out) & nchar(out_chr) == 5L & stringr::str_starts(out_chr, "99")
+  out[tbilisi_short] <- as.integer(paste0("99", stringr::str_pad(stringr::str_sub(out_chr[tbilisi_short], 3L), 4L, pad = "0")))
+  out
+}
+
+normalise_candidate_number <- function(x) {
+  out <- suppressWarnings(as.integer(x))
+  out <- if_else(!is.na(out) & out >= 100L, out %% 100L, out)
+  out
+}
+
+initiative_candidate_party_id <- function(major_id, party_num) {
+  paste0("initiative_", major_id, "_", party_num)
+}
+
+local2017_smd_party_id <- function(party_id, major_id, party_num) {
+  if_else(
+    party_id == "initiative_group" & !is.na(major_id) & !is.na(party_num),
+    initiative_candidate_party_id(major_id, party_num),
+    party_id
+  )
+}
+
+col_or_na <- function(df, name) {
+  if (name %in% names(df)) df[[name]] else NA
 }
 
 value_or_na <- function(x) {
@@ -143,8 +178,12 @@ read_precinct_join_lookup <- function(path) {
     precinct_number = as.integer(round(vapply(props, function(p) value_or_na(p$Precinct), numeric(1)))),
     district_id_geo = as.integer(round(vapply(props, function(p) value_or_na(p$District), numeric(1)))),
     selfgov_id_geo = as.integer(round(vapply(props, function(p) value_or_na(p$Mayor), numeric(1)))),
-    major_id_geo = as.integer(round(vapply(props, function(p) value_or_na(p$MID), numeric(1))))
+    MID = normalise_mid(vapply(props, function(p) value_or_na(p$MID), numeric(1)))
   ) %>%
+    mutate(precinct_id = coalesce(
+      precinct_id,
+      as.integer(round(vapply(props, function(p) value_or_na(p$PrecID), numeric(1))))
+    )) %>%
     mutate(selfgov_id_geo = if_else(selfgov_id_geo == 99L, 1L, selfgov_id_geo)) %>%
     distinct(precinct_id, .keep_all = TRUE)
 }
@@ -245,23 +284,29 @@ read_sheet_long <- function(excel_path, sheet_name, has_major) {
         major_id_fallback = to_major_id(district, major_label, major_local)
       ) %>%
       left_join(
-        precinct_join_lookup %>% select(precinct_id, major_id_geo),
+        precinct_join_lookup %>% select(precinct_id, MID),
         by = "precinct_id"
       ) %>%
       mutate(
-        major_id = coalesce(major_id_geo, major_id_fallback)
+        major_id = coalesce(MID, major_id_fallback)
       ) %>%
-      select(-major_id_geo, -major_id_fallback)
+      select(-MID, -major_id_fallback)
   }
 
-  df_sub %>%
+  out <- df_sub %>%
     pivot_longer(cols = all_of(party_cols2), names_to = "party_col", values_to = "votes") %>%
     mutate(
       party_num = str_extract(party_col, "^\\d+"),
       party_id  = PARTY_MAP[party_num],
       votes     = as.integer(coalesce(votes, 0L))
-    ) %>%
-    filter(!is.na(party_id))
+    )
+
+  if (has_major) {
+    out <- out %>%
+      mutate(party_id = local2017_smd_party_id(party_id, major_id, party_num))
+  }
+
+  out %>% filter(!is.na(party_id))
 }
 
 # ── District-level aggregation helpers ────────────────────────────────────
@@ -424,10 +469,11 @@ summarise_mayor_precincts <- function(df_long, candidate_lookup) {
 
 # ── Party-name → party_id (for candidates file, uses Georgian text) ────────
 party_id_from_name <- function(name_vec) {
-  n <- str_replace_all(name_vec, "[„\"]", "")
+  n <- str_replace_all(name_vec, "[„“”\"]", "")
   n <- str_replace_all(n, "^საარჩევნო ბლოკი\\s*", "")
   n <- str_trim(n)
   case_when(
+    str_detect(n, "საინიციატივო\\s+ჯგ")              ~ "initiative_group",
     str_detect(n, "ქართული ოცნება")              ~ "gd",
     str_detect(n, "ერთიანი ნაციონალური")          ~ "unm",
     str_detect(n, "ბაქრაძე")                      ~ "european_georgia",
@@ -438,11 +484,11 @@ party_id_from_name <- function(name_vec) {
     str_detect(n, "ლორთქიფანიძე")                 ~ "burjanadze_democratic",
     str_detect(n, "ეროვნულ.?დემოკრ")              ~ "national_democrats",
     str_detect(n, "ახალი ქრისტიან")               ~ "new_christian_democrats",
-    str_detect(n, "შენების")                      ~ "free_democrats",
+    str_detect(n, "შენების")                      ~ "construction_movement_2017",
     str_detect(n, "ვაშაძე")                       ~ "vashadze_2017",
     str_detect(n, "ტრადიციონალისტები")            ~ "traditionalists",
-    str_detect(n, "პროგრ.*დემოკრ")                ~ "progressive_democratic_2016",
-    str_detect(n, "სახალხო.*ხალხ")                ~ "peoples_power_2016",
+    str_detect(n, "პროგრ.*დემოკრ")                ~ "progressive_democratic_2017",
+    str_detect(n, "სახალხო.*ხალხ")                ~ "peoples_unity_2017",
     str_detect(n, "ზვიადის გზა")                  ~ "zviads_way",
     str_detect(n, "გამსახურდიას გზა")              ~ "freedom_gamsakhurdia",
     str_detect(n, "მემარცხენე ალიანსი")           ~ "left_alliance",
@@ -502,32 +548,47 @@ cat("  Mayor candidates — named parties:", nrow(mc_regular),
     "| initiative groups:", nrow(mc_indie), "\n")
 
 # ── 1b. Majoritarian candidates ────────────────────────────────────────────
-df_majc <- raw_major_candidates
-names(df_majc) <- c("record_id", "district_number", "district_name",
-                    "majoritarian_district", "candidate_number",
-                    "endorsing_party", "name", "last_name",
-                    "source_page", "source_pdf")
+df_majc <- tibble(
+  record_id = col_or_na(raw_major_candidates, "record_id"),
+  MID = col_or_na(raw_major_candidates, "MID"),
+  self_gov_id = col_or_na(raw_major_candidates, "self_gov_id"),
+  district_number = col_or_na(raw_major_candidates, "district_number"),
+  district_name = col_or_na(raw_major_candidates, "district_name"),
+  majoritarian_district = col_or_na(raw_major_candidates, "majoritarian_district"),
+  majoritarian_subdistrict = col_or_na(raw_major_candidates, "majoritarian_subdistrict"),
+  candidate_number = col_or_na(raw_major_candidates, "candidate_number"),
+  endorsing_party = col_or_na(raw_major_candidates, "endorsing_party"),
+  name = col_or_na(raw_major_candidates, "name"),
+  last_name = col_or_na(raw_major_candidates, "last_name"),
+  source_page = col_or_na(raw_major_candidates, "source_page"),
+  source_pdf = col_or_na(raw_major_candidates, "source_pdf")
+)
 
 df_majc <- df_majc %>%
   mutate(
     district_number      = suppressWarnings(as.integer(district_number)),
     majoritarian_district = suppressWarnings(as.integer(majoritarian_district)),
-    candidate_number     = as.integer(candidate_number),
-    selfgov_id  = to_selfgov(district_number),
-    major_id    = to_major_id(district_number, majoritarian_district),
-    party_id    = party_id_from_name(as.character(endorsing_party)),
+    majoritarian_subdistrict = suppressWarnings(as.integer(majoritarian_subdistrict)),
+    candidate_number     = normalise_candidate_number(candidate_number),
+    MID         = normalise_mid(MID),
+    selfgov_id  = coalesce(suppressWarnings(as.integer(self_gov_id)), to_selfgov(district_number)),
+    major_id    = coalesce(MID, to_major_id(district_number, majoritarian_district, majoritarian_subdistrict)),
+    party_id_base = party_id_from_name(as.character(endorsing_party)),
+    party_num   = as.character(candidate_number),
+    party_id_base = coalesce(party_id_base, unname(PARTY_MAP[party_num])),
+    party_id    = local2017_smd_party_id(party_id_base, major_id, party_num),
     name_ka     = paste(str_trim(coalesce(name, "")), str_trim(coalesce(last_name, "")))
   ) %>%
-  filter(!is.na(party_id), !is.na(major_id))
+  filter(!is.na(party_id_base), !is.na(party_id), !is.na(major_id))
 
 majc_regular <- df_majc %>%
-  filter(party_id != "initiative_group") %>%
+  filter(party_id_base != "initiative_group") %>%
   arrange(major_id, party_id) %>%
   distinct(major_id, party_id, .keep_all = TRUE) %>%
   mutate(yaml_key = paste0(party_id, "_maj_", major_id))
 
 majc_indie <- df_majc %>%
-  filter(party_id == "initiative_group") %>%
+  filter(party_id_base == "initiative_group") %>%
   arrange(major_id, candidate_number) %>%
   mutate(yaml_key = paste0("initiative_", candidate_number, "_maj_", major_id))
 
@@ -575,7 +636,8 @@ mc_lookup   <- mc %>%
                         mutate(party_num = as.character(candidate_number)) %>%
                         select(selfgov_id, party_id, party_num, name_ka)
 majc_lookup <- majc %>% filter(party_id != "initiative_group") %>%
-                        select(major_id, party_id, name_ka)
+                        mutate(party_num = as.character(candidate_number)) %>%
+                        select(major_id, party_id, party_num, name_ka)
 
 # ════════════════════════════════════════════════════════════════════════════
 # 2. PROPORTIONAL (Sakrebulo PR) — Round 1 only
@@ -729,7 +791,7 @@ turn_maj <- maj_long %>%
   )
 
 party_maj <- maj_long %>%
-  group_by(major_id, party_id) %>%
+  group_by(major_id, party_id, party_num) %>%
   summarise(votes = sum(votes, na.rm = TRUE), .groups = "drop") %>%
   filter(votes > 0)
 
@@ -741,7 +803,7 @@ maj_dist <- party_maj %>%
   left_join(valid_maj,    by = "major_id") %>%
   left_join(turn_maj,     by = "major_id") %>%
   mutate(vote_share = round(votes / total_valid, 6)) %>%
-  left_join(majc_lookup,  by = c("major_id", "party_id")) %>%
+  left_join(majc_lookup,  by = c("major_id", "party_id", "party_num")) %>%
   mutate(name_ka = coalesce(name_ka, ""), round = 1L) %>%
   rename(district_id = major_id) %>%
   select(district_id, party_id, name_ka, round, votes, vote_share,
@@ -786,7 +848,7 @@ maj_final_out <- bind_rows(nat_maj, maj_dist)
 write_csv_utf8(maj_final_out, file.path(OUT_RESULTS, "local2017_council_smd.csv"))
 
 maj_prec <- maj_long %>%
-  group_by(precinct_id, major_id, party_id) %>%
+  group_by(precinct_id, major_id, party_id, party_num) %>%
   summarise(
     votes           = sum(votes, na.rm = TRUE),
     registered      = first(registered),
@@ -1146,14 +1208,14 @@ read_2019_council_long <- function(path, candidate_lookup) {
       major_id_fallback = to_major_id(district, major_label)
     ) %>%
     left_join(
-      precinct_join_lookup %>% select(precinct_id, major_id_geo),
+      precinct_join_lookup %>% select(precinct_id, MID),
       by = "precinct_id"
     ) %>%
     mutate(
-      major_id = coalesce(major_id_geo, major_id_fallback),
+      major_id = coalesce(MID, major_id_fallback),
       precinct_key = paste(major_id, district, precinct_number, sep = ".")
     ) %>%
-    select(-major_id_geo, -major_id_fallback)
+    select(-MID, -major_id_fallback)
 
   vote_wide <- base
   for (col in candidate_cols) {
@@ -1463,14 +1525,14 @@ read_2019_oct_council_long <- function(path, candidate_lookup) {
       major_id_fallback = to_major_id(district, major_label)
     ) %>%
     left_join(
-      precinct_join_lookup %>% select(precinct_id, major_id_geo),
+      precinct_join_lookup %>% select(precinct_id, MID),
       by = "precinct_id"
     ) %>%
     mutate(
-      major_id = coalesce(major_id_geo, major_id_fallback),
+      major_id = coalesce(MID, major_id_fallback),
       precinct_key = paste(major_id, district, precinct_number, sep = ".")
     ) %>%
-    select(-major_id_geo, -major_id_fallback)
+    select(-MID, -major_id_fallback)
 
   vote_wide <- base
   for (col in candidate_cols) {
@@ -1630,14 +1692,14 @@ read_2020_council_long <- function(path, candidate_lookup) {
       major_id_fallback = to_major_id(district, major_label)
     ) %>%
     left_join(
-      precinct_join_lookup %>% select(precinct_id, major_id_geo),
+      precinct_join_lookup %>% select(precinct_id, MID),
       by = "precinct_id"
     ) %>%
     mutate(
-      major_id = coalesce(major_id_geo, major_id_fallback),
+      major_id = coalesce(MID, major_id_fallback),
       precinct_key = paste(major_id, district, precinct_number, sep = ".")
     ) %>%
-    select(-major_id_geo, -major_id_fallback)
+    select(-MID, -major_id_fallback)
 
   vote_wide <- base
   for (col in candidate_cols) {

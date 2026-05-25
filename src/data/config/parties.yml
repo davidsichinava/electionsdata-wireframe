@@ -565,6 +565,20 @@ parties:
     color: "#9E9E9E"
     type: party
 
+  # Lineage display anchor — no candidates carry this id directly; it exists
+  # so the parties page picks up a stable, canonical label for the whole
+  # Burjanadze family (burjanadze_democratic, burjanadze_united_opposition_2014,
+  # democratic_movement, early_elections_coalition). Without this, the build
+  # would fall back to the most-recent member's name (which currently is
+  # "Early Elections Coalition", an alliance she ran in 2021).
+  - id: burjanadze
+    name:
+      en: "Nino Burjanadze — Democratic Movement — United Georgia"
+      ka: "ნინო ბურჯანაძე - დემოკრატიული მოძრაობა - ერთიანი საქართველო"
+    color: "#7B1FA2"
+    type: bloc
+    category: coalition
+
   - id: burjanadze_democratic
     name:
       en: Burjanadze — Democrats

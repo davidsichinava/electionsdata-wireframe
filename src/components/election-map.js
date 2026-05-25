@@ -130,6 +130,24 @@ export async function buildElectionMap({
   map.on("movestart dragstart zoomstart", closeMapTooltip);
   mapContainer.addEventListener("mouseleave", closeMapTooltip);
 
+  // Clicking on empty map area (tile background) deselects the active unit
+  // and resets the side panel back to the national view. Polygons and
+  // precinct circles attach the `leaflet-interactive` class to their SVG
+  // elements; we ignore those so the layer-level click handlers continue
+  // to drive selection. This matches the back-button behaviour without
+  // requiring the user to find the small ← button in the results panel.
+  map.on("click", e => {
+    const target = e.originalEvent?.target;
+    if (!target) return;
+    if (target.classList?.contains("leaflet-interactive")) return;
+    if (currentSelectedUnitLevel || currentSelectedUnit) {
+      clearSelectedUnit();
+      if (typeof renderers?.showNationalPanel === "function") {
+        renderers.showNationalPanel();
+      }
+    }
+  });
+
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd', maxZoom: 19
@@ -748,6 +766,8 @@ export async function buildElectionMap({
       const stationNum = precinctStationNumber(feature);
       const p = feature?.properties ?? {};
       const rawDist = String(precinctRawDistrict(feature));
+      const featureNameEn = p.name_en || p.precinct_name_en || null;
+      const featureNameKa = p.name_ka || p.precinct_name_ka || p.precinct_name || null;
       const nameGeo = (isCouncilMode && effectiveVoteType === "smd" && councilDistrictGeoData)
         ? councilDistrictGeoData
         : activeGeo;
@@ -760,9 +780,9 @@ export async function buildElectionMap({
       const suffix = stationNum == null ? stationId : stationNum;
       return {
         ...p,
-        name_en: `${distNameEn} N${suffix}`,
-        name_ka: `${distNameKa} N${suffix}`,
-        precinct_name_ka: p.name_ka || p.precinct_name || null,
+        name_en: featureNameEn ?? `${distNameEn} N${suffix}`,
+        name_ka: featureNameKa ?? `${distNameKa} N${suffix}`,
+        precinct_name_ka: featureNameKa ? null : (p.name_ka || p.precinct_name || null),
         address_ka: p.address || null
       };
     }
@@ -883,6 +903,8 @@ export async function buildElectionMap({
             const _rawDist   = precinctRawDistrict(feature);
             const _d         = Number(_rawDist);
             const parentDid  = precinctParentId(feature, stationId);
+            const featureNameEn = feature.properties.name_en || feature.properties.precinct_name_en || null;
+            const featureNameKa = feature.properties.name_ka || feature.properties.precinct_name_ka || feature.properties.precinct_name || null;
             const _nameGeo   = (isCouncilMode && effectiveVoteType === "smd" && councilDistrictGeoData)
               ? councilDistrictGeoData
               : activeGeo;
@@ -893,8 +915,8 @@ export async function buildElectionMap({
             const distNameKa = (distFeat ? getDistrictBaseName(distFeat, "ka") : null) ?? distNameEn ?? parentDid;
             const _geoNameKa = feature.properties.name_ka || feature.properties.precinct_name || null;
             const _geoAddrKa = feature.properties.address || null;
-            const titleKa    = `${distNameKa} N${stationNum}`;
-            const titleEn    = `${distNameEn} N${stationNum}`;
+            const titleKa    = featureNameKa ?? `${distNameKa} N${stationNum}`;
+            const titleEn    = featureNameEn ?? `${distNameEn} N${stationNum}`;
 
             const selectPrecinct = () => {
               const panel = document.getElementById("results-panel");
@@ -903,7 +925,7 @@ export async function buildElectionMap({
                 ...feature.properties,
                 name_en:          titleEn,
                 name_ka:          titleKa,
-                precinct_name_ka: _geoNameKa,
+                precinct_name_ka: featureNameKa ? null : _geoNameKa,
                 address_ka:       _geoAddrKa
               };
               if (viewMode === "turnout") {
@@ -1592,6 +1614,67 @@ export async function buildElectionMap({
       }
     });
     new FullscreenControl({ position: "topleft" }).addTo(map);
+
+    // ── Overlay opacity slider ───────────────────────────────────────────────
+    // Lets the user dim the choropleth so the basemap's settlement names
+    // bleed through. Implementation: drive a CSS custom property on the map
+    // container; the matching stylesheet rule applies `opacity` to the
+    // Leaflet overlay panes (where path/circle SVG elements live). One
+    // property → both polygon layers and precinct circles fade together, no
+    // per-layer re-styling needed.
+    const OpacityControl = L.Control.extend({
+      onAdd() {
+        const container = L.DomUtil.create("div", "leaflet-bar leaflet-control map-opacity-ctrl");
+        const toggle = L.DomUtil.create("a", "map-opacity-toggle", container);
+        toggle.href = "#";
+        toggle.setAttribute("role", "button");
+        const labelTxt = t("elections.map.layer_opacity") || "Layer opacity";
+        toggle.title = labelTxt;
+        toggle.setAttribute("aria-label", labelTxt);
+        // Half-shaded circle icon = the opacity concept at a glance.
+        toggle.innerHTML = `
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path d="M12 2 a10 10 0 0 0 0 20 z" fill="currentColor"/>
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>`;
+        const tray = L.DomUtil.create("div", "map-opacity-tray", container);
+        tray.hidden = true;
+        const slider = L.DomUtil.create("input", "map-opacity-slider", tray);
+        slider.type = "range";
+        slider.min = "20";
+        slider.max = "100";
+        slider.step = "5";
+        slider.value = String(Math.round((mapContainer.dataset.overlayOpacity ?? 1) * 100));
+        slider.setAttribute("aria-label", labelTxt);
+        const valueEl = L.DomUtil.create("span", "map-opacity-value", tray);
+        valueEl.textContent = slider.value + "%";
+
+        function applyOpacity(pct) {
+          const ratio = Math.max(0.05, Math.min(1, pct / 100));
+          mapContainer.style.setProperty("--map-overlay-opacity", String(ratio));
+          mapContainer.dataset.overlayOpacity = String(ratio);
+          valueEl.textContent = pct + "%";
+        }
+
+        L.DomEvent.on(toggle, "click", e => {
+          L.DomEvent.preventDefault(e);
+          tray.hidden = !tray.hidden;
+          container.classList.toggle("map-opacity-open", !tray.hidden);
+        });
+        L.DomEvent.on(slider, "input", () => applyOpacity(Number(slider.value)));
+
+        // Initialise from the data attribute so the value survives a control
+        // re-mount (e.g. when the map cell re-runs on a language change).
+        if (mapContainer.dataset.overlayOpacity != null) {
+          applyOpacity(Math.round(Number(mapContainer.dataset.overlayOpacity) * 100));
+        }
+
+        L.DomEvent.disableClickPropagation(container);
+        L.DomEvent.disableScrollPropagation(container);
+        return container;
+      }
+    });
+    new OpacityControl({ position: "topleft" }).addTo(map);
 
     // Expose imperative map controls for bar chart clicks (toggles party filter)
     _mapCtrl.current = {

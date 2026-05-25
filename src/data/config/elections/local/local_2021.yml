@@ -172,8 +172,8 @@ parties:
 # ── Data files ────────────────────────────────────────────────────────────
 sources:
   - name:
-      en: "Freedom of Information (FOI) request from the Central Elections Commission of Georgia"
-      ka: "ცენტრალური საარჩევნო კომისიიდან გამოთხოვნილი საჯარო ინფორმაცია"
+      en: "Freedom of Information (FOI) request from the Central Elections Commission of Georgia. National Democratic Institute (NDI)"
+      ka: "ცენტრალური საარჩევნო კომისიიდან გამოთხოვნილი საჯარო ინფორმაცია. ეროვნული დემოკრატიული ინსტიტუტი (NDI)"
 
 files:
   seats:                        "data/results/local2021_seats.csv"

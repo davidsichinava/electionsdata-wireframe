@@ -328,8 +328,5 @@ downloads:
 
 sources:
   - name:
-      en: "Public information requested from the Central Election Commission as part of the preparation of the National Democratic Institute's (NDI) election portal electionsdata.ge"
-      ka: >-
-        „ეროვნული დემოკრატიული ინსტიტუტის" (NDI) საარჩევნო პორტალის
-        electionsdata.ge მომზადების ფარგლებში ცენტრალური საარჩევნო
-        კომისიიდან გამოთხოვნილი საჯარო ინფორმაცია
+      en: "National Democratic Institute (NDI)"
+      ka: "ეროვნული დემოკრატიული ინსტიტუტი (NDI)"

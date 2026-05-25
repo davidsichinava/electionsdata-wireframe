@@ -62,7 +62,8 @@
       "ka": "თავისუფალი საქართველო"
     },
     "color": "#00695C",
-    "type": "party"
+    "type": "party",
+    "lineage": "free_georgia"
   },
   {
     "id": "tribuna",
@@ -468,6 +469,7 @@
       "ka": "ვადამდელი არჩევნები - ერთიანი საქართველო - დემოკრატიული მოძრაობა"
     },
     "color": "#B71C1C",
+    "lineage": "burjanadze",
     "type": "alliance"
   },
   {
@@ -671,6 +673,16 @@
     "type": "party"
   },
   {
+    "id": "burjanadze",
+    "name": {
+      "en": "Nino Burjanadze — Democratic Movement — United Georgia",
+      "ka": "ნინო ბურჯანაძე - დემოკრატიული მოძრაობა - ერთიანი საქართველო"
+    },
+    "color": "#7B1FA2",
+    "type": "bloc",
+    "category": "coalition"
+  },
+  {
     "id": "burjanadze_democratic",
     "name": {
       "en": "Burjanadze — Democrats",
@@ -872,7 +884,8 @@
       "ka": "მოძრაობა თავისუფალი საქართველოსთვის"
     },
     "color": "#0288D1",
-    "type": "party"
+    "type": "party",
+    "lineage": "free_georgia"
   },
   {
     "id": "georgian_choice",
@@ -963,7 +976,8 @@
       "ka": "ეროვნულ-დემოკრატიული პარტია"
     },
     "color": "#1B5E20",
-    "type": "party"
+    "type": "party",
+    "lineage": "national_democratic_party"
   },
   {
     "id": "social_justice_2020",
@@ -1099,7 +1113,38 @@
       "ka": "მამულიშვილთა ორდენი სამშობლო"
     },
     "color": "#4527A0",
-    "type": "party"
+    "type": "party",
+    "lineage": "motherland"
+  },
+  {
+    "id": "our_country_2008",
+    "name": {
+      "en": "Our Country",
+      "ka": "ჩვენი ქვეყანა"
+    },
+    "color": "#9E9E9E",
+    "type": "party",
+    "lineage": "our_country"
+  },
+  {
+    "id": "radical_democrats_2008",
+    "name": {
+      "en": "Radical-Democrats National Party",
+      "ka": "სრულიად საქართველოს რადიკალ-დემოკრატთა ნაციონალური პარტია"
+    },
+    "color": "#6D4C41",
+    "type": "party",
+    "lineage": "radical_democrats"
+  },
+  {
+    "id": "greens_2014",
+    "name": {
+      "en": "Giorgi Gachechiladze — Green Party",
+      "ka": "გიორგი გაჩეჩილაძე - მწვანეთა პარტია"
+    },
+    "color": "#43A047",
+    "type": "party",
+    "lineage": "greens"
   },
   {
     "id": "christian_democrats_2008",

@@ -228,6 +228,54 @@ function intOrEmpty(v) {
   return Number.isFinite(n) ? String(n) : "";
 }
 
+function normalizeLocal2017Mid(v) {
+  const raw = strOrEmpty(v);
+  if (!raw) return "";
+  const n = Number(raw);
+  if (!Number.isFinite(n)) return raw;
+  let s = String(Math.trunc(Math.round(n)));
+  if (/^99\d{3}$/.test(s)) s = `99${s.slice(2).padStart(4, "0")}`;
+  return s;
+}
+
+function local2017CouncilPartyId(basePartyId, mid, ballotNumber) {
+  if (basePartyId === "initiative_group" && mid && ballotNumber) {
+    return `initiative_${mid}_${ballotNumber}`;
+  }
+  return basePartyId || "";
+}
+
+function local2017BallotNumber(v) {
+  const n = Number(v);
+  if (!Number.isFinite(n)) return "";
+  const out = Math.trunc(Math.round(n));
+  return String(out >= 100 ? out % 100 : out);
+}
+
+function local2017MajorIdFromRow(r) {
+  const direct = normalizeLocal2017Mid(r.MID ?? r.major_id);
+  if (direct) return direct;
+  const district = Number(r.district_number);
+  const major = Number(r.majoritarian_district);
+  const local = Number(r.majoritarian_subdistrict ?? 0) || 0;
+  if (Number.isFinite(district) && Number.isFinite(major)) {
+    const base = district >= 1 && district <= 10 ? 99 : district;
+    return String(base * 10000 + major * 100 + local);
+  }
+  return intOrEmpty(r.majoritarian_district ?? r.district_number);
+}
+
+function resolveLocal2017PartyId(label) {
+  const norm = normLabel(label);
+  if (norm === normLabel("„საქართველო”")) return "georgia_2016";
+  if (norm === normLabel("„შენების მოძრაობა”")) return "construction_movement_2017";
+  if (norm.includes(normLabel("პროგრესულ-დემოკრატიული მოძრაობა"))) return "progressive_democratic_2017";
+  if (norm.includes(normLabel("სახალხო-ხალხის ერთსულოვნება"))) return "peoples_unity_2017";
+  if (norm.includes(normLabel("მამულიშვილთა ორდენი"))) return "mamuli_ena";
+  if (norm.includes(normLabel("სოციალისტური საქართველო"))) return "communist_stalinist";
+  return resolvePartyId(label, "local_2017");
+}
+
 function strOrEmpty(v) {
   if (v == null) return "";
   const s = String(v).trim();
@@ -548,7 +596,7 @@ async function fromLocal2017Xlsx() {
       const last = strOrEmpty(r.last_name);
       if (!first && !last) continue;
       const partyLabel = strOrEmpty(r.party_list_name);
-      const partyId = resolvePartyId(partyLabel, "local_2017");
+      const partyId = resolveLocal2017PartyId(partyLabel);
       out.pr.push({
         election_id: "local_2017",
         sub_id: "__main__",
@@ -575,18 +623,21 @@ async function fromLocal2017Xlsx() {
       const last = strOrEmpty(r.last_name);
       if (!first && !last) continue;
       const partyLabel = strOrEmpty(r.endorsing_party);
-      const partyId = resolvePartyId(partyLabel, "local_2017");
+      const basePartyId = resolveLocal2017PartyId(partyLabel);
+      const districtId = local2017MajorIdFromRow(r);
+      const ballotNumber = local2017BallotNumber(r.candidate_number);
+      const partyId = local2017CouncilPartyId(basePartyId, districtId, ballotNumber);
       out.council_smd.push({
         election_id: "local_2017",
         sub_id: "__main__",
         vote_type: "council_smd",
-        party_id: partyId || "",
+        party_id: partyId,
         party_label_ka: partyLabel,
         party_code: "",
-        district_id: intOrEmpty(r.majoritarian_district ?? r.district_number),
+        district_id: districtId,
         district_name_ka: strOrEmpty(r.district_name),
         list_order: "",
-        ballot_number: intOrEmpty(r.candidate_number),
+        ballot_number: ballotNumber,
         first_name: first, last_name: last, name_ka: `${first} ${last}`.trim(),
         partisanship: "",
         elected: "",
@@ -602,7 +653,7 @@ async function fromLocal2017Xlsx() {
       const last = strOrEmpty(r.last_name);
       if (!first && !last) continue;
       const partyLabel = strOrEmpty(r.endorsing_party);
-      const partyId = resolvePartyId(partyLabel, "local_2017");
+      const partyId = resolveLocal2017PartyId(partyLabel);
       out.mayor.push({
         election_id: "local_2017",
         sub_id: "__main__",
@@ -629,20 +680,27 @@ async function fromLocal2017Xlsx() {
       const last = strOrEmpty(r.last_name);
       if (!first && !last) continue;
       const partyLabel = strOrEmpty(r.presenter_or_party);
-      const partyId = resolvePartyId(partyLabel, "local_2017");
+      const partyId = resolveLocal2017PartyId(partyLabel);
       const rawType = strOrEmpty(r.election_type);
       const voteType = rawType === "pr" ? "pr"
                     : rawType === "smd" || rawType === "majoritarian" ? "council_smd"
                     : rawType === "mayor" ? "mayor"
                     : rawType;
+      const districtId = voteType === "council_smd"
+        ? local2017MajorIdFromRow(r)
+        : intOrEmpty(r.major_id ?? r.majoritarian_district);
+      const ballotNumber = intOrEmpty(r.party_number);
+      const rowPartyId = voteType === "council_smd"
+        ? local2017CouncilPartyId(partyId, districtId, ballotNumber)
+        : (partyId || "");
       out.elected.push({
         election_id: "local_2017",
         sub_id: "__main__",
         vote_type: voteType,
-        party_id: partyId || "",
+        party_id: rowPartyId,
         party_label_ka: partyLabel,
-        party_code: intOrEmpty(r.party_number),
-        district_id: intOrEmpty(r.majoritarian_district),
+        party_code: ballotNumber,
+        district_id: districtId,
         district_name_ka: strOrEmpty(r.local_governing_unit),
         list_order: "",
         ballot_number: "",

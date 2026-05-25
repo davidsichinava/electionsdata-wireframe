@@ -143,8 +143,8 @@ parties:
 
 sources:
   - name:
-      en: "National Democratic Institute"
-      ka: "ეროვნულ-დემოკრატიული ინსტიტუტი"
+      en: "National Democratic Institute (NDI)"
+      ka: "ეროვნული დემოკრატიული ინსტიტუტი (NDI)"
 
 files:
   seats:                        "data/results/local2010_seats.csv"

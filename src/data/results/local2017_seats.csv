@@ -1,8 +1,8 @@
 "selfgov_id","party_id","seats_pr","seats_smd","seats_mayor"
 "national","burchuladze",1,0,0
 "national","burjanadze_democratic",10,1,0
+"national","construction_movement_2017",8,4,0
 "national","european_georgia",105,11,0
-"national","free_democrats",8,4,0
 "national","freedom_gamsakhurdia",1,0,0
 "national","gd",585,1011,61
 "national","georgia_2016",1,0,0
@@ -67,7 +67,7 @@
 "22","unm",1,0,0
 "23","gd",13,15,1
 "23","unm",2,0,0
-"24","free_democrats",2,1,0
+"24","construction_movement_2017",2,1,0
 "24","gd",12,15,1
 "24","unm",1,0,0
 "25","european_georgia",1,0,0
@@ -103,8 +103,8 @@
 "30","labour",1,0,0
 "30","patriots",2,0,0
 "30","unm",2,0,0
+"32","construction_movement_2017",1,0,0
 "32","european_georgia",2,0,0
-"32","free_democrats",1,0,0
 "32","gd",8,24,1
 "32","patriots",1,0,0
 "32","unm",3,0,0
@@ -141,8 +141,8 @@
 "41","european_georgia",1,0,0
 "41","gd",13,11,1
 "41","patriots",1,0,0
+"43","construction_movement_2017",1,0,0
 "43","european_georgia",1,0,0
-"43","free_democrats",1,0,0
 "43","gd",9,18,1
 "43","patriots",2,0,0
 "43","unm",2,0,0
@@ -167,8 +167,8 @@
 "47","gd",10,13,1
 "47","patriots",2,1,0
 "47","unm",1,0,0
+"48","construction_movement_2017",1,1,0
 "48","european_georgia",2,0,0
-"48","free_democrats",1,1,0
 "48","gd",9,19,1
 "48","patriots",1,0,0
 "48","unm",2,0,0
@@ -222,8 +222,8 @@
 "61","gd",10,17,1
 "61","patriots",1,0,0
 "61","unm",2,0,0
+"62","construction_movement_2017",1,0,0
 "62","european_georgia",2,0,0
-"62","free_democrats",1,0,0
 "62","gd",9,21,1
 "62","patriots",2,0,0
 "62","unm",1,0,0
@@ -253,14 +253,14 @@
 "68","gd",9,15,1
 "68","patriots",1,0,0
 "68","unm",3,0,0
+"69","construction_movement_2017",1,1,0
 "69","european_georgia",1,0,0
-"69","free_democrats",1,1,0
 "69","gd",8,12,1
 "69","patriots",1,0,0
 "69","unm",4,0,0
 "70","burjanadze_democratic",1,0,0
+"70","construction_movement_2017",1,0,0
 "70","european_georgia",1,0,0
-"70","free_democrats",1,0,0
 "70","gd",8,10,1
 "70","labour",1,0,0
 "70","patriots",1,0,0
@@ -303,7 +303,7 @@
 "60","independent",0,2,0
 "62","independent",0,2,0
 "63","independent",0,1,0
-"66","free_democrats",0,1,0
+"66","construction_movement_2017",0,1,0
 "66","patriots",0,1,0
 "13","gd",0,0,1
 "60","initiative_group",0,0,1

@@ -534,10 +534,60 @@ export function makeRenderers({
     // present. If neither notes nor sources exist we return nothing.
     const sources = Array.isArray(elec?.sources) ? elec.sources.filter(Boolean) : [];
 
-    if (!notesRaw && sources.length === 0) return "";
+    // ── "Participating political groups" — quick links to the filtered
+    //    /parties list and to the candidate roster(s) for this election.
+    //    What links appear depends on which vote types the election ran:
+    //      always:          /parties?election=<id>
+    //      pr enabled:      /candidates?election=<id>&vote_type=pr
+    //      smd enabled:     /candidates?election=<id>&vote_type=smd
+    //                       (council_smd for local elections)
+    //      presidential:    /candidates?election=<id>&vote_type=presidential
+    const participantLinks = elec?.id ? (() => {
+      const links = [];
+      const eid = encodeURIComponent(elec.id);
+      links.push({
+        href: `./parties?election=${eid}`,
+        label: t("elections.participants.parties") || "Political parties"
+      });
+      const prEnabled  = elec.system?.pr?.enabled === true;
+      const smdEnabled = elec.system?.smd?.enabled === true;
+      const isLocal    = elec.type === "local";
+      const isPres     = elec.type === "presidential";
+      if (isPres) {
+        links.push({
+          href: `./candidates?election=${eid}&vote_type=presidential`,
+          label: t("elections.participants.candidates") || "Candidates"
+        });
+      } else {
+        if (prEnabled) {
+          links.push({
+            href: `./candidates?election=${eid}&vote_type=pr`,
+            label: t("elections.participants.pr_candidates") || "PR candidates"
+          });
+        }
+        if (smdEnabled) {
+          links.push({
+            href: `./candidates?election=${eid}&vote_type=${isLocal ? "council_smd" : "smd"}`,
+            label: t("elections.participants.smd_candidates") || "SMD candidates"
+          });
+        }
+      }
+      return links;
+    })() : [];
+
+    if (!notesRaw && sources.length === 0 && participantLinks.length === 0) return "";
 
     const notesNode = document.createElement("div");
     if (notesRaw) notesNode.innerHTML = notesRaw;
+
+    const participantsNode = participantLinks.length > 0
+      ? html`<div class="election-participants">
+          <div class="election-participants-label">${t("elections.participants.label") || "Participating political groups"}</div>
+          <ul class="election-participants-list">
+            ${participantLinks.map(l => html`<li><a href="${l.href}">${l.label} →</a></li>`)}
+          </ul>
+        </div>`
+      : "";
 
     const sourceItems = sources.map(s => {
       const name = s?.name?.[lang] ?? s?.name?.en ?? s?.name?.ka ?? "";
@@ -564,6 +614,7 @@ export function makeRenderers({
 
     return html`<div class="card election-blurb">
       ${notesRaw ? notesNode : ""}
+      ${participantsNode}
       ${sourcesNode}
     </div>`;
   }

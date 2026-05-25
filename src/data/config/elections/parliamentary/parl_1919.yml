@@ -142,8 +142,8 @@ sources:
       en: "National Archives of Georgia. Central Historical Archive, Fund N1834, Descr. 2, Fol. 17, Pg. 25"
       ka: "საქართველოს ეროვნული არქივი. საისტორიო ცენტრალური არქივი, ფონდი N1834, აღწერა 2, საქმე 17, გვ. 25"
   - name:
-      en: "Electoral lists: https://firstrepublic.ge/ka/theme/68"
-      ka: "პარტიული სიები: https://firstrepublic.ge/ka/theme/68"
+      en: 'Civil Georgia project "First Republic": https://firstrepublic.ge/ka/theme/68'
+      ka: '„სამოქალაქო საქართველოს“ პროექტი "პირველი რესპუბლიკა": https://firstrepublic.ge/ka/theme/68'
 
 files:
   pr_results:  "data/results/parl1919_pr.csv"

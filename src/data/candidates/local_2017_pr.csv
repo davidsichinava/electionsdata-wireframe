@@ -1301,23 +1301,23 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,79,ბათუმი,15,,მალხაზ,მეგრელიძე,მალხაზ მეგრელიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,79,ბათუმი,16,,ზვიად,ბლადაძე,ზვიად ბლადაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,79,ბათუმი,17,,ხათუნა,თამაზაშვილი,ხათუნა თამაზაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,1,,თეიმურაზ,სამნიძე,თეიმურაზ სამნიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,2,,მერაბ,სურმანიძე,მერაბ სურმანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,3,,მიხეილ,კეჟერაძე,მიხეილ კეჟერაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,4,,ჯემალ,სამნიძე,ჯემალ სამნიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,5,,ეთერ,საკანდელიძე,ეთერ საკანდელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,6,,გივი,მორთულაძე,გივი მორთულაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,7,,ლევან,მენაბდე,ლევან მენაბდე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,8,,ამირან,ანანიძე,ამირან ანანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,9,,არჩილ,სამნიძე,არჩილ სამნიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,10,,ნონა,ჩამბა,ნონა ჩამბა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,11,,სიმონ,ფუტკარაძე,სიმონ ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,12,,ოქრო,ცინცაძე,ოქრო ცინცაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,13,,ლია,მუშარბაძე,ლია მუშარბაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,14,,ნოდარ,საგინაძე,ნოდარ საგინაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,15,,ნიკოლოზ,შავაძე,ნიკოლოზ შავაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,16,,ოთარ,ცინცაძე,ოთარ ცინცაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,17,,ხასან,კახიძე,ხასან კახიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,1,,თეიმურაზ,სამნიძე,თეიმურაზ სამნიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,2,,მერაბ,სურმანიძე,მერაბ სურმანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,3,,მიხეილ,კეჟერაძე,მიხეილ კეჟერაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,4,,ჯემალ,სამნიძე,ჯემალ სამნიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,5,,ეთერ,საკანდელიძე,ეთერ საკანდელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,6,,გივი,მორთულაძე,გივი მორთულაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,7,,ლევან,მენაბდე,ლევან მენაბდე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,8,,ამირან,ანანიძე,ამირან ანანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,9,,არჩილ,სამნიძე,არჩილ სამნიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,10,,ნონა,ჩამბა,ნონა ჩამბა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,11,,სიმონ,ფუტკარაძე,სიმონ ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,12,,ოქრო,ცინცაძე,ოქრო ცინცაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,13,,ლია,მუშარბაძე,ლია მუშარბაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,14,,ნოდარ,საგინაძე,ნოდარ საგინაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,15,,ნიკოლოზ,შავაძე,ნიკოლოზ შავაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,16,,ოთარ,ცინცაძე,ოთარ ცინცაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,79,ბათუმი,17,,ხასან,კახიძე,ხასან კახიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,79,ბათუმი,1,,ნათია,ბუაძე,ნათია ბუაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,79,ბათუმი,2,,იზა,ანდღულაძე,იზა ანდღულაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,79,ბათუმი,3,,ნიკა,ბუაძე,ნიკა ბუაძე,,,party_lists_outside_tbilisi.pdf
@@ -1860,22 +1860,22 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,36,ბორჯომი,15,,გვანცა,გულარაშვილი,გვანცა გულარაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,36,ბორჯომი,16,,გივი,ტოლიკაძე,გივი ტოლიკაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,36,ბორჯომი,17,,მალაქია,ნინუა,მალაქია ნინუა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,1,,დავით,როკეტიშვილი,დავით როკეტიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,2,,დავით,ხაჩიძე,დავით ხაჩიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,3,,ლევან,ნასყიდაშვილი,ლევან ნასყიდაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,4,,ავთანდილ,სტეფნაძე,ავთანდილ სტეფნაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,5,,ნუგზარ,სამსონიძე,ნუგზარ სამსონიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,6,,გიორგი,ხაჩიძე,გიორგი ხაჩიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,7,,ელენე,კაკიაშვილი,ელენე კაკიაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,8,,მამუკა,ხაჩიძე,მამუკა ხაჩიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,9,,გიორგი,გელაშვილი,გიორგი გელაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,10,,სტეფანე,სეროფიანი,სტეფანე სეროფიანი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,11,,რობერტ,მანუკიანი,რობერტ მანუკიანი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,12,,სერგო,ცომაია,სერგო ცომაია,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,13,,ლეონიდ,კოლომეიცი,ლეონიდ კოლომეიცი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,14,,მარინა,ტაბატაძე,მარინა ტაბატაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,15,,მელო,როკეტიშვილი,მელო როკეტიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,16,,მარიამ,გელაშვილი,მარიამ გელაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,1,,დავით,როკეტიშვილი,დავით როკეტიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,2,,დავით,ხაჩიძე,დავით ხაჩიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,3,,ლევან,ნასყიდაშვილი,ლევან ნასყიდაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,4,,ავთანდილ,სტეფნაძე,ავთანდილ სტეფნაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,5,,ნუგზარ,სამსონიძე,ნუგზარ სამსონიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,6,,გიორგი,ხაჩიძე,გიორგი ხაჩიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,7,,ელენე,კაკიაშვილი,ელენე კაკიაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,8,,მამუკა,ხაჩიძე,მამუკა ხაჩიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,9,,გიორგი,გელაშვილი,გიორგი გელაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,10,,სტეფანე,სეროფიანი,სტეფანე სეროფიანი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,11,,რობერტ,მანუკიანი,რობერტ მანუკიანი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,12,,სერგო,ცომაია,სერგო ცომაია,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,13,,ლეონიდ,კოლომეიცი,ლეონიდ კოლომეიცი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,14,,მარინა,ტაბატაძე,მარინა ტაბატაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,15,,მელო,როკეტიშვილი,მელო როკეტიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,36,ბორჯომი,16,,მარიამ,გელაშვილი,მარიამ გელაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,36,ბორჯომი,1,,გიორგი,ფერაძე,გიორგი ფერაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,36,ბორჯომი,2,,ირაკლი,კვირკველია,ირაკლი კვირკველია,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,36,ბორჯომი,3,,თამარ,სხირტლაძე,თამარ სხირტლაძე,,,party_lists_outside_tbilisi.pdf
@@ -2055,22 +2055,22 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,21,გარდაბანი,14,,თამარა,ოთარაშვილი,თამარა ოთარაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,21,გარდაბანი,15,,ნონა,წიკლაური,ნონა წიკლაური,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,21,გარდაბანი,16,,მამუკა,ვარდოსანიძე,მამუკა ვარდოსანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,1,,ფახრად,თანირგულიევ,ფახრად თანირგულიევ,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,2,,აიაზ,ისმაილოვი,აიაზ ისმაილოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,4,,რაული,ბარბაქაძე,რაული ბარბაქაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,5,,ქამრან,ნოვრუზოვი,ქამრან ნოვრუზოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,6,,ტარიელ,გასანოვი,ტარიელ გასანოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,7,,ხამედ,მუსაევი-მამედოვი,ხამედ მუსაევი-მამედოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,8,,თოღრულ,თანრიგულიევი,თოღრულ თანრიგულიევი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,9,,მუხტარ,ალმაზოვი,მუხტარ ალმაზოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,10,,არდაფილ,მადათოვი,არდაფილ მადათოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,11,,ალმაზოვი,შამილ,ალმაზოვი შამილ,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,12,,ჰასან,გასანოვი,ჰასან გასანოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,13,,ოთარი,ნოვრუზოვი,ოთარი ნოვრუზოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,15,,გუსეინ,ილიაზოვი,გუსეინ ილიაზოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,17,,ელვინ,ელჩიევი,ელვინ ელჩიევი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,18,,ხიგმეტ,რიზაევი,ხიგმეტ რიზაევი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,19,,ნადირ,ხუტათოვი,ნადირ ხუტათოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,1,,ფახრად,თანირგულიევ,ფახრად თანირგულიევ,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,2,,აიაზ,ისმაილოვი,აიაზ ისმაილოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,4,,რაული,ბარბაქაძე,რაული ბარბაქაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,5,,ქამრან,ნოვრუზოვი,ქამრან ნოვრუზოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,6,,ტარიელ,გასანოვი,ტარიელ გასანოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,7,,ხამედ,მუსაევი-მამედოვი,ხამედ მუსაევი-მამედოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,8,,თოღრულ,თანრიგულიევი,თოღრულ თანრიგულიევი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,9,,მუხტარ,ალმაზოვი,მუხტარ ალმაზოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,10,,არდაფილ,მადათოვი,არდაფილ მადათოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,11,,ალმაზოვი,შამილ,ალმაზოვი შამილ,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,12,,ჰასან,გასანოვი,ჰასან გასანოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,13,,ოთარი,ნოვრუზოვი,ოთარი ნოვრუზოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,15,,გუსეინ,ილიაზოვი,გუსეინ ილიაზოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,17,,ელვინ,ელჩიევი,ელვინ ელჩიევი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,18,,ხიგმეტ,რიზაევი,ხიგმეტ რიზაევი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,21,გარდაბანი,19,,ნადირ,ხუტათოვი,ნადირ ხუტათოვი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,21,გარდაბანი,1,,ტარიელ,ჯანხოთელი,ტარიელ ჯანხოთელი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,21,გარდაბანი,2,,თამარ,ხაჩიძე,თამარ ხაჩიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,21,გარდაბანი,3,,მაია,შამედოვა,მაია შამედოვა,,,party_lists_outside_tbilisi.pdf
@@ -2307,24 +2307,24 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,32,გორი,15,,მარიამ,მურადაშვილი,მარიამ მურადაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,32,გორი,16,,ნათელა,მეზვრიშვილი,ნათელა მეზვრიშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,32,გორი,17,,თენგიზ,ბარამაშვილი,თენგიზ ბარამაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,1,,ალიკო,ლურსმანაშვილი,ალიკო ლურსმანაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,2,,ნაზო,სტეფანიშვილი,ნაზო სტეფანიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,3,,ალექსი,მიქელაშვილი,ალექსი მიქელაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,4,,თამარ,ქარქიშვილი,თამარ ქარქიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,5,,ალექსი,უთნელიშვილი,ალექსი უთნელიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,6,,რევაზ,ბერძნიშვილი,რევაზ ბერძნიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,7,,მაყვალა,შატაკიშვილი,მაყვალა შატაკიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,8,,მაყვალა,ბერიძე,მაყვალა ბერიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,9,,გივი,შიოშვილი,გივი შიოშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,10,,ბლანდინა,დანელიან,ბლანდინა დანელიან,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,11,,მიხეილ,დვალიშვილი,მიხეილ დვალიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,13,,რობიზონ,ეცადაშვილი,რობიზონ ეცადაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,14,,მიშა,გეგელაშვილი,მიშა გეგელაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,15,,გურამ,გორგიშელი,გურამ გორგიშელი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,16,,მარია,გიგოლაევი,მარია გიგოლაევი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,17,,ოლღა,გნოლიძე,ოლღა გნოლიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,18,,გულნარა,ონეზაშვილი,გულნარა ონეზაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,19,,ცისანა,ფოცხვერაშვილი,ცისანა ფოცხვერაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,1,,ალიკო,ლურსმანაშვილი,ალიკო ლურსმანაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,2,,ნაზო,სტეფანიშვილი,ნაზო სტეფანიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,3,,ალექსი,მიქელაშვილი,ალექსი მიქელაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,4,,თამარ,ქარქიშვილი,თამარ ქარქიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,5,,ალექსი,უთნელიშვილი,ალექსი უთნელიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,6,,რევაზ,ბერძნიშვილი,რევაზ ბერძნიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,7,,მაყვალა,შატაკიშვილი,მაყვალა შატაკიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,8,,მაყვალა,ბერიძე,მაყვალა ბერიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,9,,გივი,შიოშვილი,გივი შიოშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,10,,ბლანდინა,დანელიან,ბლანდინა დანელიან,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,11,,მიხეილ,დვალიშვილი,მიხეილ დვალიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,13,,რობიზონ,ეცადაშვილი,რობიზონ ეცადაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,14,,მიშა,გეგელაშვილი,მიშა გეგელაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,15,,გურამ,გორგიშელი,გურამ გორგიშელი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,16,,მარია,გიგოლაევი,მარია გიგოლაევი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,17,,ოლღა,გნოლიძე,ოლღა გნოლიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,18,,გულნარა,ონეზაშვილი,გულნარა ონეზაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,32,გორი,19,,ცისანა,ფოცხვერაშვილი,ცისანა ფოცხვერაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,32,გორი,1,,ილია,მეტრეველი,ილია მეტრეველი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,32,გორი,2,,ბესიკ,კაიშაური,ბესიკ კაიშაური,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,32,გორი,3,,სოფიო,გუდაძე,სოფიო გუდაძე,,,party_lists_outside_tbilisi.pdf
@@ -3492,32 +3492,32 @@ local_2017,__main__,pr,labour,„შალვა ნათელაშვილ�
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,51,ზესტაფონი,17,,ნინო,სუხიაშვილი,ნინო სუხიაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,51,ზესტაფონი,18,,ნინო,ჩხეიძე,ნინო ჩხეიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,51,ზესტაფონი,19,,ქეთევან,ჟღენტი,ქეთევან ჟღენტი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,1,,ფოტინე,ბუიღლიშვილი,ფოტინე ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,2,,ავთანდილ,კობახიძე,ავთანდილ კობახიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,3,,ვარო,კობახიძე,ვარო კობახიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,4,,მარინა,კობახიძე,მარინა კობახიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,5,,ნაზი,კობახიძე,ნაზი კობახიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,6,,ცეზარი,კობახიძე,ცეზარი კობახიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,7,,ლამზირა,კობახიძე,ლამზირა კობახიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,8,,რუსუდან,ცერცვაძე,რუსუდან ცერცვაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,9,,ზურაბ,კიკნაველიძე,ზურაბ კიკნაველიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,10,,ნანული,სარალიძე,ნანული სარალიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,11,,ჟორა,სარალიძე,ჟორა სარალიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,12,,მაკა,სვანიძე,მაკა სვანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,13,,რომან,ბუიღლიშვილი,რომან ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,14,,მაგული,ბუიღლიშვილი,მაგული ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,15,,ქეთევან,კიკნაველიძე,ქეთევან კიკნაველიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,16,,ფრიდონი,ბუიღლიშვილი,ფრიდონი ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,17,,იზა,ბუიღლიშვილი,იზა ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,18,,ზურაბ,ვარდოსანიძე,ზურაბ ვარდოსანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,19,,მირიანი,მაჩიტიძე,მირიანი მაჩიტიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,20,,ამირან,მაჩიტიძე,ამირან მაჩიტიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,21,,დარეჯან,ბარამაძე,დარეჯან ბარამაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,22,,ნინო,ინწკირველი,ნინო ინწკირველი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,23,,ნონა,კიკნაველიძე,ნონა კიკნაველიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,24,,ზურაბ,ბუიღლიშვილი,ზურაბ ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,25,,იზოლდა,რობაქიძე,იზოლდა რობაქიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,51,ზესტაფონი,26,,სოფიო,ბოგვერაძე,სოფიო ბოგვერაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,1,,ფოტინე,ბუიღლიშვილი,ფოტინე ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,2,,ავთანდილ,კობახიძე,ავთანდილ კობახიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,3,,ვარო,კობახიძე,ვარო კობახიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,4,,მარინა,კობახიძე,მარინა კობახიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,5,,ნაზი,კობახიძე,ნაზი კობახიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,6,,ცეზარი,კობახიძე,ცეზარი კობახიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,7,,ლამზირა,კობახიძე,ლამზირა კობახიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,8,,რუსუდან,ცერცვაძე,რუსუდან ცერცვაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,9,,ზურაბ,კიკნაველიძე,ზურაბ კიკნაველიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,10,,ნანული,სარალიძე,ნანული სარალიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,11,,ჟორა,სარალიძე,ჟორა სარალიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,12,,მაკა,სვანიძე,მაკა სვანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,13,,რომან,ბუიღლიშვილი,რომან ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,14,,მაგული,ბუიღლიშვილი,მაგული ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,15,,ქეთევან,კიკნაველიძე,ქეთევან კიკნაველიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,16,,ფრიდონი,ბუიღლიშვილი,ფრიდონი ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,17,,იზა,ბუიღლიშვილი,იზა ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,18,,ზურაბ,ვარდოსანიძე,ზურაბ ვარდოსანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,19,,მირიანი,მაჩიტიძე,მირიანი მაჩიტიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,20,,ამირან,მაჩიტიძე,ამირან მაჩიტიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,21,,დარეჯან,ბარამაძე,დარეჯან ბარამაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,22,,ნინო,ინწკირველი,ნინო ინწკირველი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,23,,ნონა,კიკნაველიძე,ნონა კიკნაველიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,24,,ზურაბ,ბუიღლიშვილი,ზურაბ ბუიღლიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,25,,იზოლდა,რობაქიძე,იზოლდა რობაქიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,51,ზესტაფონი,26,,სოფიო,ბოგვერაძე,სოფიო ბოგვერაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,51,ზესტაფონი,2,,ნინელი,ოდიშარია,ნინელი ოდიშარია,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,51,ზესტაფონი,3,,ლამზირა,კვინიკაძე,ლამზირა კვინიკაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,51,ზესტაფონი,4,,ნინა,მჭედლიშვილი,ნინა მჭედლიშვილი,,,party_lists_outside_tbilisi.pdf
@@ -4277,65 +4277,65 @@ local_2017,__main__,pr,workers_socialist,მშრომელთა სოც�
 local_2017,__main__,pr,workers_socialist,მშრომელთა სოციალისტური პარტია,15,,თბილისი,53,,მალხაზ,მშვიდობაძე,მალხაზ მშვიდობაძე,მშრომელთა სოციალისტური პარტიის წევრი,,Tbilisi_15.pdf
 local_2017,__main__,pr,workers_socialist,მშრომელთა სოციალისტური პარტია,15,,თბილისი,54,,ციალა,ნორაკიძე,ციალა ნორაკიძე,უპარტიო,,Tbilisi_15.pdf
 local_2017,__main__,pr,workers_socialist,მშრომელთა სოციალისტური პარტია,15,,თბილისი,55,,თინა,კაჭარავა,თინა კაჭარავა,"უპარტიო მუნიციპალიტეტის წარმომადგენლობითი ორგანოს - საკრებულოს და თვითმმართველი ქალაქის/თვითმმართველი თემის მერის 2017 წლის 21 ოქტომბრის არჩევნებისათვის საარჩევნო სუბიექტის ""მშრომელთა სოციალისტური პარტია"" საქართველოს დედაქალაქის - თბილისის საკრებულოს პარტიული სია",,Tbilisi_15.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,1,,იოსებ,მაისურაძე,იოსებ მაისურაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,2,,ნუნუ,ხოზიშვილი,ნუნუ ხოზიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,3,,ზურაბ,ვეფხვაძე,ზურაბ ვეფხვაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,4,,ალექსი,გეჯაძე,ალექსი გეჯაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,5,,მაკა,გრიგოლია,მაკა გრიგოლია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,6,,თამარ,ჩაჩიბაია,თამარ ჩაჩიბაია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,7,,მამუკა,მელიქიშვილი,მამუკა მელიქიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,8,,გიორგი,კაკურია,გიორგი კაკურია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,9,,გია,კაიშაური,გია კაიშაური,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,10,,მალხაზი,მუშკუდიანი,მალხაზი მუშკუდიანი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,11,,დავით,დავითაია,დავით დავითაია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,12,,გიორგი,ფეიქრიშვილი,გიორგი ფეიქრიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,13,,თეიმურაზ,სირაძე,თეიმურაზ სირაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,14,,ემა,არზიანი,ემა არზიანი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,15,,დავით,არაბიძე,დავით არაბიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,16,,ლეილა,ხარაიშვილი,ლეილა ხარაიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,17,,თეზიკო,ჯანუაშვილი,თეზიკო ჯანუაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,18,,მაია,ჯაფარიძე,მაია ჯაფარიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,19,,პეტრე,მურაჩაშვილი,პეტრე მურაჩაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,20,,გოგი,მთვარელიშვილი,გოგი მთვარელიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,21,,გრიგოლი,ბოგვერაძე,გრიგოლი ბოგვერაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,22,,ქეთინო,გეჯაძე,ქეთინო გეჯაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,23,,გელა,სანიკიძე,გელა სანიკიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,24,,გურამი,მეტეხელი,გურამი მეტეხელი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,25,,დიმიტრი,გორდელაძე,დიმიტრი გორდელაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,26,,გურამ,გვენეტაძე,გურამ გვენეტაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,27,,ზურაბ,ოკუჯავა,ზურაბ ოკუჯავა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,28,,გოჩა,ფოფხაძე,გოჩა ფოფხაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,29,,ედუარდ,ფეიქრიშვილი,ედუარდ ფეიქრიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,30,,გურამ,ქარელიშვილი,გურამ ქარელიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,31,,ლალი,ქუთათელაძე,ლალი ქუთათელაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,32,,თენგიზ,ნემსაძე,თენგიზ ნემსაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,33,,გიორგი,მჭედლიშვილი,გიორგი მჭედლიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,34,,ზურაბი,ცისკაძე,ზურაბი ცისკაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,35,,ავთანდილ,ხოზიშვილი,ავთანდილ ხოზიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,36,,გიორგი,ჯიქია,გიორგი ჯიქია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,37,,თინათინ,დოლაბერიძე,თინათინ დოლაბერიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,38,,დავით,ლოლუა,დავით ლოლუა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,39,,ავთანდილ,მიქაძე,ავთანდილ მიქაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,40,,ვაჟა,ხუჭუა,ვაჟა ხუჭუა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,41,,იზოლდა,ქუთათელაძე,იზოლდა ქუთათელაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,42,,რეზო,ლაბუჩიძე,რეზო ლაბუჩიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,43,,ლევანი,ლოლუა,ლევანი ლოლუა,"მ.პ.გ. პარტია ""საქართველო"" მუნიციპალიტეტის წარმომადგენლობითი ორგანოს - საკრებულოს და თვითმმართველი ქალაქის/თვითმმართველი თემის მერის 2017 წლის 21 ოქტომბრის არჩევნებისათვის საკრებულოს პარტიული სია",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,44,,მზევინარ,ბოკუჩავა,მზევინარ ბოკუჩავა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,45,,რატი,ინაური,რატი ინაური,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,46,,მიხეილ,ჯავახიშვილი,მიხეილ ჯავახიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,47,,ლუიზა,ბახსოლიანი,ლუიზა ბახსოლიანი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,48,,მაია,ორმოცაძე,მაია ორმოცაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,49,,ემზარ,ლილუაშვილი,ემზარ ლილუაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,50,,თამარ,ხუციშვილი,თამარ ხუციშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,51,,თეა,მაზანიშვილი,თეა მაზანიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,52,,როლანდ,თეთრაშვილი,როლანდ თეთრაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,53,,თამარ,ნაიკ,თამარ ნაიკ,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,54,,ვადიმ,ლაპტევი,ვადიმ ლაპტევი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,55,,მადლენა,ქებურია,მადლენა ქებურია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,56,,მარიამ,თურქაძე,მარიამ თურქაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,57,,დარეჯან,ალანია,დარეჯან ალანია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,58,,ბელა,ჭუნაშვილი,ბელა ჭუნაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
-local_2017,__main__,pr,patriots,საქართველო,17,,თბილისი,59,,ანელი,იაშაღაშვილი,ანელი იაშაღაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,1,,იოსებ,მაისურაძე,იოსებ მაისურაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,2,,ნუნუ,ხოზიშვილი,ნუნუ ხოზიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,3,,ზურაბ,ვეფხვაძე,ზურაბ ვეფხვაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,4,,ალექსი,გეჯაძე,ალექსი გეჯაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,5,,მაკა,გრიგოლია,მაკა გრიგოლია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,6,,თამარ,ჩაჩიბაია,თამარ ჩაჩიბაია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,7,,მამუკა,მელიქიშვილი,მამუკა მელიქიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,8,,გიორგი,კაკურია,გიორგი კაკურია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,9,,გია,კაიშაური,გია კაიშაური,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,10,,მალხაზი,მუშკუდიანი,მალხაზი მუშკუდიანი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,11,,დავით,დავითაია,დავით დავითაია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,12,,გიორგი,ფეიქრიშვილი,გიორგი ფეიქრიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,13,,თეიმურაზ,სირაძე,თეიმურაზ სირაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,14,,ემა,არზიანი,ემა არზიანი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,15,,დავით,არაბიძე,დავით არაბიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,16,,ლეილა,ხარაიშვილი,ლეილა ხარაიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,17,,თეზიკო,ჯანუაშვილი,თეზიკო ჯანუაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,18,,მაია,ჯაფარიძე,მაია ჯაფარიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,19,,პეტრე,მურაჩაშვილი,პეტრე მურაჩაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,20,,გოგი,მთვარელიშვილი,გოგი მთვარელიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,21,,გრიგოლი,ბოგვერაძე,გრიგოლი ბოგვერაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,22,,ქეთინო,გეჯაძე,ქეთინო გეჯაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,23,,გელა,სანიკიძე,გელა სანიკიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,24,,გურამი,მეტეხელი,გურამი მეტეხელი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,25,,დიმიტრი,გორდელაძე,დიმიტრი გორდელაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,26,,გურამ,გვენეტაძე,გურამ გვენეტაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,27,,ზურაბ,ოკუჯავა,ზურაბ ოკუჯავა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,28,,გოჩა,ფოფხაძე,გოჩა ფოფხაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,29,,ედუარდ,ფეიქრიშვილი,ედუარდ ფეიქრიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,30,,გურამ,ქარელიშვილი,გურამ ქარელიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,31,,ლალი,ქუთათელაძე,ლალი ქუთათელაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,32,,თენგიზ,ნემსაძე,თენგიზ ნემსაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,33,,გიორგი,მჭედლიშვილი,გიორგი მჭედლიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,34,,ზურაბი,ცისკაძე,ზურაბი ცისკაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,35,,ავთანდილ,ხოზიშვილი,ავთანდილ ხოზიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,36,,გიორგი,ჯიქია,გიორგი ჯიქია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,37,,თინათინ,დოლაბერიძე,თინათინ დოლაბერიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,38,,დავით,ლოლუა,დავით ლოლუა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,39,,ავთანდილ,მიქაძე,ავთანდილ მიქაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,40,,ვაჟა,ხუჭუა,ვაჟა ხუჭუა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,41,,იზოლდა,ქუთათელაძე,იზოლდა ქუთათელაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,42,,რეზო,ლაბუჩიძე,რეზო ლაბუჩიძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,43,,ლევანი,ლოლუა,ლევანი ლოლუა,"მ.პ.გ. პარტია ""საქართველო"" მუნიციპალიტეტის წარმომადგენლობითი ორგანოს - საკრებულოს და თვითმმართველი ქალაქის/თვითმმართველი თემის მერის 2017 წლის 21 ოქტომბრის არჩევნებისათვის საკრებულოს პარტიული სია",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,44,,მზევინარ,ბოკუჩავა,მზევინარ ბოკუჩავა,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,45,,რატი,ინაური,რატი ინაური,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,46,,მიხეილ,ჯავახიშვილი,მიხეილ ჯავახიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,47,,ლუიზა,ბახსოლიანი,ლუიზა ბახსოლიანი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,48,,მაია,ორმოცაძე,მაია ორმოცაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,49,,ემზარ,ლილუაშვილი,ემზარ ლილუაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,50,,თამარ,ხუციშვილი,თამარ ხუციშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,51,,თეა,მაზანიშვილი,თეა მაზანიშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,52,,როლანდ,თეთრაშვილი,როლანდ თეთრაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,53,,თამარ,ნაიკ,თამარ ნაიკ,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,54,,ვადიმ,ლაპტევი,ვადიმ ლაპტევი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,55,,მადლენა,ქებურია,მადლენა ქებურია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,56,,მარიამ,თურქაძე,მარიამ თურქაძე,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,57,,დარეჯან,ალანია,დარეჯან ალანია,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,58,,ბელა,ჭუნაშვილი,ბელა ჭუნაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
+local_2017,__main__,pr,georgia_2016,საქართველო,17,,თბილისი,59,,ანელი,იაშაღაშვილი,ანელი იაშაღაშვილი,"მ.პ.გ. პარტია ""საქართველო""",,Tbilisi_2017092521031317.pdf
 local_2017,__main__,pr,vashadze_2017,გიორგი ვაშაძე - ერთობა ახალი საქართველო,27,,თბილისი,1,,ნანა,ტოხვაძე,ნანა ტოხვაძე,",,სამოქალაქო პლატფორმა-ახალი საქართველო""",,Tbilisi_27_.pdf
 local_2017,__main__,pr,vashadze_2017,გიორგი ვაშაძე - ერთობა ახალი საქართველო,27,,თბილისი,2,,ბექა,ბაღნაშვილი,ბექა ბაღნაშვილი,",,სამოქალაქო პლატფორმა-ახალი საქართველო""",,Tbilisi_27_.pdf
 local_2017,__main__,pr,vashadze_2017,გიორგი ვაშაძე - ერთობა ახალი საქართველო,27,,თბილისი,3,,თეონა,ჭალიძე,თეონა ჭალიძე,",,სამოქალაქო პლატფორმა-ახალი საქართველო""",,Tbilisi_27_.pdf
@@ -5841,21 +5841,21 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,15,ლაგოდეხი,15,,გიორგი,კაპანაძე,გიორგი კაპანაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,15,ლაგოდეხი,16,,თეიმურაზ,დავლაშერიძე,თეიმურაზ დავლაშერიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,15,ლაგოდეხი,17,,გიორგი,დავლაშერიძე,გიორგი დავლაშერიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,1,,მევლუდი,ღამბაშიძე,მევლუდი ღამბაშიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,2,,ემზარი,მაისურაძე,ემზარი მაისურაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,3,,ახმედ,აბდულაევ,ახმედ აბდულაევ,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,4,,ავთანდილი,ქიმაძე,ავთანდილი ქიმაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,5,,მზია,ელიზბარაშვილი,მზია ელიზბარაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,6,,ზურაბი,გაჩეჩილაძე,ზურაბი გაჩეჩილაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,7,,იაშარ,საფაროვი,იაშარ საფაროვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,8,,ბადრი,ხაჩიძე,ბადრი ხაჩიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,9,,მირიანი,მდივანი,მირიანი მდივანი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,10,,ლუიზა,ჭუმბურიძე,ლუიზა ჭუმბურიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,11,,პეტრე,ქიმაძე,პეტრე ქიმაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,12,,ირაკლი,მაისურაძე,ირაკლი მაისურაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,13,,გივი,ხვედელიძე,გივი ხვედელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,14,,რობერტი,ჯიბღაშვილი,რობერტი ჯიბღაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,16,,ასან,კასუმოვ,ასან კასუმოვ,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,1,,მევლუდი,ღამბაშიძე,მევლუდი ღამბაშიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,2,,ემზარი,მაისურაძე,ემზარი მაისურაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,3,,ახმედ,აბდულაევ,ახმედ აბდულაევ,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,4,,ავთანდილი,ქიმაძე,ავთანდილი ქიმაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,5,,მზია,ელიზბარაშვილი,მზია ელიზბარაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,6,,ზურაბი,გაჩეჩილაძე,ზურაბი გაჩეჩილაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,7,,იაშარ,საფაროვი,იაშარ საფაროვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,8,,ბადრი,ხაჩიძე,ბადრი ხაჩიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,9,,მირიანი,მდივანი,მირიანი მდივანი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,10,,ლუიზა,ჭუმბურიძე,ლუიზა ჭუმბურიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,11,,პეტრე,ქიმაძე,პეტრე ქიმაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,12,,ირაკლი,მაისურაძე,ირაკლი მაისურაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,13,,გივი,ხვედელიძე,გივი ხვედელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,14,,რობერტი,ჯიბღაშვილი,რობერტი ჯიბღაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,15,ლაგოდეხი,16,,ასან,კასუმოვ,ასან კასუმოვ,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,15,ლაგოდეხი,1,,ივანე,ხაჩიძე,ივანე ხაჩიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,15,ლაგოდეხი,2,,კარლო,ჯამბურია,კარლო ჯამბურია,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,15,ლაგოდეხი,3,,ზურაბი,ჯაფარიძე,ზურაბი ჯაფარიძე,,,party_lists_outside_tbilisi.pdf
@@ -6395,25 +6395,25 @@ local_2017,__main__,pr,labour,„შალვა ნათელაშვილ�
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,22,მარნეული,17,,ვერა,დევაძე,ვერა დევაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,22,მარნეული,18,,თამაზ,მენთეშაშვილი,თამაზ მენთეშაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,22,მარნეული,19,,ჟენია,მანთაშაშვილი,ჟენია მანთაშაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,2,,მანანა,სტურუა,მანანა სტურუა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,3,,მაკა,ბახტაძე,მაკა ბახტაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,4,,მაკა,ბეჟანიშვილი,მაკა ბეჟანიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,5,,ზურაბ,ჩიდრაშვილი,ზურაბ ჩიდრაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,6,,დიმიტრი,იამანიძე,დიმიტრი იამანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,7,,ხათუნა,ოქიტაშვილი,ხათუნა ოქიტაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,8,,ჯუმბერი,ბეჟანიშვილი,ჯუმბერი ბეჟანიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,9,,თინათინ,ცერელიძე,თინათინ ცერელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,10,,ბექა,კვირკველია,ბექა კვირკველია,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,11,,ლია,ბუძიშვილი,ლია ბუძიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,12,,მაია,ხუნდაძე,მაია ხუნდაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,13,,ეთერი,მაღლაფერიძე,ეთერი მაღლაფერიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,14,,ირინა,ალავერდოვა,ირინა ალავერდოვა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,15,,ლია,ჩიდრაშვილი,ლია ჩიდრაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,16,,ლამარა,აბდულაევა,ლამარა აბდულაევა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,17,,ენვერი,გამიდოვი,ენვერი გამიდოვი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,18,,როზა,გარიბოვა,როზა გარიბოვა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,19,,ფაზილ,მუსტაფაევი,ფაზილ მუსტაფაევი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,22,მარნეული,20,,ნინო,გაფრინდაშვილი,ნინო გაფრინდაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,2,,მანანა,სტურუა,მანანა სტურუა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,3,,მაკა,ბახტაძე,მაკა ბახტაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,4,,მაკა,ბეჟანიშვილი,მაკა ბეჟანიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,5,,ზურაბ,ჩიდრაშვილი,ზურაბ ჩიდრაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,6,,დიმიტრი,იამანიძე,დიმიტრი იამანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,7,,ხათუნა,ოქიტაშვილი,ხათუნა ოქიტაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,8,,ჯუმბერი,ბეჟანიშვილი,ჯუმბერი ბეჟანიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,9,,თინათინ,ცერელიძე,თინათინ ცერელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,10,,ბექა,კვირკველია,ბექა კვირკველია,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,11,,ლია,ბუძიშვილი,ლია ბუძიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,12,,მაია,ხუნდაძე,მაია ხუნდაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,13,,ეთერი,მაღლაფერიძე,ეთერი მაღლაფერიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,14,,ირინა,ალავერდოვა,ირინა ალავერდოვა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,15,,ლია,ჩიდრაშვილი,ლია ჩიდრაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,16,,ლამარა,აბდულაევა,ლამარა აბდულაევა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,17,,ენვერი,გამიდოვი,ენვერი გამიდოვი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,18,,როზა,გარიბოვა,როზა გარიბოვა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,19,,ფაზილ,მუსტაფაევი,ფაზილ მუსტაფაევი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,22,მარნეული,20,,ნინო,გაფრინდაშვილი,ნინო გაფრინდაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,construction_movement_2017,„შენების მოძრაობა”,20,22,მარნეული,1,,ლეილა,მამედოვა,ლეილა მამედოვა,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,construction_movement_2017,„შენების მოძრაობა”,20,22,მარნეული,2,,ქამილ,ალიევი,ქამილ ალიევი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,construction_movement_2017,„შენების მოძრაობა”,20,22,მარნეული,3,,მურგუზ,ხალილოვი,მურგუზ ხალილოვი,,,party_lists_outside_tbilisi.pdf
@@ -8829,23 +8829,23 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,57,ტყიბული,15,,ნათელა,სხულუხია,ნათელა სხულუხია,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,57,ტყიბული,16,,გერონტი,ჯანაშია,გერონტი ჯანაშია,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,57,ტყიბული,17,,თამარი,დოლბაია,თამარი დოლბაია,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,1,,შოთა,კუბლაშვილი,შოთა კუბლაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,2,,გია,ლომთაძე,გია ლომთაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,3,,ბათლომე,ფორჩხიძე,ბათლომე ფორჩხიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,4,,ანზორი,კუბლაშვილი,ანზორი კუბლაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,5,,ჭაბუკი,რიჟამაძე,ჭაბუკი რიჟამაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,6,,ნიკოლოზი,კაკუშაძე,ნიკოლოზი კაკუშაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,7,,ნინო,ჭელიძე,ნინო ჭელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,8,,მურადი,ცნობილაძე,მურადი ცნობილაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,9,,რამინი,დარსაძე,რამინი დარსაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,10,,უშანგი,ხუციბერიძე,უშანგი ხუციბერიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,11,,ჟიული,გვეტაძე,ჟიული გვეტაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,12,,მამუკა,გაბადაძე,მამუკა გაბადაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,13,,გურამი,ხუციბერიძე,გურამი ხუციბერიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,14,,შურა,გაბადაძე,შურა გაბადაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,15,,გოჩა,გვეტაძე,გოჩა გვეტაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,16,,გულნარა,გელაძე,გულნარა გელაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,17,,მერაბი,შანიძე,მერაბი შანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,1,,შოთა,კუბლაშვილი,შოთა კუბლაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,2,,გია,ლომთაძე,გია ლომთაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,3,,ბათლომე,ფორჩხიძე,ბათლომე ფორჩხიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,4,,ანზორი,კუბლაშვილი,ანზორი კუბლაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,5,,ჭაბუკი,რიჟამაძე,ჭაბუკი რიჟამაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,6,,ნიკოლოზი,კაკუშაძე,ნიკოლოზი კაკუშაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,7,,ნინო,ჭელიძე,ნინო ჭელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,8,,მურადი,ცნობილაძე,მურადი ცნობილაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,9,,რამინი,დარსაძე,რამინი დარსაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,10,,უშანგი,ხუციბერიძე,უშანგი ხუციბერიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,11,,ჟიული,გვეტაძე,ჟიული გვეტაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,12,,მამუკა,გაბადაძე,მამუკა გაბადაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,13,,გურამი,ხუციბერიძე,გურამი ხუციბერიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,14,,შურა,გაბადაძე,შურა გაბადაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,15,,გოჩა,გვეტაძე,გოჩა გვეტაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,16,,გულნარა,გელაძე,გულნარა გელაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,57,ტყიბული,17,,მერაბი,შანიძე,მერაბი შანიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,57,ტყიბული,1,,დავით,კუბლაშვილი,დავით კუბლაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,57,ტყიბული,2,,იოსებ,რობაქიძე,იოსებ რობაქიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,57,ტყიბული,3,,ნატალია,კობახიძე,ნატალია კობახიძე,,,party_lists_outside_tbilisi.pdf
@@ -9794,48 +9794,48 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,59,ქუთაისი,15,,გია,ბაჩილავა,გია ბაჩილავა,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,59,ქუთაისი,16,,გივი,ჯიმშელეიშვილი,გივი ჯიმშელეიშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,59,ქუთაისი,17,,ბადრი,ქიმუცაძე,ბადრი ქიმუცაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,1,,გრიგოლი,სოხაძე,გრიგოლი სოხაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,2,,თეიმურაზი,ჩუბინიძე,თეიმურაზი ჩუბინიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,3,,რამაზი,ცირეკიძე,რამაზი ცირეკიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,4,,ზურაბ,ივანეიშვილი,ზურაბ ივანეიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,5,,თამილა,ჩუბინიძე,თამილა ჩუბინიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,6,,რევაზი,შეიზაშვილი,რევაზი შეიზაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,7,,ვახტანგი,მამისეიშვილი,ვახტანგი მამისეიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,8,,მერაბი,ქაშიბაძე,მერაბი ქაშიბაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,9,,ინგა,ბარაბაძე,ინგა ბარაბაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,10,,ჟანა,კირკიტაძე,ჟანა კირკიტაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,11,,ნანი,ზაუტაშვილი,ნანი ზაუტაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,12,,ნინო,ძოწენიძე,ნინო ძოწენიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,13,,სემირამიდა,კუპრაძე,სემირამიდა კუპრაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,14,,ამირანი,გორგასლიძე,ამირანი გორგასლიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,15,,კახაბერი,გამრეკლიძე,კახაბერი გამრეკლიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,16,,მაკა,ბაწაშვილი,მაკა ბაწაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,17,,გრიგოლი,გოგავა,გრიგოლი გოგავა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,18,,ლილი,კაპანაძე,ლილი კაპანაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,19,,ირმა,ცნობილაძე,ირმა ცნობილაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,20,,სალომე,ქომეთიანი,სალომე ქომეთიანი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,21,,ზვიადი,ერისთავი,ზვიადი ერისთავი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,22,,ირმა,ჭაფოძე,ირმა ჭაფოძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,motherland_2020,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,23,,ცეზარი,შეიზაშვილი,ცეზარი შეიზაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,1,,პაატა,ხაჭაპურიძე,პაატა ხაჭაპურიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,2,,მერაბი,მანაგაძე,მერაბი მანაგაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,3,,ვალერიან,დარახველიძე,ვალერიან დარახველიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,4,,გრიგოლ,გედენიძე,გრიგოლ გედენიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,5,,იური,ჩიკვაიძე,იური ჩიკვაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,6,,გივი,მუკბანიანი,გივი მუკბანიანი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,7,,ზაირა,დვალი,ზაირა დვალი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,8,,ჟასმინი,კოსტავა,ჟასმინი კოსტავა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,9,,ჯუმბერ,ლომსიანიძე,ჯუმბერ ლომსიანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,10,,ზურაბი,ხარატიშვილი,ზურაბი ხარატიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,11,,გიორგი,კოპალეიშვილი,გიორგი კოპალეიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,12,,სურენი,მარტიროსიანი,სურენი მარტიროსიანი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,13,,გივი,გურეშიძე,გივი გურეშიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,15,,გიორგი,გედენიძე,გიორგი გედენიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,16,,გიორგი,კარანაძე,გიორგი კარანაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,17,,ზაური,კვაჩიძე,ზაური კვაჩიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,18,,დალი,ბრეგაძე,დალი ბრეგაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,19,,ომარი,კაჭკაჭიშვილი,ომარი კაჭკაჭიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,20,,მიხეილ,ჯანელიძე,მიხეილ ჯანელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,1,,გრიგოლი,სოხაძე,გრიგოლი სოხაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,2,,თეიმურაზი,ჩუბინიძე,თეიმურაზი ჩუბინიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,3,,რამაზი,ცირეკიძე,რამაზი ცირეკიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,4,,ზურაბ,ივანეიშვილი,ზურაბ ივანეიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,5,,თამილა,ჩუბინიძე,თამილა ჩუბინიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,6,,რევაზი,შეიზაშვილი,რევაზი შეიზაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,7,,ვახტანგი,მამისეიშვილი,ვახტანგი მამისეიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,8,,მერაბი,ქაშიბაძე,მერაბი ქაშიბაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,9,,ინგა,ბარაბაძე,ინგა ბარაბაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,10,,ჟანა,კირკიტაძე,ჟანა კირკიტაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,11,,ნანი,ზაუტაშვილი,ნანი ზაუტაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,12,,ნინო,ძოწენიძე,ნინო ძოწენიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,13,,სემირამიდა,კუპრაძე,სემირამიდა კუპრაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,14,,ამირანი,გორგასლიძე,ამირანი გორგასლიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,15,,კახაბერი,გამრეკლიძე,კახაბერი გამრეკლიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,16,,მაკა,ბაწაშვილი,მაკა ბაწაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,17,,გრიგოლი,გოგავა,გრიგოლი გოგავა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,18,,ლილი,კაპანაძე,ლილი კაპანაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,19,,ირმა,ცნობილაძე,ირმა ცნობილაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,20,,სალომე,ქომეთიანი,სალომე ქომეთიანი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,21,,ზვიადი,ერისთავი,ზვიადი ერისთავი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,22,,ირმა,ჭაფოძე,ირმა ჭაფოძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,mamuli_ena,მამულიშვილთა ორდენი „სამშობლო”,34,59,ქუთაისი,23,,ცეზარი,შეიზაშვილი,ცეზარი შეიზაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,1,,პაატა,ხაჭაპურიძე,პაატა ხაჭაპურიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,2,,მერაბი,მანაგაძე,მერაბი მანაგაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,3,,ვალერიან,დარახველიძე,ვალერიან დარახველიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,4,,გრიგოლ,გედენიძე,გრიგოლ გედენიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,5,,იური,ჩიკვაიძე,იური ჩიკვაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,6,,გივი,მუკბანიანი,გივი მუკბანიანი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,7,,ზაირა,დვალი,ზაირა დვალი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,8,,ჟასმინი,კოსტავა,ჟასმინი კოსტავა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,9,,ჯუმბერ,ლომსიანიძე,ჯუმბერ ლომსიანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,10,,ზურაბი,ხარატიშვილი,ზურაბი ხარატიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,11,,გიორგი,კოპალეიშვილი,გიორგი კოპალეიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,12,,სურენი,მარტიროსიანი,სურენი მარტიროსიანი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,13,,გივი,გურეშიძე,გივი გურეშიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,15,,გიორგი,გედენიძე,გიორგი გედენიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,16,,გიორგი,კარანაძე,გიორგი კარანაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,17,,ზაური,კვაჩიძე,ზაური კვაჩიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,18,,დალი,ბრეგაძე,დალი ბრეგაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,19,,ომარი,კაჭკაჭიშვილი,ომარი კაჭკაჭიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,59,ქუთაისი,20,,მიხეილ,ჯანელიძე,მიხეილ ჯანელიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,59,ქუთაისი,1,,ჰამლეტ,კობახიძე,ჰამლეტ კობახიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,59,ქუთაისი,2,,შორენა,ჩოგოვაძე-ქურასბედიანი,შორენა ჩოგოვაძე-ქურასბედიანი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,peoples_unity_2017,საარჩევნო ბლოკი „სახალხო-ხალხის ერთსულოვნება”,38,59,ქუთაისი,3,,თინათინ,თოქმაჯიშვილი,თინათინ თოქმაჯიშვილი,,,party_lists_outside_tbilisi.pdf
@@ -9967,27 +9967,27 @@ local_2017,__main__,pr,national_democrats,„ეროვნულ დემო�
 local_2017,__main__,pr,national_democrats,„ეროვნულ დემოკრატიული მოძრაობა”,11,29,ყაზბეგი,15,,ლევანი,ხუციშვილი,ლევანი ხუციშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,national_democrats,„ეროვნულ დემოკრატიული მოძრაობა”,11,29,ყაზბეგი,16,,ნათია,ხუციშვილი,ნათია ხუციშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,national_democrats,„ეროვნულ დემოკრატიული მოძრაობა”,11,29,ყაზბეგი,17,,ვეფხია,სუჯაშვილი,ვეფხია სუჯაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,1,,ზაზა,ალიბეგაშვილი,ზაზა ალიბეგაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,2,,გურამი,ჯამარჯაშვილი,გურამი ჯამარჯაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,3,,ცისია,ფირანიშვილი,ცისია ფირანიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,5,,დემური,კობაიძე,დემური კობაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,6,,ქართლოსი,კობაიძე,ქართლოსი კობაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,7,,ცირა,ქუშაშვილი,ცირა ქუშაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,8,,მირიან,კობაიძე,მირიან კობაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,9,,ვეფხია,ღუდუშაური,ვეფხია ღუდუშაური,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,10,,ია,სამქანაშვილი,ია სამქანაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,11,,მაია,გუჯარაიძე,მაია გუჯარაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,12,,ნოდარი,ფაჯიშვილი,ნოდარი ფაჯიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,13,,შალვა,გუჯარაიძე,შალვა გუჯარაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,14,,დავითი,ოდიშვილი,დავითი ოდიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,15,,გაგი,გუჯარაიძე,გაგი გუჯარაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,16,,გურამ,შიოლაშვილი,გურამ შიოლაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,17,,მამუკა,კობაიძე,მამუკა კობაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,18,,ფიქრია,სამქანაშვილი,ფიქრია სამქანაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,19,,ნათელა,კობაიძე,ნათელა კობაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,20,,ციური,ავსაჯანიშვილი,ციური ავსაჯანიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,21,,ზვიადი,გელაძე,ზვიადი გელაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,29,ყაზბეგი,22,,ჯაბა,ფაჯიშვილი,ჯაბა ფაჯიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,1,,ზაზა,ალიბეგაშვილი,ზაზა ალიბეგაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,2,,გურამი,ჯამარჯაშვილი,გურამი ჯამარჯაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,3,,ცისია,ფირანიშვილი,ცისია ფირანიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,5,,დემური,კობაიძე,დემური კობაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,6,,ქართლოსი,კობაიძე,ქართლოსი კობაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,7,,ცირა,ქუშაშვილი,ცირა ქუშაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,8,,მირიან,კობაიძე,მირიან კობაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,9,,ვეფხია,ღუდუშაური,ვეფხია ღუდუშაური,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,10,,ია,სამქანაშვილი,ია სამქანაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,11,,მაია,გუჯარაიძე,მაია გუჯარაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,12,,ნოდარი,ფაჯიშვილი,ნოდარი ფაჯიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,13,,შალვა,გუჯარაიძე,შალვა გუჯარაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,14,,დავითი,ოდიშვილი,დავითი ოდიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,15,,გაგი,გუჯარაიძე,გაგი გუჯარაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,16,,გურამ,შიოლაშვილი,გურამ შიოლაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,17,,მამუკა,კობაიძე,მამუკა კობაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,18,,ფიქრია,სამქანაშვილი,ფიქრია სამქანაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,19,,ნათელა,კობაიძე,ნათელა კობაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,20,,ციური,ავსაჯანიშვილი,ციური ავსაჯანიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,21,,ზვიადი,გელაძე,ზვიადი გელაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,29,ყაზბეგი,22,,ჯაბა,ფაჯიშვილი,ჯაბა ფაჯიშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,traditionalists,„ტრადიციონალისტები”,18,29,ყაზბეგი,1,,ეთერი,დვალიშვილი,ეთერი დვალიშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,traditionalists,„ტრადიციონალისტები”,18,29,ყაზბეგი,2,,მარინა,ჩოფიკაშვილი,მარინა ჩოფიკაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,traditionalists,„ტრადიციონალისტები”,18,29,ყაზბეგი,3,,იური,ავსაჯანიშვილი,იური ავსაჯანიშვილი,,,party_lists_outside_tbilisi.pdf
@@ -10400,26 +10400,26 @@ local_2017,__main__,pr,labour,„შალვა ნათელაშვილ�
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,82,შუახევი,14,,ნუნუ,ხიმშიაშვილი,ნუნუ ხიმშიაშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,82,შუახევი,15,,შორენა,დავითაძე,შორენა დავითაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,labour,„შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”,10,82,შუახევი,16,,რომან,კეკელიძე,რომან კეკელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,1,,გელა,ბოლქვაძე,გელა ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,2,,შალვა,ველიაძე,შალვა ველიაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,3,,რამაზ,მახარაძე,რამაზ მახარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,4,,ლევან,ფუტკარაძე,ლევან ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,5,,ჯიმშერ,სურმანიძე,ჯიმშერ სურმანიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,6,,რევაზ,მუკუტაძე,რევაზ მუკუტაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,7,,რამინ,ფუტკარაძე,რამინ ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,8,,ჯონი,მელიქიშვილი,ჯონი მელიქიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,9,,რევაზ,ამაღლობელი,რევაზ ამაღლობელი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,10,,სულხან,გოგიტიძე,სულხან გოგიტიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,11,,შალვა,მიქელაძე,შალვა მიქელაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,12,,ზებურ,ათაბაგი,ზებურ ათაბაგი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,13,,ბადრი,ბათაძე,ბადრი ბათაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,14,,ავთანდილ,ბოლქვაძე,ავთანდილ ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,15,,გოჩა,შარვაშიძე,გოჩა შარვაშიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,16,,შუშანა,ბოლქვაძე,შუშანა ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,17,,დიანა,ბოლქვაძე,დიანა ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,18,,მანანა,ფუტკარაძე,მანანა ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,19,,მადონა,ბერიძე,მადონა ბერიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,patriots,„საქართველო”,17,82,შუახევი,20,,ბადრი,მიქაბერიძე,ბადრი მიქაბერიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,1,,გელა,ბოლქვაძე,გელა ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,2,,შალვა,ველიაძე,შალვა ველიაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,3,,რამაზ,მახარაძე,რამაზ მახარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,4,,ლევან,ფუტკარაძე,ლევან ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,5,,ჯიმშერ,სურმანიძე,ჯიმშერ სურმანიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,6,,რევაზ,მუკუტაძე,რევაზ მუკუტაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,7,,რამინ,ფუტკარაძე,რამინ ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,8,,ჯონი,მელიქიშვილი,ჯონი მელიქიშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,9,,რევაზ,ამაღლობელი,რევაზ ამაღლობელი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,10,,სულხან,გოგიტიძე,სულხან გოგიტიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,11,,შალვა,მიქელაძე,შალვა მიქელაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,12,,ზებურ,ათაბაგი,ზებურ ათაბაგი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,13,,ბადრი,ბათაძე,ბადრი ბათაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,14,,ავთანდილ,ბოლქვაძე,ავთანდილ ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,15,,გოჩა,შარვაშიძე,გოჩა შარვაშიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,16,,შუშანა,ბოლქვაძე,შუშანა ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,17,,დიანა,ბოლქვაძე,დიანა ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,18,,მანანა,ფუტკარაძე,მანანა ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,19,,მადონა,ბერიძე,მადონა ბერიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,georgia_2016,„საქართველო”,17,82,შუახევი,20,,ბადრი,მიქაბერიძე,ბადრი მიქაბერიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,82,შუახევი,1,,მირიან,აბაშიძე,მირიან აბაშიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,82,შუახევი,2,,ფრიდონ,ფუტკარაძე,ფრიდონ ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,82,შუახევი,3,,ნოდარ,ქარცივაძე,ნოდარ ქარცივაძე,,,party_lists_outside_tbilisi.pdf
@@ -11700,23 +11700,23 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,56,ჭიათურა,13,,მამუკა,ჩუბინიძე,მამუკა ჩუბინიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,56,ჭიათურა,14,,ჟორა,ჩუბინიძე,ჟორა ჩუბინიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,56,ჭიათურა,15,,ხათუნა,ჩუბინიძე,ხათუნა ჩუბინიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,1,,გურამ,კაპანაძე,გურამ კაპანაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,2,,ნარგიზი,ხვედელიძე,ნარგიზი ხვედელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,3,,სპირიდონ,კაციტაძე,სპირიდონ კაციტაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,4,,თამაზ,გაფრინდაშვილი,თამაზ გაფრინდაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,5,,ვილენი,ლომიძე,ვილენი ლომიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,6,,დემური,პაპიძე,დემური პაპიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,7,,ტარიელ,ჭანკვეტაძე,ტარიელ ჭანკვეტაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,8,,ჯამბული,მუმლაძე,ჯამბული მუმლაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,9,,ვიტალი,თუთარაშვილი,ვიტალი თუთარაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,10,,როლანდი,კაპანაძე,როლანდი კაპანაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,11,,ბადური,საყვარელიძე,ბადური საყვარელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,12,,აკაკი,ხარაიძე,აკაკი ხარაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,13,,მედეა,გაფრინდაშვილი,მედეა გაფრინდაშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,14,,იგორ,ტაბატაძე,იგორ ტაბატაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,15,,ელზა,ხვედელიძე,ელზა ხვედელიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,16,,ბაკური,ხაჯალია,ბაკური ხაჯალია,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,17,,ჯემალ,მოდებაძე,ჯემალ მოდებაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,1,,გურამ,კაპანაძე,გურამ კაპანაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,2,,ნარგიზი,ხვედელიძე,ნარგიზი ხვედელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,3,,სპირიდონ,კაციტაძე,სპირიდონ კაციტაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,4,,თამაზ,გაფრინდაშვილი,თამაზ გაფრინდაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,5,,ვილენი,ლომიძე,ვილენი ლომიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,6,,დემური,პაპიძე,დემური პაპიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,7,,ტარიელ,ჭანკვეტაძე,ტარიელ ჭანკვეტაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,8,,ჯამბული,მუმლაძე,ჯამბული მუმლაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,9,,ვიტალი,თუთარაშვილი,ვიტალი თუთარაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,10,,როლანდი,კაპანაძე,როლანდი კაპანაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,11,,ბადური,საყვარელიძე,ბადური საყვარელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,12,,აკაკი,ხარაიძე,აკაკი ხარაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,13,,მედეა,გაფრინდაშვილი,მედეა გაფრინდაშვილი,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,14,,იგორ,ტაბატაძე,იგორ ტაბატაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,15,,ელზა,ხვედელიძე,ელზა ხვედელიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,16,,ბაკური,ხაჯალია,ბაკური ხაჯალია,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,56,ჭიათურა,17,,ჯემალ,მოდებაძე,ჯემალ მოდებაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,56,ჭიათურა,1,,ალექსანდრე,ციცქიშვილი,ალექსანდრე ციცქიშვილი,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,56,ჭიათურა,2,,ავთანდილი,ვაშაძე,ავთანდილი ვაშაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,56,ჭიათურა,3,,ნათელა,ხარაიშვილი,ნათელა ხარაიშვილი,,,party_lists_outside_tbilisi.pdf
@@ -12300,27 +12300,27 @@ local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,83,ხელვაჩაური,15,,ციური,გრძელიძე,ციური გრძელიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,83,ხელვაჩაური,16,,ზაზა,ცეცხლაძე,ზაზა ცეცხლაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,freedom_gamsakhurdia,„თავისუფლება-ზვიად გამსახურდიას გზა”,31,83,ხელვაჩაური,17,,ნიკა,უსტალიშვილი,ნიკა უსტალიშვილი,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,1,,ალექსანდრე,ძირკვაძე,ალექსანდრე ძირკვაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,2,,დომენტი,ფუტკარაძე,დომენტი ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,3,,ჯემალ,თედორაძე,ჯემალ თედორაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,4,,ოთარ,ბერიძე,ოთარ ბერიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,5,,ზურაბ,ჩხაიძე,ზურაბ ჩხაიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,6,,ნინო,ფუტკარაძე,ნინო ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,7,,მინური,ძირკვაძე,მინური ძირკვაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,8,,სერგო,სამნიძე,სერგო სამნიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,9,,ნოდარ,ჩამბა,ნოდარ ჩამბა,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,10,,დურსუნ,კობალაძე,დურსუნ კობალაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,11,,მედეა,მიქელაძე,მედეა მიქელაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,12,,მერაბ,თებიძე,მერაბ თებიძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,13,,რევაზ,ქობულაძე,რევაზ ქობულაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,14,,მადონა,მიქელაძე,მადონა მიქელაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,15,,ვარლამ,გორგოშაძე,ვარლამ გორგოშაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,16,,ზებურ,იაკობაძე,ზებურ იაკობაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,17,,ბადრი,დუმბაძე,ბადრი დუმბაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,18,,მერაბ,ზაქარაძე,მერაბ ზაქარაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,19,,ვლადიმერ,დუმბაძე,ვლადიმერ დუმბაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,20,,ილიას,ბედინაძე,ილიას ბედინაძე,,,party_lists_outside_tbilisi.pdf
-local_2017,__main__,pr,georgia_party,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,21,,ნოდარ,შარაძე,ნოდარ შარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,1,,ალექსანდრე,ძირკვაძე,ალექსანდრე ძირკვაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,2,,დომენტი,ფუტკარაძე,დომენტი ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,3,,ჯემალ,თედორაძე,ჯემალ თედორაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,4,,ოთარ,ბერიძე,ოთარ ბერიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,5,,ზურაბ,ჩხაიძე,ზურაბ ჩხაიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,6,,ნინო,ფუტკარაძე,ნინო ფუტკარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,7,,მინური,ძირკვაძე,მინური ძირკვაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,8,,სერგო,სამნიძე,სერგო სამნიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,9,,ნოდარ,ჩამბა,ნოდარ ჩამბა,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,10,,დურსუნ,კობალაძე,დურსუნ კობალაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,11,,მედეა,მიქელაძე,მედეა მიქელაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,12,,მერაბ,თებიძე,მერაბ თებიძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,13,,რევაზ,ქობულაძე,რევაზ ქობულაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,14,,მადონა,მიქელაძე,მადონა მიქელაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,15,,ვარლამ,გორგოშაძე,ვარლამ გორგოშაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,16,,ზებურ,იაკობაძე,ზებურ იაკობაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,17,,ბადრი,დუმბაძე,ბადრი დუმბაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,18,,მერაბ,ზაქარაძე,მერაბ ზაქარაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,19,,ვლადიმერ,დუმბაძე,ვლადიმერ დუმბაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,20,,ილიას,ბედინაძე,ილიას ბედინაძე,,,party_lists_outside_tbilisi.pdf
+local_2017,__main__,pr,communist_stalinist,„სოციალისტური საქართველო - კომუნისტები”,37,83,ხელვაჩაური,21,,ნოდარ,შარაძე,ნოდარ შარაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,83,ხელვაჩაური,1,,ნადიმ,ვარშანიძე,ნადიმ ვარშანიძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,83,ხელვაჩაური,2,,იოსებ,ბოლქვაძე,იოსებ ბოლქვაძე,,,party_lists_outside_tbilisi.pdf
 local_2017,__main__,pr,gd,„ქართული ოცნება-დემოკრატიული საქართველო”,41,83,ხელვაჩაური,3,,გურანდა,დოლიძე,გურანდა დოლიძე,,,party_lists_outside_tbilisi.pdf

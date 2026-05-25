@@ -344,7 +344,11 @@ export async function buildParties() {
   const lineagesAll = [...byLineage.values()].map(l => {
     const ids = [...l.ids];
     const appearances = l.appearances.sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
-    const electionCount = new Set(appearances.map(a => a.election_id)).size;
+    // Distinct election_ids this lineage participated in. Exposed to the
+    // /parties page so it can honour a `?election=<id>` deep-link from
+    // /elections, filtering the lineage list to "participating groups only".
+    const electionIds = [...new Set(appearances.map(a => a.election_id).filter(Boolean))];
+    const electionCount = electionIds.length;
     const category = l.category ?? inferCategory({ type: l.type, id: l.lineage_id }, electionCount);
     // Vote share time series for sparklines (year → max share across appearances
     // in that year, e.g. picks the PR share over SMD-aggregate fallback).
@@ -367,6 +371,7 @@ export async function buildParties() {
       type: l.type,
       category,
       logo: l.logo,
+      election_ids: electionIds,
       election_count: electionCount,
       candidate_count: l.total_candidates,
       elected_count: l.total_elected,

@@ -18,6 +18,7 @@ const slim = {
     type:             l.type,
     category:         l.category,
     logo:             l.logo,
+    election_ids:     l.election_ids,
     election_count:   l.election_count,
     candidate_count:  l.candidate_count,
     elected_count:    l.elected_count,
