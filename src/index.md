@@ -34,8 +34,23 @@ d3.group(featCsv, r => String(r.district_id)).forEach((rows, distId) => {
   _winnerMap.set(distId, rows.reduce((a, b) => b.vote_share > a.vote_share ? b : a));
 });
 
+// Presidential elections key colors / names by candidate id (CSV's party_id holds
+// the candidate id), so source from featured.candidates. Other types use the
+// per-election parties list + the global parties registry.
+const _isPresidential = featured?.type === "presidential";
+const _featContestants = _isPresidential
+  ? (featured?.candidates ?? []).map(c => ({
+      id: c.id,
+      color: c.color,
+      alias: c.name ? { ka: c.name.ka, en: c.name.en } : undefined
+    }))
+  : (featured?.parties ?? []);
+const _featById = new Map(_featContestants.map(c => [c.id, c]));
+
 function featPartyColor(partyId) {
-  return parties.find(p => p.id === partyId)?.color ?? "#9E9E9E";
+  return _featById.get(partyId)?.color
+      ?? parties.find(p => p.id === partyId)?.color
+      ?? "#9E9E9E";
 }
 function featPartyName(p) {
   return p.alias?.[lang] || p.alias?.en
@@ -303,9 +318,9 @@ lang;
     }).addTo(map);
   }
 
-  // ── Legend: only parties that actually won at least one district ──────────
+  // ── Legend: only parties / candidates that actually won at least one district ──
   const _winnerPartyIds = new Set([..._winnerMap.values()].map(w => w.party_id));
-  const _legendItems = (featured?.parties ?? [])
+  const _legendItems = _featContestants
     .filter(p => _winnerPartyIds.has(p.id))
     .map(p => ({ id: p.id, name: featPartyName(p), color: featPartyColor(p.id) }));
 
