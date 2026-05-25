@@ -823,8 +823,8 @@ write_byelection_precinct_geo <- function(df, source_geo, out_geo) {
   geo <- st_read(source_geo, quiet = TRUE) %>%
     mutate(
       source_major_id = as.integer(MID),
-      district_raw = as.integer(District),
-      precinct_number = as.integer(Precinct),
+      district_raw = as.integer(district),
+      precinct_number = as.integer(precinct),
       precinct_key = paste(source_major_id, district_raw, precinct_number, sep = ".")
     ) %>%
     inner_join(lookup, by = c("precinct_key", "district_raw", "precinct_number")) %>%
@@ -1165,8 +1165,8 @@ write_exec_byelection_precinct_geo <- function(df, source_geo, out_geo) {
   geo <- st_read(source_geo, quiet = TRUE) %>%
     mutate(
       source_major_id = as.integer(MID),
-      district_raw = as.integer(District),
-      precinct_number = as.integer(Precinct),
+      district_raw = as.integer(district),
+      precinct_number = as.integer(precinct),
       precinct_key = paste(source_major_id, district_raw, precinct_number, sep = ".")
     ) %>%
     inner_join(lookup, by = c("precinct_key", "district_raw", "precinct_number")) %>%
