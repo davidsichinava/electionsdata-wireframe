@@ -575,10 +575,17 @@ make_candidate_tables <- function() {
   major <- major_raw %>%
     mutate(
       source_major_id = pick_int(., c("maj_id", "major_id")),
+      candidate_selfgov_id = pick_int(., c("selfgov_id")),
       district_raw = coalesce(pick_int(., c("district_code", "district_id")), as.integer(floor(source_major_id / 100L))),
       major_local = coalesce(as.integer(str_extract(if ("smd_code" %in% names(.)) smd_code else as.character(NA), "(?<=\\.)\\d+$")), source_major_id %% 100L),
       direct_major_id = district_raw * 100L + major_local,
-      selfgov_major_id = map_city_selfgov(district_raw) * 100L + major_local,
+      # Prefer the explicit selfgov_id column from the corrected XLSX. The carved-out
+      # town municipalities (Telavi 17 -> town 171, Gori 32 -> 321, etc.) keep their
+      # seats distinct from the rural parent: rural Telavi seat 2 must resolve to 1702,
+      # town seat 2 to 17102. map_city_selfgov() collapses 17 -> 171, which for seats
+      # 1-5 collides with a valid town major_id and steals the rural seats' candidate
+      # names. Fall back to map_city_selfgov() only for rows lacking selfgov_id.
+      selfgov_major_id = coalesce(candidate_selfgov_id, map_city_selfgov(district_raw)) * 100L + major_local,
       major_id = case_when(
         selfgov_major_id %in% valid_major_ids ~ selfgov_major_id,
         direct_major_id %in% valid_major_ids ~ direct_major_id,

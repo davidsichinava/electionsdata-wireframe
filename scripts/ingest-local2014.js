@@ -168,6 +168,24 @@ function partyIdOf(label) {
   return resolvePartyId(label) ?? "";
 }
 
+// Canonical council-majoritarian district id for the geojson join.
+//
+// The XLSX `maj_id` column encodes the seat number in its last two digits, but
+// its "hundreds" part is inconsistent: for Tbilisi (selfgov_id 1) it is the
+// district_code (so seats read 101, 202, 203, 304, …), while for every other
+// municipality it is already the selfgov_id (1101, 17101, …). The council shape
+// file (majoritarian_2014_major_id.geojson) keys every district uniformly as
+//   maj_id = self_gov_id * 100 + seat_within_selfgov
+// (matching the council_smd *results* CSV). Recompose to that canonical key so
+// council candidates/winners join the map for every municipality — including
+// Tbilisi, whose 202/304/… ids previously collided with other selfgovs.
+function councilMajId(selfgovId, majId) {
+  const s = Number(selfgovId);
+  const m = Number(majId);
+  if (!Number.isFinite(s) || !Number.isFinite(m)) return majId ?? "";
+  return s * 100 + (m % 100);
+}
+
 // ─── PR-per-selfgov candidates ─────────────────────────────────────────────
 
 const prOut = [];
@@ -208,7 +226,7 @@ for (const r of smdRows) {
     party_id: partyIdOf(r.party_name),
     party_label_ka: r.party_name,
     party_code: "",
-    district_id: r.maj_id,
+    district_id: councilMajId(r.selfgov_id, r.maj_id),
     district_name_ka: r.district_name,
     list_order: "",
     ballot_number: r.candidate_number,
@@ -271,7 +289,7 @@ for (const r of electedRows) {
     party_id: partyIdOf(r.party_name),
     party_label_ka: r.party_name,
     party_code: "",
-    district_id: voteType === "council_smd" ? (r.maj_id ?? "") : (r.selfgov_id ?? ""),
+    district_id: voteType === "council_smd" ? councilMajId(r.selfgov_id, r.maj_id) : (r.selfgov_id ?? ""),
     district_name_ka: r.local_governing_unit ?? r.smd_name ?? "",
     list_order: "",
     ballot_number: r.candidate_number ?? "",
