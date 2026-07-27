@@ -1,0 +1,118 @@
+/* Page styles for parties.md (parties-only rules; the shared candidate-table
+   rules live in cand-shared.css) — extracted verbatim (REFACTOR_PLAN §4). */
+
+.cand-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0.8rem 0 0.5rem;
+}
+
+.cand-chip {
+  background: var(--theme-background, #fff);
+  border: 1px solid var(--theme-foreground-faint, #ccc);
+  border-radius: 14px;
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  color: var(--theme-foreground, #333);
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+}
+
+.cand-chip:hover { background: var(--theme-background-alt, #f6f6f6); }
+
+.cand-chip.cand-chip-active {
+  background: var(--red, #CC1720);
+  border-color: var(--red, #CC1720);
+  color: #fff;
+}
+
+/* "Filtering by election: …" chip that appears when /parties is opened
+   via /elections "Participating political groups → Political parties". */
+.parties-elec-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 12px;
+  margin: 0 0 0.75rem;
+  background: rgba(204, 23, 32, 0.08);
+  border-left: 3px solid var(--red, #CC1720);
+  border-radius: 3px;
+  font-size: 0.82rem;
+}
+
+.parties-elec-chip-label {
+  color: var(--muted);
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.parties-elec-chip strong { color: var(--dark); font-weight: 700; }
+
+.parties-elec-chip-clear {
+  background: none; border: none; cursor: pointer;
+  color: var(--muted); font-size: 1.1rem; line-height: 1;
+  padding: 0 4px; margin-left: 2px;
+}
+
+.parties-elec-chip-clear:hover { color: var(--red, #CC1720); }
+
+.cand-table-parties .cand-table-row {
+  grid-template-columns:
+    minmax(12rem, 2.4fr)
+    minmax(5rem, 0.8fr)
+    minmax(5rem, 0.8fr)
+    minmax(7rem, 1.1fr)
+    minmax(7rem, 1.1fr)
+    minmax(6rem, 0.9fr);
+}
+
+.cand-table-pappear .cand-table-row {
+  grid-template-columns:
+    minmax(3.5rem, 0.45fr)
+    minmax(14rem, 2.2fr)
+    minmax(6rem, 0.9fr)
+    minmax(7rem, 0.9fr)
+    minmax(7rem, 0.9fr)
+    minmax(5rem, 0.65fr)
+    minmax(5rem, 0.65fr)
+    minmax(6.5rem, 0.85fr)
+    minmax(7rem, 1fr);
+}
+
+@media (max-width: 900px) {
+  .cand-table { overflow-x: auto; padding-bottom: 2px; }
+  .cand-table-parties .cand-table-row { min-width: 700px; }
+  .cand-table-pappear .cand-table-row { min-width: 920px; }
+}
+
+/* Party-row visual cues */
+.party-color-bar {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  vertical-align: -2px;
+  margin-right: 6px;
+  border-radius: 2px;
+}
+
+.party-meta-line {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
+
+/* Sparkline */
+.cand-sparkline {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+}
+
+.cand-sparkline-empty {
+  color: var(--muted);
+  font-size: 0.78rem;
+}

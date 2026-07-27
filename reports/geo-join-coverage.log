@@ -1,0 +1,5 @@
+[candidates-build] district geo-join misses (no district_name_en / centroid):
+  local_2014/pr: 316/12131 rows with a district_id failed the shape lookup
+  local_2017/council_smd: 30/5815 rows with a district_id failed the shape lookup
+  local_2014/gamgebeli: 11/316 rows with a district_id failed the shape lookup
+  local_2010/council_smd: 2/4079 rows with a district_id failed the shape lookup

@@ -1,0 +1,161 @@
+/* Page styles for index.md (.idx-*) — extracted verbatim from the
+   page <style> block (REFACTOR_PLAN §4). Loaded globally via the head in
+   observablehq.config.js. */
+
+.idx-page-wrap {
+  width: 100%;
+}
+.idx-home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
+}
+.idx-home-grid > * { min-width: 0; }
+@media (min-width: 700px) {
+  .idx-home-grid { grid-template-columns: 7fr 3fr; }
+}
+.idx-map-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.idx-map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--border);
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.idx-map-header-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.idx-map-explore {
+  font-size: 0.75rem;
+  color: var(--theme-foreground-focus);
+  white-space: nowrap;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.idx-map-explore:hover { text-decoration: underline; }
+.idx-info-card { padding: 1rem; overflow-y: auto; max-height: 480px; }
+.idx-info-elec-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.idx-info-elec-name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+.idx-info-meta { font-size: 0.72rem; color: var(--muted); margin-bottom: 10px; }
+.idx-info-notes {
+  font-size: 0.79rem;
+  line-height: 1.55;
+  color: var(--theme-foreground-muted);
+  margin-bottom: 12px;
+  white-space: pre-line;
+}
+.idx-section-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.idx-explore-btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--theme-foreground-focus);
+  text-decoration: none;
+}
+.idx-explore-btn:hover { text-decoration: underline; }
+
+/* Browse section */
+.idx-browse-section {
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.idx-browse-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  background: var(--surface);
+}
+.idx-browse-summary::-webkit-details-marker { display: none; }
+.idx-browse-summary:hover { background: rgba(0,0,0,0.03); }
+.idx-browse-type-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--theme-foreground);
+  flex: 1;
+}
+.idx-browse-count {
+  font-size: 0.7rem;
+  color: var(--muted);
+  background: var(--border);
+  border-radius: 10px;
+  padding: 1px 7px;
+}
+.idx-browse-chevron {
+  font-size: 0.7rem;
+  color: var(--muted);
+  transition: transform 0.15s;
+}
+details[open] .idx-browse-chevron { display: inline-block; transform: rotate(90deg); }
+.idx-elec-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+.idx-elec-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--theme-foreground);
+  min-width: 120px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.idx-elec-card:hover {
+  border-color: var(--theme-foreground-focus);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.idx-elec-card-nodata { opacity: 0.5; }
+.idx-elec-card-year {
+  font-size: 0.68rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.idx-elec-card-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+}

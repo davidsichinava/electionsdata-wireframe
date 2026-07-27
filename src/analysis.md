@@ -45,19 +45,6 @@ const container = html`
   </p>
 </div>
 
-<style>
-  .analysis-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-  @media (min-width: 768px) {
-    .analysis-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-</style>
-
 <div class="analysis-grid">
   ${generatePosts(3)}
 </div>

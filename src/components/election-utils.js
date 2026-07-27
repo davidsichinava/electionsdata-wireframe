@@ -107,12 +107,32 @@ export function formatTurnoutPcts(td) {
 }
 
 // ── Council district helpers ──────────────────────────────────────────────
-// Converts a council majoritarian district ID to its parent selfgov_id.
-// Tbilisi districts (IDs 1–10 and any "99" city code) all map to selfgov 1.
+// TWO different id domains map to a parent selfgov id — do not conflate them
+// (kept side by side here precisely because their names look alike; shared
+// R/JS fixtures in src/loaders/R/common/districts_fixtures.csv pin both):
+//
+// 1. councilSelfgovIdFromMajorId(id): council MAJORITARIAN district ids.
+//    Encodings present in the results CSVs:
+//      3–4 digits  selfgov*100 + seat            1702  → 17
+//      5 digits    town-selfgov(3-digit)*100+seat 17102 → 171 (2014 towns)
+//      6 digits    selfgov*10000 + district*100 + seat  110701 → 11 (2017 vintage)
+//    So: divide by 10000 only for 6-digit ids; anything shorter divides by 100.
+//    (The old cutoff at n >= 10000 sent the 2014 town districts to "1"/Tbilisi.)
+//    Tbilisi raion codes (1–10) and the legacy 99 prefix collapse to selfgov 1.
+//    Mirrors selfgov_from_maj_id() in src/loaders/R/common/districts.R.
+//
+// 2. selfgovIdFromRawDistrictId(id): ELECTORAL/EXEC district numbers that are
+//    already selfgov-scale (PR electoral districts, mayor/gamgebeli districts):
+//    Tbilisi raions 1–10 collapse to selfgov 1, everything else is identity.
 export function councilSelfgovIdFromMajorId(id) {
   const n   = Number(id);
-  const raw = n >= 10000 ? Math.floor(n / 10000) : Math.floor(n / 100);
+  const raw = n >= 100000 ? Math.floor(n / 10000) : Math.floor(n / 100);
   return String(raw === 99 || (raw >= 1 && raw <= 10) ? 1 : raw);
+}
+
+export function selfgovIdFromRawDistrictId(id) {
+  const n = Number(id);
+  return String(n >= 1 && n <= 10 ? 1 : n);
 }
 
 // ── Seat helpers ──────────────────────────────────────────────────────────

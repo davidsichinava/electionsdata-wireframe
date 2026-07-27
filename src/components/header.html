@@ -28,7 +28,11 @@
 
 <script>
 (function() {
-  // --- i18n dictionary ---
+  // --- i18n FALLBACK dictionary ---
+  // Applied synchronously so the nav renders in the right language before
+  // data/config/translations.json is fetched (which then wins — see updateUI).
+  // This copy MUST stay in sync with translations.json:
+  // scripts/check-translations.js fails the build check if it drifts.
   const navDict = {
     "en": {
       "nav.brand":      "ELECTIONS DATA ARCHIVE OF GEORGIA",

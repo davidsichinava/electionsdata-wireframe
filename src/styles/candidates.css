@@ -1,0 +1,107 @@
+/* Page styles for candidates.md (candidates-only rules; the shared
+   candidate-table rules live in cand-shared.css) — extracted verbatim
+   (REFACTOR_PLAN §4). */
+
+/* Scope checkbox row beneath the search input. */
+.cand-scopes {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.cand-scope {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cand-scope input[type="checkbox"] {
+  accent-color: var(--red, #CC1720);
+  cursor: pointer;
+}
+
+.cand-table-results .cand-table-row {
+  grid-template-columns: minmax(8rem, 1.1fr) minmax(10rem, 1.4fr) minmax(18rem, 3fr) minmax(5rem, 0.55fr);
+}
+
+.cand-table-details .cand-table-row {
+  grid-template-columns:
+    minmax(3.5rem, 0.45fr)
+    minmax(12rem, 2fr)
+    minmax(9rem, 1.4fr)
+    minmax(8rem, 1.2fr)
+  minmax(5rem, 0.7fr)
+  minmax(5.5rem, 0.75fr)
+  minmax(5.5rem, 0.75fr)
+  minmax(5.25rem, 0.65fr)
+  minmax(7rem, 1fr);
+}
+
+@media (max-width: 900px) {
+  .cand-table {
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .cand-table-results .cand-table-row { min-width: 760px; }
+  .cand-table-details .cand-table-row { min-width: 980px; }
+}
+
+.cand-detail header h3 { margin: 0 0 0.3rem; }
+
+.cand-detail-meta {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  color: var(--muted); font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.cand-table-head .cand-table-cell.center { white-space: nowrap; }
+
+.cand-detail-share { margin-left: auto; }
+
+.cand-copy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--theme-background, #fff);
+  border: 1px solid var(--theme-foreground-faint, #ccc);
+  border-radius: 4px;
+  padding: 3px 9px;
+  font: inherit;
+  font-size: 0.78rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.cand-copy-link:hover {
+  color: var(--red, #CC1720);
+  border-color: var(--red, #CC1720);
+}
+
+.cand-copy-link.cand-copy-feedback {
+  color: var(--red, #CC1720);
+  border-color: var(--red, #CC1720);
+  background: var(--theme-background-alt, #fff5f5);
+}
+
+.cand-copy-link svg { flex: none; }
+
+.cand-list {
+  margin: 0;
+  padding-left: 1.05rem;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.cand-list li {
+  margin: 0 0 3px;
+  padding-left: 0.15rem;
+  overflow-wrap: anywhere;
+}
+
+.cand-list li:last-child { margin-bottom: 0; }

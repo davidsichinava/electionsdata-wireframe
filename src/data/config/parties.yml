@@ -981,14 +981,14 @@ parties:
 
   # ── Referendum vote options ───────────────────────────────────────────────
 
-  - id: yes
+  - id: "yes"
     name:
       en: "Yes"
       ka: "კი"
     color: "#2E7D32"
     type: option
 
-  - id: no
+  - id: "no"
     name:
       en: "No"
       ka: "არა"

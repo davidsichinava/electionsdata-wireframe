@@ -1,0 +1,61 @@
+/* Page styles for about.md (.about-*, .sources-*, .src-*) — extracted verbatim
+   from the page's <style> block (REFACTOR_PLAN §4). Loaded globally via the
+   head in observablehq.config.js. */
+
+.about-page {
+  width: 100%;
+}
+.about-cols {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 1rem;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .about-cols { grid-template-columns: 1fr; }
+}
+.sources-card {
+  overflow: hidden;
+  padding: 0 !important;
+}
+.sources-card h4 {
+  padding: 1rem 1rem 0.75rem;
+  margin: 0;
+}
+.sources-table {
+  width: 100%;
+  max-width: none;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.sources-table th {
+  text-align: left;
+  padding: 0.4rem 0.75rem;
+  border-bottom: 2px solid var(--theme-foreground-faintest, #e0e0e0);
+  color: var(--muted);
+  font-weight: 600;
+}
+.sources-table td {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--theme-foreground-faintest, #e0e0e0);
+  vertical-align: top;
+}
+.src-elec-cell {
+  font-weight: 500;
+  width: 35%;
+  vertical-align: top;
+  padding-top: 0.6rem;
+}
+.src-note-cell {
+  width: 20%;
+  vertical-align: top;
+  padding-top: 0.6rem;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.src-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}

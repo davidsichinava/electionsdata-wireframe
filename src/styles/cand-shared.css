@@ -1,0 +1,162 @@
+/* Candidate-table UI shared by candidates.md AND parties.md (.cand-*) —
+   the two pages carried byte-identical copies of these rules; deduplicated
+   here during the CSS extraction (REFACTOR_PLAN §4). Loaded globally via the
+   head in observablehq.config.js.
+
+   The ONE historically divergent rule (.cand-row-detail .cand-detail-meta)
+   is split: common properties below, page-specific properties scoped by the
+   .cand-grid-parties / .cand-grid-cands modifier set on each page grid. */
+
+.cand-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.cand-grid > .card { min-width: 0; }
+
+.cand-disclaimer {
+  background: var(--theme-background-alt, #f6f6f6);
+  border-left: 3px solid var(--muted, #999);
+  color: var(--muted, #555);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.cand-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.cand-prompt {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.cand-grid .input-group input::placeholder {
+  color: var(--muted);
+  font-style: italic;
+  opacity: 1;
+}
+
+/* Grid-backed tables: shared column template for header + body rows. */
+.cand-table { width: 100%; max-width: none; font-size: 0.86rem; margin: 0; }
+
+.cand-table-row {
+  display: grid;
+  width: 100%;
+  border-bottom: 1px solid var(--theme-foreground-faintest, #f0f0f0);
+  align-items: start;
+}
+
+.cand-table-row:last-child { border-bottom: none; }
+
+.cand-table-cell {
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.cand-table-head { border-bottom: 1px solid var(--theme-foreground-faint, #ddd); }
+
+.cand-table-head .cand-table-cell {
+  font-family: var(--font-head);
+  color: var(--muted);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+.cand-grid .input-group label,
+.cand-grid .input-group form > label {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.cand-table-cell.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cand-table-cell.center { text-align: center; }
+
+.cand-link {
+  background: none; border: 0; padding: 0;
+  color: var(--theme-foreground-focus, #0366d6);
+  cursor: pointer; font: inherit; text-align: left;
+}
+
+.cand-link:hover { text-decoration: underline; }
+
+.cand-pager { margin-top: 0.75rem; text-align: center; }
+
+.cand-show-more {
+  background: none;
+  border: 1px solid var(--theme-foreground-faint, #ccc);
+  border-radius: 4px;
+  padding: 5px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--theme-foreground, #333);
+}
+
+.cand-show-more:hover { background: var(--theme-background-alt, #f6f6f6); }
+
+/* Inline-expanded detail row (matches /candidates) */
+.cand-row-detail {
+  display: block;
+  background: var(--theme-background-alt, #f9f9f9);
+  border-bottom: 1px solid var(--theme-foreground-faintest, #f0f0f0);
+  border-left: 3px solid var(--red, #CC1720);
+  padding: 12px 16px 14px 16px;
+}
+
+.cand-link .cand-chevron {
+  display: inline-block;
+  width: 0.85em;
+  margin-right: 0.25em;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+}
+
+.cand-row-expanded .cand-chevron {
+  transform: rotate(90deg);
+  color: var(--red);
+}
+
+.cand-row-expanded .cand-link {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+/* ── .cand-detail-meta: common base + per-page variants ─────────────────── */
+.cand-row-detail .cand-detail-meta {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.cand-grid-parties .cand-row-detail .cand-detail-meta {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+}
+.cand-grid-cands .cand-row-detail .cand-detail-meta {
+  align-items: center;
+}

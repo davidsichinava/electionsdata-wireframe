@@ -1,0 +1,2391 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Results 2013</title>
+<link rel="shortcut icon" href="/favicon.ico"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Copyright" content="Programmed by David Baramidze | 2013 | david@maf.ge ">
+<link href="css/geo.css" rel="stylesheet" type="text/css">
+<script src="js/runtime.js"></script>
+<script src="js/map.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/fill.js"></script>
+<script type="text/javascript" src="js/exporting.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+		
+$('#chart_all').highcharts({
+            chart: {
+                type: 'bar',
+                margin: [ 30, 50, 20, 200],
+				plotBorderWidth: null,
+				plotShadow: false,
+				borderColor: '#bcbcbc',
+				borderWidth: 1,
+				borderRadius: 5
+            },
+			exporting: { enabled: false },
+            title: {
+                text: 'მიღებული ხმების რაოდენობა'
+            },
+            xAxis: {
+                categories: [
+				'თამაზ ბიბილური                                                                                                                                                                                           <b>1</b>','გიორგი ლილუაშვილი                                                                                                                                                                                        <b>2</b>','სერგო ჯავახიძე                                                                                                                                                                                           <b>3</b>','კობა დავითაშვილი                                                                                                                                                                                         <b>4</b>','დავით ბაქრაძე                                                                                                                                                                                            <b>5</b>','აკაკი ასათიანი                                                                                                                                                                                           <b>6</b>','ნინო ჭანიშვილი                                                                                                                                                                                           <b>7</b>','თეიმურაზ ბობოხიძე                                                                                                                                                                                        <b>8</b>','შალვა ნათელაშვილი                                                                                                                                                                                        <b>9</b>','გიორგი თარგამაძე                                                                                                                                                                                         <b>10</b>','ლევან ჩაჩუა                                                                                                                                                                                              <b>11</b>','ნესტან კირთაძე                                                                                                                                                                                           <b>12</b>','გიორგი ჩიხლაძე                                                                                                                                                                                           <b>13</b>','ნინო ბურჯანაძე                                                                                                                                                                                           <b>14</b>','ზურაბ ხარატიშვილი                                                                                                                                                                                        <b>15</b>','მიხეილ სალუაშვილი                                                                                                                                                                                        <b>16</b>','ქართლოს ღარიბაშვილი                                                                                                                                                                                      <b>17</b>','მამუკა ჭოხონელიძე                                                                                                                                                                                        <b>18</b>','ავთანდილ მარგიანი                                                                                                                                                                                        <b>19</b>','ნუგზარ ავალიანი                                                                                                                                                                                          <b>20</b>','მამუკა მელიქიშვილი                                                                                                                                                                                       <b>21</b>','თეიმურაზ მჟავია                                                                                                                                                                                          <b>22</b>','გიორგი მარგველაშვილი                                                                                                                                                                                     <b>41</b>',                ],
+                labels: {
+                    rotation: 0,
+					y: 3,
+                    align: 'right',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'Verdana, sans-serif',
+						color: '#000000'
+                    }
+                }
+            },
+            yAxis: {
+					gridLineColor: '#F2F2F2',
+					title: { text: '' },
+					labels:{ enabled: false }
+            },
+            legend: {
+                enabled: false
+            },
+			tooltip: {
+				formatter: function() {
+					return '<b>'+ this.point.name+'. '+this.point.kand+'</b>: '+ this.y +' %'+'<br>'+'<b>წარმდგენი:</b>'+this.point.part_name+'<br>'+'<b>მიღებული ხმების რაოდენობა</b>: '+ this.point.xma;
+				}
+			},
+            series: [{
+                name: 'შედეგები 2013',
+				data: [
+																			{ name: '1',  kand: 'თამაზ ბიბილური                                                                                                                                                                                          ', part_name: 'საინიციატივო ჯგუფი', y: 0.01, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '3'},
+																			{ name: '2',  kand: 'გიორგი ლილუაშვილი                                                                                                                                                                                       ', part_name: 'საინიციატივო ჯგუფი', y: 0.14, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '34'},
+																			{ name: '3',  kand: 'სერგო ჯავახიძე                                                                                                                                                                                          ', part_name: '"სამართლიანი საქართველოსთვის"', y: 0.09, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '22'},
+																			{ name: '4',  kand: 'კობა დავითაშვილი                                                                                                                                                                                        ', part_name: '"ხალხის პარტია"', y: 0.51, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '122'},
+																			{ name: '5',  kand: 'დავით ბაქრაძე                                                                                                                                                                                           ', part_name: '"ერთიანი ნაციონალური მოძრაობა"', y: 30.33, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '7313'},
+																			{ name: '6',  kand: 'აკაკი ასათიანი                                                                                                                                                                                          ', part_name: '"ქართველ ტრადიციონალისტთა კავშირი"', y: 0.11, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '26'},
+																			{ name: '7',  kand: 'ნინო ჭანიშვილი                                                                                                                                                                                          ', part_name: 'საინიციატივო ჯგუფი', y: 0.16, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '39'},
+																			{ name: '8',  kand: 'თეიმურაზ ბობოხიძე                                                                                                                                                                                       ', part_name: 'საინიციატივო ჯგუფი', y: 0.01, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '3'},
+																			{ name: '9',  kand: 'შალვა ნათელაშვილი                                                                                                                                                                                       ', part_name: '"საქართველოს ლეიბორისტული პარტია"', y: 2.63, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '634'},
+																			{ name: '10',  kand: 'გიორგი თარგამაძე                                                                                                                                                                                        ', part_name: '"ქრისტიან-დემოკრატიული მოძრაობა"', y: 1.03, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '249'},
+																			{ name: '11',  kand: 'ლევან ჩაჩუა                                                                                                                                                                                             ', part_name: 'საინიციატივო ჯგუფი', y: 0.08, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '20'},
+																			{ name: '12',  kand: 'ნესტან კირთაძე                                                                                                                                                                                          ', part_name: 'საინიციატივო ჯგუფი', y: 0.03, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '8'},
+																			{ name: '13',  kand: 'გიორგი ჩიხლაძე                                                                                                                                                                                          ', part_name: 'საინიციატივო ჯგუფი', y: 0.08, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '20'},
+																			{ name: '14',  kand: 'ნინო ბურჯანაძე                                                                                                                                                                                          ', part_name: '"დემოკრატიული მოძრაობა-ერთიანი საქართველო"', y: 9.53, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '2297'},
+																			{ name: '15',  kand: 'ზურაბ ხარატიშვილი                                                                                                                                                                                       ', part_name: '"საქართველოს ევროპელი დემოკრატები"', y: 0.09, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '22'},
+																			{ name: '16',  kand: 'მიხეილ სალუაშვილი                                                                                                                                                                                       ', part_name: 'საინიციატივო ჯგუფი', y: 0.02, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '6'},
+																			{ name: '17',  kand: 'ქართლოს ღარიბაშვილი                                                                                                                                                                                     ', part_name: 'საინიციატივო ჯგუფი', y: 0.02, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '6'},
+																			{ name: '18',  kand: 'მამუკა ჭოხონელიძე                                                                                                                                                                                       ', part_name: 'საინიციატივო ჯგუფი', y: 0, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '0'},
+																			{ name: '19',  kand: 'ავთანდილ მარგიანი                                                                                                                                                                                       ', part_name: 'საინიციატივო ჯგუფი', y: 0.02, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '6'},
+																			{ name: '20',  kand: 'ნუგზარ ავალიანი                                                                                                                                                                                         ', part_name: 'საინიციატივო ჯგუფი', y: 0.04, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '9'},
+																			{ name: '21',  kand: 'მამუკა მელიქიშვილი                                                                                                                                                                                      ', part_name: 'საინიციატივო ჯგუფი', y: 0.06, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '15'},
+																			{ name: '22',  kand: 'თეიმურაზ მჟავია                                                                                                                                                                                         ', part_name: '"ქრისტიან-დემოკრატიული სახალხო პარტია"', y: 0.04, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '9'},
+																			{ name: '41',  kand: 'გიორგი მარგველაშვილი                                                                                                                                                                                    ', part_name: '"ქართული ოცნება-დემოკრატიული საქართველო"', y: 54.95, color: {pattern: 'pics/col_bg.jpg', width: 20, height: 5}, xma: '13248'},
+												
+				],
+				showInLegend: true,
+				legendType: 'point',				
+                dataLabels: {
+                    enabled: true,
+					overflow: false,
+					crop: false,
+                    rotation: 0,
+                    color: '#333333',
+                    align: 'left',
+                    x: 4,
+                    y: -5,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif',
+                        textShadow: '0 0 3px white',
+						fontWeight: 'bold'
+                    },
+					formatter: function() {
+						return this.y+' %'
+					}
+                }
+            }]
+        }); 
+		
+  //ubnebi
+  $('#chart_ubnebi').highcharts({
+            chart: {
+                type: 'column'                
+            },
+            title: {
+                text: '<span style="font-size:10px; color: #999999;">უბნების რაოდენობა</span>'
+            },
+            xAxis: {
+                categories: ['უბნები'],
+                labels:{ enabled: false }
+            },
+            yAxis: {
+            		min: 0,
+					max: 101,
+                    gridLineWidth: 0,
+                    title: { text: '' },
+                    labels:{ enabled: false }
+            },
+            legend: {
+            	enabled: true
+            },
+            tooltip: {
+                formatter: function() {
+                    return this.series.name +':<br/>'+ Highcharts.numberFormat(this.point.ricxvi,0) + this.point.ch_txt +' (<b>'+ this.point.procenti+'</b>)';
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'percent',
+                    dataLabels: {
+                        enabled: true,
+                        verticalAlign: 'top',
+						x: -2,
+						y: -15,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black',
+		                formatter: function() {
+		                	if (this.percentage > 10) {
+		                    	return Highcharts.numberFormat(this.point.ricxvi,0) + this.point.ch_txt + ' . . . . . . . . . '+ this.point.procenti;
+		                   }	
+		                }
+                    }
+                }
+            },
+            
+			series: [ {
+							name: 'სულ უბნები',
+							pointWidth: 40,
+							color: '#FFFFFF',
+							borderColor: '#CCC',
+							borderWidth: '2',
+							data: [{ y:0, procenti: "100%", ricxvi: "68", ch_txt : "" }]
+						}, {
+							name: 'დათვლილი უბნები',
+							pointWidth: 40,
+							color: '#7EC240',
+							borderColor: '#CCC',
+							borderWidth: '2',
+														data: [{ y:67, procenti: "100%", ricxvi: "67", ch_txt : "+1*"}
+							]
+						}], 
+						exporting: {
+						enabled: false
+					}       
+  });    
+    
+		
+  //ubnebi amomrchevlebi	
+  $('#chart_amomrchevlebi').highcharts({
+            chart: {
+                type: 'column'                
+            },
+            title: {
+                text: '<span style="font-size:10px; color: #999999;">ამომრჩევლები</span>'
+            },
+            xAxis: {
+                categories: ['ამომრჩევლები'],
+                labels:{ enabled: false }
+            },
+            yAxis: {
+            		min: 0,
+					max: 101,
+                    gridLineWidth: 0,
+                    title: { text: '' },
+                    labels:{ enabled: false }
+            },
+            legend: {
+            	enabled: true
+            },
+            tooltip: {
+                formatter: function() {
+                    return this.series.name +':<br/>'+ Highcharts.numberFormat(this.point.ricxvi,0) +' (<b>'+ this.point.procenti+'</b>)';
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'percent',
+                    dataLabels: {
+                        enabled: true,
+                        verticalAlign: 'top',
+						x: -13,
+						y: -15,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black',
+		                formatter: function() {
+		                	if (this.percentage > 10) {
+		                    	return Highcharts.numberFormat(this.point.ricxvi,0) +' . . . . . . . . . . . '+ this.point.procenti;
+		                   }	
+		                }
+                    }
+                }
+            },
+            
+						series: [ {
+							name: 'სულ ამომრჩევლები',
+							pointWidth: 40,
+							color: '#FFFFFF',
+							borderColor: '#CCC',
+							borderWidth: '2',
+							data: [{ y:28585, procenti: "100%", ricxvi: "52696" }]
+						}, {
+							name: 'მონაწილეთა რაოდენობა',
+							pointWidth: 40,
+							color: '#7EC240',
+							borderColor: '#CCC',
+							borderWidth: '2',
+														data: [{ y:24111, procenti: "45.75%", ricxvi: "24111" }
+							]
+						}], 
+						exporting: {
+						enabled: false
+					}       
+  });    
+		   
+});
+</script>
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+
+<table border="0" width="100%" cellspacing="5" cellpadding="0">
+		<tr>
+			<td align="center">
+			<table border="0" width="1000" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="177">
+					<a target="_self" href="index.html">
+					<img border="0" src="pics/logo_geo.gif" width="177" height="78"></a></td>
+					<td align="center">
+					<img border="0" src="pics/title_geo.gif" height="30"><p>
+					<font color="#21AA48" size="4"><b>#58 წყალტუბო - წინასწარი მონაცემები</b></font></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="10" align="center"><img border="0" src="pics/line1.gif"></td>
+		</tr>
+		<tr>
+			<td height="20" align="center">
+							<table border="0" id="table340" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+									<img border="0" src="pics/sul.gif" width="58" height="21"></td>
+									<td>
+									<font face="Tahoma" style="font-size: 15pt; font-weight:700">68</font></td>
+									<td>
+									<img border="0" src="pics/monacemebi.gif" height="21"></td>
+									<td><b>
+									<font face="Tahoma" style="font-size: 15pt">67</font><font face="Tahoma" size="4">+1</font><a href=# title="* სხვა უბნებზე დათვლილი მიმაგრებული უბნები"  style="font-size: 15pt; text-decoration:none"><font color="#FF0000" face="Tahoma">*</font></a></b> <b>
+									<font face="Tahoma" size="2" color="#999999">
+									(100%)</font></b></td>
+									<td>
+									<img border="0" src="pics/ubnis_mixedvit.gif" width="178" height="21"></td>
+								</tr>
+							</table>
+							</td>
+		</tr>
+		<tr>
+			<td align="center">
+<table border="0">
+				<tr>
+					<td valign="top">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td style="background-image: url('pics/no_map.png'); background-repeat: no-repeat; background-position: center">
+    <div id="swiffycontainer" style="height: 304px; width:580px">
+    </div>
+    <script>
+      var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),swiffyobject);
+      stage.setFlashVars("olqi=58");  
+      stage.start();
+    </script>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<table border="0" width="388" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="145">
+							<img border="0" src="pics/airchiet_olqi_geo.gif"></td>
+									<td width="20" align="right">&nbsp;		
+</td>
+									<td width="224" align="left">		
+<form style="margin:5px;">															
+<select style="width: 214px; margin: 5px; height: 25px;" name="URL" onChange="window.location.href= this.form.URL.options[this.form.URL.selectedIndex].value">
+		<option selected value="0">აირჩიეთ...</option>
+		<option style='border:0' value='olq_1.html' >1. მთაწმინდა</option><option style='border:0' value='olq_2.html' >2. ვაკე</option><option style='border:0' value='olq_3.html' >3. საბურთალო</option><option style='border:0' value='olq_4.html' >4. კრწანისი</option><option style='border:0' value='olq_5.html' >5. ისანი</option><option style='border:0' value='olq_6.html' >6. სამგორი</option><option style='border:0' value='olq_7.html' >7. ჩუღურეთი</option><option style='border:0' value='olq_8.html' >8. დიდუბე</option><option style='border:0' value='olq_9.html' >9. ნაძალადევი</option><option style='border:0' value='olq_10.html' >10. გლდანი</option><option style='border:0' value='olq_11.html' >11. საგარეჯო</option><option style='border:0' value='olq_12.html' >12. გურჯაანი</option><option style='border:0' value='olq_13.html' >13. სიღნაღი</option><option style='border:0' value='olq_14.html' >14. დედოფლისწყარო</option><option style='border:0' value='olq_15.html' >15. ლაგოდეხი</option><option style='border:0' value='olq_16.html' >16. ყვარელი</option><option style='border:0' value='olq_17.html' >17. თელავი</option><option style='border:0' value='olq_18.html' >18. ახმეტა</option><option style='border:0' value='olq_19.html' >19. თიანეთი</option><option style='border:0' value='olq_20.html' >20. რუსთავი</option><option style='border:0' value='olq_21.html' >21. გარდაბანი</option><option style='border:0' value='olq_22.html' >22. მარნეული</option><option style='border:0' value='olq_23.html' >23. ბოლნისი</option><option style='border:0' value='olq_24.html' >24. დმანისი</option><option style='border:0' value='olq_25.html' >25. წალკა</option><option style='border:0' value='olq_26.html' >26. თეთრიწყარო</option><option style='border:0' value='olq_27.html' >27. მცხეთა</option><option style='border:0' value='olq_28.html' >28. დუშეთი</option><option style='border:0' value='olq_29.html' >29. ყაზბეგი</option><option style='border:0' value='olq_30.html' >30. კასპი</option><option style='border:0' value='olq_32.html' >32. გორი</option><option style='border:0' value='olq_33.html' >33. ქარელი</option><option style='border:0' value='olq_35.html' >35. ხაშური</option><option style='border:0' value='olq_36.html' >36. ბორჯომი</option><option style='border:0' value='olq_37.html' >37. ახალციხე</option><option style='border:0' value='olq_38.html' >38. ადიგენი</option><option style='border:0' value='olq_39.html' >39. ასპინძა</option><option style='border:0' value='olq_40.html' >40. ახალქალაქი</option><option style='border:0' value='olq_41.html' >41. ნინოწმინდა</option><option style='border:0' value='olq_43.html' >43. ონი</option><option style='border:0' value='olq_44.html' >44. ამბროლაური</option><option style='border:0' value='olq_45.html' >45. ცაგერი</option><option style='border:0' value='olq_46.html' >46. ლენტეხი</option><option style='border:0' value='olq_47.html' >47. მესტია</option><option style='border:0' value='olq_48.html' >48. ხარაგაული</option><option style='border:0' value='olq_49.html' >49. თერჯოლა</option><option style='border:0' value='olq_50.html' >50. საჩხერე</option><option style='border:0' value='olq_51.html' >51. ზესტაფონი</option><option style='border:0' value='olq_52.html' >52. ბაღდათი</option><option style='border:0' value='olq_53.html' >53. ვანი</option><option style='border:0' value='olq_54.html' >54. სამტრედია</option><option style='border:0' value='olq_55.html' >55. ხონი</option><option style='border:0' value='olq_56.html' >56. ჭიათურა</option><option style='border:0' value='olq_57.html' >57. ტყიბული</option><option style='border:0' value='olq_58.html' selected>58. წყალტუბო</option><option style='border:0' value='olq_59.html' >59. ქუთაისი</option><option style='border:0' value='olq_60.html' >60. ოზურგეთი</option><option style='border:0' value='olq_61.html' >61. ლანჩხუთი</option><option style='border:0' value='olq_62.html' >62. ჩოხატაური</option><option style='border:0' value='olq_63.html' >63. აბაშა</option><option style='border:0' value='olq_64.html' >64. სენაკი</option><option style='border:0' value='olq_65.html' >65. მარტვილი</option><option style='border:0' value='olq_66.html' >66. ხობი</option><option style='border:0' value='olq_67.html' >67. ზუგდიდი</option><option style='border:0' value='olq_68.html' >68. წალენჯიხა</option><option style='border:0' value='olq_69.html' >69. ჩხოროწყუ</option><option style='border:0' value='olq_70.html' >70. ფოთი</option><option style='border:0' value='olq_79.html' >79. ბათუმი</option><option style='border:0' value='olq_80.html' >80. ქედა</option><option style='border:0' value='olq_81.html' >81. ქობულეთი</option><option style='border:0' value='olq_82.html' >82. შუახევი</option><option style='border:0' value='olq_83.html' >83. ხელვაჩაური</option><option style='border:0' value='olq_84.html' >84. ხულო</option><option style='border:0' value='olq_87.html' >საზღვარგარეთი</option>	</select>
+</form>
+</td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+
+							</td>
+						</tr>
+					  </table>
+					</td>
+					<td valign="top" width="15">
+					<img border="0" src="pics/line.gif" width="15" height="340"></td>
+					<td valign="top">
+		<table border="0" height="348">
+			<tr>
+				<td>
+					<div id="chart_ubnebi" style="width:200px; height: 340px; margin: 0 auto"></div>
+				</td>
+				<td>
+					<div id="chart_amomrchevlebi" style="width: 200px; height: 340px; margin: 0 auto"></div>
+				</td>
+			</tr>
+		</table>
+
+					</td>
+				</tr>
+			</table></td>
+		</tr>
+		<tr>
+			<td align="center">
+                <table border="0" width="967">
+                    <tr>
+                        <td><div id="chart_all" style="height: 550px; margin: 0 auto"></div></td>
+                    </tr>
+                </table>
+            </td>
+		</tr>
+					<td height="35">
+					<p align="center"><font class=satauri1>მონაცემები უბნების მიხედვით</font><br><p align="center"><font class=satauri1>წყალტუბო</font><br>
+					 (მონაცემები 67 უბნის მიხედვით) </td>
+				</tr>
+		<tr>
+			<td>					<div align="center">
+					<table border="1" width="99%" id="table36" height="92" bordercolor="#C0C0C0" cellspacing="1" cellpadding="3" style="border-collapse: collapse">
+						<tr>
+							<td height="58" align="center" width="20" bgcolor="#E1E1E1">
+							<b><font size="2">უბანი</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">1</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">2</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">3</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">4</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">5</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">6</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">7</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">8</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">9</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">10</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">11</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">12</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">13</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">14</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">15</font></b></td>
+							<td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">16</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">17</font></b></td>
+							<td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">18</font></b></td>
+                            <td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">19</font></b></td>
+							<td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">20</font></b></td>
+							<td align="center" bgcolor="#E1E1E1"><b><font size="4" face="Tahoma">21</font></b></td>
+							<td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">22</font></b></td>
+							<td align="center" bgcolor="#E1E1E1"><b><font face="Tahoma" size="4">41</font></b></td>
+							<td align="center" height="58" width="36" bgcolor="#E1E1E1">
+							<b><font size="2">ოქმი</font></b></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>1</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>151</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>27</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>188</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_1.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>2</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>166</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>70</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>278</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_2.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>3</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>144</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>9</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>66</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>283</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_3.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>4</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>184</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>12</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>30</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>231</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_4.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>5</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>89</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>9</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>29</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>145</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_5.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>6</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>133</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>17</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>37</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>155</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_6.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>7</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>107</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>35</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>181</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_7.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>8</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>96</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>19</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>38</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>273</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_8.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>9<br><font size=1>(+ #68 მიმაგრ. უბანი)</font></font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>85</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>9</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>61</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>471</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_9.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>10</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>60</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>10</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>25</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>149</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_10.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>11</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>164</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>15</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>34</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>271</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_11.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>12</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>72</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>43</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>158</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_12.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>13</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>103</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>12</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>31</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>253</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_13.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>14</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>190</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>22</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>58</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>310</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_14.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>15</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>194</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>19</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>40</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>279</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_15.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>16</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>146</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>9</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>33</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>109</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_16.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>17</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>47</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>59</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_17.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>18</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>71</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>148</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_18.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>19</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>136</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>40</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>161</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_19.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>20</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>152</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>46</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>249</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_20.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>21</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>145</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>16</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>63</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>305</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_21.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>22</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>168</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>68</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>252</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_22.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>23</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>39</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>17</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>78</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_23.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>24</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>30</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>111</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_24.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>25</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>200</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>27</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>283</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_25.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>26</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>69</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>44</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>175</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_26.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>27</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>17</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>14</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>97</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_27.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>28</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>19</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>43</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_28.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>29</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>18</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>30</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>71</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_29.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>30</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>112</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>30</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>27</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>185</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_30.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>31</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>55</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>15</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>23</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>109</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_31.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>32</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>36</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>18</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>55</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_32.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>33</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>60</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>37</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>355</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_33.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>34</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>96</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>17</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>43</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>301</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_34.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>35</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>112</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>15</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>45</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>372</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_35.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>36</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>150</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>14</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>70</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>303</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_36.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>37</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>67</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>56</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>92</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_37.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>38</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>54</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>21</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>80</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_38.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>39</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>23</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>52</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_39.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>40</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>85</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>19</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>394</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_40.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>41</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>9</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>349</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_41.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>42</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>138</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>58</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>352</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_42.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>43</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>175</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>10</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>34</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>303</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_43.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>44</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>185</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>15</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>41</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>310</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_44.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>45</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>129</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>17</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>69</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>296</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_45.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>46</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>116</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>34</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>243</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_46.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>47</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>150</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>16</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>159</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_47.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>48</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>187</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>6</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>177</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_48.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>49</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>171</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>41</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>277</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_49.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>50</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>23</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>157</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>15</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>40</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>261</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_50.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>51</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>9</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>139</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>42</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>168</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_51.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>52</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>91</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>16</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>163</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_52.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>53</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>144</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>10</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>90</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_53.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>54</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>56</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>25</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>81</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_54.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>55</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>128</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>24</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>128</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_55.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>56</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>186</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>15</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>19</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>122</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_56.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>57</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>86</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>21</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>61</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_57.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>58</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>49</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>12</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>38</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_58.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>59</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>134</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>10</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>49</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>190</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_59.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>60</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>176</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>16</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>5</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>61</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>198</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_60.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>61</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>144</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>8</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>9</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>76</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>240</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_61.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>62</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>137</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>17</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>48</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>168</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_62.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>63</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>110</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>12</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>3</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>165</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_63.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>64</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>66</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>7</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>117</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_64.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>65</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>146</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>10</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>43</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>189</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_65.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>66</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>67</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>13</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>32</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>328</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_66.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>67</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>2</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>1</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>4</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>0</font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1>11</font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"><a href='oqm/oqmi_58_67.html' target='_blank'>ოქმი</a></td>
+						</tr>
+	
+
+						<tr>
+							<td align="center" height="32" bgcolor="#EFEFEF"><b><font class=satauri1>68</font></b></a></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="110"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="111"><font class=ricxvebi1></font></td>
+							<td align="center" height="32" width="36" bgcolor="#EFEFEF"></td>
+						</tr>
+						
+						</table>
+					</div>
+
+</td>
+		</tr>
+		<tr>
+			<td>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td align="left">
+					<img border="0" src="pics/cdsko.gif" width="75" height="9"></td>
+					<td align="right">
+					<img border="0" src="pics/2013.gif" width="24" height="9"></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a13583879ed7d464',t:'MTc4Mjc0MjIxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>

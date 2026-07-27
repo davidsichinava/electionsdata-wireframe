@@ -32,6 +32,19 @@ export default {
   head: `
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="custom-style.css">
+    <!-- Per-page styles (REFACTOR_PLAN §4): class names are page-prefixed or
+         verified collision-free, so global loading is safe. cand-shared.css
+         holds the candidate-table UI used by BOTH candidates.md and parties.md
+         (deduplicated from two identical copies); the one divergent rule is
+         scoped via .cand-grid-parties / .cand-grid-cands modifiers. -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/elections.css">
+    <link rel="stylesheet" href="styles/cand-shared.css">
+    <link rel="stylesheet" href="styles/candidates.css">
+    <link rel="stylesheet" href="styles/parties.css">
+    <link rel="stylesheet" href="styles/analysis.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/downloads.css">
     <link rel="icon" href="logo_ka-1.svg" type="image/svg" sizes="32x32">
     <!-- Cloudflare Web Analytics — skipped on localhost / dev preview / file:// so dev traffic doesn't pollute stats. -->
     <script>

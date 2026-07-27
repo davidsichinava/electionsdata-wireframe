@@ -1,0 +1,28 @@
+fn,input,expected,note
+maj,101,1,Tbilisi raion 1 seat 1 (3-digit)
+maj,304,1,Tbilisi raion 3 seat 4
+maj,1010,1,Tbilisi raion 10 seat 10
+maj,1101,11,Sagarejo seat 1 (4-digit)
+maj,1702,17,Telavi rural seat 2
+maj,6702,67,Zugdidi rural seat 2
+maj,9901,1,legacy 99 Tbilisi prefix (4-digit)
+maj,17101,171,Telavi town seat 1 (5-digit 2014 carve-out)
+maj,17105,171,Telavi town seat 5
+maj,27103,271,Mtskheta town seat 3
+maj,60101,601,Ozurgeti town seat 1
+maj,110100,11,2017 vintage Sagarejo (6-digit)
+maj,110701,11,2017 vintage Sagarejo district 7 seat 1
+maj,990101,1,2017 vintage Tbilisi raion 1 seat 1 (6-digit)
+maj,996100,1,2017 vintage Tbilisi
+raw,1,1,Tbilisi raion 1
+raw,5,1,Tbilisi raion 5
+raw,10,1,Tbilisi raion 10
+raw,11,11,Sagarejo
+raw,17,17,Telavi rural
+raw,171,171,Telavi town
+raw,79,79,Batumi
+dotted,01.01,101,Mtatsminda raion seat 1
+dotted,02.02,102,Vake raion seat 2 (raion collapses to selfgov 1)
+dotted,10.10,110,Gldani raion seat 10
+dotted,63.01,6301,non-Tbilisi selfgov 63 seat 1
+dotted,101,101,already-canonical id without dot

@@ -1,0 +1,637 @@
+<META http-equiv=Content-Type content="text/html; charset=utf-8" >
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Results 2013</title>
+<link rel="shortcut icon" href="/favicon.ico"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Copyright" content="Programmed by David Baramidze | 2013 | david@maf.ge ">
+<link href="css/geo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/highcharts_.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/exporting.js"></script>
+<script type="text/javascript">
+    var emi1;
+    var chart;
+    var chart1;
+    var chart2;
+
+$(document).ready(function() {
+
+//=================================== #9 ნაძალადევი 
+
+	emi1= new Highcharts8.Chart({
+		chart: {
+			renderTo: 'chart_all_9',
+            plotBackgroundColor: null,
+			plotBorderWidth: null,
+			plotShadow: false,
+			borderColor: '#bcbcbc',borderWidth: 1,borderRadius: 5
+		},
+		title: {
+			text: 'მაჟორიტარების მიერ მიღებული ხმები'
+		},
+		
+		tooltip: {
+			formatter: function() {
+				return '<b>'+ this.point.name+'. '+this.point.kand+'</b>: '+ this.y +' %'+'<br><span style="font-size:10px; color: #999999;">'+this.point.part_name+'</span><br><b>მიღებული ხმების რაოდენობა</b>: '+ this.point.xma;
+			}
+		},
+		credits:0,
+		plotOptions: {
+			emicicle: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: false
+				}
+			}
+		},
+					
+		 series: [
+
+					{
+						type: 'emicicle',
+						name: 'შუალედური არჩევნების შედეგები 2013',
+						size: '90%',
+						innerSize: '50%',
+						data: [
+							{ name: '1', part_name: '”კახა კუკავა - თავისუფალი საქართველო”', kand: 'კახა კუკავა                                                                                                                                                                                             ', y: 17.26, color: '#FFBB72', xma: '6772'},
+							{ name: '5', part_name: 'პოლიტიკური გაერთიანება ”ერთიანი ნაციონალური მოძრაობა”', kand: 'მირზა დავითაია                                                                                                                                                                                          ', y: 15.11, color: '#FD1F2E', xma: '5926'},
+							{ name: '9', part_name: '”სამართლიანი საქართველოსთვის”', kand: 'ხვიჩა ასანიძე                                                                                                                                                                                           ', y: 0.05, color: '#97AD62', xma: '20'},
+							{ name: '19', part_name: 'პოლიტიკური მოძრაობა ”თავისუფლება - ზვიად გამსახურდიას გზა”', kand: 'ზაზა მეზვრიშვილი                                                                                                                                                                                        ', y: 0.08, color: '#81C0D8', xma: '33'},
+							{ name: '30', part_name: '”მერაბ კოსტავას საზოგადოება”', kand: 'გიორგი ლილუაშვილი                                                                                                                                                                                       ', y: 0.12, color: '#6EA4AE', xma: '46'},
+							{ name: '36', part_name: 'პოლიტიკური გაერთიანება ”საქართველოს მშრომელთა საბჭო”', kand: 'გია ნემსაძე                                                                                                                                                                                             ', y: 0.34, color: '#A62C43', xma: '133'},
+							{ name: '38', part_name: '”შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”', kand: 'გიორგი გუგავა                                                                                                                                                                                           ', y: 3.14, color: '#CDD774', xma: '1233'},
+							{ name: '41', part_name: 'საარჩევნო ბლოკი ”ბიძინა ივანიშვილი - ქართული ოცნება”', kand: 'თამარ კორძაია                                                                                                                                                                                           ', y: 39.48, color: '#113B87', xma: '15487'},
+							{ name: '42', part_name: 'საინიციატივო ჯგუფი', kand: 'იოსებ მანჯავიძე                                                                                                                                                                                         ', y: 12.95, color: '#888888', xma: '5078'},
+							{ name: '44', part_name: 'საინიციატივო ჯგუფი', kand: 'ზვიად ჩიტიშვილი                                                                                                                                                                                         ', y: 11.46, color: '#CCCCCC', xma: '4497'},
+						
+						],
+							showInLegend: true,
+							legendType: 'point'
+					}
+					]
+					
+
+	});
+//=================================== #52 ბაღდათი 
+
+	emi1= new Highcharts8.Chart({
+		chart: {
+			renderTo: 'chart_all_52',
+            plotBackgroundColor: null,
+			plotBorderWidth: null,
+			plotShadow: false,
+			borderColor: '#bcbcbc',borderWidth: 1,borderRadius: 5
+		},
+		title: {
+			text: 'მაჟორიტარების მიერ მიღებული ხმები'
+		},
+		
+		tooltip: {
+			formatter: function() {
+				return '<b>'+ this.point.name+'. '+this.point.kand+'</b>: '+ this.y +' %'+'<br><span style="font-size:10px; color: #999999;">'+this.point.part_name+'</span><br><b>მიღებული ხმების რაოდენობა</b>: '+ this.point.xma;
+			}
+		},
+		credits:0,
+		plotOptions: {
+			emicicle: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: false
+				}
+			}
+		},
+					
+		 series: [
+
+					{
+						type: 'emicicle',
+						name: 'შუალედური არჩევნების შედეგები 2013',
+						size: '90%',
+						innerSize: '50%',
+						data: [
+							{ name: '4', part_name: '”ეროვნულ-დემოკრატიული პარტია”', kand: 'დათო შარაბიძე                                                                                                                                                                                           ', y: 0.12, color: '#CF9185', xma: '14'},
+							{ name: '5', part_name: 'პოლიტიკური გაერთიანება ”ერთიანი ნაციონალური მოძრაობა”', kand: 'ვლადიმერ წიქორიძე                                                                                                                                                                                       ', y: 21.12, color: '#FD1F2E', xma: '2383'},
+							{ name: '9', part_name: '”სამართლიანი საქართველოსთვის”', kand: 'პაატა ბაკურაძე                                                                                                                                                                                          ', y: 0.35, color: '#97AD62', xma: '39'},
+							{ name: '19', part_name: 'პოლიტიკური მოძრაობა ”თავისუფლება - ზვიად გამსახურდიას გზა”', kand: 'ლაშა თამაზაშვილი                                                                                                                                                                                        ', y: 0.04, color: '#81C0D8', xma: '5'},
+							{ name: '36', part_name: 'პოლიტიკური გაერთიანება ”საქართველოს მშრომელთა საბჭო”', kand: 'არჩილ იოსელიანი                                                                                                                                                                                         ', y: 0.12, color: '#A62C43', xma: '14'},
+							{ name: '41', part_name: 'საარჩევნო ბლოკი ”ბიძინა ივანიშვილი - ქართული ოცნება”', kand: 'პაატა კიკნაველიძე                                                                                                                                                                                       ', y: 61.81, color: '#113B87', xma: '6975'},
+							{ name: '42', part_name: 'საინიციატივო ჯგუფი', kand: 'რომან რობაქიძე                                                                                                                                                                                          ', y: 6.65, color: '#888888', xma: '751'},
+							{ name: '43', part_name: 'საინიციატივო ჯგუფი', kand: 'ზურაბ მსხვილიძე                                                                                                                                                                                         ', y: 9.78, color: '#2FACD5', xma: '1104'},
+						
+						],
+							showInLegend: true,
+							legendType: 'point'
+					}
+					]
+					
+
+	});
+
+//=================================== #54 სამტრედია
+
+	emi1= new Highcharts8.Chart({
+		chart: {
+			renderTo: 'chart_all_54',
+            plotBackgroundColor: null,
+			plotBorderWidth: null,
+			plotShadow: false,
+			borderColor: '#bcbcbc',borderWidth: 1,borderRadius: 5
+		},
+		title: {
+			text: 'მაჟორიტარების მიერ მიღებული ხმები'
+		},
+		
+		tooltip: {
+			formatter: function() {
+				return '<b>'+ this.point.name+'. '+this.point.kand+'</b>: '+ this.y +' %'+'<br><span style="font-size:10px; color: #999999;">'+this.point.part_name+'</span><br><b>მიღებული ხმების რაოდენობა</b>: '+ this.point.xma;
+			}
+		},
+		credits:0,
+		plotOptions: {
+			emicicle: {
+				allowPointSelect: true,
+				cursor: 'pointer',
+				dataLabels: {
+					enabled: false
+				}
+			}
+		},
+					
+		 series: [
+
+					{
+						type: 'emicicle',
+						name: 'შუალედური არჩევნების შედეგები 2013',
+						size: '90%',
+						innerSize: '50%',
+						data: [
+							{ name: '5', part_name: 'პოლიტიკური გაერთიანება ”ერთიანი ნაციონალური მოძრაობა”', kand: 'ემზარი შუბლაძე                                                                                                                                                                                          ', y: 18.69, color: '#FD1F2E', xma: '3963'},
+							{ name: '9', part_name: '”სამართლიანი საქართველოსთვის”', kand: 'გოჩა ბაძგარაძე                                                                                                                                                                                          ', y: 0.16, color: '#97AD62', xma: '33'},
+							{ name: '19', part_name: 'პოლიტიკური მოძრაობა ”თავისუფლება - ზვიად გამსახურდიას გზა”', kand: 'ბადრი გოგელაშვილი                                                                                                                                                                                       ', y: 0.09, color: '#81C0D8', xma: '19'},
+							{ name: '36', part_name: 'პოლიტიკური გაერთიანება ”საქართველოს მშრომელთა საბჭო”', kand: 'მორისონი ქობულია                                                                                                                                                                                        ', y: 0.12, color: '#A62C43', xma: '26'},
+							{ name: '41', part_name: 'საარჩევნო ბლოკი ”ბიძინა ივანიშვილი - ქართული ოცნება”', kand: 'გიორგი კახიანი                                                                                                                                                                                          ', y: 80.94, color: '#113B87', xma: '17163'},
+						
+						],
+							showInLegend: true,
+							legendType: 'point'
+					}
+					]
+					
+
+	});
+
+
+//================== უბნები ====================
+//================== #9 ნაძალადევი
+  
+  var chart9;
+        chart9 = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container2_9',
+                type: 'column'                
+            },
+            title: {
+                text: '<span style="font-size:10px; color: #999999;">უბნების რაოდენობა</span>'
+            },
+            xAxis: {
+                categories: ['უბნები'],
+                labels:{ enabled: false }
+            },
+            yAxis: {
+            		min: 0,
+                    gridLineWidth: 0,
+                    title: { text: '' },
+                    labels:{ enabled: false },
+            },
+            legend: {
+            	enabled: true
+            },
+            tooltip: {
+                formatter: function() {
+                    return this.series.name +':<br/>'+ Highcharts.numberFormat(this.point.ricxvi,0) +' (<b>'+ this.point.procenti+'</b>)';
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'percent',
+                    dataLabels: {
+                        enabled: true,
+                        align: 'right',
+                        verticalAlign: 'top',
+                        y: 0,
+                        x: 33,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black',
+		                formatter: function() {
+		                	if (this.percentage > 10) {
+		                    	return Highcharts.numberFormat(this.point.ricxvi,0) +' . . . . . . . . . '+ this.point.procenti;
+		                    }	
+		                }
+                    }
+                }
+            },
+            
+series: [ {
+                name: 'სულ უბნები',
+                pointWidth: 40,
+                color: '#CCCCCC',
+                data: [{ y:0, procenti: "100%", ricxvi: "99" }]
+            }, {
+                name: 'დათვლილი უბნები',
+                pointWidth: 40,
+                color: '#7EC240',
+                data: [{ y:99, procenti: "100%", ricxvi: "99" }
+                ]
+            }], 
+            exporting: {
+            enabled: false
+        }       
+  });    
+    
+//================== #52 ბაღდათი
+  
+  var chart52;
+        chart52 = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container2_52',
+                type: 'column'                
+            },
+            title: {
+                text: '<span style="font-size:10px; color: #999999;">უბნების რაოდენობა</span>'
+            },
+            xAxis: {
+                categories: ['უბნები'],
+                labels:{ enabled: false }
+            },
+            yAxis: {
+            		min: 0,
+                    gridLineWidth: 0,
+                    title: { text: '' },
+                    labels:{ enabled: false },
+            },
+            legend: {
+            	enabled: true
+            },
+            tooltip: {
+                formatter: function() {
+                    return this.series.name +':<br/>'+ Highcharts.numberFormat(this.point.ricxvi,0) +' (<b>'+ this.point.procenti+'</b>)';
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'percent',
+                    dataLabels: {
+                        enabled: true,
+                        align: 'right',
+                        verticalAlign: 'top',
+                        y: 0,
+                        x: 33,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black',
+		                formatter: function() {
+		                	if (this.percentage > 10) {
+		                    	return Highcharts.numberFormat(this.point.ricxvi,0) +' . . . . . . . . . '+ this.point.procenti;
+		                    }	
+		                }
+                    }
+                }
+            },
+            
+series: [ {
+                name: 'სულ უბნები',
+                pointWidth: 40,
+                color: '#CCCCCC',
+                data: [{ y:0, procenti: "100%", ricxvi: "28" }]
+            }, {
+                name: 'დათვლილი უბნები',
+                pointWidth: 40,
+                color: '#7EC240',
+                data: [{ y:28, procenti: "100%", ricxvi: "28" }
+                ]
+            }], 
+            exporting: {
+            enabled: false
+        }       
+  });    
+  var chart54;
+        chart54 = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container2_54',
+                type: 'column'                
+            },
+            title: {
+                text: '<span style="font-size:10px; color: #999999;">უბნების რაოდენობა</span>'
+            },
+            xAxis: {
+                categories: ['უბნები'],
+                labels:{ enabled: false }
+            },
+            yAxis: {
+            		min: 0,
+                    gridLineWidth: 0,
+                    title: { text: '' },
+                    labels:{ enabled: false },
+            },
+            legend: {
+            	enabled: true
+            },
+            tooltip: {
+                formatter: function() {
+                    return this.series.name +':<br/>'+ Highcharts.numberFormat(this.point.ricxvi,0) +' (<b>'+ this.point.procenti+'</b>)';
+                }
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'percent',
+                    dataLabels: {
+                        enabled: true,
+                        align: 'right',
+                        verticalAlign: 'top',
+                        y: 0,
+                        x: 33,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black',
+		                formatter: function() {
+		                	if (this.percentage > 10) {
+		                    	return Highcharts.numberFormat(this.point.ricxvi,0) +' . . . . . . . . . '+ this.point.procenti;
+		                    }	
+		                }
+                    }
+                }
+            },
+            
+series: [ {
+                name: 'სულ უბნები',
+                pointWidth: 40,
+                color: '#CCCCCC',
+                data: [{ y:0, procenti: "100%", ricxvi: "50" }]
+            }, {
+                name: 'დათვლილი უბნები',
+                pointWidth: 40,
+                color: '#7EC240',
+                data: [{ y:50, procenti: "100%", ricxvi: "50" }
+                ]
+            }], 
+            exporting: {
+            enabled: false
+        }       
+  });        
+//==----    
+});
+</script>
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+	<table border="0" width="100%" cellspacing="5" cellpadding="0">
+		<tr>
+			<td align="center">
+			<table border="0" width="1000" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="177">
+					<a href="\">
+					<img border="0" src="pics/logo_geo.gif" width="177" height="78"></a></td>
+					<td align="center"><font color=#2FACD5><strong>საქართველოს პარლამენტის 2013 წლის 27 აპრილის შუალედური არჩევნები</strong></font>					<p>
+				  <font size="4" color="#21AA48"><b>წინასწარი მონაცემები</b></font></span></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="10" align="center"><img border="0" src="pics/line1.gif"></td>
+		</tr>
+		<tr>
+			<td height="20" align="center">
+							<b><font size="4">#9 ნაძალადევი</font></b></td>
+		</tr>
+		<tr>
+			<td align="center" height="198" valign="top">
+			<table border="0" width="800">
+				<tr>
+					<td>
+					<table border="0" width="100%">
+						<tr>
+							<td><div id="chart_all_9" style="min-width: 500px; height: 350px; margin: 0 auto;"></td>
+							<td width="180" valign="top">
+							<table border="0" width="100%" height="350">
+								<tr>
+									<td height="310"><div id="container2_9" style="width: 150px; height: 300px; margin: 0 auto"></td>
+								</tr>
+								<tr>
+									<td>
+									<p align="center"><b><span lang="ka">
+									<a href="major9.html">დეტალური ინფორმაცია</a></span></b></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+<table border="1" width="100%" id="table39" height="92" bordercolor="#C0C0C0" cellspacing="1" cellpadding="3" style="border-collapse: collapse">
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>1</b></font></td><td align="left" bgcolor=#EFEFEF >კახა კუკავა                                                                                                                                                                                              - <b>6772 <font size=1>(17.26%)</font></b><br><font size=1 color=#666666>”კახა კუკავა - თავისუფალი საქართველო”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>5</b></font></td><td align="left" bgcolor=#EFEFEF >მირზა დავითაია                                                                                                                                                                                           - <b>5926 <font size=1>(15.11%)</font></b><br><font size=1 color=#666666>პოლიტიკური გაერთიანება ”ერთიანი ნაციონალური მოძრაობა”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>9</b></font></td><td align="left" bgcolor=#EFEFEF >ხვიჩა ასანიძე                                                                                                                                                                                            - <b>20 <font size=1>(0.05%)</font></b><br><font size=1 color=#666666>”სამართლიანი საქართველოსთვის”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>19</b></font></td><td align="left" bgcolor=#EFEFEF >ზაზა მეზვრიშვილი                                                                                                                                                                                         - <b>33 <font size=1>(0.08%)</font></b><br><font size=1 color=#666666>პოლიტიკური მოძრაობა ”თავისუფლება - ზვიად გამსახურდიას გზა”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>30</b></font></td><td align="left" bgcolor=#EFEFEF >გიორგი ლილუაშვილი                                                                                                                                                                                        - <b>46 <font size=1>(0.12%)</font></b><br><font size=1 color=#666666>”მერაბ კოსტავას საზოგადოება”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>36</b></font></td><td align="left" bgcolor=#EFEFEF >გია ნემსაძე                                                                                                                                                                                              - <b>133 <font size=1>(0.34%)</font></b><br><font size=1 color=#666666>პოლიტიკური გაერთიანება ”საქართველოს მშრომელთა საბჭო”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>38</b></font></td><td align="left" bgcolor=#EFEFEF >გიორგი გუგავა                                                                                                                                                                                            - <b>1233 <font size=1>(3.14%)</font></b><br><font size=1 color=#666666>”შალვა ნათელაშვილი - საქართველოს ლეიბორისტული პარტია”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>41</b></font></td><td align="left" bgcolor=#EFEFEF >თამარ კორძაია                                                                                                                                                                                            - <b>15487 <font size=1>(39.48%)</font></b><br><font size=1 color=#666666>საარჩევნო ბლოკი ”ბიძინა ივანიშვილი - ქართული ოცნება”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>42</b></font></td><td align="left" bgcolor=#EFEFEF >იოსებ მანჯავიძე                                                                                                                                                                                          - <b>5078 <font size=1>(12.95%)</font></b><br><font size=1 color=#666666>საინიციატივო ჯგუფი</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>44</b></font></td><td align="left" bgcolor=#EFEFEF >ზვიად ჩიტიშვილი                                                                                                                                                                                          - <b>4497 <font size=1>(11.46%)</font></b><br><font size=1 color=#666666>საინიციატივო ჯგუფი</font></font></td>
+						</tr>
+						
+						</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="10" align="center"><img border="0" src="pics/line1.gif"></td>
+		</tr>
+		<tr>
+			<td align="center">
+			<b><font size="4">#52 ბაღდათი</font></b></td>
+		</tr>
+		<tr>
+			<td align="center">
+			<table border="0" width="800">
+				<tr>
+					<td>
+					<table border="0" width="100%">
+						<tr>
+							<td>
+							<div id="chart_all_52" style="min-width: 500px; height: 350px; margin: 0 auto;"></td>
+							<td width="180" valign="top">
+							<table border="0" width="100%" height="350">
+								<tr>
+									<td height="310">
+									<div id="container2_52" style="width: 150px; height: 300px; margin: 0 auto"></td>
+								</tr>
+								<tr>
+									<td>
+									<p align="center"><b><span lang="ka">
+									<a href="major52.html">დეტალური ინფორმაცია</a></span></b></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+<table border="1" width="100%" id="table40" height="92" bordercolor="#C0C0C0" cellspacing="1" cellpadding="3" style="border-collapse: collapse">
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>4</b></font></td><td align="left" bgcolor=#EFEFEF >დათო შარაბიძე                                                                                                                                                                                            - <b>14 <font size=1>(0.12%)</font></b><br><font size=1 color=#666666>”ეროვნულ-დემოკრატიული პარტია”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>5</b></font></td><td align="left" bgcolor=#EFEFEF >ვლადიმერ წიქორიძე                                                                                                                                                                                        - <b>2383 <font size=1>(21.12%)</font></b><br><font size=1 color=#666666>პოლიტიკური გაერთიანება ”ერთიანი ნაციონალური მოძრაობა”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>9</b></font></td><td align="left" bgcolor=#EFEFEF >პაატა ბაკურაძე                                                                                                                                                                                           - <b>39 <font size=1>(0.35%)</font></b><br><font size=1 color=#666666>”სამართლიანი საქართველოსთვის”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>19</b></font></td><td align="left" bgcolor=#EFEFEF >ლაშა თამაზაშვილი                                                                                                                                                                                         - <b>5 <font size=1>(0.04%)</font></b><br><font size=1 color=#666666>პოლიტიკური მოძრაობა ”თავისუფლება - ზვიად გამსახურდიას გზა”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>36</b></font></td><td align="left" bgcolor=#EFEFEF >არჩილ იოსელიანი                                                                                                                                                                                          - <b>14 <font size=1>(0.12%)</font></b><br><font size=1 color=#666666>პოლიტიკური გაერთიანება ”საქართველოს მშრომელთა საბჭო”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>41</b></font></td><td align="left" bgcolor=#EFEFEF >პაატა კიკნაველიძე                                                                                                                                                                                        - <b>6975 <font size=1>(61.81%)</font></b><br><font size=1 color=#666666>საარჩევნო ბლოკი ”ბიძინა ივანიშვილი - ქართული ოცნება”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>42</b></font></td><td align="left" bgcolor=#EFEFEF >რომან რობაქიძე                                                                                                                                                                                           - <b>751 <font size=1>(6.65%)</font></b><br><font size=1 color=#666666>საინიციატივო ჯგუფი</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>43</b></font></td><td align="left" bgcolor=#EFEFEF >ზურაბ მსხვილიძე                                                                                                                                                                                          - <b>1104 <font size=1>(9.78%)</font></b><br><font size=1 color=#666666>საინიციატივო ჯგუფი</font></font></td>
+						</tr>
+						
+						</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td height="10" align="center"><img border="0" src="pics/line1.gif"></td>
+		</tr>
+		<tr>
+			<td align="center">
+<b><span lang="ka"><font size="4">#54 სამტრედია</font></span></b></td>
+		</tr>
+		<tr>
+			<td align="center">
+			<table border="0" width="800">
+				<tr>
+					<td>
+					<table border="0" width="100%">
+						<tr>
+							<td>
+							<div id="chart_all_54" style="min-width: 500px; height: 350px; margin: 0 auto;"></td>
+							<td width="180" valign="top">
+							<table border="0" width="100%" height="350">
+								<tr>
+									<td height="310">
+									<div id="container2_54" style="width: 150px; height: 300px; margin: 0 auto"></td>
+								</tr>
+								<tr>
+									<td>
+									<p align="center"><b><span lang="ka">
+									<a href="major54.html">დეტალური ინფორმაცია</a></span></b></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+<table border="1" width="100%" id="table41" height="92" bordercolor="#C0C0C0" cellspacing="1" cellpadding="3" style="border-collapse: collapse">
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>5</b></font></td><td align="left" bgcolor=#EFEFEF >ემზარი შუბლაძე                                                                                                                                                                                           - <b>3963 <font size=1>(18.69%)</font></b><br><font size=1 color=#666666>პოლიტიკური გაერთიანება ”ერთიანი ნაციონალური მოძრაობა”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>9</b></font></td><td align="left" bgcolor=#EFEFEF >გოჩა ბაძგარაძე                                                                                                                                                                                           - <b>33 <font size=1>(0.16%)</font></b><br><font size=1 color=#666666>”სამართლიანი საქართველოსთვის”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>19</b></font></td><td align="left" bgcolor=#EFEFEF >ბადრი გოგელაშვილი                                                                                                                                                                                        - <b>19 <font size=1>(0.09%)</font></b><br><font size=1 color=#666666>პოლიტიკური მოძრაობა ”თავისუფლება - ზვიად გამსახურდიას გზა”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>36</b></font></td><td align="left" bgcolor=#EFEFEF >მორისონი ქობულია                                                                                                                                                                                         - <b>26 <font size=1>(0.12%)</font></b><br><font size=1 color=#666666>პოლიტიკური გაერთიანება ”საქართველოს მშრომელთა საბჭო”</font></font></td>
+						</tr>
+	
+						<tr>
+							<td width=50 align=center bgcolor=#EFEFEF><font size=4 color=#333333><b>41</b></font></td><td align="left" bgcolor=#EFEFEF >გიორგი კახიანი                                                                                                                                                                                           - <b>17163 <font size=1>(80.94%)</font></b><br><font size=1 color=#666666>საარჩევნო ბლოკი ”ბიძინა ივანიშვილი - ქართული ოცნება”</font></font></td>
+						</tr>
+						
+						</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+					<p align="center">
+					<img border="0" src="pics/cdsko.gif" width="75" height="9"></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a13581e74e22959d',t:'MTc4Mjc0MjE1MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,6 +1,6 @@
 import L from "npm:leaflet";
 import * as d3 from "npm:d3";
-import {turnoutValue, turnoutNorm, fetchTextAsset, fetchJSONAsset, councilSelfgovIdFromMajorId} from "./election-utils.js";
+import {turnoutValue, turnoutNorm, fetchTextAsset, fetchJSONAsset, councilSelfgovIdFromMajorId, selfgovIdFromRawDistrictId} from "./election-utils.js";
 import {
   GEORGIA_OUTLINE_SVG,
   TBILISI_OUTLINE_SVG,
@@ -190,12 +190,10 @@ export async function buildElectionMap({
     const p = feature?.properties ?? {};
     return String(p.major_id ?? p.maj_id ?? p.MID ?? p.id ?? p.selfgov_id ?? p.self_gov_id);
   }
-  function councilSelfgovIdFromDistrictId(id) {
-    const n = Number(id);
-    return String(n >= 1 && n <= 10 ? 1 : n);
-  }
   function updateCouncilSeatsForDistrict(did, props) {
-    const sgId = councilSelfgovIdFromDistrictId(did);
+    // `did` here is a raw electoral/exec district number (already selfgov-scale),
+    // NOT a council maj_id — see the domain note in election-utils.js.
+    const sgId = selfgovIdFromRawDistrictId(did);
     const sgFeat = selfgovGeoData?.features?.find(f => String(f.properties.id) === sgId);
     updateCouncilSeats(sgId, sgFeat?.properties ?? props, true);
   }
@@ -689,7 +687,7 @@ export async function buildElectionMap({
       if (!isCouncilMode) return;
       const sgId = effectiveVoteType === "smd"
         ? councilSelfgovIdFromMajorId(_precinctToMajorId.get(stationId) ?? parentDid)
-        : councilSelfgovIdFromDistrictId(parentDid);
+        : selfgovIdFromRawDistrictId(parentDid);
       const sgFeat = selfgovGeoData?.features?.find(f => String(f.properties.id) === sgId);
       updateCouncilSeats(sgId, sgFeat?.properties ?? props, true);
     }

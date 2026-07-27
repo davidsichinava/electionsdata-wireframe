@@ -1,0 +1,623 @@
+/* Page styles for elections.md (map layout, filter panel, results tables,
+   seat tiles, fullscreen overrides, legend/turnout controls) — extracted
+   verbatim from the page <style> block (REFACTOR_PLAN §4). The generic-looking
+   class names (.bar-row, .dist-table, .year-chips…) are emitted only by
+   election-renderers.js / election-map.js, which render on this page alone —
+   verified against every other page before global loading. */
+
+
+.elections-outer {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 1rem;
+  align-items: start;
+  width: 100%;
+}
+/* Map row: two-column grid — map on the left, results panel on the right.
+   The panel only floats over the map when the user enters fullscreen mode
+   (see :fullscreen overrides further down). */
+.elections-main {
+  display: grid;
+  grid-template-columns: minmax(0, 900px) 300px;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* ── Fullscreen mode ─────────────────────────────────────────────────────
+   When the user clicks the fullscreen button, the .elections-main wrapper
+   (which contains both the map card and the results panel) is the element
+   handed to the browser's Fullscreen API. Override the two-column grid so
+   the map fills the entire viewport, and float the panel as an overlay in
+   the bottom-right corner.
+
+   Explicit viewport sizing is intentional here: some browsers keep the
+   fullscreen element's document-flow dimensions unless we force the wrapper
+   and map card to the fullscreen viewport. */
+.elections-main:fullscreen,
+.elections-main:-webkit-full-screen,
+.elections-main.map-fullscreen-active {
+  display: block;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: var(--theme-background, #fff);
+}
+.elections-main:fullscreen > .card:not(.results-panel),
+.elections-main:-webkit-full-screen > .card:not(.results-panel),
+.elections-main.map-fullscreen-active > .card:not(.results-panel) {
+  width: 100vw !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0 !important;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+.elections-main:fullscreen > .card:not(.results-panel) > div,
+.elections-main:-webkit-full-screen > .card:not(.results-panel) > div,
+.elections-main.map-fullscreen-active > .card:not(.results-panel) > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+.elections-main:fullscreen > .results-panel,
+.elections-main:-webkit-full-screen > .results-panel,
+.elections-main.map-fullscreen-active > .results-panel {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  max-height: min(55vh, calc(100vh - 32px));
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  background: var(--theme-background, #fff);
+}
+/* The toggle button gets the .results-panel-toggle class. It's hidden
+   by default and only shown when the panel is decorated for fullscreen
+   (the JS adds the .results-panel-fullscreen class to the panel — that
+   is the most reliable trigger because it does not depend on any
+   browser pseudo-class support).
+
+   Comma-separated selector lists that mix :fullscreen with the legacy
+   :-webkit-full-screen pseudo-class can get the WHOLE rule dropped in
+   some Chrome versions where -webkit-full-screen is no longer a valid
+   parser token. That is why these are class-based rules — they are
+   robust. */
+.results-panel > .results-panel-toggle {
+  display: none;
+}
+.results-panel.results-panel-fullscreen > .results-panel-toggle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border, rgba(0,0,0,0.18));
+  border-radius: 4px;
+  background: var(--theme-background, #fff);
+  color: var(--theme-foreground, #222);
+  cursor: pointer;
+  z-index: 2;
+}
+.results-panel.results-panel-fullscreen > .results-panel-toggle:hover {
+  border-color: var(--theme-foreground-focus, #1a3a5c);
+  color: var(--theme-foreground-focus, #1a3a5c);
+}
+.results-panel.results-panel-fullscreen.results-panel-collapsed > :not(.results-panel-toggle) {
+  display: none !important;
+}
+.results-panel.results-panel-fullscreen.results-panel-collapsed > .results-panel-toggle {
+  top: 6px;
+  right: 6px;
+}
+/* On narrow screens the mobile media query below sets left: 16px on the
+   fullscreen panel so the expanded panel can stretch across the bottom of
+   the screen. When the panel is collapsed to a 42x42 px tile we must
+   cancel that left: 16px (or the tile would anchor to the left edge,
+   fighting the inline right: 16px set by JS). Class-only selector keeps
+   this rule isolated from any :fullscreen / :-webkit-full-screen parser
+   quirks. */
+.results-panel.results-panel-fullscreen.results-panel-collapsed {
+  left: auto !important;
+}
+@media (max-width: 700px) {
+  .elections-main:fullscreen > .results-panel,
+  .elections-main:-webkit-full-screen > .results-panel,
+  .elections-main.map-fullscreen-active > .results-panel {
+    left: 16px;
+    width: auto;
+    max-height: 45vh;
+  }
+}
+.elections-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+@media (max-width: 900px) { .elections-bottom { grid-template-columns: 1fr; } }
+.results-panel { min-height: 200px; overflow-y: auto; }
+.election-info { font-size: 0.85rem; line-height: 1.65; }
+.election-info .info-date { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.5rem; }
+.election-info a { color: var(--theme-foreground-focus); }
+@media (max-width: 900px) {
+  .elections-outer  { grid-template-columns: 1fr; }
+  .elections-main   { grid-template-columns: 1fr; }
+  .elections-bottom { grid-template-columns: 1fr; }
+}
+
+/* Filter panel */
+.filter-panel { --input-width: 186px; overflow: hidden; }
+.filter-label {
+  font-size: 0.72rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.05em;
+  font-weight: 700; margin-bottom: 4px;
+}
+.filter-item { margin-bottom: 1rem; }
+
+/* Form fonts — explicit family so Georgian text uses the loaded BPG Arial
+   web font instead of whatever the browser picks for native form controls. */
+.filter-panel select,
+.filter-panel option,
+.filter-panel input,
+.filter-panel label {
+  font-family: "BPG Arial", "Calibri", system-ui, sans-serif;
+}
+
+/* Modern select styling */
+.filter-panel select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 7px 30px 7px 10px;
+  font-size: 0.82rem;
+  color: var(--theme-foreground, #1a1a1a);
+  background-color: var(--theme-background, #fff);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+  border: 1.5px solid var(--border, #ddd);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+.filter-panel select:hover {
+  border-color: #aaa;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.filter-panel select:focus {
+  outline: none;
+  border-color: #6b9bd2;
+  box-shadow: 0 0 0 3px rgba(107,155,210,0.18);
+}
+
+/* Year chips — election picker. Drop-in replacement for the old long-name
+   dropdown; hover shows the full election name as a browser tooltip. */
+.year-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.year-chip {
+  font-family: "BPG Arial", "Calibri", system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.1;
+  padding: 5px 11px;
+  border: 1.5px solid var(--border, #ddd);
+  border-radius: 999px;
+  background: var(--theme-background, #fff);
+  color: var(--theme-foreground, #1a1a1a);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.year-chip:hover {
+  border-color: #999;
+  background: rgba(0,0,0,0.04);
+}
+.year-chip.active {
+  background: var(--theme-foreground-focus, #1a3a5c);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+.year-chip.active:hover {
+  filter: brightness(1.08);
+  background: var(--theme-foreground-focus, #1a3a5c);
+}
+.year-chip:focus-visible {
+  outline: 2px solid var(--theme-foreground-focus, #1a3a5c);
+  outline-offset: 2px;
+}
+
+/* Collapsible chip section — summary acts as a chip-shaped status line and
+   the disclosure toggle. Used for the sub-election picker so a long list
+   (runoffs + by-elections + repeats) doesn't dominate the filter column. */
+.chip-details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-family: "BPG Arial", "Calibri", system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.1;
+  padding: 5px 26px 5px 11px;
+  border: 1.5px solid var(--border, #ddd);
+  border-radius: 999px;
+  background: var(--theme-background, #fff);
+  color: var(--theme-foreground, #1a1a1a);
+  position: relative;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.chip-details > summary::-webkit-details-marker { display: none; }
+.chip-details > summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 5px);
+  transform: rotate(45deg);
+  transition: transform 0.15s ease, top 0.15s ease;
+}
+.chip-details[open] > summary::after {
+  transform: rotate(-135deg);
+  top: calc(50% - 2px);
+}
+.chip-details > summary:hover { border-color: #999; }
+.chip-details > summary:focus-visible {
+  outline: 2px solid var(--theme-foreground-focus, #1a3a5c);
+  outline-offset: 2px;
+}
+.chip-details > .year-chips { margin-top: 6px; }
+
+/* Map level control */
+.leaflet-level-control {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  min-width: 110px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  line-height: 1.4;
+}
+.level-control-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin-bottom: 4px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.level-control-item {
+  padding: 2px 0;
+  color: #aaa;
+}
+.level-control-item.lc-clickable {
+  cursor: pointer;
+}
+.level-control-item.lc-clickable:hover { color: #333; }
+.level-control-item.lc-active { color: #333; font-weight: 600; }
+
+
+/* Bar chart */
+.bar-row { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; font-size: 0.82rem; }
+.bar-label { width: 140px; white-space: normal; line-height: 1.3; flex-shrink: 0; }
+.bar-track { flex: 1; background: var(--border); border-radius: 2px; height: 14px; position: relative; margin-top: 2px; }
+.bar-fill  { height: 100%; border-radius: 2px; transition: width 0.3s; }
+.bar-value { width: 80px; text-align: right; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; line-height: 1.25; margin-top: 1px; }
+.bar-value-main { font-size: 0.78rem; color: var(--muted); }
+.bar-value-sub  { font-size: 0.70rem; color: var(--muted); opacity: 0.7; }
+/* Expandable below-threshold section */
+.below-threshold-details { margin-top: 6px; }
+.below-threshold-details[open] { margin-top: 8px; }
+.below-threshold-summary {
+  display: flex; align-items: center; gap: 6px;
+  font-style: italic; text-transform: uppercase;
+  font-size: 0.70rem; color: var(--muted);
+  cursor: pointer; list-style: none;
+  border-top: 2px dashed #bbb; padding-top: 6px;
+  user-select: none;
+}
+.below-threshold-summary::-webkit-details-marker { display: none; }
+.below-threshold-summary::before {
+  content: "▸"; font-style: normal; font-size: 0.65rem;
+  transition: transform 0.15s;
+}
+.below-threshold-details[open] .below-threshold-summary::before { content: "▾"; }
+.below-threshold-count {
+  background: var(--muted); color: #fff;
+  font-size: 0.65rem; font-style: normal;
+  border-radius: 10px; padding: 1px 6px; line-height: 1.4;
+}
+.below-threshold-details .bar-row { margin-top: 6px; }
+.below-threshold-details .dist-table { margin-top: 4px; }
+
+/* District results table */
+.dist-table {
+  width: 100%;
+  max-width: none;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.dist-table thead { display: table-header-group; }
+.dist-table tbody { display: table-row-group; }
+.dist-table tr { display: table-row; }
+.dist-table th,
+.dist-table td {
+  box-sizing: border-box;
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.dist-table th {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid var(--border);
+  text-align: left;
+}
+.dist-table th:first-child,
+.dist-table td:first-child {
+  width: 68%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.dist-table th:last-child,
+.dist-table td:last-child {
+  width: 32%;
+  text-align: right;
+  white-space: nowrap;
+}
+.dist-table tr:last-child td { border-bottom: none; }
+.party-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; flex-shrink: 0; }
+
+/* Seat tiles — rectangles grouped by party */
+.seat-block { display: flex; flex-wrap: wrap; gap: 2px; }
+.seat-tile  { width: 9px; height: 9px; border-radius: 1px; }
+
+/* Active highlights for legend rows (bar chart, district table, seat
+   legend). All three reserve a 3 px transparent left border on the base
+   class so the active state can colour it in without shifting the row's
+   contents — that way the red accent never overlaps the swatch or text,
+   and toggling does not cause a horizontal jiggle. Background tint stays
+   the same in all three for visual consistency. */
+
+/* Active bar row (party filter) — visible when the user lands via a
+   ?party= deep link from /parties or clicks any row themselves. */
+.bar-row {
+  transition: background 0.15s, border-color 0.15s;
+  border-left: 3px solid transparent;
+  border-radius: 3px;
+  padding-left: 4px;
+}
+.bar-row-active {
+  background: rgba(204, 23, 32, 0.08);
+  border-left-color: var(--red, #CC1720);
+}
+
+/* Clickable district/precinct table rows. The accent attaches to the
+   first cell because Leaflet doesn't let us paint a border across the
+   whole <tr>; padding-left adds breathing room between the stripe and
+   the party-dot swatch. */
+.dist-table-row { cursor: pointer; transition: background 0.1s; }
+.dist-table-row:hover td { background: rgba(0,0,0,0.04); }
+.dist-table-row td:first-child {
+  border-left: 3px solid transparent;
+  padding-left: 10px;
+}
+.dist-table-row-active td { background: rgba(204, 23, 32, 0.08); }
+.dist-table-row-active td:first-child {
+  font-weight: 700;
+  border-left-color: var(--red, #CC1720);
+}
+
+/* Seat legend row (below the dot composition). Border-radius lives here
+   (was inline) so the active border-left can sit flush against it. */
+.seat-legend-row {
+  transition: background 0.15s, border-color 0.15s;
+  border-left: 3px solid transparent;
+  border-radius: 3px;
+  padding-left: 7px;
+}
+.seat-legend-row:hover { background: rgba(0,0,0,0.04); }
+.seat-legend-row-active {
+  background: rgba(204, 23, 32, 0.08);
+  border-left-color: var(--red, #CC1720);
+}
+.seat-legend-row-active strong { color: var(--red, #CC1720); }
+
+/* Overlay opacity slider — driven by the OpacityControl in election-map.js.
+   The toggle button shows a half-shaded circle icon and reveals a small
+   tray with a horizontal range input. Adjusting it sets a CSS custom
+   property on the map container; the two rules below apply that to the
+   Leaflet overlay/marker panes so the choropleth (and precinct circles)
+   dim together, revealing the basemap's settlement labels beneath. */
+.leaflet-container .leaflet-overlay-pane,
+.leaflet-container .leaflet-marker-pane {
+  opacity: var(--map-overlay-opacity, 1);
+  transition: opacity 0.15s ease;
+}
+
+/* Unify every map-control button — Leaflet's built-in zoom +/-, the
+   custom Zoom-Georgia / Zoom-Tbilisi, Share, Fullscreen, and Opacity
+   toggles — to the same 26×26 grey-on-white box. Without this Leaflet's
+   touch theme bumps the zoom +/- to 30×30 on tablets and our custom
+   controls stay 26×26, so the column ends up jagged. We also force
+   display:flex so any inline SVG centres on both axes instead of
+   hanging off the text baseline (this was the "opacity icon off-centre"
+   bug).
+   !important is needed because the inline cssText attribute set on
+   each custom button has higher specificity than a plain class rule. */
+.leaflet-bar a,
+.leaflet-touch .leaflet-bar a {
+  width: 26px !important;
+  height: 26px !important;
+  line-height: 26px !important;
+  color: #444 !important;
+  background-color: #fff;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  font-size: 18px;
+}
+.leaflet-bar a:hover { color: #000 !important; background-color: #f4f4f4; }
+/* SVG icons render as inline elements by default and pick up baseline
+   alignment, which pushed the opacity glyph a couple of pixels low. */
+.leaflet-bar a > svg { display: block; }
+
+.map-opacity-ctrl {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  overflow: hidden;
+}
+.map-opacity-toggle { /* size + color inherited from .leaflet-bar a */ }
+.map-opacity-tray {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  border-left: 1px solid var(--theme-foreground-faint, #ccc);
+}
+.map-opacity-tray[hidden] { display: none; }
+.map-opacity-slider {
+  width: 90px;
+  accent-color: var(--red, #CC1720);
+  cursor: pointer;
+}
+.map-opacity-value {
+  font-size: 0.7rem;
+  color: #444;
+  min-width: 30px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* "Participating political groups" — cross-page navigation block in the
+   election-info card. Sits between notes and sources; shows quick-jump
+   links to the filtered /parties list and to each available candidate
+   roster (/candidates?election=<id>&vote_type=<type>). */
+.election-participants {
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.election-participants-label {
+  font-family: var(--font-head);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.election-participants-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+.election-participants-list li {
+  margin-bottom: 0.15rem;
+}
+.election-participants-list li::marker {
+  color: var(--muted);
+}
+.election-participants-list a {
+  color: var(--red, #CC1720);
+  text-decoration: none;
+  font-weight: 500;
+}
+.election-participants-list a:hover { text-decoration: underline; }
+
+/* Election info card "Sources:" footer (rendered by renderElectionInfo()
+   after the notes block). Small, muted, treats the YAML 'sources:' array
+   as a citation list. */
+.election-sources {
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.election-sources-label {
+  font-family: var(--font-head);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+.election-sources-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.election-sources-list li { margin-bottom: 0.2rem; }
+.election-sources-list a {
+  color: var(--red, #CC1720);
+  text-decoration: none;
+}
+.election-sources-list a:hover { text-decoration: underline; }
+
+/* Selected map unit (parliamentary SMD, sakrebulo majoritarian, selfgov,
+   or precinct circle). The class is toggled by setSelectedUnit() on the
+   Leaflet SVG element. !important is necessary because Leaflet applies
+   stroke style inline via setStyle() during hover, re-colouring, and
+   party-filter restyling, and we want the selection accent to survive
+   all of that. A thin black dashed outline reads cleanly on top of any
+   fill colour without competing with the choropleth gradient. */
+path.geda-selected,
+circle.geda-selected {
+  stroke: #111 !important;
+  stroke-width: 1.75px !important;
+  stroke-opacity: 1 !important;
+  stroke-dasharray: 5 3 !important;
+}
+
+/* Turnout metric rows — clickable to switch the map metric */
+.turnout-metric-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 5px 4px; margin: 0 -4px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem; cursor: pointer;
+  border-radius: 3px; transition: background 0.1s;
+}
+.turnout-metric-row:hover { background: rgba(0,0,0,0.04); }
+.metric-row-active { background: rgba(0,0,0,0.07) !important; }
+.metric-row-active .metric-row-label { font-weight: 700; color: var(--theme-foreground); }
+
+
+/* Map legend control */
+.map-legend {
+  background: rgba(255,255,255,0.93);
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 0.68rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.18);
+  pointer-events: none;
+  max-width: 240px;
+}

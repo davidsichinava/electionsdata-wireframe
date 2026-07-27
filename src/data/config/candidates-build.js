@@ -149,11 +149,14 @@ function loadGeoIndex(shapeFile) {
   return idx;
 }
 
+// Returns the district geo record, or null when the shape/id doesn't resolve.
+// (Previously returned a truthy {} on miss, which made join failures
+// indistinguishable from hits — the root of the silent-blank-names bug, B3.)
 function lookupDistrict(shapeFile, id) {
-  if (!shapeFile || id == null || id === "") return {};
+  if (!shapeFile || id == null || id === "") return null;
   const idx = loadGeoIndex(shapeFile);
-  if (!idx) return {};
-  return idx.byId[String(id)] ?? {};
+  if (!idx) return null;
+  return idx.byId[String(id)] ?? null;
 }
 
 // ─── results joining (vote shares) ───────────────────────────────────────────
@@ -260,6 +263,31 @@ function intOrNull(v) {
   return Number.isFinite(n) ? n : null;
 }
 
+// Geo-join coverage tally (B3): a failed lookupDistrict() silently blanks
+// district_name_en (the canonical CSVs carry only the ka name, so English
+// names exist ONLY via the geo join) and drops the district centroid. Misses
+// are counted per election/vote_type and reported after the build loop so
+// join regressions are visible instead of silent.
+const geoJoinStats = new Map(); // `${election_id}/${vote_type}` → {total, missed}
+
+function tallyGeoJoin(electionId, voteType, joined) {
+  const key = `${electionId}/${voteType}`;
+  const s = geoJoinStats.get(key) ?? { total: 0, missed: 0 };
+  s.total++;
+  if (!joined) s.missed++;
+  geoJoinStats.set(key, s);
+}
+
+export function reportGeoJoinCoverage() {
+  const misses = [...geoJoinStats.entries()].filter(([, s]) => s.missed > 0)
+    .sort((a, b) => b[1].missed - a[1].missed);
+  if (!misses.length) return;
+  console.warn(`[candidates-build] district geo-join misses (no district_name_en / centroid):`);
+  for (const [key, s] of misses) {
+    console.warn(`  ${key}: ${s.missed}/${s.total} rows with a district_id failed the shape lookup`);
+  }
+}
+
 function appearanceFromCanonicalRow(row, election, sub, partyMap, shapeForVoteType, smdResultsIdx, presResultsIdx) {
   const first_name = (row.first_name ?? "").toString().trim();
   const last_name  = (row.last_name  ?? "").toString().trim();
@@ -284,6 +312,7 @@ function appearanceFromCanonicalRow(row, election, sub, partyMap, shapeForVoteTy
   let district_lat = null, district_lng = null, district_zoom = null;
   const shape = shapeForVoteType(vote_type, election);
   const geo = lookupDistrict(shape, districtId);
+  if (districtId != null) tallyGeoJoin(election.id, vote_type, !!geo);
   if (geo) {
     district_name_ka ??= geo.name_ka ?? null;
     district_name_en   = geo.name_en ?? null;
@@ -385,6 +414,7 @@ export async function buildCandidates() {
   const appearances = [];
   const apIndex = new Map(); // mergeKey → appearance reference
 
+  geoJoinStats.clear(); // fresh coverage tally per build call
   for (const election of elections) {
     if (!election?.id) continue;
     const partyMap = buildElectionPartyMap(election);
@@ -444,6 +474,8 @@ export async function buildCandidates() {
       }
     }
   }
+
+  reportGeoJoinCoverage(); // B3: surface silent district_name_en / centroid gaps
 
   // ─── cluster by normalized (first_name, last_name) ─────────────────────────
 
